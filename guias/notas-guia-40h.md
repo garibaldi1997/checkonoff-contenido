@@ -115,7 +115,35 @@ Hasta agosto de 2026 la autoridad no había emitido las reglas de carácter gene
   2. **Manifestación o acuerdo del registro electrónico:** acredita que trabajador y patrón conocen y acuerdan el mecanismo.
   3. **Registro electrónico:** evidencia diaria de entrada, salida, jornada y tiempo extraordinario.
 
-## 12. Pendiente de agregar a la guía
+## 12. Obligaciones del patrón con el registro electrónico (láminas 35-36)
+1. **Sistema confiable:** registrar entradas, salidas, descansos y horas extra; impedir modificaciones sin trazabilidad; conservar la información el plazo legal.
+2. **Integridad:** registros completos y cronológicos; identificar al trabajador que registró; respaldos y seguridad.
+3. **Acceso:** el trabajador puede consultar sus registros; se pueden emitir reportes para inspecciones o controversias.
+4. **Conservar evidencia:** bitácoras, reportes de asistencia, incidencias, horas extra autorizadas, correcciones.
+5. **Datos personales:** huella, reconocimiento facial, iris, geolocalización o firma electrónica obligan a cumplir la ley de protección de datos.
+(Nota: son buenas prácticas de la presentación; las reglas oficiales de la STPS aún no se publican.)
+
+## 13. Tipos de jornada y tope semanal efectivo
+Art. 60/61: diurna 06:00-20:00 (máx. 8 h diarias); nocturna 20:00-06:00 (máx. 7 h); mixta, abarca ambas con periodo nocturno < 3.5 h (máx. 7.5 h; si el nocturno es de 3.5 h o más, se considera nocturna).
+Antes de la reforma, con 6 días: diurna 48 h, mixta 45 h (7.5×6), nocturna 42 h (7×6).
+El tope semanal del art. 59 solo "muerde" cuando es menor que 6 × el máximo diario:
+| Año | Tope art. 59 | Diurna | Mixta | Nocturna |
+|---|---|---|---|---|
+| 2026 | 48 | 48 | 45 | 42 |
+| 2027 | 46 | 46 | 45 | 42 |
+| 2028 | 44 | 44 | 44 | 42 |
+| 2029 | 42 | 42 | 42 | 42 |
+| 2030 | 40 | 40 | 40 | 40 |
+Diurna cambia desde 2027, mixta desde 2028, nocturna hasta 2030.
+- ⚠️ Error en la lámina 44: la columna "Nuevo límite" pone nocturna "45 h" y mixta "42 h"; está invertido (nocturna 42, mixta 45).
+
+## 14. Ejemplos de turnos en 2030 (40 h, distribución de común acuerdo)
+- Diurna: lunes a viernes 8 h; sábado y domingo descanso.
+- Nocturna: lunes a viernes 7 h + sábado 5 h; domingo descanso.
+- Mixta: lunes a viernes 7.5 h + sábado 2.5 h; domingo descanso.
+- ⚠️ Error en la lámina 46: el pie atribuye al art. 58 "8 h diarias, pudiendo aumentar dos horas más… sin exceder tres veces por semana"; eso no es el art. 58 y además es la regla VIEJA de horas extra. Correcto: art. 58 (2º párrafo) permite distribuir la jornada de común acuerdo; art. 59 fija el máximo de 40 h; art. 61 los máximos diarios; art. 66 las extra (4 h diarias, 4 días).
+
+## 15. Pendiente de agregar a la guía
 - Tipos de jornada (art. 60): diurna 6:00-20:00; nocturna 20:00-6:00; mixta con periodo nocturno < 3.5 h (si es mayor, se considera nocturna). "Vespertina" no es categoría legal.
 - Sección de errores comunes de RRHH.
 - (Esperando más imágenes del usuario.)
