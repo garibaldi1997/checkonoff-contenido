@@ -2,7 +2,8 @@
   "2026-10-19-sabias-carga-prueba": {
     "instagram": {
       "id": "18124616986904330",
-      "fecha": "2026-10-14T07:10:04+00:00"
+      "fecha": "2026-10-14T07:10:04+00:00",
+      "borrado": "manual (la API de Instagram no permite borrar)"
     },
     "facebook": {
       "id": "122098568673512173",
@@ -25,7 +26,8 @@
   "2026-10-15-reel-pov-quincena": {
     "instagram": {
       "id": "17928605688424823",
-      "fecha": "2026-10-14T07:27:04+00:00"
+      "fecha": "2026-10-14T07:27:04+00:00",
+      "borrado": "manual (la API de Instagram no permite borrar)"
     },
     "facebook": {
       "id": "4777836345827657",
