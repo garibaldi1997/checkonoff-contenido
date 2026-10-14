@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-10-19-sabias-carga-prueba",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-14T01:00:00-06:00",
+    "tipo": "imagen",
+    "redes": [
+      "instagram",
+      "facebook"
+    ],
+    "imagenes": [
+      "contenido/checkonoff/2026-10-19-sabias-carga-prueba/01.jpg"
+    ],
+    "texto": "¿Sabías que si un trabajador demanda por la jornada, le toca a la EMPRESA probarla? ⚖️\n\nLos Arts. 784 y 804 de la LFT ponen en el patrón la obligación de demostrar horarios y tiempo extra, y de conservar los controles de asistencia.\n\nSin registros confiables, defenderte es muy difícil.\n\n🛡️ CheckONOFF guarda cada entrada y salida con hora, GPS y foto.\n👉 14 días gratis en checkonoff.mx\n\n#demandalaboral #recursoshumanos #cumplimientolaboral #empresasmexicanas #controldeasistencia"
+  },
+  {
     "id": "2026-10-15-quincena",
     "cuenta": "checkonoff",
     "fecha": "2026-10-15T10:00:00-06:00",
@@ -141,20 +155,6 @@
       "contenido/checkonoff/2026-10-19-vacaciones/07.jpg"
     ],
     "texto": "Diciembre se acerca 🏖️ ¿Sabes cuántos días de vacaciones le tocan a cada quien?\n\nDesde 2023, la Ley Federal del Trabajo marca 12 días desde el primer año:\n\n1 año → 12 días\n2 años → 14\n3 años → 16\n4 años → 18\n5 años → 20\n6 a 10 años → 22\n11 a 15 años → 24\n…y +2 días por cada 5 años más. Prima vacacional mínima: 25 %.\n\nCon CheckONOFF:\n⚖️ Los días se calculan según la LFT\n🎂 El saldo se actualiza en cada aniversario\n✍️ Solicitudes y aprobaciones con firma digital, sin papeles\n\nCumplir con la ley no debería depender de un Excel.\n👉 Prueba 14 días GRATIS en checkonoff.mx\n\n📌 GUARDA esta tabla y compártela con tu equipo.\n\n#vacaciones #leyfederaldeltrabajo #derechoslaborales #trabajomexico #recursoshumanos"
-  },
-  {
-    "id": "2026-10-19-sabias-carga-prueba",
-    "cuenta": "checkonoff",
-    "fecha": "2026-10-19T12:00:00-06:00",
-    "tipo": "imagen",
-    "redes": [
-      "instagram",
-      "facebook"
-    ],
-    "imagenes": [
-      "contenido/checkonoff/2026-10-19-sabias-carga-prueba/01.jpg"
-    ],
-    "texto": "¿Sabías que si un trabajador demanda por la jornada, le toca a la EMPRESA probarla? ⚖️\n\nLos Arts. 784 y 804 de la LFT ponen en el patrón la obligación de demostrar horarios y tiempo extra, y de conservar los controles de asistencia.\n\nSin registros confiables, defenderte es muy difícil.\n\n🛡️ CheckONOFF guarda cada entrada y salida con hora, GPS y foto.\n👉 14 días gratis en checkonoff.mx\n\n#demandalaboral #recursoshumanos #cumplimientolaboral #empresasmexicanas #controldeasistencia"
   },
   {
     "id": "2026-10-20-reforma-40-horas",
