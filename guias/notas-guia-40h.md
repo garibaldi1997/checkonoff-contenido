@@ -152,7 +152,7 @@ Diurna cambia desde 2027, mixta desde 2028, nocturna hasta 2030.
 | Nocturno | 20:00 | 01:00 | 01:30 | 03:00 | 7.0 |
 **2. + 2 h extra (controlado, tope 4 h/día):** salidas 17:00 / 23:30 / 05:00.
 **3. Alerta por exceso:** diurno 07:00-20:00 (13 h → 5 h extra: excede 4 h/día y 12 h totales); nocturno 20:00-07:00 (11 h → 4 h extra: al límite).
-- ⚠️ Error en la lámina: mixto 14:00-03:00 son 13 h → **5.5 h extra** (no 5 h). Igual excede el tope.
+- ⚠️ Error en la lámina: el turno 14:00-03:00 tiene 7 h nocturnas (20:00-03:00), así que por el art. 60 es NOCTURNO (máx. 7 h): 13 h → **6 h extra** (la lámina dice 5 h). Igual excede el tope de 12 h diarias. (Corrección detectada al programar el sistema.)
 
 ## 17. Valor de la hora extra diurna 2026-2030 (lámina "Valor de hora extra")
 Método de la lámina: hora simple = salario diario ÷ (tope semanal ÷ 6). Ej. salario diario $400:
