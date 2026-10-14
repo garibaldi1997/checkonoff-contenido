@@ -246,7 +246,56 @@ Jornada diurna lunes a sábado, 8 h ordinarias diarias (48 h, válido en 2026). 
 - ⚠️ Con las reglas vigentes desde el 1 de mayo de 2026 este ejemplo INCUMPLE: (1) 13 h en un día rebasa el tope de 12 h diarias (art. 68); (2) 5 h extra en un día rebasa el máximo de 4 h diarias (art. 66); (3) 6 h triples rebasan el máximo de 4 h triples por semana (art. 68). Además, el reparto 3 + 2 por día no sigue la regla: las dobles van hasta 4 h al día hasta llegar al tope semanal (9 h en 2026).
 - Uso en la guía: como ejemplo de lo que el registro electrónico va a evidenciar y de cómo corregirlo (ej. lunes a jueves 2 h extra = 8 h dobles, dentro de los topes).
 
-## 31. Pendiente de agregar a la guía
+## 32. Disfrazar horas extra como bono (caso de nómina, salario $500/día)
+Base: hora $62.50 · doble $125 · triple $187.50 (salario diario ÷ 8).
+| | Hasta el 30 de abril (correcto) | Después del 1 de mayo (INCORRECTO) |
+|---|---|---|
+| Sueldo ordinario | $3,000 | $3,000 |
+| Horas extra dobles | 9 h = $1,125 | 9 h = $1,125 |
+| Horas extra triples | 6 h = $1,125 | 4 h = $750 |
+| "Bono de productividad" | — | $375 (son las 2 h triples que ya no caben en el tope) |
+| Total | $5,250 | $5,250 |
+Riesgos: inconsistencia registro vs. CFDI, falta de materialidad del bono, riesgo laboral y fiscal por reclasificación indebida.
+- Lo correcto desde el 1 de mayo: no programar más de 4 h triples; si se trabajaron, pagarlas como lo que son y corregir la operación (no maquillar el recibo).
+
+## 33. Percepciones variables: evidencia y riesgo (clave 038 "Otros ingresos por salarios")
+| Situación | Evidencia recomendable | Riesgo |
+|---|---|---|
+| Bono de productividad | Política, indicadores, metas, cálculo y autorización | Alto si solo existe el CFDI |
+| Compensación | Contrato, política salarial, autorización y motivo | Medio/alto |
+| Incentivo por ventas | Reporte de ventas, % pactado, cálculo y autorización | Menor si hay trazabilidad |
+| Bono por metas | Metas previas + evidencia de cumplimiento | Menor |
+| "Otros ingresos" sin descripción | Ninguna | Muy alto |
+| Pago fijo recurrente disfrazado de bono | Analizar su naturaleza salarial | Muy alto |
+Documentar además: políticas de bonos e incentivos, KPI, metas medibles, evaluaciones de desempeño, evidencia de resultados, autorizaciones y reglas de cálculo.
+
+## 34. Ejemplos 100 % legales de horas extra
+**2026** (tope 48 h ordinarias; 9 dobles + 4 triples = 13 h extra máx.; dobles hasta 4 h/día en máx. 4 días; jornada + extra ≤ 12 h/día):
+| Día | Ordinaria | Extra | Dobles | Triples | Total |
+|---|---|---|---|---|---|
+| Lunes | 8 | 4 | 4 | 0 | 12 |
+| Martes | 8 | 4 | 4 | 0 | 12 |
+| Miércoles | 8 | 3 | 1 | 2 | 11 |
+| Jueves | 8 | 2 | 0 | 2 | 10 |
+| Viernes | 8 | 0 | 0 | 0 | 8 |
+| Sábado | 8 | 0 | 0 | 0 | 8 |
+| Totales | 48 | 13 | 9 | 4 | 61 |
+
+**2030** (tope 40 h; 12 dobles + 4 triples = 16 h extra máx.):
+| Día | Ordinaria | Extra | Dobles | Triples | Total |
+|---|---|---|---|---|---|
+| Lunes | 6 | 5 | 4 | 1 | 11 |
+| Martes | 8 | 4 | 4 | 0 | 12 |
+| Miércoles | 8 | 4 | 4 | 0 | 12 |
+| Jueves | 8 | 3 | 0 | 3 | 11 |
+| Viernes | 6 | 0 | 0 | 0 | 6 |
+| Sábado | 4 | 0 | 0 | 0 | 4 |
+| Totales | 40 | 16 | 12 | 4 | 56 |
+Máximo absoluto en 2030: 56 h a la semana (coincide con el boletín de la STPS).
+- Criterio usado: la hora extra que pasa de 4 en un día, o que supera el tope semanal de dobles, se paga triple (máx. 4 a la semana). Coincide con la cédula de CONTPAQi.
+- ⚠️ Detalle de la lámina 2030: el encabezado dice "Triples (excedente de 9)"; en 2030 es excedente de 12.
+
+## 35. Pendiente de agregar a la guía
 - Tipos de jornada (art. 60): diurna 6:00-20:00; nocturna 20:00-6:00; mixta con periodo nocturno < 3.5 h (si es mayor, se considera nocturna). "Vespertina" no es categoría legal.
 - Sección de errores comunes de RRHH.
 - (Esperando más imágenes del usuario.)
