@@ -295,7 +295,21 @@ Máximo absoluto en 2030: 56 h a la semana (coincide con el boletín de la STPS)
 - Criterio usado: la hora extra que pasa de 4 en un día, o que supera el tope semanal de dobles, se paga triple (máx. 4 a la semana). Coincide con la cédula de CONTPAQi.
 - ⚠️ Detalle de la lámina 2030: el encabezado dice "Triples (excedente de 9)"; en 2030 es excedente de 12.
 
-## 35. Pendiente de agregar a la guía
+## 36. Caso práctico antes vs. después (salario $500/día, hora $62.50)
+- **Antes (hasta 30/04/2026):** 15 h extra (lunes, miércoles y viernes 5 h) → 9 dobles × $125 = $1,125 + 6 triples × $187.50 = $1,125 → **$2,250/semana**. (Ya entonces 5 h en un día rebasaba el límite de 3 h diarias; se pagaba, pero era incumplimiento. Y la clasificación era semanal: las primeras 9 dobles, el resto triple.)
+- **Después (desde 01/05/2026):** 5 + 5 + 5 ya no procede (8 + 5 = 13 h diarias > 12). Máximo legal 2026-2027: 9 dobles + 4 triples = 13 h. Distribución válida: lunes 4 dobles (12 h), miércoles 4 dobles (12 h), viernes 1 doble + 3 triples (12 h), martes o jueves 1 triple (9 h). Pago máximo: $1,125 + $750 = **$1,875**. De las 15 h pretendidas, **2 h no deben laborarse**. Fundamento: arts. 66 y 68 LFT y transitorio cuarto.
+
+## 37. Tabla de transición 2026-2030
+| Año | Ordinaria máx. semanal | Extra dobles | Triples | Extra total | Máximo semanal total |
+|---|---|---|---|---|---|
+| 2026 | 48 | 9 | 4 | 13 | 61 |
+| 2027 | 46 | 9 | 4 | 13 | 59 |
+| 2028 | 44 | 10 | 4 | 14 | 58 |
+| 2029 | 42 | 11 | 4 | 15 | 57 |
+| 2030 | 40 | 12 | 4 | 16 | 56 |
+- ⚠️ La lámina incluye "jornada máxima por día" 7.66 / 7.33 / 7 / 6.66 h y "suma total por día" 11.66 / 11.33 / 11 / 10.66 h: son PROMEDIOS si la semana se reparte en 6 días, no límites legales. Los límites diarios legales siguen siendo 8/7/7.5 h ordinarias (art. 61) y 12 h totales (art. 68) todos los años.
+
+## 38. Pendiente de agregar a la guía
 - Tipos de jornada (art. 60): diurna 6:00-20:00; nocturna 20:00-6:00; mixta con periodo nocturno < 3.5 h (si es mayor, se considera nocturna). "Vespertina" no es categoría legal.
 - Sección de errores comunes de RRHH.
 - (Esperando más imágenes del usuario.)
