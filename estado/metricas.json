@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T07:23:55+00:00",
+  "actualizado": "2026-10-14T07:44:45+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -10,10 +10,14 @@
         "comments_count": 0,
         "like_count": 0,
         "media_product_type": "FEED",
-        "permalink": "https://www.instagram.com/p/Ded0JAbGBly/"
+        "permalink": "https://www.instagram.com/p/Ded0JAbGBly/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
       },
       "facebook": {
-        "error": "GET 122098568673512173: (#100) Tried accessing nonexisting field (shares)"
+        "error": "GET 122098568673512173: (#100) Tried accessing nonexisting field (reactions)"
       }
     },
     "2026-10-14-prima-dominical": {
@@ -25,10 +29,36 @@
         "comments_count": 0,
         "like_count": 0,
         "media_product_type": "FEED",
-        "permalink": "https://www.instagram.com/p/Ded0kd4oNTj/"
+        "permalink": "https://www.instagram.com/p/Ded0kd4oNTj/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
       },
       "facebook": {
-        "error": "GET 1413919435136937_122098571619512173: (#10) This endpoint requires the 'pages_read_user_content' permission or the 'Page Public Content Access' feature. Refer to https://developers.facebook.com/docs/apps/review/login-permissions#manage-pages and https://developers.facebook.com/docs/apps/review/feature#reference-PAGES_ACCESS for details."
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122098571619512173"
+      }
+    },
+    "2026-10-15-reel-pov-quincena": {
+      "tipo": "reel",
+      "fecha": "2026-10-14T01:00:00-06:00",
+      "tema": "POV: eres de RRHH y es jueves de quincena 😵‍💫",
+      "instagram": {
+        "id": "17928605688424823",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/Ded2LZzCHQD/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "error": "GET 4777836345827657: (#100) Tried accessing nonexisting field (reactions)"
       }
     }
   }
