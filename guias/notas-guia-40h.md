@@ -184,7 +184,26 @@ Nómina semanal (7 días pagados), jornada "8 + 1 = 9":
 - ⚠️ Matiz: por la Ley del Seguro Social (art. 27), el tiempo extra dentro de los márgenes de la LFT no integra al SBC; lo que excede esos márgenes sí. La lámina lo generaliza.
 - ⚠️ No afirmar en la guía que las inspecciones "usan inteligencia artificial" sin una fuente oficial.
 
-## 21. Pendiente de agregar a la guía
+## 22. Riesgos de una mala implementación (láminas 54-58)
+Una implementación incorrecta puede generar riesgos laborales, fiscales, de seguridad social y hasta penales.
+
+**1. Laborales**
+- a) **Horas extra indebidas:** mantener la misma carga con menos horas ordinarias → horas extra constantes. Consecuencias: pago de dobles y triples, reclamaciones, demandas por diferencias salariales, inspecciones de la STPS.
+  Ejemplo: quien trabajaba 48 h sigue igual tras la reforma y le piden 2 h diarias extra toda la semana. Con 6 días son 12 h extra: en 2027 rebasa el tope de 9 h dobles y el máximo de 4 días con horas extra → pago triple e incumplimiento.
+- b) **Simulación de horarios:** registrar 40 h cuando en realidad se trabajan 48 o más. Consecuencias: nulidad de los registros internos, posibles sanciones por falsedad documental, presunción de incumplimiento.
+- c) **Sin registro electrónico:** consecuencias: el patrón no podrá acreditar los horarios reales (la carga de la prueba ya es suya, arts. 784 y 804, y sin registro se presumen ciertos los hechos del trabajador), multas de 250 a 5,000 UMA.
+  (La lámina dice "inversión de la carga de la prueba"; más preciso: la carga ya es del patrón y sin registros pierde con qué probar.)
+
+**2. Seguridad social (IMSS)**
+- a) **Integración incorrecta de horas extra al SBC** (art. 27 LSS): diferencias en cuotas obrero-patronales, capitales constitutivos, actualizaciones y recargos.
+- b) **Modificaciones salariales omitidas:** nuevos turnos o reorganización pueden cambiar salarios que deben avisarse al IMSS (art. 15 fr. I LSS): omisión de movimientos afiliatorios, multas por avisos extemporáneos.
+
+**3. Fiscales (SAT)**
+- a) **CFDI de nómina sin soporte:** aumentos de horas extra timbradas sin evidencia de asistencia → cuestionamiento de deducciones, requerimientos, cartas invitación. Soporte: registro electrónico, contratos, políticas de jornada, autorizaciones de horas extra.
+- b) **Deducción no procedente:** sin materialidad de los pagos de horas extra se puede perder la deducción (art. 27 fr. V LISR; arts. 29 y 29-A CFF).
+- c) **Inconsistencias:** el SAT puede cruzar CFDI de nómina, IMSS, registro electrónico e información laboral → presunción de simulación o pagos indebidos.
+
+## 23. Pendiente de agregar a la guía
 - Tipos de jornada (art. 60): diurna 6:00-20:00; nocturna 20:00-6:00; mixta con periodo nocturno < 3.5 h (si es mayor, se considera nocturna). "Vespertina" no es categoría legal.
 - Sección de errores comunes de RRHH.
 - (Esperando más imágenes del usuario.)
