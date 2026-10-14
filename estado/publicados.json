@@ -12,7 +12,8 @@
   "2026-10-14-prima-dominical": {
     "instagram": {
       "id": "18050525837807943",
-      "fecha": "2026-10-14T07:13:32+00:00"
+      "fecha": "2026-10-14T07:13:32+00:00",
+      "borrado": "manual (la API de Instagram no permite borrar)"
     },
     "facebook": {
       "id": "1413919435136937_122098571619512173",
