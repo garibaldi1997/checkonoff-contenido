@@ -143,7 +143,48 @@ Diurna cambia desde 2027, mixta desde 2028, nocturna hasta 2030.
 - Mixta: lunes a viernes 7.5 h + sábado 2.5 h; domingo descanso.
 - ⚠️ Error en la lámina 46: el pie atribuye al art. 58 "8 h diarias, pudiendo aumentar dos horas más… sin exceder tres veces por semana"; eso no es el art. 58 y además es la regla VIEJA de horas extra. Correcto: art. 58 (2º párrafo) permite distribuir la jornada de común acuerdo; art. 59 fija el máximo de 40 h; art. 61 los máximos diarios; art. 66 las extra (4 h diarias, 4 días).
 
-## 15. Pendiente de agregar a la guía
+## 16. Control de jornadas y tiempo extra: ejemplos por turno (lámina 47)
+**1. Ordinaria (art. 61)** — descanso de 30 min dentro de la jornada:
+| Turno | Entrada | Sale comida | Regresa | Salida | Horas |
+|---|---|---|---|---|---|
+| Diurno | 07:00 | 12:00 | 12:30 | 15:00 | 8.0 |
+| Mixto | 14:00 | 19:00 | 19:30 | 21:30 | 7.5 |
+| Nocturno | 20:00 | 01:00 | 01:30 | 03:00 | 7.0 |
+**2. + 2 h extra (controlado, tope 4 h/día):** salidas 17:00 / 23:30 / 05:00.
+**3. Alerta por exceso:** diurno 07:00-20:00 (13 h → 5 h extra: excede 4 h/día y 12 h totales); nocturno 20:00-07:00 (11 h → 4 h extra: al límite).
+- ⚠️ Error en la lámina: mixto 14:00-03:00 son 13 h → **5.5 h extra** (no 5 h). Igual excede el tope.
+
+## 17. Valor de la hora extra diurna 2026-2030 (lámina "Valor de hora extra")
+Método de la lámina: hora simple = salario diario ÷ (tope semanal ÷ 6). Ej. salario diario $400:
+| Año | Horas/día (÷6) | Simple | Doble | Triple |
+|---|---|---|---|---|
+| 2026 | 8.00 | 50.00 | 100.00 | 150.00 |
+| 2027 | 7.67 | 52.22 | 104.44 | 156.66 |
+| 2028 | 7.33 | 54.57 | 109.14 | 163.71 |
+| 2029 | 7.00 | 57.14 | 114.29 | 171.43 |
+| 2030 | 6.67 | 59.97 | 119.94 | 179.91 |
+Mensaje: el costo de cada hora extra SUBE cada año porque el mismo salario cubre menos horas.
+- ⚠️ Es una **interpretación**, no regla de la ley: supone la jornada repartida en 6 días. Si en 2030 se trabaja 5 × 8 h, otro método común es salario diario ÷ 8 (= $50) o salario semanal (7 × SD) ÷ 40 (= $70). En la guía presentarlo como "ejemplo con un método" y recomendar definir el criterio con el contador/abogado. 2027 usa 7.66 en el cálculo y muestra 7.67 (diferencia por redondeo).
+- No usar los nombres de la lámina en la guía (usar "Colaborador A/B/C").
+
+## 18. Catálogo del SAT c_TipoJornada vs. la LFT
+01 Diurna · 02 Nocturna · 03 Mixta · 04 Por hora · 05 Reducida · 06 Continuada · 07 Partida · 08 Por turnos · 99 Otra jornada (vigente desde 01/01/2017).
+La LFT solo tiene diurna, nocturna y mixta como jornadas ordinarias. El SAT acepta otras porque le interesa la trazabilidad del pago y el ISR, no si la jornada cumple la LFT. "Otra jornada" suele usarse para turnos 12×12, 24×24 o de 10 h: el CFDI se timbra, pero eso no vuelve legal la jornada.
+
+## 19. CFDI con horas extra (ejemplo, datos anonimizados)
+Nómina semanal (7 días pagados), jornada "8 + 1 = 9":
+- P001 Sueldo; P003 Horas extras dobles: nodo `HorasExtra Dias="3" TipoHoras="01" HorasExtra="7"`; P005 Horas extras triples: `Dias="2" TipoHoras="02" HorasExtra="2"`. Importes con parte exenta y gravada.
+- Revisar en la guía: con 7 h dobles en la semana (tope 2026: 9) solo hay triples si algún día pasó de 4 h extra o si hubo más de 4 días con extra; el ejemplo debe explicar por qué hay triples.
+- El XML de la lámina trae datos reales de una persona: NO publicarlo.
+
+## 20. La trampa del reloj biométrico (10, 12 o 24 h)
+- Las jornadas de 10, 12 o 24 h no son ordinarias legales. Solo se puede pasar del límite diario con: (a) la distribución del art. 59 para descansar el sábado (régimen ANTERIOR a la reforma; hoy la distribución de común acuerdo está en el art. 58 y debe respetar el tope diario del 61) o (b) tiempo extra (art. 67: 100 %; art. 68: 200 % sobre el tope).
+- Si el biométrico dice 08:00-20:00 (12 h) y el CFDI se timbra como "jornada diurna" u "otra jornada" sin horas extra, la inconsistencia se ve de inmediato en una revisión.
+- Conclusión: biométrico con 12 h + CFDI sin horas extra = omisión de pago, posible impacto en ISR y en el SBC del IMSS, y violación de los topes.
+- ⚠️ Matiz: por la Ley del Seguro Social (art. 27), el tiempo extra dentro de los márgenes de la LFT no integra al SBC; lo que excede esos márgenes sí. La lámina lo generaliza.
+- ⚠️ No afirmar en la guía que las inspecciones "usan inteligencia artificial" sin una fuente oficial.
+
+## 21. Pendiente de agregar a la guía
 - Tipos de jornada (art. 60): diurna 6:00-20:00; nocturna 20:00-6:00; mixta con periodo nocturno < 3.5 h (si es mayor, se considera nocturna). "Vespertina" no es categoría legal.
 - Sección de errores comunes de RRHH.
 - (Esperando más imágenes del usuario.)
