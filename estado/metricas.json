@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T07:45:55+00:00",
+  "actualizado": "2026-10-14T14:33:13+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -65,6 +65,21 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/4777836345827657/"
+      }
+    },
+    "2026-10-15-historia-demo": {
+      "tipo": "historia",
+      "fecha": "2026-10-14T01:00:00-06:00",
+      "tema": "",
+      "instagram": {
+        "id": "18099789665310469",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "STORY",
+        "permalink": "https://www.instagram.com/stories/checkonoff/4007607641388331930"
+      },
+      "facebook": {
+        "error": "GET 1664451338624639: (#100) Tried accessing nonexisting field (likes)"
       }
     }
   }
