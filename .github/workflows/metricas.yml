@@ -1,0 +1,33 @@
+name: Leer métricas
+
+on:
+  schedule:
+    - cron: "41 13 * * *"   # diario 7:41 a. m. CDMX
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  metricas:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Leer métricas
+        env:
+          META_TOKEN_CHECKONOFF: ${{ secrets.META_TOKEN_CHECKONOFF }}
+          GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
+        run: python scripts/metricas.py
+      - name: Guardar métricas
+        run: |
+          git config user.name "checkonoff-bot"
+          git config user.email "checkonoff-bot@users.noreply.github.com"
+          git add estado/
+          git diff --cached --quiet || (git commit -m "Métricas [skip ci]" && git pull --rebase -q && git push)

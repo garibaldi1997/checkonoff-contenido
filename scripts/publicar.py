@@ -94,8 +94,8 @@ def cargar_cuentas():
 
 
 # ---------- Instagram ----------
-def ig_esperar(cuenta, contenedor):
-    for _ in range(30):
+def ig_esperar(cuenta, contenedor, intentos=30):
+    for _ in range(intentos):
         estado = cuenta.api("GET", contenedor, fields="status_code").get("status_code")
         if estado == "FINISHED":
             return
@@ -106,7 +106,12 @@ def ig_esperar(cuenta, contenedor):
 
 
 def ig_publicar(cuenta, ig_id, entrada):
-    tipo, imgs, texto = entrada["tipo"], entrada["imagenes"], entrada.get("texto", "")
+    tipo, imgs, texto = entrada["tipo"], entrada.get("imagenes", []), entrada.get("texto", "")
+    if tipo == "reel":
+        c = cuenta.api("POST", f"{ig_id}/media", media_type="REELS", video_url=url_publica(entrada["video"]),
+                       caption=texto, share_to_feed="true")["id"]
+        ig_esperar(cuenta, c, intentos=90)  # el video tarda más en procesarse
+        return cuenta.api("POST", f"{ig_id}/media_publish", creation_id=c)["id"]
     if tipo == "historia":
         c = cuenta.api("POST", f"{ig_id}/media", image_url=url_publica(imgs[0]), media_type="STORIES")["id"]
     elif tipo == "carrusel":
@@ -124,7 +129,9 @@ def ig_publicar(cuenta, ig_id, entrada):
 
 # ---------- Facebook ----------
 def fb_publicar(cuenta, page_id, entrada):
-    tipo, imgs, texto = entrada["tipo"], entrada["imagenes"], entrada.get("texto", "")
+    tipo, imgs, texto = entrada["tipo"], entrada.get("imagenes", []), entrada.get("texto", "")
+    if tipo == "reel":
+        return cuenta.api("POST", f"{page_id}/videos", file_url=url_publica(entrada["video"]), description=texto)["id"]
     if tipo == "historia":
         foto = cuenta.api("POST", f"{page_id}/photos", url=url_publica(imgs[0]), published="false")["id"]
         return cuenta.api("POST", f"{page_id}/photo_stories", photo_id=foto).get("post_id", foto)
@@ -163,9 +170,13 @@ def validar(calendario, config):
         cuenta = e.get("cuenta", CUENTA_POR_DEFECTO)
         if cuenta not in config:
             errores.append(f"{e['id']}: la cuenta '{cuenta}' no está en cuentas.json")
-        if e["tipo"] not in ("imagen", "carrusel", "historia"):
+        if e["tipo"] not in ("imagen", "carrusel", "historia", "reel"):
             errores.append(f"{e['id']}: tipo inválido {e['tipo']}")
-        for img in e["imagenes"]:
+        if e["tipo"] == "reel":
+            v = e.get("video", "")
+            if not v.lower().endswith(".mp4") or not os.path.exists(os.path.join(RAIZ, v)):
+                errores.append(f"{e['id']}: un reel necesita 'video' con un .mp4 existente")
+        for img in e.get("imagenes", []):
             if not os.path.exists(os.path.join(RAIZ, img)):
                 errores.append(f"{e['id']}: no existe {img}")
             if not img.lower().endswith((".jpg", ".jpeg")):
@@ -223,7 +234,7 @@ def main():
         for red in e.get("redes", ["instagram", "facebook"]):
             if red in hecho:
                 continue
-            print(f"→ [{nombre}] {e['id']} en {red} ({e['tipo']}, {len(e['imagenes'])} imagen/es)")
+            print(f"→ [{nombre}] {e['id']} en {red} ({e['tipo']}, {len(e.get('imagenes', []))} imagen/es)")
             if DRY_RUN:
                 continue
             try:
