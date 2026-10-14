@@ -4,6 +4,7 @@ const fs = require('fs'), path = require('path');
 const b64 = (f, t) => `data:${t};base64,` + fs.readFileSync(path.join(__dirname, f)).toString('base64');
 const LOGO = b64('logo.png', 'image/png'), LOGOF = b64('logo_full.png', 'image/png');
 const QRWEB = b64('qr_registro.svg', 'image/svg+xml'), QRWA = b64('qr_grupo.svg', 'image/svg+xml'), QRASE = b64('qr_asesor.svg', 'image/svg+xml');
+const QRCALC = b64('qr_calc.svg', 'image/svg+xml'), CALC_HE = 'https://checkonoff.mx/calculadora-horas-extra/';
 const REG = 'https://app.checkonoff.mx/registro-empresa', ASESOR = 'https://wa.me/523330213199?text=Hola%2C%20soy%20de%20RRHH%20y%20descargu%C3%A9%20la%20gu%C3%ADa%20de%2040%20horas', CALC_VAC = 'https://checkonoff.mx/calculadora-vacaciones/';
 const NAVY = '#111C3B', BLUE = '#0A4E94', GREEN = '#34B614', LIME = '#7DD818', RED = '#E21B20', LIGHT = '#F2F6FB';
 const WA_LINK = 'https://chat.whatsapp.com/DyoKg8wa7IQCWzT9UgOyge';
@@ -95,6 +96,7 @@ const box = (items) => `<ul class="box">${items.map(t => `<li><span></span><div>
 const bienMal = (bien, mal) => `<div class="bm"><div class="b">${ic('check', 34)}<b>ASÍ SÍ</b><p>${bien}</p></div><div class="m">${ic('x', 34)}<b>ASÍ NO</b><p>${mal}</p></div></div>`;
 const tabla = (cols, rows, cls = '') => `<table class="tb ${cls}"><tr>${cols.map(c => `<th>${c}</th>`).join('')}</tr>${rows.map(r => `<tr class="${r.cls || ''}">${(r.c || r).map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</table>`;
 const nota = (t, cls = '') => `<div class="note ${cls}">${t}</div>`;
+const ctaCalc = () => `<a class="ctab calc" href="${CALC_HE}"><div><b>🧮 Calcula tus horas extra con la reforma</b><span>Calculadora gratis: escribe la semana, el salario y las horas de cada día; separa dobles y triples y te avisa si algo no está permitido. Toca o escanea →</span></div><img src="${QRCALC}"></a>`;
 const cta = (t = 'Prueba CheckONOFF 14 días gratis') => `<a class="ctab" href="${REG}"><div><b>${t}</b><span>14 días gratis, sin tarjeta · Registro electrónico de jornada, horas extra y pre-nómina · Toca o escanea →</span></div><img src="${QRWEB}"></a>`;
 
 const P = [];
@@ -233,7 +235,7 @@ P.push(page(`${head('06', 'Caso práctico', 'El mismo trabajador, antes y despu�
     </div>
   </div>
   ${bienMal('Redistribuir: máx. 4 h extra por día, nunca más de 12 h en el día y solo 4 h triples. Las <b>2 horas sobrantes no se trabajan</b>: se cubren con otra persona o con otro turno.', 'Seguir con 5 + 5 + 5: son días de 13 h (rebasan el tope de 12) y 6 h triples (rebasan el máximo de 4). Es incumplimiento aunque se paguen.')}
-  ${cta('¿Quieres que el sistema te avise antes de rebasar un límite?')}`));
+  ${ctaCalc()}`));
 
 /* 9 · Disfrazar como bono */
 P.push(page(`${head('07', 'Error caro', 'Disfrazar horas extra como "bono"', RED)}
@@ -262,10 +264,11 @@ P.push(page(`${head('08', 'Costos', 'Cada año, la hora extra sale más cara')}
   ${tabla(['Año', 'Tope semanal', 'Hora simple', 'Hora doble', 'Hora triple'], [
     ['2026', '48 h', '$50.00', '$100.00', '$150.00'], ['2027', '46 h', '$52.22', '$104.44', '$156.66'], ['2028', '44 h', '$54.57', '$109.14', '$163.71'],
     ['2029', '42 h', '$57.14', '$114.29', '$171.43'], { cls: 'hl', c: ['2030', '40 h', '$59.97', '<b>$119.94</b>', '<b>$179.91</b>'] }], 'center')}
-  <div class="bar2">${[100, 104.44, 109.14, 114.29, 119.94].map((v, i) => `<div><i style="height:${(v - 80) * 4.2}px"></i><b>$${v.toFixed(0)}</b><span>${2026 + i}</span></div>`).join('')}<p>Hora extra doble, salario $400</p></div>
+  <div class="bar2">${[100, 104.44, 109.14, 114.29, 119.94].map((v, i) => `<div><i style="height:${(v - 80) * 2.4}px"></i><b>$${v.toFixed(0)}</b><span>${2026 + i}</span></div>`).join('')}<p>Hora extra doble, salario $400</p></div>
   ${nota('<b>Importante:</b> es un método de cálculo, no una regla de la ley. Si en 2030 tu empresa trabaja 5 días de 8 h, tu contador puede usar otro divisor. Defínelo por escrito y aplícalo igual para todos.', 'warn')}
   <div class="hero2">${svg(150, 200, persona({ x: -12, y: -6, s: .58, skin: 1, hair: '#24170F', shirt: BLUE, tie: true, mood: 'neutral', prop: 'clip' }))}
-    <div><b>Con 50 colaboradores que sigan trabajando 48 h en 2027:</b><p>2 h dobles × $104.44 × 50 personas × 52 semanas ≈ <b>$543,000 al año</b> solo en horas extra. Medir hoy la jornada real es la forma más barata de evitarlo.</p></div></div>`));
+    <div><b>Con 50 colaboradores que sigan trabajando 48 h en 2027:</b><p>2 h dobles × $104.44 × 50 personas × 52 semanas ≈ <b>$543,000 al año</b> solo en horas extra. Medir hoy la jornada real es la forma más barata de evitarlo.</p></div></div>
+  ${ctaCalc()}`));
 
 /* 11 · Registro electrónico */
 P.push(page(`${head('09', 'Nueva obligación', 'Registro electrónico de jornada', BLUE)}
@@ -466,6 +469,7 @@ h4{font-size:14.5px;font-weight:800;margin-top:18px;display:flex;align-items:cen
 .rules i{font-style:normal;font-weight:800;flex:none;width:28px;height:28px;border-radius:50%;background:${BLUE};color:#fff;display:grid;place-items:center;font-size:14px}.rules p{font-size:12px;line-height:1.45}
 .vs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.vs>div{border-radius:14px;padding:12px}.vs .old{background:#FFF4E6}.vs .new{background:#EAF7E4}
 .vh{display:flex;align-items:center;gap:6px}.vh small{display:block;font-size:10px;font-weight:800;letter-spacing:1.5px;color:#4A5670}.vh b{font-size:17px}.sm2{font-size:11px;margin-top:6px;color:#4A5670;line-height:1.4}
+.ctab.calc{background:${BLUE}}
 .ctab{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:16px;background:${NAVY};color:#fff;border-radius:16px;padding:14px 18px}
 .ctab b{display:block;font-size:15px}.ctab span{font-size:11.5px;color:#C5CCDA}.ctab img{width:74px;height:74px;background:#fff;border-radius:8px;padding:4px}
 .rcpt{border-radius:14px;padding:14px;margin-top:12px;border:2px solid}.rcpt.ok{border-color:${GREEN};background:#F4FBF1}.rcpt.bad{border-color:${RED};background:#FFF6F6}

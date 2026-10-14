@@ -56,7 +56,7 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 - Asesor por WhatsApp: +52 333 021 3199 (https://wa.me/523330213199) · contacto@checkonoff.mx · San Luis Potosí.
 - Planes (MXN por colaborador al mes + IVA): Esencial $39 (mín. 13), Profesional $59 (mín. 9), Corporativo $89 (mín. 6).
 - Registro por app Android/iOS (geocercas + foto, sin internet), checador biométrico existente conectado a la nube, o bot de WhatsApp (todos los planes).
-- Calculadoras: https://checkonoff.mx/calculadora-vacaciones/ (correcta) y https://checkonoff.mx/calculadora-horas-extra/ (⚠️ aún con la regla anterior a la reforma: 3 h × 3 días; no enlazar hasta actualizarla).
+- Calculadoras: https://checkonoff.mx/calculadora-vacaciones/ (correcta) y https://checkonoff.mx/calculadora-horas-extra/ (actualizada con la reforma el 14/10/2026: usarla como imán en posts, reels y la guía).
 - Páginas por industria: restaurantes, manufactura, construcción. Comparativa: alternativa a Factorial.
 
 ## Embudo de WhatsApp

@@ -165,6 +165,20 @@
     "texto": ""
   },
   {
+    "id": "2026-10-16-calculadora-horas-extra",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-16T18:00:00-06:00",
+    "tipo": "imagen",
+    "redes": [
+      "instagram",
+      "facebook"
+    ],
+    "imagenes": [
+      "contenido/checkonoff/2026-10-16-calculadora-horas-extra/01.jpg"
+    ],
+    "texto": "🧮 RRHH: ¿tus horas extra ya se calculan con la reforma?\n\nDesde el 1 de mayo de 2026 (DOF) las reglas cambiaron:\n⏱️ Al doble: hasta 4 h al día, en máximo 4 días, hasta 9 h a la semana (10 en 2028, 11 en 2029, 12 en 2030)\n🔥 Al triple: máximo 4 h a la semana\n⛔ Nunca más de 12 h de trabajo en un día\n\nHicimos una calculadora GRATIS: escribe la semana, el salario y las horas de cada día; separa dobles y triples y te avisa si algo no está permitido.\n\n👉 https://checkonoff.mx/calculadora-horas-extra/\n(En Instagram: link en nuestra bio 👆)\n\n📌 Guárdalo y compártelo con tu equipo de nómina.\n\n#horasextra #tiempoextra #reformalaboral #jornada40horas #nomina #recursoshumanos #rrhh"
+  },
+  {
     "id": "2026-10-17-sabias-paternidad",
     "cuenta": "checkonoff",
     "fecha": "2026-10-17T11:00:00-06:00",
@@ -189,6 +203,32 @@
     ],
     "imagenes": [
       "contenido/checkonoff/2026-10-17-historia-pregunta/01.jpg"
+    ],
+    "texto": ""
+  },
+  {
+    "id": "2026-10-17-reel-calculadora",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-17T18:00:00-06:00",
+    "tipo": "reel",
+    "redes": [
+      "instagram",
+      "facebook"
+    ],
+    "video": "contenido/checkonoff/2026-10-17-reel-calculadora/reel.mp4",
+    "texto": "¿Tu nómina sigue con \"3 horas × 3 días\"? 😬 Esa regla ya no existe.\n\nDesde el 1 de mayo de 2026:\n⏱️ Dobles: hasta 4 h al día, máx. 4 días\n🔥 Triples: máximo 4 h a la semana\n⛔ Nunca más de 12 h al día\n\nCalcula tu caso gratis 🧮 https://checkonoff.mx/calculadora-horas-extra/\n(link en nuestra bio)\n\n#recursoshumanos #rrhh #nomina #horasextra #reformalaboral #jornada40horas"
+  },
+  {
+    "id": "2026-10-17-historia-calculadora",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-17T19:30:00-06:00",
+    "tipo": "historia",
+    "redes": [
+      "instagram",
+      "facebook"
+    ],
+    "imagenes": [
+      "contenido/checkonoff/2026-10-17-historia-calculadora/01.jpg"
     ],
     "texto": ""
   },

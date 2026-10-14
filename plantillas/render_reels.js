@@ -39,6 +39,16 @@ const cta = (a) => scene(a, 999, `
   <div style="font-size:52px;font-weight:800;margin-top:36px">checkonoff.mx</div>`);
 
 const REELS = {
+  reel_calculadora: { dur: 14, cls: 'dark', html: `
+    ${scene(0, 2.8, `<div class="h" style="font-size:96px">¿Tu nómina sigue calculando horas extra con <span class="gr">3 horas × 3 días</span>? 😬</div>`)}
+    ${scene(2.8, 7.8, `
+      <div class="h" style="font-size:84px;margin-bottom:60px">Desde el 1 de mayo de 2026 <span class="gr">cambió</span>:</div>
+      ${[['⏱️','Dobles: 4 h al día, máx. 4 días',3.3],['🔥','Triples: máximo 4 h a la semana',4.4],['⛔','Nunca más de 12 h al día',5.5]].map(([e,t,d])=>`<div class="chip" style="font-size:44px;margin:20px 0;opacity:0;animation:pop .45s ease-out ${d}s">${e} ${t}</div>`).join('')}`)}
+    ${scene(7.8, 11.0, `<div style="font-size:150px">🧮</div><div class="h" style="font-size:100px;margin-top:20px">Calcula tu caso <span class="gr">gratis</span></div>
+      <div class="chip" style="font-size:40px;margin-top:50px;opacity:0;animation:pop .5s ease-out 8.4s">checkonoff.mx/calculadora-horas-extra</div>
+      <div style="font-size:44px;font-weight:600;margin-top:40px;opacity:.9">Link en nuestra bio 👆</div>`)}
+    <div class="f green" style="opacity:0;animation:flash .3s ease 10.9s">${cta(11.0)}</div>` },
+
   reel_quincena: { dur: 13, cls: 'dark', html: `
     ${scene(0, 2.8, `<div class="h" style="font-size:150px">POV:</div><div class="h" style="font-size:92px;margin-top:30px">eres de RRHH y es <span class="gr">jueves de quincena</span> 😵‍💫</div>`)}
     ${scene(2.8, 7.4, `

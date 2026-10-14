@@ -96,6 +96,17 @@ add('st_nuevo_c1', SH, 'cream', `${brand}
   </div>
   <div class="sub" style="margin-top:40px">Ve a nuestro perfil para verlo completo 👆</div>
 </div>`);
+add('st_calculadora', SH, 'dark', `${brand}
+<div style="margin:auto 0;text-align:center">
+  <div style="font-size:200px">🧮</div>
+  <div class="pill grn" style="margin-top:30px">Herramienta gratis</div>
+  <div class="h h2" style="margin-top:50px">¿Tus horas extra ya cumplen la <span class="gr">reforma 2026</span>?</div>
+  <div class="card" style="margin:60px auto 0;width:760px;padding:40px;text-align:left">
+    ${['⏱️ Dobles: hasta 4 h al día, 4 días','🔥 Triples: máximo 4 h a la semana','⛔ Nunca más de 12 h al día'].map(t=>`<div style="font-size:38px;font-weight:600;margin:14px 0">${t}</div>`).join('')}
+  </div>
+  <div class="sub" style="margin-top:50px">Calcula tu caso en <b>checkonoff.mx/calculadora-horas-extra</b></div>
+  <div class="sub" style="margin-top:20px">Link en nuestra bio 👆</div>
+</div>`);
 add('st_nuevo_c2', SH, 'green', `${brand}
 <div style="margin:auto 0;text-align:center">
   <div class="pill blk">🆕 Nuevo en el feed</div>
