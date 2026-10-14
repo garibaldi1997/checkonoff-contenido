@@ -203,7 +203,31 @@ Una implementación incorrecta puede generar riesgos laborales, fiscales, de seg
 - b) **Deducción no procedente:** sin materialidad de los pagos de horas extra se puede perder la deducción (art. 27 fr. V LISR; arts. 29 y 29-A CFF).
 - c) **Inconsistencias:** el SAT puede cruzar CFDI de nómina, IMSS, registro electrónico e información laboral → presunción de simulación o pagos indebidos.
 
-## 23. Pendiente de agregar a la guía
+## 24. Registro de asistencia y materialidad digital (láminas 7.x)
+- **Punto 1 (2026):** todavía no baja la jornada semanal (48 h), pero desde el 1 de mayo de 2026 cambia la forma de revisarla: ahora importa la jornada DIARIA. Mensaje: "en 2026 no baja la semana laboral; cambia la revisión de la jornada".
+- **Punto 2 (art. 61):** diurna 8 h · nocturna 7 h · mixta 7.5 h. Ya no basta revisar el total semanal.
+- **Punto 3 (ejemplo):** lunes a jueves 10 h + viernes 8 h = 48 h. Suma 48, pero NO cumple como jornada ordinaria diurna: son 40 h ordinarias + 8 h extra (2 h diarias de lunes a jueves). En 2026 eso es legal solo si se pagan como extra dobles (8 h ≤ 9; 2 h/día ≤ 4; 4 días ≤ 4).
+- La STPS (FAQ 12) dice que el registro electrónico fortalece la inspección federal para vigilar las 40 h.
+
+**Datos que aporta el registro ("verdad histórica"):** identificación del trabajador (ID interno; RFC/CURP/NSS si aplica), timestamp exacto de entradas, salidas y descansos, geolocalización o IP (materialidad), cómputo automático de horas ordinarias y extra, clasificación de incidencias (ausentismos, retardos, faltas, descansos laborados, vacaciones, incapacidades).
+Recomendación de datos personales: recabar solo lo necesario (minimización) y cubrirlo en el aviso de privacidad.
+
+## 25. "Match" del registro con el CFDI de nómina (complemento 1.2)
+| Dato del registro | Nodo/atributo XML | Clave SAT | Cómo debe coincidir |
+|---|---|---|---|
+| Días trabajados | NumDiasPagados | Atributo general | Faltas injustificadas → los días pagados bajan |
+| Faltas | Deduccion | 020 Ausencia (ausentismo) | Lo marcado como falta se descuenta aquí |
+| Incapacidades | Nodo Incapacidad | 01 riesgo de trabajo, 02 enfermedad general, 03 maternidad | Mismos días que el registro |
+| Vacaciones | Percepcion | 001 Sueldos (o desglose según política) | Sin checadas en días de vacaciones |
+| Horas extra dobles | HorasExtra → TipoHoras 01 | Percepción 019 | Dentro de los límites legales |
+| Horas extra triples | HorasExtra → TipoHoras 02 | Percepción 019 | Lo que excede los límites del art. 66 (máx. 4 h/sem), con su ISR y SBC |
+- ⚠️ Error en la lámina: en "Horas extra dobles" dice "3 horas al día, 3 veces por semana". Es la regla ANTERIOR. Vigente: hasta 4 h al día, máx. 4 días, tope semanal 9 h (2026-2027) a 12 h (2030).
+
+## 26. ¿Quiénes deben llevar registro electrónico?
+Según la presentación: todos los trabajadores cuya jornada está sujeta al control del patrón (operativos, administrativos, supervisores, gerentes, personal de confianza, directores con contrato y horario). Generalmente no: socios, accionistas, administradores únicos, prestadores de servicios independientes, personas sin relación laboral subordinada.
+- ⚠️ Es interpretación: la STPS emitirá las disposiciones que definan el ámbito de aplicación y las excepciones (art. 132 fr. XXXIV). En la guía decirlo así.
+
+## 27. Pendiente de agregar a la guía
 - Tipos de jornada (art. 60): diurna 6:00-20:00; nocturna 20:00-6:00; mixta con periodo nocturno < 3.5 h (si es mayor, se considera nocturna). "Vespertina" no es categoría legal.
 - Sección de errores comunes de RRHH.
 - (Esperando más imágenes del usuario.)
