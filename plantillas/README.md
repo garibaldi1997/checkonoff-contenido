@@ -7,6 +7,6 @@ Generan las imágenes y reels con Playwright (Chromium) y ffmpeg. Cada script es
 - `render_sabias.js` – posts "¿Sabías que?" / "Para RRHH" (argumento opcional: prefijo del nombre).
 - `render_buk.js` – piezas de la reforma de 40 horas.
 - `render_reels.js` – reels cuadro por cuadro (argumento opcional: nombre del reel).
-- `guia.js` – guía PDF de 40 horas.
+- `guia_v2.js` – guía PDF de 40 horas (20 páginas, ilustraciones y QR). `guia.js` es la versión anterior.
 
 Paleta: ver "Identidad visual" en `ESTRATEGIA.md`.

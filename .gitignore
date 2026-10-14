@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 plantillas/out*/
 plantillas/**/f[0-9]*.jpg
+plantillas/*.pdf
