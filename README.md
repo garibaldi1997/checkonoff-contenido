@@ -80,4 +80,4 @@ Ejemplo de entrada:
 - Instagram solo acepta **JPG** por API. El flujo `Validar calendario` revisa formato, rutas y número de imágenes.
 - Las historias por API no admiten stickers de enlace, encuesta ni música.
 - Las entradas con más de 36 horas de atraso no se publican (para no saturar el feed si algo falló).
-- Si la API de Meta cambia de versión, crea la variable `GRAPH_VERSION` (Settings → Variables) con la versión nueva, p. ej. `v24.0`.
+- Si la API de Meta cambia de versión, crea la variable `GRAPH_VERSION` (Settings → Variables) con la versión nueva, p. ej. `v27.0`.

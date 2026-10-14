@@ -29,7 +29,7 @@ jobs:
       - name: Publicar
         env:
           SECRETOS_JSON: ${{ toJSON(secrets) }}
-          GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v23.0' }}
+          GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
           RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}
           DRY_RUN: ${{ inputs.modo == 'simular' && '1' || '0' }}
         run: |

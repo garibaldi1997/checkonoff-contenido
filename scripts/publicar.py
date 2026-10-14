@@ -9,7 +9,7 @@ Usa solo la biblioteca estándar de Python y la API Graph de Meta.
 Variables de entorno:
   SECRETOS_JSON    Todos los secretos del repositorio en JSON (los pasa el workflow).
   META_PAGE_TOKEN  Alternativa: token directo de la cuenta "checkonoff".
-  GRAPH_VERSION    Versión de la API Graph (por defecto v23.0).
+  GRAPH_VERSION    Versión de la API Graph (por defecto v26.0).
   RAW_BASE         URL pública base de los archivos del repositorio.
   DRY_RUN          "1" para simular sin publicar.
 
@@ -34,7 +34,7 @@ PUBLICADOS = os.path.join(RAIZ, "estado", "publicados.json")
 VENTANA_ATRASO = timedelta(hours=36)  # no publicar entradas viejas olvidadas
 CUENTA_POR_DEFECTO = "checkonoff"
 
-GRAPH = os.environ.get("GRAPH_BASE", "https://graph.facebook.com") + "/" + os.environ.get("GRAPH_VERSION", "v23.0")
+GRAPH = os.environ.get("GRAPH_BASE", "https://graph.facebook.com") + "/" + os.environ.get("GRAPH_VERSION", "v26.0")
 RAW_BASE = os.environ.get("RAW_BASE", "").rstrip("/")
 DRY_RUN = os.environ.get("DRY_RUN") == "1"
 
