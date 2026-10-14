@@ -1,0 +1,35 @@
+{
+  "actualizado": "2026-10-14T07:23:55+00:00",
+  "publicaciones": {
+    "2026-10-19-sabias-carga-prueba": {
+      "tipo": "imagen",
+      "fecha": "2026-10-14T01:00:00-06:00",
+      "tema": "¿Sabías que si un trabajador demanda por la jornada, le toca a la EMPRESA probarla? ⚖️",
+      "instagram": {
+        "id": "18124616986904330",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/Ded0JAbGBly/"
+      },
+      "facebook": {
+        "error": "GET 122098568673512173: (#100) Tried accessing nonexisting field (shares)"
+      }
+    },
+    "2026-10-14-prima-dominical": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-14T01:00:00-06:00",
+      "tema": "¿Sabías que si trabajas en domingo te deben pagar 25 % EXTRA? ☀️💵",
+      "instagram": {
+        "id": "18050525837807943",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/Ded0kd4oNTj/"
+      },
+      "facebook": {
+        "error": "GET 1413919435136937_122098571619512173: (#10) This endpoint requires the 'pages_read_user_content' permission or the 'Page Public Content Access' feature. Refer to https://developers.facebook.com/docs/apps/review/login-permissions#manage-pages and https://developers.facebook.com/docs/apps/review/feature#reference-PAGES_ACCESS for details."
+      }
+    }
+  }
+}
