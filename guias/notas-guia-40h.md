@@ -87,7 +87,35 @@ Si no puede salir durante el reposo o comida, ese tiempo cuenta como tiempo efec
 | Ubicación (opcional) | Centro de trabajo |
 El CFDI incluye sueldo base, horas ordinarias, horas extra, deducciones, impuestos y neto; se cruzan con el registro para calcular bien nómina y horas extra. (El complemento XML del registro en el CFDI es solo una propuesta hipotética, no oficial.)
 
-## 9. Pendiente de agregar a la guía
+## 9. Ejemplo de CFDI de nómina 4.0 / complemento Nómina 1.2 (estructura, datos anonimizados)
+Lo que el XML real ya contiene y que se puede cruzar con el registro de jornada:
+- Periodo: `FechaInicialPago`, `FechaFinalPago`, `FechaPago`, `NumDiasPagados` (ej. quincena 01-15 de enero, 15 días).
+- Receptor: `NumEmpleado`, `TipoJornada` (01 = diurna), `PeriodicidadPago` (04 = quincenal), `TipoContrato`, `Puesto`, `Departamento`, antigüedad, SDI.
+- Percepciones: sueldo (P001), días de descanso obligatorio (P028), otras exentas/gravadas.
+- Deducciones: ISR, IMSS. Otros pagos: subsidio para el empleo.
+- Hoy el CFDI NO trae horas trabajadas por día; las horas extra solo aparecen si se pagan (nodo HorasExtra). Por eso el registro de jornada es la evidencia que respalda lo pagado.
+- **Nunca publicar datos reales** (nombres, RFC, CURP, NSS, UUID) de un CFDI: en la guía usar solo la estructura con datos ficticios.
+
+## 10. Estado de la regulación y autodiagnóstico (agosto 2026)
+Hasta agosto de 2026 la autoridad no había emitido las reglas de carácter general sobre las características de los reportes del registro electrónico ni el procedimiento para conciliarlos con el CFDI de nómina. Preguntas para la empresa que ya tiene control de asistencia o reloj biométrico:
+1. **Registro cronológico:** ¿registra bien entrada, salida, descansos y total de horas conforme al art. 61?
+2. **Control de horas extra:** ¿vigilo los nuevos límites vigentes desde el 1 de mayo de 2026?
+3. **Análisis:** ¿cuántas horas extra se trabajaron en el año y cuántas fueron dobles o triples?
+4. **Planeación:** ¿uso esa información para planear jornadas y horas extra desde el 1 de mayo de 2026?
+5. **Conciliación preventiva:** ¿el registro coincide con días laborados, incidencias, horas extra y pagos del CFDI?
+
+## 11. Registro electrónico y protección de datos
+- El fundamento del aviso de privacidad NO está en la LFT sino en la legislación de datos personales:
+  - Constitución, art. 16, 2º párrafo: derecho a la protección de datos personales (acceso, rectificación, cancelación, oposición).
+  - LFPDPPP, art. 15: el responsable debe informar qué datos recaba y para qué, mediante el aviso de privacidad. De ahí nace la obligación del patrón de emitir el aviso.
+- Con la reforma, el reloj checador deja de ser solo un aparato: es una base de datos laboral que puede tener datos personales y biométricos; debe cumplir a la vez la LFT y la ley de datos personales.
+- "El patrón no solo tendrá que decir cuántas horas trabajó una persona: tendrá que demostrarlo electrónicamente. Y para que tenga fuerza probatoria plena, deberá acreditar que el mecanismo fue acordado con el trabajador."
+- **Tres capas** del cumplimiento:
+  1. **Aviso de privacidad:** informa y autoriza cómo se tratan los datos personales.
+  2. **Manifestación o acuerdo del registro electrónico:** acredita que trabajador y patrón conocen y acuerdan el mecanismo.
+  3. **Registro electrónico:** evidencia diaria de entrada, salida, jornada y tiempo extraordinario.
+
+## 12. Pendiente de agregar a la guía
 - Tipos de jornada (art. 60): diurna 6:00-20:00; nocturna 20:00-6:00; mixta con periodo nocturno < 3.5 h (si es mayor, se considera nocturna). "Vespertina" no es categoría legal.
 - Sección de errores comunes de RRHH.
 - (Esperando más imágenes del usuario.)
