@@ -7,8 +7,7 @@ nombre del secreto de GitHub que guarda su token de página.
 Usa solo la biblioteca estándar de Python y la API Graph de Meta.
 
 Variables de entorno:
-  SECRETOS_JSON    Todos los secretos del repositorio en JSON (los pasa el workflow).
-  META_PAGE_TOKEN  Alternativa: token directo de la cuenta "checkonoff".
+  META_TOKEN_*     Token de página de cada cuenta, con el nombre indicado en cuentas.json.
   GRAPH_VERSION    Versión de la API Graph (por defecto v26.0).
   RAW_BASE         URL pública base de los archivos del repositorio.
   DRY_RUN          "1" para simular sin publicar.
@@ -84,23 +83,11 @@ class Cuenta:
         return self._datos
 
 
-def tokens_disponibles():
-    secretos = {}
-    try:
-        secretos = json.loads(os.environ.get("SECRETOS_JSON") or "{}")
-    except json.JSONDecodeError:
-        pass
-    if os.environ.get("META_PAGE_TOKEN"):
-        secretos.setdefault("META_PAGE_TOKEN", os.environ["META_PAGE_TOKEN"])
-    return secretos
-
-
 def cargar_cuentas():
     config = cargar(CUENTAS, {})
-    secretos = tokens_disponibles()
     cuentas = {}
     for nombre, c in config.items():
-        token = secretos.get(c["secreto"]) or (secretos.get("META_PAGE_TOKEN") if nombre == CUENTA_POR_DEFECTO else None)
+        token = os.environ.get(c["secreto"], "").strip()
         if token:
             cuentas[nombre] = Cuenta(nombre, token)
     return config, cuentas

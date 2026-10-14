@@ -28,7 +28,8 @@ jobs:
 
       - name: Publicar
         env:
-          SECRETOS_JSON: ${{ toJSON(secrets) }}
+          # Un token por cuenta (ver cuentas.json). Al agregar una cuenta, añade su línea aquí.
+          META_TOKEN_CHECKONOFF: ${{ secrets.META_TOKEN_CHECKONOFF }}
           GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
           RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}
           DRY_RUN: ${{ inputs.modo == 'simular' && '1' || '0' }}

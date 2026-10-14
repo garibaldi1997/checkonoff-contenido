@@ -50,7 +50,8 @@ Debe mostrar cada cuenta con su página y su usuario de Instagram. ✅ Listo: de
    ```json
    "dieloxia": { "nombre": "Dieloxia", "secreto": "META_TOKEN_DIELOXIA" }
    ```
-3. Crea el secreto `META_TOKEN_DIELOXIA` con el token de esa página.
+3. Crea el secreto `META_TOKEN_DIELOXIA` con el token de esa página y agrega su línea en `.github/workflows/publicar.yml` (sección `env`):
+   `META_TOKEN_DIELOXIA: ${{ secrets.META_TOKEN_DIELOXIA }}`
 4. Sus publicaciones van en `contenido/dieloxia/` y en el calendario con `"cuenta": "dieloxia"`.
 
 Las cuentas sin token simplemente se saltan (no generan errores).
