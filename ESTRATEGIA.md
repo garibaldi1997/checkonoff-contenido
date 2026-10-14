@@ -2,6 +2,17 @@
 
 **Meta:** 100,000 seguidores de RRHH en Instagram y Facebook, convertidos en pruebas gratis de 14 días en checkonoff.mx.
 
+## Identidad visual (usar SIEMPRE)
+Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/icono-checkonoff.png`):
+| Uso | Color |
+|---|---|
+| Azul marino (fondos oscuros, texto) | `#111C3B` |
+| Azul (cambios de ley, tablas) | `#0A4E94` |
+| Verde (marca, "ON", CTA, cumplimiento) | `#34B614` · claro `#7DD818` |
+| Rojo ("OFF", errores, alertas, multas) | `#E21B20` |
+| Blanco / fondo claro | `#FFFFFF` · `#F2F6FB` |
+| Negro | `#000000` |
+
 ## A quién le hablamos
 - Gerentes y analistas de **RRHH**, responsables de **nómina** y **dueños de PyMEs** con personal operativo (manufactura, retail, restaurantes, logística, construcción, salud).
 - Nunca al trabajador: los temas de ley se cuentan como *"lo que tu empresa debe cumplir"* y *"el error que te cuesta dinero"*.
