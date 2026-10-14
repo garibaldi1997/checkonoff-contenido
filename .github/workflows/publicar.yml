@@ -51,3 +51,4 @@ jobs:
             git commit -m "Registro de publicaciones [skip ci]"
             git pull --rebase -q && git push
           fi
+# activado
