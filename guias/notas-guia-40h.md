@@ -46,7 +46,48 @@ Transitorios: 1º vigencia 01/05/2026 · 2º jornada 48-46-44-42-40 · 3º ajust
 | Jornada computable | 8 h | Trabajo efectivo 8 h · permanencia 9 h | |
 Si no puede salir durante el reposo o comida, ese tiempo cuenta como tiempo efectivo (art. 64).
 
-## 5. Pendiente de agregar a la guía
+## 5. Detalle de arts. 61, 66 y 68 (comparativo)
+- **61:** se incorpora la palabra DIARIA: máx. 8 h diurna, 7 nocturna, 7.5 mixta; los límites diarios no pueden redistribuirse.
+- **66:** pasa de 3×3 (9 h) a 4×4 (hasta 12 h), con tope semanal gradual 9-9-10-11-12.
+- **68:** antes, lo que excedía de 9 h semanales se pagaba con 200 % adicional y sin tope diario expreso. Ahora: tope absoluto de 12 h diarias (ordinaria + extra) y máx. 4 h triples por semana.
+
+## 6. Descanso semanal y prima dominical (arts. 69, 70, 71)
+- Art. 69: 1 día de descanso por cada 6 de trabajo, con salario íntegro.
+- Art. 70: en labor continua, empresa y trabajadores fijan de común acuerdo los días de descanso.
+- Art. 71: se procurará que el descanso sea en domingo; quien labore en domingo recibe prima de al menos 25 % (párrafo reformado DOF 01/05/2026).
+- Ejemplo de costo semanal con salario diario de $500:
+  | | Descanso en domingo | Descanso en lunes (trabaja domingo) |
+  |---|---|---|
+  | 6 días trabajados | $3,000 | $3,000 |
+  | Descanso pagado | $500 | $500 |
+  | Prima dominical 25 % | $0 | $125 |
+  | **Costo semanal** | **$3,500** | **$3,625** |
+  Diferencia: $125 por semana por trabajador.
+- Ojo: en la lámina original el recuadro "Fundamento" atribuye al art. 69 lo de "procurar que sea domingo"; eso es del art. 71. En la guía citar 71.
+
+## 7. Registro electrónico de jornada (art. 132 fr. XXXIV)
+- Por primera vez la LFT obliga expresamente a documentar electrónicamente la jornada de cada trabajador (inicio y fin) y entregarla a la autoridad.
+- La STPS emitirá disposiciones generales (ámbito y excepciones), vigentes desde el 01/01/2027.
+- Prueba plena si se acredita que fue acordado entre trabajador y empleador.
+- Ejemplo de alerta: jornada programada 8 h, trabajadas 13 h → 5 h adicionales (rebasa el tope diario de 12 h).
+- **¿Y si no cumplo?** Multa art. 994 fr. IV Bis (UMA 2026, dato de la presentación):
+  | | UMA | Importe |
+  |---|---|---|
+  | Mínima | 250 | $29,327.50 |
+  | Máxima | 5,000 | $586,550.00 |
+  Riesgos además: demandas laborales, falta de evidencia, afectación a la empresa. Mensaje: "Cumplir hoy evita problemas mañana".
+
+## 8. CFDI de nómina y registro de jornada (correlación)
+| Dato del registro | Se relaciona con (CFDI) |
+|---|---|
+| Fecha del registro | Periodo de pago |
+| Hora de entrada | Horas ordinarias |
+| Hora de salida | Horas extraordinarias |
+| ID del empleado | Datos del trabajador |
+| Ubicación (opcional) | Centro de trabajo |
+El CFDI incluye sueldo base, horas ordinarias, horas extra, deducciones, impuestos y neto; se cruzan con el registro para calcular bien nómina y horas extra. (El complemento XML del registro en el CFDI es solo una propuesta hipotética, no oficial.)
+
+## 9. Pendiente de agregar a la guía
 - Tipos de jornada (art. 60): diurna 6:00-20:00; nocturna 20:00-6:00; mixta con periodo nocturno < 3.5 h (si es mayor, se considera nocturna). "Vespertina" no es categoría legal.
 - Sección de errores comunes de RRHH.
 - (Esperando más imágenes del usuario.)
