@@ -32,14 +32,15 @@ def fb_metricas(cuenta, post_id):
     # Las fotos sueltas no tienen "shares"; los posts sí. Probamos de más a menos campos.
     for campos in ("shares,reactions.summary(true).limit(0),comments.summary(true).limit(0),permalink_url",
                    "reactions.summary(true).limit(0),comments.summary(true).limit(0)",
-                   "likes.summary(true).limit(0),comments.summary(true).limit(0),permalink_url"):  # fotos y videos
+                   "likes.summary(true).limit(0),comments.summary(true).limit(0),permalink_url",  # videos
+                   "likes.summary(true).limit(0),comments.summary(true).limit(0),link"):  # fotos
         try:
             d = cuenta.api("GET", post_id, fields=campos)
             return {
                 "reacciones": (d.get("reactions") or d.get("likes") or {}).get("summary", {}).get("total_count", 0),
                 "comentarios": d.get("comments", {}).get("summary", {}).get("total_count", 0),
                 "compartidos": d.get("shares", {}).get("count", 0),
-                "permalink": d.get("permalink_url"),
+                "permalink": d.get("permalink_url") or d.get("link"),
             }
         except p.ErrorMeta as err:
             ultimo = err
