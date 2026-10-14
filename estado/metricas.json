@@ -1,71 +1,20 @@
 {
-  "actualizado": "2026-10-14T14:33:13+00:00",
+  "actualizado": "2026-10-14T18:09:52+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
       "fecha": "2026-10-14T01:00:00-06:00",
-      "tema": "¿Sabías que si un trabajador demanda por la jornada, le toca a la EMPRESA probarla? ⚖️",
-      "instagram": {
-        "id": "18124616986904330",
-        "comments_count": 0,
-        "like_count": 0,
-        "media_product_type": "FEED",
-        "permalink": "https://www.instagram.com/p/Ded0JAbGBly/",
-        "reach": 0,
-        "saved": 0,
-        "shares": 0,
-        "views": 0
-      },
-      "facebook": {
-        "reacciones": 0,
-        "comentarios": 0,
-        "compartidos": 0,
-        "permalink": "https://www.facebook.com/photo.php?fbid=122098568673512173&set=a.122097810891512173&type=3"
-      }
+      "tema": "¿Sabías que si un trabajador demanda por la jornada, le toca a la EMPRESA probarla? ⚖️"
     },
     "2026-10-14-prima-dominical": {
       "tipo": "carrusel",
       "fecha": "2026-10-14T01:00:00-06:00",
-      "tema": "¿Sabías que si trabajas en domingo te deben pagar 25 % EXTRA? ☀️💵",
-      "instagram": {
-        "id": "18050525837807943",
-        "comments_count": 0,
-        "like_count": 0,
-        "media_product_type": "FEED",
-        "permalink": "https://www.instagram.com/p/Ded0kd4oNTj/",
-        "reach": 0,
-        "saved": 0,
-        "shares": 0,
-        "views": 0
-      },
-      "facebook": {
-        "reacciones": 0,
-        "comentarios": 0,
-        "compartidos": 0,
-        "permalink": "https://www.facebook.com/122098590447512173/posts/122098571619512173"
-      }
+      "tema": "¿Sabías que si trabajas en domingo te deben pagar 25 % EXTRA? ☀️💵"
     },
     "2026-10-15-reel-pov-quincena": {
       "tipo": "reel",
       "fecha": "2026-10-14T01:00:00-06:00",
-      "tema": "POV: eres de RRHH y es jueves de quincena 😵‍💫",
-      "instagram": {
-        "id": "17928605688424823",
-        "comments_count": 0,
-        "like_count": 0,
-        "media_product_type": "REELS",
-        "permalink": "https://www.instagram.com/reel/Ded2LZzCHQD/",
-        "reach": 0,
-        "saved": 0,
-        "shares": 0,
-        "views": 0
-      },
-      "facebook": {
-        "reacciones": 0,
-        "comentarios": 0,
-        "compartidos": 0,
-        "permalink": "/reel/4777836345827657/"
-      }
+      "tema": "POV: eres de RRHH y es jueves de quincena 😵‍💫"
     },
     "2026-10-15-historia-demo": {
       "tipo": "historia",
@@ -80,6 +29,28 @@
       },
       "facebook": {
         "error": "GET 1664451338624639: (#100) Tried accessing nonexisting field (likes)"
+      }
+    },
+    "2026-10-14-guia-40-horas": {
+      "tipo": "imagen",
+      "fecha": "2026-10-14T10:00:00-06:00",
+      "tema": "📘 GUÍA GRATUITA PARA RRHH: ¿Cómo preparar a tu empresa para la jornada de 40 horas?",
+      "instagram": {
+        "id": "18140830225612394",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/Dee0nWYINeM/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/photo.php?fbid=122098959447512173&set=a.122097810891512173&type=3"
       }
     }
   }
