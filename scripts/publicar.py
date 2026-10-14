@@ -1,0 +1,204 @@
+#!/usr/bin/env python3
+"""Publica en Facebook e Instagram las entradas del calendario cuya hora ya llegó.
+
+Usa solo la biblioteca estándar de Python y la API Graph de Meta.
+
+Variables de entorno:
+  META_PAGE_TOKEN  Token de acceso de la página de Facebook (obligatorio).
+  GRAPH_VERSION    Versión de la API Graph (por defecto v23.0).
+  RAW_BASE         URL pública base de los archivos del repositorio.
+  DRY_RUN          "1" para simular sin publicar.
+
+Uso:
+  python scripts/publicar.py            # publica lo pendiente
+  python scripts/publicar.py --verificar  # comprueba el token y las cuentas
+"""
+import json
+import os
+import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+from datetime import datetime, timedelta, timezone
+
+RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CALENDARIO = os.path.join(RAIZ, "calendario.json")
+PUBLICADOS = os.path.join(RAIZ, "estado", "publicados.json")
+VENTANA_ATRASO = timedelta(hours=36)  # no publicar entradas viejas olvidadas
+
+GRAPH = os.environ.get("GRAPH_BASE", "https://graph.facebook.com") + "/" + os.environ.get("GRAPH_VERSION", "v23.0")
+TOKEN = os.environ.get("META_PAGE_TOKEN", "")
+RAW_BASE = os.environ.get("RAW_BASE", "").rstrip("/")
+DRY_RUN = os.environ.get("DRY_RUN") == "1"
+
+
+class ErrorMeta(Exception):
+    pass
+
+
+def api(metodo, ruta, **params):
+    params["access_token"] = TOKEN
+    datos = urllib.parse.urlencode(params).encode()
+    url = f"{GRAPH}/{ruta}"
+    if metodo == "GET":
+        req = urllib.request.Request(url + "?" + datos.decode())
+    else:
+        req = urllib.request.Request(url, data=datos, method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        cuerpo = e.read().decode(errors="replace")
+        try:
+            msg = json.loads(cuerpo)["error"]["message"]
+        except Exception:
+            msg = cuerpo
+        raise ErrorMeta(f"{metodo} {ruta}: {msg}") from None
+
+
+def cuentas():
+    pagina = api("GET", "me", fields="id,name,instagram_business_account{id,username}")
+    ig = pagina.get("instagram_business_account") or {}
+    return pagina["id"], pagina["name"], ig.get("id"), ig.get("username")
+
+
+def url_publica(ruta_rel):
+    return f"{RAW_BASE}/{urllib.parse.quote(ruta_rel)}"
+
+
+# ---------- Instagram ----------
+def ig_esperar(contenedor):
+    for _ in range(30):
+        estado = api("GET", contenedor, fields="status_code").get("status_code")
+        if estado == "FINISHED":
+            return
+        if estado in ("ERROR", "EXPIRED"):
+            raise ErrorMeta(f"Instagram rechazó el contenedor {contenedor}: {estado}")
+        time.sleep(4)
+    raise ErrorMeta(f"Instagram tardó demasiado en procesar {contenedor}")
+
+
+def ig_publicar(ig_id, entrada):
+    tipo, imgs, texto = entrada["tipo"], entrada["imagenes"], entrada.get("texto", "")
+    if tipo == "historia":
+        c = api("POST", f"{ig_id}/media", image_url=url_publica(imgs[0]), media_type="STORIES")["id"]
+    elif tipo == "carrusel":
+        hijos = []
+        for img in imgs[:10]:
+            h = api("POST", f"{ig_id}/media", image_url=url_publica(img), is_carousel_item="true")["id"]
+            ig_esperar(h)
+            hijos.append(h)
+        c = api("POST", f"{ig_id}/media", media_type="CAROUSEL", children=",".join(hijos), caption=texto)["id"]
+    else:
+        c = api("POST", f"{ig_id}/media", image_url=url_publica(imgs[0]), caption=texto)["id"]
+    ig_esperar(c)
+    return api("POST", f"{ig_id}/media_publish", creation_id=c)["id"]
+
+
+# ---------- Facebook ----------
+def fb_publicar(page_id, entrada):
+    tipo, imgs, texto = entrada["tipo"], entrada["imagenes"], entrada.get("texto", "")
+    if tipo == "historia":
+        foto = api("POST", f"{page_id}/photos", url=url_publica(imgs[0]), published="false")["id"]
+        return api("POST", f"{page_id}/photo_stories", photo_id=foto).get("post_id", foto)
+    if len(imgs) == 1:
+        return api("POST", f"{page_id}/photos", url=url_publica(imgs[0]), caption=texto)["id"]
+    adjuntos = {}
+    for i, img in enumerate(imgs):
+        fid = api("POST", f"{page_id}/photos", url=url_publica(img), published="false")["id"]
+        adjuntos[f"attached_media[{i}]"] = json.dumps({"media_fbid": fid})
+    return api("POST", f"{page_id}/feed", message=texto, **adjuntos)["id"]
+
+
+# ---------- Ciclo principal ----------
+def cargar(ruta, defecto):
+    if not os.path.exists(ruta):
+        return defecto
+    with open(ruta, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def guardar(ruta, datos):
+    os.makedirs(os.path.dirname(ruta), exist_ok=True)
+    with open(ruta, "w", encoding="utf-8") as f:
+        json.dump(datos, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+
+def validar(calendario):
+    errores = []
+    ids = set()
+    for e in calendario:
+        if e["id"] in ids:
+            errores.append(f"id repetido: {e['id']}")
+        ids.add(e["id"])
+        datetime.fromisoformat(e["fecha"])
+        if e["tipo"] not in ("imagen", "carrusel", "historia"):
+            errores.append(f"{e['id']}: tipo inválido {e['tipo']}")
+        for img in e["imagenes"]:
+            if not os.path.exists(os.path.join(RAIZ, img)):
+                errores.append(f"{e['id']}: no existe {img}")
+            if not img.lower().endswith((".jpg", ".jpeg")):
+                errores.append(f"{e['id']}: Instagram solo acepta JPG ({img})")
+        if e["tipo"] == "carrusel" and not 2 <= len(e["imagenes"]) <= 10:
+            errores.append(f"{e['id']}: un carrusel lleva de 2 a 10 imágenes")
+    return errores
+
+
+def main():
+    calendario = cargar(CALENDARIO, [])
+    errores = validar(calendario)
+    if errores:
+        print("❌ El calendario tiene errores:\n  " + "\n  ".join(errores))
+        return 1
+
+    if "--validar" in sys.argv:
+        print(f"✅ Calendario válido: {len(calendario)} entradas.")
+        return 0
+    if not TOKEN:
+        print("❌ Falta el secreto META_PAGE_TOKEN.")
+        return 1
+
+    page_id, page_name, ig_id, ig_user = cuentas()
+    print(f"Página de Facebook: {page_name} ({page_id})")
+    print(f"Instagram: @{ig_user} ({ig_id})" if ig_id else "⚠️ La página no tiene una cuenta de Instagram profesional vinculada.")
+    if "--verificar" in sys.argv:
+        print("✅ Token válido. Imagen de prueba:", url_publica(calendario[0]["imagenes"][0]) if calendario else "-")
+        return 0
+
+    publicados = cargar(PUBLICADOS, {})
+    ahora = datetime.now(timezone.utc)
+    fallos = 0
+    for e in sorted(calendario, key=lambda x: x["fecha"]):
+        fecha = datetime.fromisoformat(e["fecha"])
+        if fecha > ahora or ahora - fecha > VENTANA_ATRASO:
+            continue
+        hecho = publicados.setdefault(e["id"], {})
+        for red in e.get("redes", ["instagram", "facebook"]):
+            if red in hecho:
+                continue
+            print(f"→ {e['id']} en {red} ({e['tipo']}, {len(e['imagenes'])} imagen/es)")
+            if DRY_RUN:
+                continue
+            try:
+                if red == "instagram":
+                    if not ig_id:
+                        raise ErrorMeta("sin cuenta de Instagram vinculada")
+                    pid = ig_publicar(ig_id, e)
+                else:
+                    pid = fb_publicar(page_id, e)
+                hecho[red] = {"id": pid, "fecha": ahora.isoformat(timespec="seconds")}
+                print(f"  ✅ publicado ({pid})")
+                guardar(PUBLICADOS, publicados)
+            except ErrorMeta as err:
+                fallos += 1
+                print(f"  ❌ {err}")
+        if not hecho:
+            publicados.pop(e["id"], None)
+    guardar(PUBLICADOS, publicados)
+    return 1 if fallos else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

@@ -1,0 +1,51 @@
+name: Publicar en redes
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # cada 15 minutos (hora UTC)
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "publicar | verificar | simular"
+        default: publicar
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Publicar
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v23.0' }}
+          RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}
+          DRY_RUN: ${{ inputs.modo == 'simular' && '1' || '0' }}
+        run: |
+          if [ "${{ inputs.modo }}" = "verificar" ]; then
+            python scripts/publicar.py --verificar
+          else
+            python scripts/publicar.py
+          fi
+
+      - name: Guardar registro de publicaciones
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain estado/)" ]; then
+            git config user.name "checkonoff-bot"
+            git config user.email "checkonoff-bot@users.noreply.github.com"
+            git add estado/
+            git commit -m "Registro de publicaciones [skip ci]"
+            git push
+          fi
