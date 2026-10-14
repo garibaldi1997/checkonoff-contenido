@@ -227,7 +227,26 @@ Recomendación de datos personales: recabar solo lo necesario (minimización) y 
 Según la presentación: todos los trabajadores cuya jornada está sujeta al control del patrón (operativos, administrativos, supervisores, gerentes, personal de confianza, directores con contrato y horario). Generalmente no: socios, accionistas, administradores únicos, prestadores de servicios independientes, personas sin relación laboral subordinada.
 - ⚠️ Es interpretación: la STPS emitirá las disposiciones que definan el ámbito de aplicación y las excepciones (art. 132 fr. XXXIV). En la guía decirlo así.
 
-## 27. Pendiente de agregar a la guía
+## 28. Casos difíciles del registro (láminas 7.x)
+**¿Y si un directivo no quiere registrarse?** Si tiene contrato laboral y horario, está obligado. Riesgos: multa en inspección por no tener el control; sin registros la empresa pierde su defensa en una demanda (horas extra, despido); mala señal para el resto ("si el jefe no lo hace…"). Solución: si de verdad no está sujeto a control (administrador único, socio), revisar su situación contractual y fiscal para no simular una relación subordinada; si es empleado, explicarle que el registro protege a la empresa, no es desconfianza.
+
+**¿Y si un trabajador olvida registrarse con frecuencia?** Problemas: el sistema lo marca como falta (descuentos o pérdida de bonos aunque sí trabajó → fricciones); pagar días "no registrados" genera alertas de materialidad; la LFT permite sancionar el incumplimiento de obligaciones previstas en el Reglamento Interior.
+- Nota: no descontar un día si hay evidencia de que sí trabajó; primero la bitácora de justificación. Las suspensiones disciplinarias sin goce tienen un máximo de 8 días (art. 423 fr. X).
+
+**Plan de acción para blindar a la empresa:**
+1. **Reglamento Interior de Trabajo** (depositado ante la autoridad): obligatoriedad del registro para todos los niveles, procedimiento si se olvida (ej. avisar a RRHH en los primeros 30 min del turno), consecuencias de la reincidencia.
+2. **Contratos:** cláusula de obligación de usar el sistema de control de asistencia que determine el patrón.
+3. **Bitácora de justificación:** nunca dejar el espacio en blanco ni llenarlo a mano sin respaldo; formato de "Justificación de incidencia" firmado por el trabajador y su jefe.
+
+## 29. Riesgo de materialidad por bonos e incentivos
+Si con menos horas registradas suben mucho bonos, productividad, comisiones o incentivos, la autoridad podría cuestionarlos: la STPS, si la productividad es congruente con las horas registradas; el SAT, la razón de negocio y la materialidad sin evidencia de metas o resultados. Ejemplo: de 48 a 40 h con un bono mayor que antes → documentar con evidencia objetiva cómo se generó; si no, podría verse como pago encubierto de tiempo no registrado o de horas extra. (Es un riesgo potencial, no una regla publicada.)
+
+## 30. Ejemplo de registro con horas extra (lámina 73) — usarlo como caso de INCUMPLIMIENTO
+Jornada diurna lunes a sábado, 8 h ordinarias diarias (48 h, válido en 2026). Lunes, miércoles y viernes 08:00-21:00 (13 h): 5 h extra cada día → la lámina reparte 3 dobles + 2 triples por día = 9 dobles y 6 triples (15 h extra).
+- ⚠️ Con las reglas vigentes desde el 1 de mayo de 2026 este ejemplo INCUMPLE: (1) 13 h en un día rebasa el tope de 12 h diarias (art. 68); (2) 5 h extra en un día rebasa el máximo de 4 h diarias (art. 66); (3) 6 h triples rebasan el máximo de 4 h triples por semana (art. 68). Además, el reparto 3 + 2 por día no sigue la regla: las dobles van hasta 4 h al día hasta llegar al tope semanal (9 h en 2026).
+- Uso en la guía: como ejemplo de lo que el registro electrónico va a evidenciar y de cómo corregirlo (ej. lunes a jueves 2 h extra = 8 h dobles, dentro de los topes).
+
+## 31. Pendiente de agregar a la guía
 - Tipos de jornada (art. 60): diurna 6:00-20:00; nocturna 20:00-6:00; mixta con periodo nocturno < 3.5 h (si es mayor, se considera nocturna). "Vespertina" no es categoría legal.
 - Sección de errores comunes de RRHH.
 - (Esperando más imágenes del usuario.)
