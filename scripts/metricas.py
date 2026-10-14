@@ -61,6 +61,8 @@ def main():
             continue
         fila = {"tipo": e.get("tipo"), "fecha": e.get("fecha"), "tema": (e.get("texto") or "").split("\n")[0][:90]}
         for red, info in redes.items():
+            if info.get("borrado"):
+                continue
             try:
                 fila[red] = ig_metricas(cuenta, info["id"]) if red == "instagram" else fb_metricas(cuenta, info["id"])
             except p.ErrorMeta as err:

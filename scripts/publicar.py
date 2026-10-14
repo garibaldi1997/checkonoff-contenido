@@ -47,8 +47,8 @@ def api(token, metodo, ruta, **params):
     params["access_token"] = token
     datos = urllib.parse.urlencode(params).encode()
     url = f"{GRAPH}/{ruta}"
-    if metodo == "GET":
-        req = urllib.request.Request(url + "?" + datos.decode())
+    if metodo in ("GET", "DELETE"):
+        req = urllib.request.Request(url + "?" + datos.decode(), method=metodo)
     else:
         req = urllib.request.Request(url, data=datos, method="POST")
     try:
