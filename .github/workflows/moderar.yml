@@ -4,11 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       accion:
-        description: "buscar | ocultar | borrar"
+        description: "buscar | ocultar | borrar | editar"
         default: buscar
       objetivo:
         description: "Texto a buscar, id del calendario o id de Meta"
         required: true
+      texto:
+        description: "Nuevo texto (solo para editar)"
+        required: false
 
 permissions:
   contents: write
@@ -31,6 +34,7 @@ jobs:
           GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
           ACCION: ${{ inputs.accion }}
           OBJETIVO: ${{ inputs.objetivo }}
+          TEXTO: ${{ inputs.texto }}
         run: python scripts/moderar.py "$ACCION" "$OBJETIVO"
       - name: Guardar registro
         if: always()

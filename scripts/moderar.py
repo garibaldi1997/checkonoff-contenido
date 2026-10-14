@@ -5,6 +5,7 @@ Uso:
   python scripts/moderar.py buscar "texto"        # lista publicaciones que contienen el texto
   python scripts/moderar.py ocultar "texto o id"  # oculta en Facebook (Instagram no permite ocultar por API)
   python scripts/moderar.py borrar "id"           # borra; acepta el id del calendario o el id de Meta
+  python scripts/moderar.py editar "id"           # cambia el texto de un post de Facebook por el de TEXTO
 
 La cuenta se toma de CUENTA (por defecto checkonoff).
 """
@@ -63,6 +64,12 @@ def main():
                     continue
                 cuenta.api("POST", mid, is_hidden="true")
                 print(f"🙈 oculto en Facebook: {mid}")
+            elif accion == "editar":
+                if red == "instagram":
+                    print(f"⚠️ {mid}: Instagram no permite editar el texto por API; edítalo desde la app.")
+                    continue
+                cuenta.api("POST", mid, message=os.environ["TEXTO"])
+                print(f"✏️ texto actualizado en Facebook: {mid}")
             elif accion == "borrar":
                 cuenta.api("DELETE", mid)
                 print(f"🗑️ borrado en {red}: {mid}")
