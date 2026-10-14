@@ -29,13 +29,22 @@ def ig_metricas(cuenta, media_id):
 
 
 def fb_metricas(cuenta, post_id):
-    d = cuenta.api("GET", post_id, fields="shares,reactions.summary(true).limit(0),comments.summary(true).limit(0),permalink_url")
-    return {
-        "reacciones": d.get("reactions", {}).get("summary", {}).get("total_count", 0),
-        "comentarios": d.get("comments", {}).get("summary", {}).get("total_count", 0),
-        "compartidos": d.get("shares", {}).get("count", 0),
-        "permalink": d.get("permalink_url"),
-    }
+    # Las fotos sueltas no tienen "shares"; los posts sí. Probamos de más a menos campos.
+    for campos in ("shares,reactions.summary(true).limit(0),comments.summary(true).limit(0),permalink_url",
+                   "reactions.summary(true).limit(0),comments.summary(true).limit(0)"):
+        try:
+            d = cuenta.api("GET", post_id, fields=campos)
+            return {
+                "reacciones": d.get("reactions", {}).get("summary", {}).get("total_count", 0),
+                "comentarios": d.get("comments", {}).get("summary", {}).get("total_count", 0),
+                "compartidos": d.get("shares", {}).get("count", 0),
+                "permalink": d.get("permalink_url"),
+            }
+        except p.ErrorMeta as err:
+            ultimo = err
+    if "pages_read_user_content" in str(ultimo):
+        return {"pendiente": "agregar el permiso pages_read_user_content en la app de Meta"}
+    raise ultimo
 
 
 def main():
