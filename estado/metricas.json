@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T07:44:45+00:00",
+  "actualizado": "2026-10-14T07:45:19+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -17,7 +17,7 @@
         "views": 0
       },
       "facebook": {
-        "error": "GET 122098568673512173: (#100) Tried accessing nonexisting field (reactions)"
+        "error": "GET 122098568673512173: (#100) Tried accessing nonexisting field (permalink_url)"
       }
     },
     "2026-10-14-prima-dominical": {
@@ -58,7 +58,10 @@
         "views": 0
       },
       "facebook": {
-        "error": "GET 4777836345827657: (#100) Tried accessing nonexisting field (reactions)"
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/4777836345827657/"
       }
     }
   }
