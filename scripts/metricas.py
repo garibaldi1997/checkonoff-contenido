@@ -31,11 +31,12 @@ def ig_metricas(cuenta, media_id):
 def fb_metricas(cuenta, post_id):
     # Las fotos sueltas no tienen "shares"; los posts sí. Probamos de más a menos campos.
     for campos in ("shares,reactions.summary(true).limit(0),comments.summary(true).limit(0),permalink_url",
-                   "reactions.summary(true).limit(0),comments.summary(true).limit(0)"):
+                   "reactions.summary(true).limit(0),comments.summary(true).limit(0)",
+                   "likes.summary(true).limit(0),comments.summary(true).limit(0),permalink_url"):  # fotos y videos
         try:
             d = cuenta.api("GET", post_id, fields=campos)
             return {
-                "reacciones": d.get("reactions", {}).get("summary", {}).get("total_count", 0),
+                "reacciones": (d.get("reactions") or d.get("likes") or {}).get("summary", {}).get("total_count", 0),
                 "comentarios": d.get("comments", {}).get("summary", {}).get("total_count", 0),
                 "compartidos": d.get("shares", {}).get("count", 0),
                 "permalink": d.get("permalink_url"),
