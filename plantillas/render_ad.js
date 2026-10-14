@@ -12,12 +12,12 @@ const CSS = `
 .tile,.brand .t,.brand .tile{background:transparent!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important}.tile img,.brand .t img,.brand img{object-fit:contain}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
-.f{position:relative;overflow:hidden;width:1080px;height:1920px;color:#fff;background:#0B3D06}
+.f{position:relative;overflow:hidden;width:1080px;height:1920px;color:#fff;background:#111C3B}
 .bgph{position:absolute;inset:-60px;background-size:cover;background-position:center;filter:blur(16px) saturate(.9)}
-.ov{position:absolute;inset:0;background:linear-gradient(160deg,rgba(12,70,6,.97) 0%,rgba(28,140,16,.9) 45%,rgba(52,182,20,.62) 100%)}
-.ov2{position:absolute;inset:0;background:radial-gradient(ellipse 70% 40% at 80% 30%,rgba(255,255,255,.16),transparent 70%),linear-gradient(to bottom,transparent 70%,rgba(4,30,2,.75))}
+.ov{position:absolute;inset:0;background:linear-gradient(160deg,rgba(17,28,59,.97) 0%,rgba(10,78,148,.9) 55%,rgba(52,182,20,.6) 100%)}
+.ov2{position:absolute;inset:0;background:radial-gradient(ellipse 70% 40% at 80% 30%,rgba(255,255,255,.16),transparent 70%),linear-gradient(to bottom,transparent 70%,rgba(17,28,59,.8))}
 .top{position:absolute;left:90px;right:90px;top:290px;display:flex;justify-content:space-between;align-items:center}
-.tag{display:inline-flex;align-items:center;gap:12px;background:#FFD43B;color:#3A2A00;border-radius:999px;padding:14px 26px;font-size:28px;font-weight:800;letter-spacing:1px;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.tag{display:inline-flex;align-items:center;gap:12px;background:#E21B20;color:#fff;border-radius:999px;padding:14px 26px;font-size:28px;font-weight:800;letter-spacing:1px;box-shadow:0 12px 30px rgba(0,0,0,.25)}
 .logo{display:flex;align-items:center;gap:12px;font-size:30px;font-weight:600}
 .logo .t{width:60px;height:60px;border-radius:15px;background:#111C3B;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.3)}.logo img{width:56px}
 h1{font-weight:800;letter-spacing:-.035em;line-height:1.04;text-shadow:0 6px 30px rgba(0,25,0,.3)}
@@ -36,7 +36,7 @@ const groupPhone = (w, style) => {
   const msg = (who, color, body, time, extra = '') => `<div style="background:#fff;border-radius:${14 * s}px;border-top-left-radius:${3 * s}px;padding:${12 * s}px ${16 * s}px;max-width:88%;box-shadow:0 1px 1px rgba(0,0,0,.1);font-size:${18 * s}px;line-height:1.35;color:#111">
     <div style="font-size:${15 * s}px;font-weight:700;color:${color}">${who}</div>${extra}${body}<div style="text-align:right;font-size:${12 * s}px;color:#888">${time}</div></div>`;
   const doc = (icon, name, meta, bg) => `<div style="display:flex;gap:${12 * s}px;align-items:center;background:${bg};border-radius:${10 * s}px;padding:${12 * s}px;margin:${6 * s}px 0"><div style="width:${46 * s}px;height:${54 * s}px;border-radius:${6 * s}px;background:#E53935;color:#fff;display:grid;place-items:center;font-size:${14 * s}px;font-weight:800">${icon}</div><div><b style="font-size:${17 * s}px">${name}</b><div style="font-size:${13 * s}px;color:#777">${meta}</div></div></div>`;
-  return `<div style="width:${w}px;height:${1010 * s}px;background:#0A0A0A;border-radius:${76 * s}px;padding:${16 * s}px;box-shadow:0 60px 110px rgba(0,20,0,.55),0 0 0 3px #3A3A3A;${style}">
+  return `<div style="width:${w}px;height:${1010 * s}px;background:#0A0A0A;border-radius:${76 * s}px;padding:${16 * s}px;box-shadow:0 60px 110px rgba(0,0,20,.55),0 0 0 3px #3A3A3A;${style}">
   <div style="width:100%;height:100%;border-radius:${62 * s}px;overflow:hidden;background:#EEF3F9;display:flex;flex-direction:column;position:relative">
     <div style="position:absolute;top:${22 * s}px;left:50%;transform:translateX(-50%);width:${140 * s}px;height:${40 * s}px;background:#000;border-radius:${24 * s}px;z-index:2"></div>
     <div style="height:${80 * s}px;background:#fff"></div>
@@ -74,7 +74,7 @@ const PIECES = [
   </div>
   ${groupPhone(390, 'position:absolute;right:55px;top:770px;transform:rotate(5deg)')}
   <div style="position:absolute;left:90px;top:1150px;display:flex;align-items:center;gap:18px;background:rgba(0,0,0,.28);border:2px solid rgba(255,255,255,.25);border-radius:24px;padding:20px 28px;font-size:30px;font-weight:600;line-height:1.25">
-    <span style="font-size:52px">⏳</span><span>La reducción empieza el<br><b style="font-size:38px;color:#FFD43B">1 de enero de 2027</b></span></div>
+    <span style="font-size:52px">⏳</span><span>La reducción empieza el<br><b style="font-size:38px;color:#7DD818">1 de enero de 2027</b></span></div>
   <div class="waBtn" style="position:absolute;left:90px;right:90px;top:1420px;height:135px;font-size:52px">${waIcon(68)}Únete gratis al grupo</div>
   ${swipe('Toca <b>“Enviar mensaje”</b> 👇')}
 </div>`],

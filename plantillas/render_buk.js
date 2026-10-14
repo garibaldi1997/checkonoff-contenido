@@ -12,15 +12,15 @@ const CSS = `
 body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
 .f{position:relative;overflow:hidden;color:#fff}
 .bgph{position:absolute;inset:-60px;background-size:cover;background-position:center;filter:blur(14px) saturate(.95) brightness(1.05)}
-.ov{position:absolute;inset:0;background:linear-gradient(115deg,rgba(14,100,8,.96) 0%,rgba(30,150,18,.86) 38%,rgba(52,182,20,.55) 68%,rgba(52,182,20,.22) 100%)}
-.ov2{position:absolute;inset:0;background:radial-gradient(ellipse 60% 45% at 85% 20%,rgba(255,255,255,.18),transparent 70%),linear-gradient(to bottom,rgba(0,0,0,0) 60%,rgba(5,40,2,.35))}
+.ov{position:absolute;inset:0;background:linear-gradient(115deg,rgba(17,28,59,.97) 0%,rgba(10,78,148,.88) 40%,rgba(52,182,20,.55) 75%,rgba(52,182,20,.25) 100%)}
+.ov2{position:absolute;inset:0;background:radial-gradient(ellipse 60% 45% at 85% 20%,rgba(255,255,255,.18),transparent 70%),linear-gradient(to bottom,rgba(0,0,0,0) 60%,rgba(17,28,59,.4))}
 .kick{font-size:30px;font-weight:600;letter-spacing:9px;text-transform:uppercase;opacity:.92}
 .logo{display:flex;align-items:center;gap:14px;font-size:36px;font-weight:600;letter-spacing:-1px}
 .logo .t{width:66px;height:66px;border-radius:16px;background:#111C3B;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.25)}.logo img{width:60px}
 h1{font-weight:800;letter-spacing:-.035em;line-height:1.06;text-shadow:0 4px 30px rgba(0,30,0,.25)}
 .cover{position:absolute;border-radius:26px;background:linear-gradient(160deg,#2FBF1D,#1C8E10 70%,#16760C);box-shadow:0 50px 90px rgba(0,25,0,.45),0 0 0 2px rgba(255,255,255,.12) inset;overflow:hidden;color:#fff}
 .cover .ck{font-size:17px;font-weight:600;letter-spacing:5px;opacity:.9}
-.pillw{display:inline-flex;align-items:center;background:rgba(255,255,255,.93);color:#0E5A07;border-radius:999px;font-weight:600;box-shadow:0 16px 40px rgba(0,30,0,.25)}
+.pillw{display:inline-flex;align-items:center;background:rgba(255,255,255,.93);color:#111C3B;border-radius:999px;font-weight:600;box-shadow:0 16px 40px rgba(0,30,0,.25)}
 .btn{display:inline-flex;align-items:center;gap:22px;background:#fff;color:#111C3B;border-radius:44px;font-weight:600;box-shadow:0 20px 50px rgba(0,30,0,.35)}
 `;
 
