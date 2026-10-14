@@ -84,6 +84,40 @@
     "texto": "¿Tu empresa sigue calculando las horas extra con la regla de \"3 horas, 3 veces por semana\"?\n\nDesde el 1 de mayo de 2026, con la reforma a la Ley Federal del Trabajo (DOF), las reglas cambiaron:\n\n• Horas extra al doble: hasta 4 horas al día, en máximo 4 días de la semana, con un tope de 9 h semanales (sube a 12 h en 2030).\n• Horas extra al triple: máximo 4 horas a la semana.\n• Jornada ordinaria + extra: nunca más de 12 horas en un día.\n• Además, el registro electrónico de la jornada ya es obligatorio (Art. 132, fr. XXXIV).\n\nEn CheckONOFF hicimos una calculadora gratuita con las reglas nuevas: escribes la semana, el salario y las horas de cada día, y separa dobles y triples y te avisa si algo no está permitido.\n\n👉 https://checkonoff.mx/calculadora-horas-extra/\n\n¿En tu empresa ya ajustaron la nómina a la reforma?\n\n#RecursosHumanos #ReformaLaboral #Jornada40Horas #Nomina #LFT"
   },
   {
+    "id": "2026-10-14-carrusel-tipos-jornada",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-14T15:29:00-06:00",
+    "tipo": "carrusel",
+    "redes": [
+      "instagram",
+      "facebook",
+      "linkedin"
+    ],
+    "imagenes": [
+      "contenido/checkonoff/2026-10-14-carrusel-tipos-jornada/01.jpg",
+      "contenido/checkonoff/2026-10-14-carrusel-tipos-jornada/02.jpg",
+      "contenido/checkonoff/2026-10-14-carrusel-tipos-jornada/03.jpg",
+      "contenido/checkonoff/2026-10-14-carrusel-tipos-jornada/04.jpg",
+      "contenido/checkonoff/2026-10-14-carrusel-tipos-jornada/05.jpg",
+      "contenido/checkonoff/2026-10-14-carrusel-tipos-jornada/06.jpg"
+    ],
+    "texto": "¿Tu turno es \"vespertino\"? 🤔 Para la Ley Federal del Trabajo, ese tipo de jornada NO existe.\n\nSolo hay 3 (Arts. 60 y 61 LFT):\n☀️ Diurna (06:00 a 20:00): máximo 8 h al día\n🌙 Nocturna (20:00 a 06:00): máximo 7 h al día\n🌗 Mixta (abarca ambas, con menos de 3.5 h nocturnas): máximo 7.5 h al día\n\n⚠️ El error más común en RRHH: un turno de 16:00 a 00:00 parece \"de 8 horas\", pero tiene 4 h nocturnas → es NOCTURNO, su máximo es 7 h y la octava hora es tiempo extra.\n\nY con la reforma de 40 horas, el tope semanal baja distinto para cada jornada: la diurna desde 2027, la mixta desde 2028 y la nocturna hasta 2030.\n\n¿En tu empresa cómo clasifican los turnos de la tarde? 👇\n\n👉 CheckONOFF clasifica cada turno y calcula las horas extra según la ley: checkonoff.mx\n\n📌 Guárdalo y compártelo con tu equipo de nómina.\n\n#recursoshumanos #rrhh #nomina #jornadalaboral #reformalaboral #leyfederaldeltrabajo"
+  },
+  {
+    "id": "2026-10-14-historia-vespertino",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-14T15:30:00-06:00",
+    "tipo": "historia",
+    "redes": [
+      "instagram",
+      "facebook"
+    ],
+    "imagenes": [
+      "contenido/checkonoff/2026-10-14-historia-vespertino/01.jpg"
+    ],
+    "texto": ""
+  },
+  {
     "id": "2026-10-15-quincena",
     "cuenta": "checkonoff",
     "fecha": "2026-10-15T10:00:00-06:00",
