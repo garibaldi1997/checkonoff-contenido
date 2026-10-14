@@ -51,6 +51,14 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 - Art. 132 fr. XXXIV: registro electrónico obligatorio de la jornada (inicio y fin). Reglas de la STPS desde el 1/01/2027. Multa 250-5,000 UMA (Art. 994 fr. IV Bis). Prueba plena si fue acordado entre empresa y trabajador.
 - Temas pendientes para contenido: acuerdo de registro electrónico, aviso de privacidad para biométricos, tope de 56 h a la semana en 2030, conciliación registro-nómina.
 
+## Datos del negocio (fuente: checkonoff.mx y llms.txt, 14/10/2026)
+- Registro con 14 días gratis, sin tarjeta: https://app.checkonoff.mx/registro-empresa
+- Asesor por WhatsApp: +52 333 021 3199 (https://wa.me/523330213199) · contacto@checkonoff.mx · San Luis Potosí.
+- Planes (MXN por colaborador al mes + IVA): Esencial $39 (mín. 13), Profesional $59 (mín. 9), Corporativo $89 (mín. 6).
+- Registro por app Android/iOS (geocercas + foto, sin internet), checador biométrico existente conectado a la nube, o bot de WhatsApp (todos los planes).
+- Calculadoras: https://checkonoff.mx/calculadora-vacaciones/ (correcta) y https://checkonoff.mx/calculadora-horas-extra/ (⚠️ aún con la regla anterior a la reforma: 3 h × 3 días; no enlazar hasta actualizarla).
+- Páginas por industria: restaurantes, manufactura, construcción. Comparativa: alternativa a Factorial.
+
 ## Embudo de WhatsApp
 - Grupo **Jornada 40 hrs MX · Comunidad RRHH**: https://chat.whatsapp.com/DyoKg8wa7IQCWzT9UgOyge (solo admins escriben; guía PDF fijada).
 - Imán: `guias/guia-40-horas-checkonoff.pdf`. Usar este link en posts e historias de la reforma de 40 h.

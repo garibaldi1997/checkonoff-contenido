@@ -3,7 +3,8 @@ const { chromium } = require('/opt/node-tools/node_modules/playwright');
 const fs = require('fs'), path = require('path');
 const b64 = (f, t) => `data:${t};base64,` + fs.readFileSync(path.join(__dirname, f)).toString('base64');
 const LOGO = b64('logo.png', 'image/png'), LOGOF = b64('logo_full.png', 'image/png');
-const QRWEB = b64('qr_web.svg', 'image/svg+xml'), QRWA = b64('qr_grupo.svg', 'image/svg+xml');
+const QRWEB = b64('qr_registro.svg', 'image/svg+xml'), QRWA = b64('qr_grupo.svg', 'image/svg+xml'), QRASE = b64('qr_asesor.svg', 'image/svg+xml');
+const REG = 'https://app.checkonoff.mx/registro-empresa', ASESOR = 'https://wa.me/523330213199?text=Hola%2C%20soy%20de%20RRHH%20y%20descargu%C3%A9%20la%20gu%C3%ADa%20de%2040%20horas', CALC_VAC = 'https://checkonoff.mx/calculadora-vacaciones/';
 const NAVY = '#111C3B', BLUE = '#0A4E94', GREEN = '#34B614', LIME = '#7DD818', RED = '#E21B20', LIGHT = '#F2F6FB';
 const WA_LINK = 'https://chat.whatsapp.com/DyoKg8wa7IQCWzT9UgOyge';
 
@@ -94,7 +95,7 @@ const box = (items) => `<ul class="box">${items.map(t => `<li><span></span><div>
 const bienMal = (bien, mal) => `<div class="bm"><div class="b">${ic('check', 34)}<b>ASÍ SÍ</b><p>${bien}</p></div><div class="m">${ic('x', 34)}<b>ASÍ NO</b><p>${mal}</p></div></div>`;
 const tabla = (cols, rows, cls = '') => `<table class="tb ${cls}"><tr>${cols.map(c => `<th>${c}</th>`).join('')}</tr>${rows.map(r => `<tr class="${r.cls || ''}">${(r.c || r).map(c => `<td>${c}</td>`).join('')}</tr>`).join('')}</table>`;
 const nota = (t, cls = '') => `<div class="note ${cls}">${t}</div>`;
-const cta = (t = 'Prueba CheckONOFF 14 días gratis') => `<a class="ctab" href="https://checkonoff.mx"><div><b>${t}</b><span>Registro electrónico de jornada, horas extra y pre-nómina en un solo lugar · checkonoff.mx</span></div><img src="${QRWEB}"></a>`;
+const cta = (t = 'Prueba CheckONOFF 14 días gratis') => `<a class="ctab" href="${REG}"><div><b>${t}</b><span>14 días gratis, sin tarjeta · Registro electrónico de jornada, horas extra y pre-nómina · Toca o escanea →</span></div><img src="${QRWEB}"></a>`;
 
 const P = [];
 
@@ -381,15 +382,16 @@ const yrs = [['Ahora · resto de 2026', ['Medir la jornada real por puesto duran
 P.push(page(`${head('16', 'Plan', 'Tu plan de implementación año por año')}
   <div class="tl">${yrs.map(([t, it], i) => `<div class="ty"><div class="dot" style="background:${[RED, GREEN, GREEN, BLUE, NAVY][i]}"></div><div><h3>${t}</h3>${box(it)}</div></div>`).join('')}</div>
   <h4>Plantilla rápida de diagnóstico</h4>
-  ${tabla(['Puesto / área', 'Turno', 'Personas', 'Horas reales/sem', 'Extra/sem', '¿Días de +12 h?'], Array.from({ length: 5 }, () => ['', '', '', '', '', '']), 'tpl')}`));
+  ${tabla(['Puesto / área', 'Turno', 'Personas', 'Horas reales/sem', 'Extra/sem', '¿Días de +12 h?'], Array.from({ length: 5 }, () => ['', '', '', '', '', '']), 'tpl')}
+  <a class="tool" href="${CALC_VAC}"><span>🧮</span><div><b>Herramienta gratis: calculadora de vacaciones y prima vacacional</b><small>Días según el art. 76 de la LFT y cuánto pagar. Toca aquí →</small></div></a>`));
 
 /* 19 · CheckONOFF */
-const feats = [['📲', 'Checa por WhatsApp', 'Entrada y salida con hora, ubicación GPS y selfie. Sin descargar apps.'],
-  ['📶', 'Funciona sin señal', 'El registro se guarda en el celular y se sincroniza con la hora real.'],
-  ['⏱️', 'Horas extra en automático', 'Separa ordinarias, dobles y triples para tu pre-nómina.'],
-  ['📋', 'Incidencias y permisos', 'Retardos, faltas y permisos con firma digital, por sucursal.'],
-  ['🏖️', 'Vacaciones LFT', 'Días y antigüedad calculados según la ley.'],
-  ['📊', 'Pre-nómina en 1 clic', 'Todo lo que necesitas para cerrar la quincena sin capturas a mano.']];
+const feats = [['📲', 'Checa como prefieras', 'App Android/iOS con geocercas y foto, tu checador biométrico actual o el bot de WhatsApp.'],
+  ['📶', 'Funciona sin internet', 'La app guarda el registro y lo sincroniza al recuperar señal.'],
+  ['🚨', 'Avisos de topes de la LFT', 'Te avisa cuando un turno rebasa los límites de jornada y horas extra.'],
+  ['📊', 'Pre-nómina automática', 'Horas, tiempo extra, bonos y descuentos; exporta a Excel.'],
+  ['🏖️', 'Vacaciones LFT', 'Saldo por antigüedad acreditado en automático, con aprobación del supervisor.'],
+  ['🗂️', 'Expedientes digitales', 'IMSS, incapacidades, contratos y actas administrativas en un solo lugar.']];
 P.push(page(`<div class="top">${brand()}<div class="pill" style="background:${GREEN}">La solución</div></div>
   <h2>Cumple la reforma sin complicarte: <span class="g">CheckONOFF</span></h2>
   <div class="prod">
@@ -397,23 +399,24 @@ P.push(page(`<div class="top">${brand()}<div class="pill" style="background:${GR
     <div class="feats">${feats.map(([e, t, d]) => `<div><span>${e}</span><div><b>${t}</b><p>${d}</p></div></div>`).join('')}</div>
   </div>
   ${tabla(['La reforma te pide…', 'CheckONOFF te ayuda con…'], [
-    ['Registro electrónico de inicio y fin de jornada', 'Checadas digitales con hora, GPS y foto de cada colaborador'],
-    ['Respetar 4 h extra al día, 4 días y 12 h totales', 'Cálculo automático de horas trabajadas y tiempo extra'],
+    ['Registro electrónico de inicio y fin de jornada', 'Checadas por app con geocerca y foto, biométrico conectado a la nube o WhatsApp'],
+    ['No rebasar los topes de jornada y horas extra', 'Avisos cuando un turno rebasa los límites y cálculo automático del tiempo extra'],
     ['Separar horas dobles y triples', 'Pre-nómina con dobles y triples separadas'],
     ['Evidencia para inspecciones y demandas', 'Historial por colaborador y sucursal, listo para consultar'],
     ['Que el registro coincida con la nómina', 'Faltas, retardos, permisos y vacaciones en un solo lugar']], 'sm')}
-  <div class="price">${['$39', '$59', '$89'].map(p => `<div><small>Plan</small><b>${p}</b><span>MXN por colaborador al mes</span></div>`).join('')}</div>
-  ${cta('Pruébalo 14 días gratis con tu equipo')}`));
+  <div class="price">${[['Esencial', '$39', 'Mín. 13 colaboradores · checador offline, GPS, biométrico, WhatsApp, vacaciones LFT'], ['Profesional', '$59', 'Mín. 9 · reportes avanzados, guardias y coberturas, multi-sucursal sin límite'], ['Corporativo', '$89', 'Mín. 6 · soporte prioritario, multi-coordinador sin límite']].map(([n, p, d]) => `<div><small>${n}</small><b>${p}</b><span>MXN por colaborador al mes + IVA</span><p>${d}</p></div>`).join('')}</div>
+  ${cta('Pruébalo 14 días gratis, sin tarjeta')}`));
 
 /* 20 · Contraportada QR */
 P.push(page(`
   <div class="cv-logo"><img src="${LOGOF}"></div>
   <div class="cv-tag">SIGUIENTE PASO</div>
   <h1 style="font-size:42px">Con menos horas, <span>cada minuto tiene que quedar registrado.</span></h1>
-  <p class="lead">Empieza hoy: prueba CheckONOFF 14 días gratis y únete a la comunidad de RRHH donde compartimos clases en vivo, plantillas y novedades de la reforma.</p>
+  <p class="lead">Empieza hoy: prueba CheckONOFF 14 días gratis y sin tarjeta, únete a la comunidad de RRHH o pregúntale a un asesor cómo conectar tu checador actual.</p>
   <div class="qrs">
-    <a href="https://checkonoff.mx"><img src="${QRWEB}"><b>Prueba 14 días gratis</b><span>checkonoff.mx</span></a>
-    <a href="${WA_LINK}"><img src="${QRWA}"><b>Comunidad por WhatsApp</b><span>Jornada 40 hrs MX · Comunidad RRHH</span></a>
+    <a href="${REG}"><img src="${QRWEB}"><b>Prueba 14 días gratis</b><span>Sin tarjeta · app.checkonoff.mx</span></a>
+    <a href="${WA_LINK}"><img src="${QRWA}"><b>Comunidad RRHH</b><span>Grupo de WhatsApp: clases y plantillas</span></a>
+    <a href="${ASESOR}"><img src="${QRASE}"><b>Habla con un asesor</b><span>WhatsApp +52 333 021 3199</span></a>
   </div>
   <div class="cv-art2">${svg(560, 230, `${persona({ x: 40, y: -20, s: .68, skin: 0, hair: '#5A3A22', shirt: GREEN, long: true, arm: 'up' })}${persona({ x: 200, y: -20, s: .68, skin: 2, shirt: BLUE, helmet: true, prop: 'phone' })}${persona({ x: 360, y: -20, s: .68, skin: 1, hair: '#24170F', shirt: '#FFFFFF', pants: NAVY, tie: true, arm: 'up' })}`)}</div>
   <div class="cv-foot">Escanea los códigos con la cámara de tu celular · Guía informativa, no sustituye asesoría legal o contable.</div>`, 'cover', false));
@@ -489,10 +492,11 @@ h4{font-size:14.5px;font-weight:800;margin-top:18px;display:flex;align-items:cen
 .tl{margin-top:10px}.ty{display:flex;gap:14px;padding:6px 0}.ty .dot{flex:none;width:16px;height:16px;border-radius:50%;margin-top:4px}
 .prod{display:grid;grid-template-columns:240px 1fr;gap:10px;align-items:center;margin-top:6px}
 .feats{display:grid;grid-template-columns:1fr 1fr;gap:9px}.feats>div{display:flex;gap:8px;background:${LIGHT};border-radius:12px;padding:10px}.feats span{font-size:20px}.feats b{font-size:12.5px}.feats p{font-size:11px;line-height:1.4;margin-top:2px;color:#2E3A55}
-.price{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}.price div{border:2px solid ${GREEN};border-radius:14px;padding:10px;text-align:center}.price small{font-size:11px;font-weight:700;color:#4A5670}.price b{display:block;font-size:28px;color:${GREEN}}.price span{font-size:10.5px;color:#4A5670}
-.qrs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}.qrs a{background:#fff;color:${NAVY};border-radius:20px;padding:18px;text-align:center}
-.qrs img{width:2in;height:2in}.qrs b{display:block;font-size:16px;margin-top:6px}.qrs span{font-size:11.5px;color:#4A5670}
+.price{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}.price div{border:2px solid ${GREEN};border-radius:14px;padding:10px;text-align:center}.price small{font-size:11px;font-weight:700;color:#4A5670}.price b{display:block;font-size:28px;color:${GREEN}}.price span{font-size:10.5px;color:#4A5670}.price p{font-size:10.5px;line-height:1.35;margin-top:6px;color:#2E3A55}
+.qrs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:22px}.qrs a{background:#fff;color:${NAVY};border-radius:20px;padding:18px;text-align:center}
+.qrs img{width:1.6in;height:1.6in}.qrs b{display:block;font-size:16px;margin-top:6px}.qrs span{font-size:11.5px;color:#4A5670}
 .scene{margin-top:14px}.scene svg{width:100%;height:auto;display:block}
+.tool{display:flex;gap:12px;align-items:center;margin-top:12px;background:${BLUE};color:#fff;border-radius:14px;padding:10px 16px}.tool span{font-size:26px}.tool b{font-size:13px;display:block}.tool small{font-size:11px;color:#BFD3EE}
 .foot{position:absolute;left:.62in;right:.62in;bottom:.4in;display:flex;justify-content:space-between;font-size:9.5px;color:#8A93A8;border-top:1px solid #E6EBF3;padding-top:8px}`;
 
 (async () => {
