@@ -157,8 +157,8 @@ def main():
         print(f"✅ Calendario válido: {len(calendario)} entradas.")
         return 0
     if not TOKEN:
-        print("❌ Falta el secreto META_PAGE_TOKEN.")
-        return 1
+        print("⏸️ Falta el secreto META_PAGE_TOKEN: no se publica nada hasta configurarlo (ver README).")
+        return 1 if "--verificar" in sys.argv else 0
 
     page_id, page_name, ig_id, ig_user = cuentas()
     print(f"Página de Facebook: {page_name} ({page_id})")
