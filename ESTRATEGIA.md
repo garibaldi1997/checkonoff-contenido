@@ -32,6 +32,11 @@
 | Guardados por carrusel | creciente semana a semana |
 | Clics a checkonoff.mx / mensajes "DEMO" | registrar cada semana |
 
+## Embudo de WhatsApp
+- Grupo **Jornada 40 hrs MX · Comunidad RRHH**: https://chat.whatsapp.com/DyoKg8wa7IQCWzT9UgOyge (solo admins escriben; guía PDF fijada).
+- Imán: `guias/guia-40-horas-checkonoff.pdf`. Usar este link en posts e historias de la reforma de 40 h.
+- Límite: 1,024 miembros por grupo; al acercarse, abrir grupo 2 o pasar a Comunidad.
+
 ## Aceleradores (fuera de este repositorio)
 - **Anuncios pagados** de "Enviar mensaje" a WhatsApp con la historia de la guía de 40 horas.
 - **Colaboraciones** con despachos contables y creadores de contenido de RRHH.
