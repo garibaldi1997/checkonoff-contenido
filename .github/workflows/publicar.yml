@@ -32,6 +32,7 @@ jobs:
           META_TOKEN_CHECKONOFF: ${{ secrets.META_TOKEN_CHECKONOFF }}
           GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
           RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}
+          VIDEO_BASE: https://cdn.jsdelivr.net/gh/${{ github.repository }}@${{ github.sha }}
           DRY_RUN: ${{ inputs.modo == 'simular' && '1' || '0' }}
         run: |
           if [ "${{ inputs.modo }}" = "verificar" ]; then

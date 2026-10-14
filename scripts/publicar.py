@@ -35,6 +35,7 @@ CUENTA_POR_DEFECTO = "checkonoff"
 
 GRAPH = os.environ.get("GRAPH_BASE", "https://graph.facebook.com") + "/" + os.environ.get("GRAPH_VERSION", "v26.0")
 RAW_BASE = os.environ.get("RAW_BASE", "").rstrip("/")
+VIDEO_BASE = os.environ.get("VIDEO_BASE", "").rstrip("/")  # CDN que entrega video/mp4 (jsDelivr)
 DRY_RUN = os.environ.get("DRY_RUN") == "1"
 
 
@@ -64,6 +65,21 @@ def api(token, metodo, ruta, **params):
 
 def url_publica(ruta_rel):
     return f"{RAW_BASE}/{urllib.parse.quote(ruta_rel)}"
+
+
+def url_video(ruta_rel):
+    """URL del video con tipo video/mp4. Prueba la CDN (y la calienta); si falla, usa la URL normal."""
+    if VIDEO_BASE:
+        url = f"{VIDEO_BASE}/{urllib.parse.quote(ruta_rel)}"
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, method="HEAD"), timeout=60) as r:
+                tipo = r.headers.get("Content-Type", "")
+            print(f"  video: {tipo} desde la CDN")
+            if tipo.startswith("video/"):
+                return url
+        except Exception as err:  # noqa: BLE001
+            print(f"  ⚠️ CDN no disponible ({err}); uso la URL normal")
+    return url_publica(ruta_rel)
 
 
 # ---------- Cuentas ----------
@@ -108,7 +124,7 @@ def ig_esperar(cuenta, contenedor, intentos=30):
 def ig_publicar(cuenta, ig_id, entrada):
     tipo, imgs, texto = entrada["tipo"], entrada.get("imagenes", []), entrada.get("texto", "")
     if tipo == "reel":
-        c = cuenta.api("POST", f"{ig_id}/media", media_type="REELS", video_url=url_publica(entrada["video"]),
+        c = cuenta.api("POST", f"{ig_id}/media", media_type="REELS", video_url=url_video(entrada["video"]),
                        caption=texto, share_to_feed="true")["id"]
         ig_esperar(cuenta, c, intentos=90)  # el video tarda más en procesarse
         return cuenta.api("POST", f"{ig_id}/media_publish", creation_id=c)["id"]
@@ -131,7 +147,7 @@ def ig_publicar(cuenta, ig_id, entrada):
 def fb_publicar(cuenta, page_id, entrada):
     tipo, imgs, texto = entrada["tipo"], entrada.get("imagenes", []), entrada.get("texto", "")
     if tipo == "reel":
-        return cuenta.api("POST", f"{page_id}/videos", file_url=url_publica(entrada["video"]), description=texto)["id"]
+        return cuenta.api("POST", f"{page_id}/videos", file_url=url_video(entrada["video"]), description=texto)["id"]
     if tipo == "historia":
         foto = cuenta.api("POST", f"{page_id}/photos", url=url_publica(imgs[0]), published="false")["id"]
         return cuenta.api("POST", f"{page_id}/photo_stories", photo_id=foto).get("post_id", foto)
