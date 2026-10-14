@@ -32,6 +32,14 @@
 | Guardados por carrusel | creciente semana a semana |
 | Clics a checkonoff.mx / mensajes "DEMO" | registrar cada semana |
 
+## Datos verificados de la reforma (fuente: DOF 1/05/2026, carpeta "Guia 40 hrs." en Drive)
+- Vigencia del decreto: 1 de mayo de 2026; mayo-diciembre 2026 es periodo de ajuste.
+- Jornada máxima semanal: 48 (2026), 46 (2027), 44 (2028), 42 (2029), 40 (2030); cada 1 de enero. Sin reducir sueldos ni prestaciones.
+- Tiempo extra (Arts. 66 y 68): al doble hasta 9 h/sem (2026-2027), 10 (2028), 11 (2029), 12 (2030); máx. 4 h al día en máx. 4 días; al triple solo 4 h más por semana; ordinaria + extra ≤ 12 h al día. Ya NO aplica la regla de "3 horas, 3 veces".
+- Art. 69: al menos 1 día de descanso por cada 6 de trabajo.
+- Art. 132 fr. XXXIV: registro electrónico obligatorio de la jornada (inicio y fin). Reglas de la STPS desde el 1/01/2027. Multa 250-5,000 UMA (Art. 994 fr. IV Bis). Prueba plena si fue acordado entre empresa y trabajador.
+- Temas pendientes para contenido: acuerdo de registro electrónico, aviso de privacidad para biométricos, tope de 56 h a la semana en 2030, conciliación registro-nómina.
+
 ## Embudo de WhatsApp
 - Grupo **Jornada 40 hrs MX · Comunidad RRHH**: https://chat.whatsapp.com/DyoKg8wa7IQCWzT9UgOyge (solo admins escriben; guía PDF fijada).
 - Imán: `guias/guia-40-horas-checkonoff.pdf`. Usar este link en posts e historias de la reforma de 40 h.
