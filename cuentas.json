@@ -1,6 +1,10 @@
 {
   "checkonoff": {
     "nombre": "CheckONOFF",
-    "secreto": "META_TOKEN_CHECKONOFF"
+    "secreto": "META_TOKEN_CHECKONOFF",
+    "linkedin": {
+      "secreto": "LINKEDIN_TOKEN_GARIBALDI",
+      "nota": "Perfil personal de Garibaldi (app Publiqo). Al aprobar Community Management, agregar una cuenta con 'organizacion': '144005971'."
+    }
   }
 }

@@ -26,6 +26,9 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from linkedin import CuentaLinkedIn, ErrorLinkedIn, texto_linkedin  # noqa: E402
+
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CALENDARIO = os.path.join(RAIZ, "calendario.json")
 CUENTAS = os.path.join(RAIZ, "cuentas.json")
@@ -103,9 +106,12 @@ def cargar_cuentas():
     config = cargar(CUENTAS, {})
     cuentas = {}
     for nombre, c in config.items():
-        token = os.environ.get(c["secreto"], "").strip()
-        if token:
+        token = os.environ.get(c.get("secreto", ""), "").strip()
+        li = c.get("linkedin") or {}
+        li_token = os.environ.get(li.get("secreto", ""), "").strip()
+        if token or li_token:
             cuentas[nombre] = Cuenta(nombre, token)
+            cuentas[nombre].li = CuentaLinkedIn(li_token, li.get("organizacion")) if li_token else None
     return config, cuentas
 
 
@@ -221,13 +227,21 @@ def main():
                 print(f"⏸️ {nombre}: falta el secreto {c['secreto']}")
                 malos += 1
                 continue
-            try:
-                page_id, page_name, ig_id, ig_user = cuentas[nombre].datos()
-                ig = f"Instagram @{ig_user}" if ig_id else "⚠️ sin Instagram profesional vinculado"
-                print(f"✅ {nombre}: página «{page_name}» · {ig}")
-            except ErrorMeta as err:
-                print(f"❌ {nombre}: {err}")
-                malos += 1
+            cu = cuentas[nombre]
+            if cu.token:
+                try:
+                    page_id, page_name, ig_id, ig_user = cu.datos()
+                    ig = f"Instagram @{ig_user}" if ig_id else "⚠️ sin Instagram profesional vinculado"
+                    print(f"✅ {nombre}: página «{page_name}» · {ig}")
+                except ErrorMeta as err:
+                    print(f"❌ {nombre}: {err}")
+                    malos += 1
+            if cu.li:
+                try:
+                    print(f"✅ {nombre}: LinkedIn {cu.li.autor()} {getattr(cu.li, 'nombre', '')}")
+                except ErrorLinkedIn as err:
+                    print(f"❌ {nombre} LinkedIn: {err}")
+                    malos += 1
         return 1 if malos else 0
 
     if not cuentas:
@@ -254,6 +268,24 @@ def main():
             if DRY_RUN:
                 continue
             try:
+                if red == "linkedin":
+                    if e["tipo"] == "historia":
+                        hecho[red] = {"omitido": "LinkedIn no tiene historias"}
+                        continue
+                    if not cuenta.li:
+                        print("  ⏸️ sin token de LinkedIn")
+                        continue
+                    pid = cuenta.li.publicar(
+                        e.get("texto_linkedin") or texto_linkedin(e.get("texto", "")),
+                        imagenes=[os.path.join(RAIZ, i) for i in e.get("imagenes", [])],
+                        video=os.path.join(RAIZ, e["video"]) if e["tipo"] == "reel" else None)
+                    hecho[red] = {"id": pid, "fecha": ahora.isoformat(timespec="seconds")}
+                    print(f"  ✅ publicado ({pid})")
+                    guardar(PUBLICADOS, publicados)
+                    continue
+                if not cuenta.token:
+                    print("  ⏸️ sin token de Meta")
+                    continue
                 page_id, _, ig_id, _ = cuenta.datos()
                 if red == "instagram":
                     if not ig_id:
@@ -264,7 +296,7 @@ def main():
                 hecho[red] = {"id": pid, "fecha": ahora.isoformat(timespec="seconds")}
                 print(f"  ✅ publicado ({pid})")
                 guardar(PUBLICADOS, publicados)
-            except ErrorMeta as err:
+            except (ErrorMeta, ErrorLinkedIn) as err:
                 fallos += 1
                 print(f"  ❌ {err}")
         if not hecho:
