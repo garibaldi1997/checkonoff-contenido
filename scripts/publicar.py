@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 """Publica en Facebook e Instagram las entradas del calendario cuya hora ya llegó.
 
+Admite varias páginas (cuentas). Cada cuenta se declara en cuentas.json con el
+nombre del secreto de GitHub que guarda su token de página.
+
 Usa solo la biblioteca estándar de Python y la API Graph de Meta.
 
 Variables de entorno:
-  META_PAGE_TOKEN  Token de acceso de la página de Facebook (obligatorio).
+  SECRETOS_JSON    Todos los secretos del repositorio en JSON (los pasa el workflow).
+  META_PAGE_TOKEN  Alternativa: token directo de la cuenta "checkonoff".
   GRAPH_VERSION    Versión de la API Graph (por defecto v23.0).
   RAW_BASE         URL pública base de los archivos del repositorio.
   DRY_RUN          "1" para simular sin publicar.
 
 Uso:
-  python scripts/publicar.py            # publica lo pendiente
-  python scripts/publicar.py --verificar  # comprueba el token y las cuentas
+  python scripts/publicar.py              # publica lo pendiente
+  python scripts/publicar.py --verificar  # comprueba los tokens de todas las cuentas
+  python scripts/publicar.py --validar    # revisa calendario e imágenes (sin red)
 """
 import json
 import os
@@ -24,11 +29,12 @@ from datetime import datetime, timedelta, timezone
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CALENDARIO = os.path.join(RAIZ, "calendario.json")
+CUENTAS = os.path.join(RAIZ, "cuentas.json")
 PUBLICADOS = os.path.join(RAIZ, "estado", "publicados.json")
 VENTANA_ATRASO = timedelta(hours=36)  # no publicar entradas viejas olvidadas
+CUENTA_POR_DEFECTO = "checkonoff"
 
 GRAPH = os.environ.get("GRAPH_BASE", "https://graph.facebook.com") + "/" + os.environ.get("GRAPH_VERSION", "v23.0")
-TOKEN = os.environ.get("META_PAGE_TOKEN", "")
 RAW_BASE = os.environ.get("RAW_BASE", "").rstrip("/")
 DRY_RUN = os.environ.get("DRY_RUN") == "1"
 
@@ -37,8 +43,8 @@ class ErrorMeta(Exception):
     pass
 
 
-def api(metodo, ruta, **params):
-    params["access_token"] = TOKEN
+def api(token, metodo, ruta, **params):
+    params["access_token"] = token
     datos = urllib.parse.urlencode(params).encode()
     url = f"{GRAPH}/{ruta}"
     if metodo == "GET":
@@ -57,20 +63,53 @@ def api(metodo, ruta, **params):
         raise ErrorMeta(f"{metodo} {ruta}: {msg}") from None
 
 
-def cuentas():
-    pagina = api("GET", "me", fields="id,name,instagram_business_account{id,username}")
-    ig = pagina.get("instagram_business_account") or {}
-    return pagina["id"], pagina["name"], ig.get("id"), ig.get("username")
-
-
 def url_publica(ruta_rel):
     return f"{RAW_BASE}/{urllib.parse.quote(ruta_rel)}"
 
 
+# ---------- Cuentas ----------
+class Cuenta:
+    def __init__(self, nombre, token):
+        self.nombre, self.token = nombre, token
+        self._datos = None
+
+    def api(self, metodo, ruta, **params):
+        return api(self.token, metodo, ruta, **params)
+
+    def datos(self):
+        if self._datos is None:
+            p = self.api("GET", "me", fields="id,name,instagram_business_account{id,username}")
+            ig = p.get("instagram_business_account") or {}
+            self._datos = (p["id"], p["name"], ig.get("id"), ig.get("username"))
+        return self._datos
+
+
+def tokens_disponibles():
+    secretos = {}
+    try:
+        secretos = json.loads(os.environ.get("SECRETOS_JSON") or "{}")
+    except json.JSONDecodeError:
+        pass
+    if os.environ.get("META_PAGE_TOKEN"):
+        secretos.setdefault("META_PAGE_TOKEN", os.environ["META_PAGE_TOKEN"])
+    return secretos
+
+
+def cargar_cuentas():
+    config = cargar(CUENTAS, {})
+    secretos = tokens_disponibles()
+    cuentas = {}
+    for nombre, c in config.items():
+        token = secretos.get(c["secreto"]) or (secretos.get("META_PAGE_TOKEN") if nombre == CUENTA_POR_DEFECTO else None)
+        if token:
+            cuentas[nombre] = Cuenta(nombre, token)
+    return config, cuentas
+
+
 # ---------- Instagram ----------
-def ig_esperar(contenedor):
+def ig_esperar(cuenta, contenedor):
     for _ in range(30):
-        estado = api("GET", contenedor, fields="status_code").get("status_code")
+        estado = cuenta.api("GET", contenedor, fields="status_code").get("status_code")
         if estado == "FINISHED":
             return
         if estado in ("ERROR", "EXPIRED"):
@@ -79,39 +118,39 @@ def ig_esperar(contenedor):
     raise ErrorMeta(f"Instagram tardó demasiado en procesar {contenedor}")
 
 
-def ig_publicar(ig_id, entrada):
+def ig_publicar(cuenta, ig_id, entrada):
     tipo, imgs, texto = entrada["tipo"], entrada["imagenes"], entrada.get("texto", "")
     if tipo == "historia":
-        c = api("POST", f"{ig_id}/media", image_url=url_publica(imgs[0]), media_type="STORIES")["id"]
+        c = cuenta.api("POST", f"{ig_id}/media", image_url=url_publica(imgs[0]), media_type="STORIES")["id"]
     elif tipo == "carrusel":
         hijos = []
         for img in imgs[:10]:
-            h = api("POST", f"{ig_id}/media", image_url=url_publica(img), is_carousel_item="true")["id"]
-            ig_esperar(h)
+            h = cuenta.api("POST", f"{ig_id}/media", image_url=url_publica(img), is_carousel_item="true")["id"]
+            ig_esperar(cuenta, h)
             hijos.append(h)
-        c = api("POST", f"{ig_id}/media", media_type="CAROUSEL", children=",".join(hijos), caption=texto)["id"]
+        c = cuenta.api("POST", f"{ig_id}/media", media_type="CAROUSEL", children=",".join(hijos), caption=texto)["id"]
     else:
-        c = api("POST", f"{ig_id}/media", image_url=url_publica(imgs[0]), caption=texto)["id"]
-    ig_esperar(c)
-    return api("POST", f"{ig_id}/media_publish", creation_id=c)["id"]
+        c = cuenta.api("POST", f"{ig_id}/media", image_url=url_publica(imgs[0]), caption=texto)["id"]
+    ig_esperar(cuenta, c)
+    return cuenta.api("POST", f"{ig_id}/media_publish", creation_id=c)["id"]
 
 
 # ---------- Facebook ----------
-def fb_publicar(page_id, entrada):
+def fb_publicar(cuenta, page_id, entrada):
     tipo, imgs, texto = entrada["tipo"], entrada["imagenes"], entrada.get("texto", "")
     if tipo == "historia":
-        foto = api("POST", f"{page_id}/photos", url=url_publica(imgs[0]), published="false")["id"]
-        return api("POST", f"{page_id}/photo_stories", photo_id=foto).get("post_id", foto)
+        foto = cuenta.api("POST", f"{page_id}/photos", url=url_publica(imgs[0]), published="false")["id"]
+        return cuenta.api("POST", f"{page_id}/photo_stories", photo_id=foto).get("post_id", foto)
     if len(imgs) == 1:
-        return api("POST", f"{page_id}/photos", url=url_publica(imgs[0]), caption=texto)["id"]
+        return cuenta.api("POST", f"{page_id}/photos", url=url_publica(imgs[0]), caption=texto)["id"]
     adjuntos = {}
     for i, img in enumerate(imgs):
-        fid = api("POST", f"{page_id}/photos", url=url_publica(img), published="false")["id"]
+        fid = cuenta.api("POST", f"{page_id}/photos", url=url_publica(img), published="false")["id"]
         adjuntos[f"attached_media[{i}]"] = json.dumps({"media_fbid": fid})
-    return api("POST", f"{page_id}/feed", message=texto, **adjuntos)["id"]
+    return cuenta.api("POST", f"{page_id}/feed", message=texto, **adjuntos)["id"]
 
 
-# ---------- Ciclo principal ----------
+# ---------- Utilidades ----------
 def cargar(ruta, defecto):
     if not os.path.exists(ruta):
         return defecto
@@ -126,7 +165,7 @@ def guardar(ruta, datos):
         f.write("\n")
 
 
-def validar(calendario):
+def validar(calendario, config):
     errores = []
     ids = set()
     for e in calendario:
@@ -134,6 +173,9 @@ def validar(calendario):
             errores.append(f"id repetido: {e['id']}")
         ids.add(e["id"])
         datetime.fromisoformat(e["fecha"])
+        cuenta = e.get("cuenta", CUENTA_POR_DEFECTO)
+        if cuenta not in config:
+            errores.append(f"{e['id']}: la cuenta '{cuenta}' no está en cuentas.json")
         if e["tipo"] not in ("imagen", "carrusel", "historia"):
             errores.append(f"{e['id']}: tipo inválido {e['tipo']}")
         for img in e["imagenes"]:
@@ -146,25 +188,36 @@ def validar(calendario):
     return errores
 
 
+# ---------- Ciclo principal ----------
 def main():
     calendario = cargar(CALENDARIO, [])
-    errores = validar(calendario)
+    config, cuentas = cargar_cuentas()
+    errores = validar(calendario, config)
     if errores:
         print("❌ El calendario tiene errores:\n  " + "\n  ".join(errores))
         return 1
-
     if "--validar" in sys.argv:
-        print(f"✅ Calendario válido: {len(calendario)} entradas.")
+        print(f"✅ Calendario válido: {len(calendario)} entradas para {len(config)} cuenta(s).")
         return 0
-    if not TOKEN:
-        print("⏸️ Falta el secreto META_PAGE_TOKEN: no se publica nada hasta configurarlo (ver README).")
-        return 1 if "--verificar" in sys.argv else 0
 
-    page_id, page_name, ig_id, ig_user = cuentas()
-    print(f"Página de Facebook: {page_name} ({page_id})")
-    print(f"Instagram: @{ig_user} ({ig_id})" if ig_id else "⚠️ La página no tiene una cuenta de Instagram profesional vinculada.")
     if "--verificar" in sys.argv:
-        print("✅ Token válido. Imagen de prueba:", url_publica(calendario[0]["imagenes"][0]) if calendario else "-")
+        malos = 0
+        for nombre, c in config.items():
+            if nombre not in cuentas:
+                print(f"⏸️ {nombre}: falta el secreto {c['secreto']}")
+                malos += 1
+                continue
+            try:
+                page_id, page_name, ig_id, ig_user = cuentas[nombre].datos()
+                ig = f"Instagram @{ig_user}" if ig_id else "⚠️ sin Instagram profesional vinculado"
+                print(f"✅ {nombre}: página «{page_name}» · {ig}")
+            except ErrorMeta as err:
+                print(f"❌ {nombre}: {err}")
+                malos += 1
+        return 1 if malos else 0
+
+    if not cuentas:
+        print("⏸️ No hay tokens configurados: no se publica nada (ver README).")
         return 0
 
     publicados = cargar(PUBLICADOS, {})
@@ -174,20 +227,26 @@ def main():
         fecha = datetime.fromisoformat(e["fecha"])
         if fecha > ahora or ahora - fecha > VENTANA_ATRASO:
             continue
+        nombre = e.get("cuenta", CUENTA_POR_DEFECTO)
+        cuenta = cuentas.get(nombre)
+        if not cuenta:
+            print(f"⏸️ {e['id']}: la cuenta '{nombre}' aún no tiene token")
+            continue
         hecho = publicados.setdefault(e["id"], {})
         for red in e.get("redes", ["instagram", "facebook"]):
             if red in hecho:
                 continue
-            print(f"→ {e['id']} en {red} ({e['tipo']}, {len(e['imagenes'])} imagen/es)")
+            print(f"→ [{nombre}] {e['id']} en {red} ({e['tipo']}, {len(e['imagenes'])} imagen/es)")
             if DRY_RUN:
                 continue
             try:
+                page_id, _, ig_id, _ = cuenta.datos()
                 if red == "instagram":
                     if not ig_id:
                         raise ErrorMeta("sin cuenta de Instagram vinculada")
-                    pid = ig_publicar(ig_id, e)
+                    pid = ig_publicar(cuenta, ig_id, e)
                 else:
-                    pid = fb_publicar(page_id, e)
+                    pid = fb_publicar(cuenta, page_id, e)
                 hecho[red] = {"id": pid, "fecha": ahora.isoformat(timespec="seconds")}
                 print(f"  ✅ publicado ({pid})")
                 guardar(PUBLICADOS, publicados)

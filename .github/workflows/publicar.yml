@@ -28,7 +28,7 @@ jobs:
 
       - name: Publicar
         env:
-          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          SECRETOS_JSON: ${{ toJSON(secrets) }}
           GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v23.0' }}
           RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}
           DRY_RUN: ${{ inputs.modo == 'simular' && '1' || '0' }}

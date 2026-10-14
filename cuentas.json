@@ -1,0 +1,6 @@
+{
+  "checkonoff": {
+    "nombre": "CheckONOFF",
+    "secreto": "META_TOKEN_CHECKONOFF"
+  }
+}

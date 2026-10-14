@@ -1,9 +1,10 @@
-# CheckONOFF · Publicación automática gratis
+# Publicación automática gratis (multi-página)
 
-Este repositorio publica solo el contenido de CheckONOFF en **Instagram** y **Facebook**, sin pagar ninguna herramienta:
+Este repositorio publica solo el contenido de **una o varias páginas** (CheckONOFF y otros proyectos) en **Instagram** y **Facebook**, sin pagar ninguna herramienta:
 
-- `calendario.json` → qué se publica, cuándo (hora de Ciudad de México) y con qué texto.
-- `contenido/` → las imágenes (JPG).
+- `cuentas.json` → las páginas que maneja el sistema y el nombre del secreto con su token.
+- `calendario.json` → qué se publica, en qué cuenta, cuándo (hora de Ciudad de México) y con qué texto.
+- `contenido/<cuenta>/` → las imágenes (JPG) de cada cuenta.
 - `.github/workflows/publicar.yml` → GitHub Actions revisa el calendario cada 15 minutos y publica lo que toque con la API oficial de Meta.
 - `estado/publicados.json` → registro de lo ya publicado (evita duplicados).
 
@@ -31,15 +32,30 @@ Tipos de publicación: `imagen`, `carrusel` (2 a 10 imágenes) e `historia`.
 3. Pulsa **Generate Access Token** y acepta (selecciona la página Checkonoff y su Instagram).
 4. Copia el token y ábrelo en el **Depurador de tokens**: <https://developers.facebook.com/tools/debug/accesstoken> → **Ampliar token de acceso** → copia el token largo.
 5. Vuelve al Explorador, pega el token largo y consulta `me/accounts`.
-6. En la respuesta, copia el `access_token` de **Checkonoff**. Ese es el **token de página** (por lo general no caduca).
+6. En la respuesta aparece cada página que administras con su propio `access_token`. Ese es el **token de página** (por lo general no caduca).
 
 ### 4. Guardarlo en GitHub
 1. En este repositorio: **Settings → Secrets and variables → Actions → New repository secret**
-2. Nombre: `META_PAGE_TOKEN` · Valor: el token de página.
+2. Nombre: el que diga `cuentas.json` para esa página (para CheckONOFF: `META_TOKEN_CHECKONOFF`) · Valor: su token de página.
 
 ### 5. Probar
 **Actions → Publicar en redes → Run workflow** → modo `verificar`.
-Debe mostrar el nombre de la página y el usuario de Instagram. ✅ Listo: desde ese momento se publica solo.
+Debe mostrar cada cuenta con su página y su usuario de Instagram. ✅ Listo: desde ese momento se publica solo.
+
+---
+
+## Agregar otra página o proyecto
+1. En el paso 3, al generar el token, marca también esa página y su Instagram (debes ser administrador de la página).
+2. Agrega la cuenta en `cuentas.json`:
+   ```json
+   "dieloxia": { "nombre": "Dieloxia", "secreto": "META_TOKEN_DIELOXIA" }
+   ```
+3. Crea el secreto `META_TOKEN_DIELOXIA` con el token de esa página.
+4. Sus publicaciones van en `contenido/dieloxia/` y en el calendario con `"cuenta": "dieloxia"`.
+
+Las cuentas sin token simplemente se saltan (no generan errores).
+
+> **Páginas de clientes:** si te agregan como administrador o editor de su página, funciona igual. Para que clientes se conecten solos a la app hace falta la **revisión de la app** y la **verificación del negocio** en Meta.
 
 ---
 
@@ -51,10 +67,11 @@ Ejemplo de entrada:
 ```json
 {
   "id": "2026-10-15-quincena",
+  "cuenta": "checkonoff",
   "fecha": "2026-10-15T10:00:00-06:00",
   "tipo": "carrusel",
   "redes": ["instagram", "facebook"],
-  "imagenes": ["contenido/2026-10-15-quincena/01.jpg", "contenido/2026-10-15-quincena/02.jpg"],
+  "imagenes": ["contenido/checkonoff/2026-10-15-quincena/01.jpg", "contenido/checkonoff/2026-10-15-quincena/02.jpg"],
   "texto": "Texto con #hashtags"
 }
 ```
