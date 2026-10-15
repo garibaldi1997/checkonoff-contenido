@@ -1,4 +1,5 @@
-// Estándar premium: foto real a sangre, titular grande, burbujas, poco texto.
+// Estándar premium (ref. Mandü / Humand): fotos claras a sangre, caja de titular,
+// burbujas tipo chat con colita, logo pequeño y mucho aire.
 const { chromium } = require('/opt/node-tools/node_modules/playwright');
 const fs = require('fs'), path = require('path');
 const D = __dirname;
@@ -8,112 +9,90 @@ const FOTO = n => b64(`hq/${n}.jpg`, 'image/jpeg');
 const QR = b64('qr_registro.png', 'image/png');
 const FONTS = [400, 500, 600, 700, 800].map(w => `@font-face{font-family:IT;font-weight:${w};src:url(${b64(`fonts_it_${w}.ttf`, 'font/ttf')})}`).join('');
 const OUT = path.join(D, 'out_premium'); fs.mkdirSync(OUT, { recursive: true });
-const C = { navy: '#111C3B', g: '#34B614', lime: '#7DD818', r: '#E21B20', b: '#0A4E94' };
+const C = { navy: '#111C3B', g: '#34B614', lime: '#7DD818', mint: '#D9F5CC', r: '#E21B20', b: '#0A4E94' };
 
 const CSS = `${FONTS}
 *{box-sizing:border-box;margin:0;padding:0}body{font-family:IT,sans-serif;-webkit-font-smoothing:antialiased}
-.f{position:relative;width:1080px;height:1350px;overflow:hidden;color:#fff;background:${C.navy}}
-.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.sh{position:absolute;inset:0}
-.top{position:absolute;top:56px;left:72px;right:72px;display:flex;justify-content:space-between;align-items:center;z-index:5}
-.brand{display:flex;align-items:center;gap:14px;font-weight:700;font-size:28px;letter-spacing:-.01em}
-.brand .tile{width:50px;height:50px;border-radius:13px;background:#fff;display:grid;place-items:center}.brand img{width:38px}
-.cnt{font-size:26px;font-weight:600;letter-spacing:.08em;opacity:.85}
-.body{position:absolute;left:72px;right:72px;z-index:4}
-.h{font-weight:800;letter-spacing:-.022em;line-height:1.02}
-.k{font-size:26px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
-.bar{width:120px;height:10px;border-radius:5px}
-.swipe{display:inline-flex;align-items:center;gap:12px;font-size:28px;font-weight:700;padding:16px 28px;border-radius:99px;background:rgba(255,255,255,.14);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.25)}
-.nt{position:absolute;z-index:3;display:flex;gap:18px;align-items:center;background:rgba(255,255,255,.93);color:${C.navy};border-radius:26px;padding:20px 26px;box-shadow:0 20px 50px rgba(0,0,0,.35);backdrop-filter:blur(14px)}
-.nt .ic{flex:none;width:58px;height:58px;border-radius:15px;display:grid;place-items:center;font-size:30px;color:#fff;font-weight:800}
-.nt b{display:block;font-size:26px;font-weight:700}.nt span{font-size:23px;color:#4A556F}
-.nt i{font-style:normal;font-size:20px;color:#8A93A8;margin-left:auto;align-self:flex-start;padding-left:14px}
-.foot{position:absolute;bottom:52px;left:72px;right:72px;display:flex;justify-content:space-between;font-size:22px;opacity:.7;z-index:5}
+.f{position:relative;width:1080px;height:1350px;overflow:hidden;background:#EEF1F4;color:${C.navy}}
+.ph{position:absolute;left:0;width:1080px}
+.box{position:absolute;left:64px;right:64px;border-radius:40px;padding:44px 52px;text-align:center;font-weight:700;letter-spacing:-.015em;line-height:1.12;box-shadow:0 18px 40px rgba(17,28,59,.18)}
+.bb{position:absolute;font-weight:700;font-size:36px;line-height:1.2;letter-spacing:-.01em;padding:22px 32px;border-radius:26px;box-shadow:0 14px 34px rgba(17,28,59,.22)}
+.bb:after{content:"";position:absolute;bottom:-14px;width:30px;height:30px;background:inherit;transform:rotate(45deg);border-radius:4px}
+.bb.l:after{left:34px}.bb.r:after{right:34px}
+.n{background:${C.navy};color:#fff}.m{background:${C.mint};color:${C.navy}}.w{background:#fff;color:${C.navy}}
+.ast{position:absolute;width:90px;height:90px}.ast i{position:absolute;left:37px;top:0;width:16px;height:90px;border-radius:8px;background:${C.lime}}
+.ast i:nth-child(2){transform:rotate(60deg)}.ast i:nth-child(3){transform:rotate(-60deg)}
+.logo{position:absolute;right:56px;bottom:52px;display:flex;align-items:center;gap:12px;font-weight:700;font-size:26px;padding:10px 20px 10px 10px;border-radius:99px;background:rgba(255,255,255,.92);color:${C.navy}}
+.logo img{width:40px;height:40px}
+.sw{position:absolute;left:64px;bottom:56px;font-size:28px;font-weight:700;padding:16px 28px;border-radius:99px;background:${C.navy};color:#fff}
 `;
-const top = (n, t, dark) => `<div class="top" style="color:${dark ? C.navy : '#fff'}"><div class="brand"><div class="tile" style="${dark ? `background:${C.navy}` : ''}"><img src="${LOGO}"></div>CheckONOFF</div><div class="cnt">${String(n).padStart(2, '0')} / ${String(t).padStart(2, '0')}</div></div>`;
-const nt = (x, y, rot, ic, col, t, s, h) => `<div class="nt" style="left:${x}px;top:${y}px;transform:rotate(${rot}deg)"><div class="ic" style="background:${col}">${ic}</div><div><b>${t}</b><span>${s}</span></div><i>${h}</i></div>`;
+const ast = (x, y, s = 1) => `<div class="ast" style="left:${x}px;top:${y}px;transform:scale(${s})"><i></i><i></i><i></i></div>`;
+const bb = (x, y, cls, t, side = 'l') => `<div class="bb ${cls} ${side}" style="left:${x}px;top:${y}px">${t}</div>`;
+const logo = `<div class="logo"><img src="${LOGO}">CheckONOFF</div>`;
+const ph = (n, top, extra = '') => `<img class="ph" src="${FOTO(n)}" style="top:${top}px;${extra}">`;
 const S = [];
 const add = (n, html) => S.push([n, html]);
+const G = s => `<span style="color:${C.lime}">${s}</span>`;
+const GD = s => `<span style="color:${C.g}">${s}</span>`;
 
-// ── Carrusel: cierre de quincena (6) ──
-const T = 6;
-add('q_01', `<img class="ph" src="${FOTO('estres2')}" style="object-position:50% 75%">
-<div class="sh" style="background:linear-gradient(180deg,rgba(17,28,59,.55) 0%,rgba(17,28,59,0) 28%,rgba(17,28,59,.2) 45%,rgba(17,28,59,.96) 72%)"></div>
-${top(1, T)}
-${nt(440, 170, 2, '💬', C.g, 'Coordinación · 47 sin leer', '"¿Ya quedó la asistencia?"', 'ahora')}
-${nt(500, 330, -2, 'X', '#1D6F42', 'Asistencia_FINAL_v7.xlsx', 'Se modificó hace 2 min', '22:40')}
-${nt(560, 485, 1.5, '!', C.r, '3 sucursales sin reporte', 'Cierre: mañana 9:00', 'jue')}
-<div class="body" style="bottom:120px">
-  <div class="bar" style="background:${C.r}"></div>
-  <div class="h" style="font-size:96px;margin-top:34px">Si tu cierre de quincena se ve así,</div>
-  <div class="h" style="font-size:96px;color:${C.lime}">es momento de un cambio.</div>
-  <div style="margin-top:44px"><span class="swipe">Desliza →</span></div>
-</div>`);
-add('q_02', `<div class="sh" style="background:${C.navy}"></div>
-${top(2, T)}
-<div class="body" style="top:50%;transform:translateY(-46%)">
-  <div class="k" style="color:${C.lime}">El problema</div>
-  <div class="h" style="font-size:92px;margin-top:28px">No es tu equipo.<br><span style="color:${C.lime}">Es el proceso.</span></div>
-  <div style="margin-top:80px;border-top:2px solid rgba(255,255,255,.14)">
-    ${[['01', 'Revisar checadas a mano, sucursal por sucursal'], ['02', 'Corregir retardos y faltas uno por uno'], ['03', 'Calcular horas extra con fórmulas que nadie entiende']].map(([n, t]) => `<div style="display:flex;gap:36px;align-items:baseline;padding:34px 0;border-bottom:2px solid rgba(255,255,255,.14)"><span style="font-size:30px;font-weight:700;color:${C.lime}">${n}</span><span style="font-size:44px;font-weight:600;line-height:1.2">${t}</span></div>`).join('')}
-  </div>
-</div>`);
-add('q_03', `<div class="sh" style="background:#fff"></div>
-${top(3, T, true)}
-<div class="body" style="top:50%;transform:translateY(-46%);color:${C.navy}">
-  <div class="k" style="color:${C.r}">Y desde 2026</div>
-  <div class="h" style="font-size:84px;margin-top:28px">La reforma cambió las reglas del tiempo extra.</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:70px">
-    ${[['4 h', 'máximo de extras dobles por día'], ['4 días', 'máximo con extras por semana'], ['4 h', 'tope de triples a la semana'], ['12 h', 'tope total de trabajo por día']].map(([n, t], i) => `<div style="border-radius:28px;padding:38px 36px;background:${i === 3 ? C.navy : '#F2F6FB'};color:${i === 3 ? '#fff' : C.navy}"><div style="font-size:84px;font-weight:800;letter-spacing:-.04em;color:${i === 3 ? C.lime : C.b}">${n}</div><div style="font-size:32px;font-weight:500;margin-top:8px;line-height:1.25">${t}</div></div>`).join('')}
-  </div>
-  <div style="font-size:24px;margin-top:34px;color:#5B6782">Arts. 66 y 68 LFT · DOF 01/05/2026</div>
-</div>`);
-add('q_04', `<img class="ph" src="${FOTO('feliz')}" style="object-position:62% 40%">
-<div class="sh" style="background:linear-gradient(180deg,rgba(17,28,59,.5) 0%,rgba(17,28,59,0) 25%,rgba(17,28,59,0) 42%,rgba(17,28,59,.95) 74%)"></div>
-${top(4, T)}
-${nt(80, 200, -1.5, '✓', C.g, 'Asistencia de 3 sucursales', 'Lista y sin capturas', '17:02')}
-${nt(330, 345, 1.5, '✓', C.b, 'Extras dobles y triples', 'Calculadas con la ley 2026', '17:03')}
-${nt(150, 490, -1, '✓', C.navy, 'Pre-nómina en Excel', 'Exportada', '17:05')}
-<div class="body" style="bottom:120px">
-  <div class="bar" style="background:${C.g}"></div>
-  <div class="h" style="font-size:96px;margin-top:34px">Así se ve un cierre<br>con <span style="color:${C.lime}">CheckONOFF.</span></div>
-  <div style="font-size:38px;font-weight:500;margin-top:28px;opacity:.9">Viernes, 17:05. Y te vas a casa.</div>
-</div>`);
-add('q_05', `<div class="sh" style="background:${C.navy}"></div>
-${top(5, T)}
-<div class="body" style="top:50%;transform:translateY(-46%)">
-  <div class="k" style="color:${C.lime}">Cómo funciona</div>
-  <div class="h" style="font-size:88px;margin-top:28px">3 pasos.<br>Cero capturas.</div>
-  <div style="margin-top:70px;display:flex;flex-direction:column;gap:22px">
-    ${[[C.g, '1', 'Tu equipo checa', 'App con foto y geocerca, biométrico o WhatsApp'], [C.b, '2', 'CheckONOFF calcula', 'Retardos, faltas, extras dobles y triples'], [C.r, '3', 'Tú revisas y exportas', 'Pre-nómina lista para tu sistema de nómina']].map(([c, n, t, s]) => `<div style="display:flex;gap:32px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:28px;padding:32px 36px"><div style="flex:none;width:84px;height:84px;border-radius:50%;background:${c};display:grid;place-items:center;font-size:42px;font-weight:800">${n}</div><div><div style="font-size:44px;font-weight:700;letter-spacing:-.02em">${t}</div><div style="font-size:30px;opacity:.72;margin-top:6px">${s}</div></div></div>`).join('')}
-  </div>
-</div>`);
-add('q_06', `<div class="sh" style="background:${C.g}"></div>
-<div class="sh" style="background:radial-gradient(circle at 85% 10%,${C.lime} 0,rgba(125,216,24,0) 45%)"></div>
-${top(6, T)}
-<div class="body" style="top:260px">
-  <div class="h" style="font-size:112px">Cierra la quincena en minutos,</div>
-  <div class="h" style="font-size:112px;color:${C.navy}">no en noches.</div>
-  <div style="display:flex;gap:40px;align-items:center;margin-top:90px">
-    <div style="background:#fff;border-radius:28px;padding:18px"><img src="${QR}" style="width:220px;height:220px;image-rendering:pixelated;display:block"></div>
-    <div>
-      <div style="display:inline-block;background:${C.navy};color:#fff;font-size:40px;font-weight:700;padding:26px 40px;border-radius:99px">Prueba 14 días gratis →</div>
-      <div style="font-size:30px;font-weight:600;margin-top:22px">Sin tarjeta · checkonoff.mx</div>
-    </div>
-  </div>
+// 1 · Portada (Mandü): foto clara, caja de titular, burbujas del dolor
+add('q_01', `${ph('estres_luz', -40)}
+<div class="box n" style="top:60px;font-size:62px">Si tu cierre de ${G('quincena')} se ve así, es momento de un cambio</div>
+${ast(900, 360, .8)}
+${bb(600, 560, 'n r', '47 mensajes<br>sin leer.', 'r')}
+${bb(560, 760, 'm r', 'Asistencia_FINAL_v7.xlsx', 'r')}
+${bb(44, 1000, 'n l', 'Cuadrando checadas<br>a las 22:40 hrs.')}
+${logo}`);
+
+// 2 · El problema
+add('q_02', `${ph('pensando', 150)}
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(238,241,244,1) 0%,rgba(238,241,244,.95) 22%,rgba(238,241,244,0) 40%)"></div>
+<div style="position:absolute;left:72px;right:72px;top:90px;font-size:78px;font-weight:800;letter-spacing:-.025em;line-height:1.04">Cinco fuentes de asistencia.<br>${GD('Ninguna coincide.')}</div>
+${bb(56, 900, 'n l', '🕒 Checador')}
+${bb(70, 1050, 'm l', '💬 WhatsApp')}
+${bb(720, 880, 'n r', '📄 Papel', 'r')}
+${bb(700, 1030, 'm r', '📊 Excel', 'r')}
+${bb(380, 1170, 'm l', '📞 “¿Quién faltó en Norte?”')}
+${logo.replace('class="logo"', 'class="logo" style="bottom:auto;top:-200px"')}`);
+
+// 3 · La ley cambió
+add('q_03', `${ph('duda', -60)}
+${ast(950, 120, .7)}
+${bb(600, 230, 'n r', 'Máx. <b style="color:#7DD818">4 h</b> extra<br>dobles por día', 'r')}
+${bb(640, 430, 'm r', 'Triples: tope<br><b>4 h</b> a la semana', 'r')}
+${bb(600, 630, 'n r', 'Nunca más de<br><b style="color:#7DD818">12 h</b> en un día', 'r')}
+<div class="box w" style="bottom:150px;font-size:58px;text-align:left">Y desde mayo de 2026,<br>la ley ${GD('también cambió.')}<div style="font-size:26px;font-weight:500;margin-top:16px;opacity:.6">Arts. 66 y 68 LFT · DOF 01/05/2026</div></div>
+${logo}`);
+
+// 4 · La solución
+add('q_04', `${ph('feliz', -330, 'width:1400px;left:-160px')}
+<div class="box" style="top:60px;font-size:60px;background:${C.g};color:#fff">Con CheckONOFF,<br>tu cierre se ve así</div>
+${ast(900, 330, .7)}
+${bb(48, 420, 'w l', '✅ 3 sucursales listas')}
+${bb(48, 560, 'n l', '✅ Extras calculadas<br>con la LFT 2026')}
+${bb(48, 740, 'm l', '✅ Pre-nómina en Excel')}
+<div class="bb n r" style="right:48px;bottom:150px;font-size:34px">Viernes 17:05. A casa. 🏡</div>
+${logo}`);
+
+// 5 · Cómo checan
+add('q_05', `${ph('laptop', -140)}<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(244,245,246,.97) 0%,rgba(244,245,246,.9) 22%,rgba(244,245,246,0) 38%)"></div>
+<div style="position:absolute;left:72px;right:72px;top:110px;font-size:80px;font-weight:800;letter-spacing:-.025em;line-height:1.04">Tu equipo checa<br>${GD('como le acomode.')}</div>
+${bb(56, 340, 'n l', '📱 App con foto')}
+${bb(400, 340, 'm l', '💬 WhatsApp')}
+${bb(730, 340, 'n r', '🖐️ Biométrico', 'r')}
+<div class="box n" style="bottom:150px;font-size:52px">Y todo cae en ${G('un solo registro.')}<div style="font-size:30px;font-weight:500;margin-top:14px;opacity:.8">Horas, retardos, faltas y extras en automático</div></div>
+${logo}`);
+
+// 6 · CTA
+add('q_06', `<div style="position:absolute;inset:0;background:linear-gradient(160deg,#F4FBF0 0%,#DDF4D2 100%)"></div>
+${ast(880, 120, 1.3)}${ast(930, 640, .6)}
+<div style="position:absolute;left:72px;right:72px;top:300px;font-size:104px;font-weight:800;letter-spacing:-.03em;line-height:1.0">Recupera tus<br>noches de<br>${GD('quincena.')}</div>
+<div style="position:absolute;left:72px;top:770px;font-size:38px;font-weight:500;line-height:1.35;width:820px;opacity:.85">Prueba CheckONOFF 14 días gratis.<br>Sin tarjeta. Te ayudamos a configurarlo.</div>
+<div style="position:absolute;left:72px;top:960px;display:flex;gap:36px;align-items:center">
+  <div style="background:#fff;border-radius:28px;padding:16px;box-shadow:0 14px 34px rgba(17,28,59,.12)"><img src="${QR}" style="width:200px;height:200px;image-rendering:pixelated;display:block"></div>
+  <div><div style="background:${C.navy};color:#fff;font-size:38px;font-weight:700;padding:24px 40px;border-radius:99px">Empieza gratis →</div><div style="font-size:30px;font-weight:700;margin-top:18px;color:${C.g}">checkonoff.mx</div></div>
 </div>
-<div class="foot" style="opacity:.85"><span>Guarda este post para tu próximo cierre</span><span>🔖</span></div>`);
-
-// ── Portada de impacto: reforma 40 h ──
-add('ref_01', `<img class="ph" src="${FOTO('fabrica')}" style="object-position:50% 50%;filter:saturate(.85)">
-<div class="sh" style="background:linear-gradient(180deg,rgba(10,16,36,.75) 0%,rgba(10,16,36,.35) 30%,rgba(10,16,36,.75) 55%,rgba(10,16,36,.98) 80%)"></div>
-${top(1, 7)}
-<div class="body" style="bottom:120px">
-  <div class="k" style="color:#fff;opacity:.85">Reforma LFT · Jornada de 40 horas</div>
-  <div class="h" style="font-size:108px;margin-top:30px">Menos horas de trabajo.</div>
-  <div style="display:flex;gap:28px;align-items:stretch;margin-top:18px"><div style="flex:none;width:12px;border-radius:6px;background:${C.r}"></div><div class="h" style="font-size:108px;color:#FF5A4E">Más horas extra si no te preparas.</div></div>
-  <div style="margin-top:48px"><span class="swipe">Desliza →</span></div>
-</div>`);
+${logo}`);
 
 (async () => {
   const only = process.argv.slice(2);
