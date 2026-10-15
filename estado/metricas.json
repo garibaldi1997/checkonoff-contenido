@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T13:40:17+00:00",
+  "actualizado": "2026-10-15T17:52:46+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -64,10 +64,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DefWoq4GAXB/",
-        "reach": 42,
+        "reach": 47,
         "saved": 0,
         "shares": 1,
-        "views": 56
+        "views": 62
       },
       "facebook": {
         "reacciones": 0,
@@ -101,10 +101,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DefYwtvjzW_/",
-        "reach": 29,
+        "reach": 34,
         "saved": 0,
         "shares": 1,
-        "views": 33
+        "views": 39
       },
       "facebook": {
         "reacciones": 0,
@@ -177,6 +177,28 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122099352915512173"
+      }
+    },
+    "2026-10-15-quincena": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-15T10:00:00-06:00",
+      "tema": "Si tu cierre de quincena se ve así, es momento de un cambio 😮‍💨",
+      "instagram": {
+        "id": "17889167136621326",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DehVr3OgGzN/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122099652897512173"
       }
     }
   }
