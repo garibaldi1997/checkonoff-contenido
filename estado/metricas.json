@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T18:09:52+00:00",
+  "actualizado": "2026-10-15T13:40:17+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -21,14 +21,10 @@
       "fecha": "2026-10-14T01:00:00-06:00",
       "tema": "",
       "instagram": {
-        "id": "18099789665310469",
-        "comments_count": 0,
-        "like_count": 0,
-        "media_product_type": "STORY",
-        "permalink": "https://www.instagram.com/stories/checkonoff/4007607641388331930"
+        "error": "GET 18099789665310469: Unsupported get request. Object with ID '18099789665310469' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       },
       "facebook": {
-        "error": "GET 1664451338624639: (#100) Tried accessing nonexisting field (likes)"
+        "error": "GET 1664451338624639: Unsupported get request. Object with ID '1664451338624639' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       }
     },
     "2026-10-14-guia-40-horas": {
@@ -41,6 +37,92 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/Dee0nWYINeM/",
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "views": 3
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/photo.php?fbid=122098959447512173&set=a.122097810891512173&type=3"
+      }
+    },
+    "2026-10-14-linkedin-prueba": {
+      "tipo": "imagen",
+      "fecha": "2026-10-14T14:53:00-06:00",
+      "tema": "¿Tu empresa sigue calculando las horas extra con la regla de \"3 horas, 3 veces por semana\""
+    },
+    "2026-10-14-carrusel-tipos-jornada": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-14T15:29:00-06:00",
+      "tema": "¿Tu turno es \"vespertino\"? 🤔 Para la Ley Federal del Trabajo, ese tipo de jornada NO exist",
+      "instagram": {
+        "id": "18033707672671240",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DefWoq4GAXB/",
+        "reach": 42,
+        "saved": 0,
+        "shares": 1,
+        "views": 56
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122099101719512173"
+      }
+    },
+    "2026-10-14-historia-vespertino": {
+      "tipo": "historia",
+      "fecha": "2026-10-14T15:30:00-06:00",
+      "tema": "",
+      "instagram": {
+        "id": "18164002855504973",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "STORY",
+        "permalink": "https://www.instagram.com/stories/checkonoff/4008021998450540282"
+      },
+      "facebook": {
+        "error": "GET 3822771977861693: (#100) Tried accessing nonexisting field (likes)"
+      }
+    },
+    "2026-10-14-carrusel-reloj-checador": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-14T15:48:00-06:00",
+      "tema": "⏰ ¿El reloj checador ya es obligatorio en México?",
+      "instagram": {
+        "id": "18130107220834104",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DefYwtvjzW_/",
+        "reach": 29,
+        "saved": 0,
+        "shares": 1,
+        "views": 33
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122099112333512173"
+      }
+    },
+    "2026-10-14-sueldo-46-horas": {
+      "tipo": "imagen",
+      "fecha": "2026-10-14T22:50:00-06:00",
+      "tema": "¿Me van a bajar el sueldo por trabajar menos horas? 🤔",
+      "instagram": {
+        "id": "18038426777837350",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DegJPpGIBfK/",
         "reach": 0,
         "saved": 0,
         "shares": 0,
@@ -50,7 +132,51 @@
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
-        "permalink": "https://www.facebook.com/photo.php?fbid=122098959447512173&set=a.122097810891512173&type=3"
+        "permalink": "https://www.facebook.com/photo.php?fbid=122099288955512173&set=a.122097810891512173&type=3"
+      }
+    },
+    "2026-10-15-carrusel-46-cambia": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-14T23:52:00-06:00",
+      "tema": "1 de enero de 2027: la jornada baja a 46 horas. Esto cambia y esto NO 👇",
+      "instagram": {
+        "id": "17952523350294018",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DegRCYSoE2s/",
+        "reach": 0,
+        "saved": 1,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122099326023512173"
+      }
+    },
+    "2026-10-15-carrusel-turno-46": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-15T00:47:00-06:00",
+      "tema": "Tu turno de 8 h de lunes a sábado ya no cabe en 2027 ⏰",
+      "instagram": {
+        "id": "17928639612179758",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DegX3SwjO8T/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122099352915512173"
       }
     }
   }
