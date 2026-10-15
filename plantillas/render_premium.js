@@ -36,16 +36,16 @@ const G = s => `<span style="color:${C.lime}">${s}</span>`;
 const GD = s => `<span style="color:${C.g}">${s}</span>`;
 
 // 1 · Portada (Mandü): foto clara, caja de titular, burbujas del dolor
-add('q_01', `${ph('estres_luz', -40)}
-<div class="box n" style="top:60px;font-size:62px">Si tu cierre de ${G('quincena')} se ve así, es momento de un cambio</div>
-${ast(900, 360, .8)}
-${bb(600, 560, 'n r', '47 mensajes<br>sin leer.', 'r')}
-${bb(560, 760, 'm r', 'Asistencia_FINAL_v7.xlsx', 'r')}
-${bb(44, 1000, 'n l', 'Cuadrando checadas<br>a las 22:40 hrs.')}
+add('q_01', `${ph('mx_estres', -60)}
+${bb(40, 440, 'w l', '47 mensajes<br>sin leer.')}
+${bb(560, 90, 'm r', 'Asistencia_FINAL_v7.xlsx', 'r')}
+${bb(40, 760, 'n l', 'Cuadrando checadas<br>a las 22:40 hrs.')}
+${ast(920, 330, .8)}
+<div class="box n" style="bottom:140px;font-size:62px">Si tu cierre de ${G('quincena')} se ve así, es momento de un cambio</div>
 ${logo}`);
 
 // 2 · El problema
-add('q_02', `${ph('pensando', 150)}
+add('q_02', `${ph('mx_pensando', 170)}
 <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(238,241,244,1) 0%,rgba(238,241,244,.95) 22%,rgba(238,241,244,0) 40%)"></div>
 <div style="position:absolute;left:72px;right:72px;top:90px;font-size:78px;font-weight:800;letter-spacing:-.025em;line-height:1.04">Cinco fuentes de asistencia.<br>${GD('Ninguna coincide.')}</div>
 ${bb(56, 900, 'n l', '🕒 Checador')}
@@ -56,16 +56,18 @@ ${bb(380, 1170, 'm l', '📞 “¿Quién faltó en Norte?”')}
 ${logo.replace('class="logo"', 'class="logo" style="bottom:auto;top:-200px"')}`);
 
 // 3 · La ley cambió
-add('q_03', `${ph('duda', -60)}
-${ast(950, 120, .7)}
-${bb(600, 230, 'n r', 'Máx. <b style="color:#7DD818">4 h</b> extra<br>dobles por día', 'r')}
-${bb(640, 430, 'm r', 'Triples: tope<br><b>4 h</b> a la semana', 'r')}
-${bb(600, 630, 'n r', 'Nunca más de<br><b style="color:#7DD818">12 h</b> en un día', 'r')}
-<div class="box w" style="bottom:150px;font-size:58px;text-align:left">Y desde mayo de 2026,<br>la ley ${GD('también cambió.')}<div style="font-size:26px;font-weight:500;margin-top:16px;opacity:.6">Arts. 66 y 68 LFT · DOF 01/05/2026</div></div>
+add('q_03', `<div style="position:absolute;left:0;top:0;width:1080px;height:780px;overflow:hidden"><img src="${FOTO('mx_enserio')}" style="width:1080px;position:absolute;top:-290px"></div>
+<div style="position:absolute;left:0;right:0;top:700px;bottom:0;background:#fff;border-radius:48px 48px 0 0"></div>
+<div style="position:absolute;left:72px;right:72px;top:770px;font-size:64px;font-weight:800;letter-spacing:-.025em;line-height:1.05">¿Ya viste lo que cambió<br>en ${GD('el tiempo extra?')}</div>
+<div style="position:absolute;left:72px;right:72px;top:955px;display:flex;gap:18px">
+${[['4 h', 'máx. de dobles<br>por día', 'n'], ['4 h', 'máx. de triples<br>a la semana', 'm'], ['12 h', 'tope total<br>en un día', 'n']].map(([a, t, c]) => `<div class="${c}" style="flex:1;border-radius:28px;padding:26px 24px;box-shadow:0 12px 28px rgba(17,28,59,.15)"><div style="font-size:64px;font-weight:800;letter-spacing:-.03em;color:${c === 'n' ? C.lime : C.g}">${a}</div><div style="font-size:28px;font-weight:600;line-height:1.2;margin-top:4px">${t}</div></div>`).join('')}
+</div>
+<div style="position:absolute;left:72px;bottom:66px;font-size:24px;opacity:.55">Arts. 66 y 68 LFT · DOF 01/05/2026</div>
+${ast(930, 640, .7)}
 ${logo}`);
 
 // 4 · La solución
-add('q_04', `${ph('feliz', -330, 'width:1400px;left:-160px')}
+add('q_04', `${ph('mx_feliz', -80, 'width:1300px;left:-40px')}
 <div class="box" style="top:60px;font-size:60px;background:${C.g};color:#fff">Con CheckONOFF,<br>tu cierre se ve así</div>
 ${ast(900, 330, .7)}
 ${bb(48, 420, 'w l', '✅ 3 sucursales listas')}
@@ -75,7 +77,7 @@ ${bb(48, 740, 'm l', '✅ Pre-nómina en Excel')}
 ${logo}`);
 
 // 5 · Cómo checan
-add('q_05', `${ph('laptop', -140)}<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(244,245,246,.97) 0%,rgba(244,245,246,.9) 22%,rgba(244,245,246,0) 38%)"></div>
+add('q_05', `${ph('mx_laptop', -40)}<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(244,245,246,.97) 0%,rgba(244,245,246,.9) 22%,rgba(244,245,246,0) 38%)"></div>
 <div style="position:absolute;left:72px;right:72px;top:110px;font-size:80px;font-weight:800;letter-spacing:-.025em;line-height:1.04">Tu equipo checa<br>${GD('como le acomode.')}</div>
 ${bb(56, 340, 'n l', '📱 App con foto')}
 ${bb(400, 340, 'm l', '💬 WhatsApp')}
