@@ -80,3 +80,7 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 - **Responder comentarios en la primera hora** después de cada publicación.
 
 > El orgánico solo rara vez lleva a 100,000 seguidores en un nicho B2B; la combinación de contenido constante, anuncios a WhatsApp y colaboraciones es lo que escala.
+
+### Personas en las fotos (indicación del cliente)
+- Siempre personas con rasgos mexicanos o latinos, en escenas luminosas (no oscuras).
+- Estilo aprobado: foto clara a sangre + caja de titular redondeada + burbujas tipo chat con colita (ver `plantillas/render_premium.js`).
