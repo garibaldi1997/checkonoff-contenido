@@ -108,7 +108,7 @@ P.push(page(`
   <h1>Jornada de <span>40 horas</span>: lo que tu empresa debe hacer, paso a paso</h1>
   <p class="lead">Reglas nuevas de horas extra, tipos de jornada, registro electrónico obligatorio, multas, CFDI de nómina, ejemplos de bien y mal, y un plan año por año.</p>
   <div class="cv-art">${svg(560, 380, `
-    <rect x="0" y="250" width="560" height="130" rx="30" fill="rgba(255,255,255,.06)"/>
+    <rect x="0" y="0" width="560" height="380" rx="30" fill="#EAF0F8"/>
     ${reloj(290, 120, 92, 8, 0)}
     ${persona({ x: 20, y: 30, s: .98, skin: 1, hair: '#3B2416', shirt: GREEN, long: true, prop: 'clip', mood: 'smile' })}
     ${persona({ x: 380, y: 30, s: .98, skin: 2, shirt: BLUE, helmet: true, prop: 'phone', mood: 'smile' })}
@@ -421,7 +421,7 @@ P.push(page(`
     <a href="${WA_LINK}"><img src="${QRWA}"><b>Comunidad RRHH</b><span>Grupo de WhatsApp: clases y plantillas</span></a>
     <a href="${ASESOR}"><img src="${QRASE}"><b>Habla con un asesor</b><span>WhatsApp +52 333 021 3199</span></a>
   </div>
-  <div class="cv-art2">${svg(560, 230, `${persona({ x: 40, y: -20, s: .68, skin: 0, hair: '#5A3A22', shirt: GREEN, long: true, arm: 'up' })}${persona({ x: 200, y: -20, s: .68, skin: 2, shirt: BLUE, helmet: true, prop: 'phone' })}${persona({ x: 360, y: -20, s: .68, skin: 1, hair: '#24170F', shirt: '#FFFFFF', pants: NAVY, tie: true, arm: 'up' })}`)}</div>
+  <div class="cv-art2">${svg(560, 250, `<rect x="0" y="0" width="560" height="250" rx="28" fill="#EAF0F8"/>${persona({ x: 40, y: 8, s: .66, skin: 0, hair: '#5A3A22', shirt: GREEN, long: true, arm: 'up' })}${persona({ x: 200, y: 8, s: .66, skin: 2, shirt: BLUE, helmet: true, prop: 'phone' })}${persona({ x: 360, y: 8, s: .66, skin: 1, hair: '#24170F', shirt: '#FFFFFF', pants: NAVY, tie: true, arm: 'up' })}`)}</div>
   <div class="cv-foot">Escanea los códigos con la cámara de tu celular · Guía informativa, no sustituye asesoría legal o contable.</div>`, 'cover', false));
 
 const CSS = `@page{size:Letter;margin:0}
@@ -435,7 +435,7 @@ a{color:inherit;text-decoration:none}
 h1{font-size:46px;line-height:1.04;letter-spacing:-.045em;font-weight:800;margin-top:16px}h1 span{color:${LIME}}
 .lead{font-size:16px;line-height:1.5;color:#D4DCEA;margin-top:14px;max-width:6.6in}
 .cv-art{margin-top:6px}.cv-art2{margin-top:18px;display:flex;justify-content:center}
-.cv-steps{display:flex;gap:8px;margin-top:-6px}.cv-steps div{flex:1;border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:10px 6px;text-align:center}.cv-steps b{display:block;font-size:22px}.cv-steps span{font-size:11px;color:${LIME};font-weight:700}.cv-steps .last{background:${GREEN};border-color:${GREEN}}.cv-steps .last span{color:${NAVY}}
+.cv-steps{display:flex;gap:8px;margin-top:14px}.cv-steps div{flex:1;border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:10px 6px;text-align:center}.cv-steps b{display:block;font-size:22px}.cv-steps span{font-size:11px;color:${LIME};font-weight:700}.cv-steps .last{background:${GREEN};border-color:${GREEN}}.cv-steps .last span{color:${NAVY}}
 .cv-foot{position:absolute;bottom:.45in;left:.62in;right:.62in;font-size:11px;color:#9FB0CC}
 .top{display:flex;justify-content:space-between;align-items:center}
 .brand{display:flex;align-items:center;gap:8px;font-weight:800;font-size:14px}.brand img{height:30px}
