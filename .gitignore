@@ -3,3 +3,4 @@ __pycache__/
 plantillas/out*/
 plantillas/**/f[0-9]*.jpg
 plantillas/*.pdf
+plantillas/inter-tight.ttf

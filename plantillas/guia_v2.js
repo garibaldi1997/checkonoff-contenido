@@ -3,8 +3,10 @@ const { chromium } = require('/opt/node-tools/node_modules/playwright');
 const fs = require('fs'), path = require('path');
 const b64 = (f, t) => `data:${t};base64,` + fs.readFileSync(path.join(__dirname, f)).toString('base64');
 const LOGO = b64('logo.png', 'image/png'), LOGOF = b64('logo_full.png', 'image/png');
-const QRWEB = b64('qr_registro.svg', 'image/svg+xml'), QRWA = b64('qr_grupo.svg', 'image/svg+xml'), QRASE = b64('qr_asesor.svg', 'image/svg+xml');
-const QRCALC = b64('qr_calc.svg', 'image/svg+xml'), CALC_HE = 'https://checkonoff.mx/calculadora-horas-extra/';
+const QRWEB = b64('qr_registro.png', 'image/png'), QRWA = b64('qr_grupo.png', 'image/png'), QRASE = b64('qr_asesor.png', 'image/png');
+const PH_COVER = b64('ph_cover.jpg', 'image/jpeg'), PH_BACK = b64('ph_back.jpg', 'image/jpeg');
+const FONTS = [400, 500, 600, 700, 800].map(w => `@font-face{font-family:'IT';font-weight:${w};src:url(${b64('fonts_it_' + w + '.ttf', 'font/ttf')}) format('truetype')}`).join('');
+const QRCALC = b64('qr_calc.png', 'image/png'), CALC_HE = 'https://checkonoff.mx/calculadora-horas-extra/';
 const REG = 'https://app.checkonoff.mx/registro-empresa', ASESOR = 'https://wa.me/523330213199?text=Hola%2C%20soy%20de%20RRHH%20y%20descargu%C3%A9%20la%20gu%C3%ADa%20de%2040%20horas', CALC_VAC = 'https://checkonoff.mx/calculadora-vacaciones/';
 const NAVY = '#111C3B', BLUE = '#0A4E94', GREEN = '#34B614', LIME = '#7DD818', RED = '#E21B20', LIGHT = '#F2F6FB';
 const WA_LINK = 'https://chat.whatsapp.com/DyoKg8wa7IQCWzT9UgOyge';
@@ -70,15 +72,12 @@ const bubble = (x, y, w, lines, col = '#fff', tc = NAVY, tail = 'left') => {
   const tx = tail === 'left' ? x + 26 : x + w - 26;
   return `<g><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="16" fill="${col}" stroke="rgba(17,28,59,.12)" stroke-width="2"/>
   <path d="M${tx - 10} ${y + h - 1} L${tx + (tail === 'left' ? -16 : 16)} ${y + h + 18} L${tx + 12} ${y + h - 1} Z" fill="${col}"/>
-  ${lines.map((l, i) => `<text x="${x + 16}" y="${y + 28 + i * 19}" font-size="15" font-weight="${i === 0 ? 800 : 500}" fill="${tc}" font-family="Inter">${l}</text>`).join('')}</g>`;
+  ${lines.map((l, i) => `<text x="${x + 16}" y="${y + 28 + i * 19}" font-size="15" font-weight="${i === 0 ? 800 : 500}" fill="${tc}" font-family="IT">${l}</text>`).join('')}</g>`;
 };
-const escena = (a, b, la, lb, bien = true, w = 100) => `<div class="scene ${bien ? 'ok' : ''}" style="width:${w}%;margin-left:auto;margin-right:auto">${svg(680, 250, `
-  <rect x="0" y="0" width="680" height="250" rx="22" fill="${bien ? '#EAF7E4' : '#EEF3F9'}"/>
-  ${persona({ x: 6, y: 50, s: .56, ...a })}
-  ${persona({ x: 560, y: 50, s: .56, ...b })}
-  ${bubble(120, 18, 250, la, '#fff', NAVY, 'left')}
-  ${bubble(318, 112, 250, lb, bien ? GREEN : BLUE, '#fff', 'right')}
-`)}</div>`;
+const rol = p => p.helmet ? '👷' : p.tie ? '👔' : p.prop === 'clip' ? '🧾' : '👩‍💼';
+const escena = (a, b, la, lb, bien = true) => `<div class="chat ${bien ? 'ok' : 'no'}">
+  <div class="msg l"><span class="av">${rol(a)}</span><p>${la.join(' ')}</p></div>
+  <div class="msg r"><p>${lb.join(' ')}</p><span class="av rr">${rol(b)}</span></div></div>`;
 const ICONS = {
   check: c => `<circle cx="20" cy="20" r="20" fill="${c || GREEN}"/><path d="M11 21 L18 28 L30 13" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`,
   x: c => `<circle cx="20" cy="20" r="20" fill="${c || RED}"/><path d="M13 13 L27 27 M27 13 L13 27" stroke="#fff" stroke-width="5" stroke-linecap="round"/>`,
@@ -107,12 +106,7 @@ P.push(page(`
   <div class="cv-tag">GUÍA GRATUITA PARA RRHH · EDICIÓN 2026</div>
   <h1>Jornada de <span>40 horas</span>: lo que tu empresa debe hacer, paso a paso</h1>
   <p class="lead">Reglas nuevas de horas extra, tipos de jornada, registro electrónico obligatorio, multas, CFDI de nómina, ejemplos de bien y mal, y un plan año por año.</p>
-  <div class="cv-art">${svg(560, 380, `
-    <rect x="0" y="0" width="560" height="380" rx="30" fill="#EAF0F8"/>
-    ${reloj(290, 120, 92, 8, 0)}
-    ${persona({ x: 20, y: 30, s: .98, skin: 1, hair: '#3B2416', shirt: GREEN, long: true, prop: 'clip', mood: 'smile' })}
-    ${persona({ x: 380, y: 30, s: .98, skin: 2, shirt: BLUE, helmet: true, prop: 'phone', mood: 'smile' })}
-  `)}</div>
+  <div class="cv-photo" style="background-image:url(${PH_COVER})"><div class="cv-badge">${svg(64, 64, reloj(32, 32, 30, 8, 0))}<div><b>De 48 a 40 h</b><span>2027 – 2030 · sin bajar salarios</span></div></div></div>
   <div class="cv-steps">${[['48 h', '2026'], ['46 h', '2027'], ['44 h', '2028'], ['42 h', '2029'], ['40 h', '2030']].map(([h, y], i) => `<div class="${i === 4 ? 'last' : ''}"><b>${h}</b><span>${y}</span></div>`).join('')}</div>
   <div class="cv-foot">Basada en el decreto de reforma a la Ley Federal del Trabajo publicado en el DOF el 1 de mayo de 2026</div>`, 'cover', false));
 
@@ -128,7 +122,7 @@ P.push(page(`${head('', 'Resumen', 'La reforma en 1 minuto')}
        ['$586,550', 'Multa máxima por no llevar registro electrónico de jornada (5,000 UMA, art. 994).', NAVY]]
       .map(([n, t, c]) => `<div class="kpi" style="border-top:6px solid ${c}"><b style="color:${c}">${n}</b><p>${t}</p></div>`).join('')}
   </div>
-  <div class="hero2">${svg(170, 230, persona({ x: -10, y: -10, s: .66, skin: 0, hair: '#5A3A22', shirt: GREEN, long: true, arm: 'up', mood: 'smile' }))}
+  <div class="hero2"><span class="hav">💡</span>
     <div><b>Lo más importante no es trabajar menos horas: es poder demostrar cada hora.</b><p>La ley ahora obliga a registrar la jornada de forma electrónica. Sin registro, la empresa no tiene cómo defenderse en una inspección o una demanda.</p></div></div>
   ${nota('<b>Aviso:</b> esta guía es informativa y no sustituye la asesoría de tu abogado laboral o tu contador. Las reglas de la STPS sobre el registro electrónico aún no se publican.', 'warn')}`));
 
@@ -224,12 +218,12 @@ P.push(page(`${head('06', 'Caso práctico', 'El mismo trabajador, antes y despu�
   <p class="p">Salario de <b>$500</b> al día · jornada diurna de 8 h · hora simple <b>$62.50</b> · doble <b>$125</b> · triple <b>$187.50</b>. La empresa quiere 15 horas extra: lunes, miércoles y viernes 5 h.</p>
   <div class="vs">
     <div class="old">
-      <div class="vh">${svg(90, 120, persona({ x: 0, y: 0, s: .34, skin: 2, shirt: NAVY, helmet: true, mood: 'sad' }))}<div><small>HASTA EL 30 DE ABRIL DE 2026</small><b>15 h extra = $2,250</b></div></div>
+      <div class="vh"><span class="hav o">⏳</span><div><small>HASTA EL 30 DE ABRIL DE 2026</small><b>15 h extra = $2,250</b></div></div>
       ${tabla(['Día', 'Extra', 'Dobles', 'Triples'], [['Lunes', '5', '3', '2'], ['Miércoles', '5', '3', '2'], ['Viernes', '5', '3', '2'], { cls: 'hl', c: ['<b>Total</b>', '<b>15</b>', '<b>9</b>', '<b>6</b>'] }], 'center sm')}
       <p class="sm2">9 × $125 + 6 × $187.50 = $2,250. (Ya entonces, 5 h en un día rebasaba el límite de 3 h diarias.)</p>
     </div>
     <div class="new">
-      <div class="vh">${svg(90, 120, persona({ x: 0, y: 0, s: .34, skin: 2, shirt: GREEN, helmet: true, mood: 'smile' }))}<div><small>DESDE EL 1 DE MAYO DE 2026</small><b>Máximo legal 13 h = $1,875</b></div></div>
+      <div class="vh"><span class="hav">✅</span><div><small>DESDE EL 1 DE MAYO DE 2026</small><b>Máximo legal 13 h = $1,875</b></div></div>
       ${tabla(['Día', 'Dobles', 'Triples', 'Total día'], [['Lunes', '4', '0', '12'], ['Miércoles', '4', '0', '12'], ['Viernes', '1', '3', '12'], ['Martes o jueves', '0', '1', '9'], { cls: 'hl', c: ['<b>Total</b>', '<b>9</b>', '<b>4</b>', ''] }], 'center sm')}
       <p class="sm2">9 × $125 + 4 × $187.50 = $1,875.</p>
     </div>
@@ -266,7 +260,7 @@ P.push(page(`${head('08', 'Costos', 'Cada año, la hora extra sale más cara')}
     ['2029', '42 h', '$57.14', '$114.29', '$171.43'], { cls: 'hl', c: ['2030', '40 h', '$59.97', '<b>$119.94</b>', '<b>$179.91</b>'] }], 'center')}
   <div class="bar2">${[100, 104.44, 109.14, 114.29, 119.94].map((v, i) => `<div><i style="height:${(v - 80) * 2.4}px"></i><b>$${v.toFixed(0)}</b><span>${2026 + i}</span></div>`).join('')}<p>Hora extra doble, salario $400</p></div>
   ${nota('<b>Importante:</b> es un método de cálculo, no una regla de la ley. Si en 2030 tu empresa trabaja 5 días de 8 h, tu contador puede usar otro divisor. Defínelo por escrito y aplícalo igual para todos.', 'warn')}
-  <div class="hero2">${svg(150, 200, persona({ x: -12, y: -6, s: .58, skin: 1, hair: '#24170F', shirt: BLUE, tie: true, mood: 'neutral', prop: 'clip' }))}
+  <div class="hero2"><span class="hav">📈</span>
     <div><b>Con 50 colaboradores que sigan trabajando 48 h en 2027:</b><p>2 h dobles × $104.44 × 50 personas × 52 semanas ≈ <b>$543,000 al año</b> solo en horas extra. Medir hoy la jornada real es la forma más barata de evitarlo.</p></div></div>
   ${ctaCalc()}`));
 
@@ -283,7 +277,7 @@ P.push(page(`${head('09', 'Nueva obligación', 'Registro electrónico de jornada
   <h4>¿Y si no cumplo? Multa del art. 994, fr. IV Bis</h4>
   <div class="fine"><div><small>MÍNIMA · 250 UMA</small><b>$29,327.50</b></div><div class="mx"><small>MÁXIMA · 5,000 UMA</small><b>$586,550</b></div></div>
   <p class="p xs">Importes con la UMA 2026. Además: demandas laborales que no puedes defender y cuestionamientos del SAT a la nómina.</p>
-  <div class="hero2">${svg(150, 200, persona({ x: -12, y: -6, s: .58, skin: 3, shirt: NAVY, helmet: true, mood: 'sad' }))}
+  <div class="hero2"><span class="hav r">⚠️</span>
     <div><b>"¿Y si no compro el checador?"</b><p>Con tarjetas de papel, Excel o mensajes sueltos no tienes un registro electrónico confiable, ni acordado, ni fácil de entregar a la autoridad. La pregunta ya no es si registrar, sino cómo hacerlo bien.</p></div></div>`));
 
 /* 12 · 3 capas + obligaciones */
@@ -368,7 +362,7 @@ P.push(page(`${head('14', 'Errores comunes', '12 errores de RRHH que te pueden c
 /* 17 · Autodiagnóstico */
 const preguntas = ['¿Sabes cuántas horas trabaja realmente cada puesto, por día y por semana?', '¿Tu sistema registra entrada, salida y descansos de cada persona?', '¿Detecta en automático cuando alguien pasa de 4 h extra en un día o de 12 h totales?', '¿Separa horas extra dobles y triples según los topes del año?', '¿Tienes firmado el acuerdo del registro electrónico con cada trabajador?', '¿Tienes aviso de privacidad si usas foto, GPS o biometría?', '¿Las correcciones de checadas dejan rastro y justificación?', '¿Tu registro coincide con días pagados, faltas, incapacidades y horas extra del CFDI?', '¿Puedes entregar un reporte de jornada a la autoridad hoy mismo?', '¿Tienes un plan de turnos para la jornada de 46 h de 2027?'];
 P.push(page(`${head('15', 'Autodiagnóstico', '¿Tu empresa está lista? Responde en 3 minutos')}
-  <div class="quiz">${preguntas.map((q, i) => `<div><span>${i + 1}</span><p>${q}</p><em>☐ Sí</em><em>☐ No</em></div>`).join('')}</div>
+  <div class="quiz">${preguntas.map((q, i) => `<div><span>${i + 1}</span><p>${q}</p><em><i class="bx"></i>Sí</em><em><i class="bx"></i>No</em></div>`).join('')}</div>
   <div class="score">
     <div style="background:${GREEN}"><b>9-10 "Sí"</b><p>Vas muy bien. Mantén el control mes a mes.</p></div>
     <div style="background:#F5A300"><b>6-8 "Sí"</b><p>Tienes huecos que pueden salir caros en una inspección.</p></div>
@@ -421,12 +415,12 @@ P.push(page(`
     <a href="${WA_LINK}"><img src="${QRWA}"><b>Comunidad RRHH</b><span>Grupo de WhatsApp: clases y plantillas</span></a>
     <a href="${ASESOR}"><img src="${QRASE}"><b>Habla con un asesor</b><span>WhatsApp +52 333 021 3199</span></a>
   </div>
-  <div class="cv-art2">${svg(560, 250, `<rect x="0" y="0" width="560" height="250" rx="28" fill="#EAF0F8"/>${persona({ x: 40, y: 8, s: .66, skin: 0, hair: '#5A3A22', shirt: GREEN, long: true, arm: 'up' })}${persona({ x: 200, y: 8, s: .66, skin: 2, shirt: BLUE, helmet: true, prop: 'phone' })}${persona({ x: 360, y: 8, s: .66, skin: 1, hair: '#24170F', shirt: '#FFFFFF', pants: NAVY, tie: true, arm: 'up' })}`)}</div>
+  <div class="cv-photo back" style="background-image:url(${PH_BACK})"><div class="cv-badge"><span style="font-size:30px">📲</span><div><b>Tu equipo checa desde el celular</b><span>App, WhatsApp o tu biométrico · hora, GPS y foto</span></div></div></div>
   <div class="cv-foot">Escanea los códigos con la cámara de tu celular · Guía informativa, no sustituye asesoría legal o contable.</div>`, 'cover', false));
 
-const CSS = `@page{size:Letter;margin:0}
+const CSS = `${FONTS}@page{size:Letter;margin:0}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',sans-serif;color:${NAVY};-webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:'IT',sans-serif;color:${NAVY};-webkit-font-smoothing:antialiased;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 a{color:inherit;text-decoration:none}
 .pg{width:8.5in;height:11in;padding:.55in .62in .8in;position:relative;overflow:hidden;page-break-after:always;background:#fff}
 .cover{background:radial-gradient(ellipse 85% 40% at 85% 105%,rgba(52,182,20,.5),transparent 65%),radial-gradient(ellipse 70% 40% at 0% 0%,rgba(10,78,148,.55),transparent 70%),${NAVY};color:#fff;padding-top:.5in}
@@ -453,7 +447,7 @@ h4{font-size:14.5px;font-weight:800;margin-top:18px;display:flex;align-items:cen
 .tb tr.hl td{background:#EAF7E4}.tb.center td,.tb.center th{text-align:center}.tb.sm td{font-size:11.2px;padding:6px 9px}.tb.tpl td{height:.36in}
 .kpis{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:16px}
 .kpi{background:${LIGHT};border-radius:12px;padding:14px}.kpi b{font-size:30px;letter-spacing:-.03em;font-weight:800}.kpi p{font-size:12px;line-height:1.45;margin-top:4px;color:#2E3A55}
-.hero2{display:flex;align-items:center;gap:14px;margin-top:16px;background:linear-gradient(120deg,#EAF7E4,#E8F0FA);border-radius:16px;padding:10px 18px}
+.hero2{display:flex;align-items:center;gap:16px;margin-top:16px;background:linear-gradient(120deg,#EAF7E4,#E8F0FA);border-radius:16px;padding:16px 20px}
 .hero2 b{font-size:15px;line-height:1.35}.hero2 p{font-size:12.5px;line-height:1.5;margin-top:6px;color:#2E3A55}
 .jt{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:16px}
 .jt div{border:2px solid;border-radius:14px;padding:14px;text-align:center}.jt .e{font-size:30px}.jt b{display:block;font-size:18px;margin-top:4px}.jt small{display:block;font-size:11.5px;color:#4A5670;margin-top:4px;min-height:30px}
@@ -462,7 +456,7 @@ h4{font-size:14.5px;font-weight:800;margin-top:18px;display:flex;align-items:cen
 .card{background:${LIGHT};border-radius:12px;padding:14px;margin-top:10px}.card.g{background:#EAF7E4}.card.r{background:#FDECEC}.card p{font-size:12px;line-height:1.45;margin-top:4px;color:#2E3A55}.card .e{font-size:24px}
 .bm{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
 .bm>div{border-radius:14px;padding:14px;position:relative}.bm .b{background:#EAF7E4;border:2px solid ${GREEN}}.bm .m{background:#FDECEC;border:2px solid ${RED}}
-.bm svg{position:absolute;top:-12px;right:12px}.bm b{font-size:12px;letter-spacing:2px}.bm .b b{color:#1F7A0E}.bm .m b{color:${RED}}.bm p{font-size:12px;line-height:1.45;margin-top:6px}
+.bm svg{position:absolute;top:-12px;right:12px}.bm>div>b{font-size:12px;letter-spacing:2px}.bm .b>b{color:#1F7A0E}.bm .m>b{color:${RED}}.bm p{font-size:12px;line-height:1.45;margin-top:6px}
 .chk{list-style:none;margin-top:6px}.chk li{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.4;padding:4px 0}.chk svg{flex:none;margin-top:1px}
 .box{list-style:none;margin-top:4px}.box li{display:flex;gap:9px;font-size:12px;line-height:1.42;padding:4px 0}.box span{flex:none;width:14px;height:14px;border:2px solid ${GREEN};border-radius:4px;margin-top:2px}
 .rules{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.rules>div{display:flex;gap:10px;background:${LIGHT};border-radius:12px;padding:12px}
@@ -501,6 +495,17 @@ h4{font-size:14.5px;font-weight:800;margin-top:18px;display:flex;align-items:cen
 .qrs img{width:1.6in;height:1.6in}.qrs b{display:block;font-size:16px;margin-top:6px}.qrs span{font-size:11.5px;color:#4A5670}
 .scene{margin-top:14px}.scene svg{width:100%;height:auto;display:block}
 .tool{display:flex;gap:12px;align-items:center;margin-top:12px;background:${BLUE};color:#fff;border-radius:14px;padding:10px 16px}.tool span{font-size:26px}.tool b{font-size:13px;display:block}.tool small{font-size:11px;color:#BFD3EE}
+.cv-photo{position:relative;margin-top:20px;height:3.3in;border-radius:22px;background-size:cover;background-position:center}.cv-photo.back{height:2.7in;margin-top:22px}
+.cv-badge{position:absolute;left:18px;bottom:18px;display:flex;align-items:center;gap:12px;background:#fff;color:${NAVY};border-radius:16px;padding:10px 16px 10px 10px}.cv-badge b{display:block;font-size:15px}.cv-badge span{font-size:11.5px;color:#4A5670}
+.qrs img{image-rendering:pixelated}.ctab img{image-rendering:pixelated}
+.chat{margin-top:14px;border-radius:16px;padding:14px 16px;background:#EEF3F9}.chat.ok{background:#EAF7E4}
+.msg{display:flex;gap:10px;align-items:flex-end;margin:6px 0}.msg.r{justify-content:flex-end}
+.msg p{max-width:72%;font-size:12.5px;line-height:1.45;padding:10px 14px;border-radius:14px;background:#fff;color:${NAVY}}.msg.l p{border-bottom-left-radius:4px}
+.msg.r p{background:${BLUE};color:#fff;border-bottom-right-radius:4px;font-weight:600}.chat.ok .msg.r p{background:${GREEN}}
+.av{flex:none;width:34px;height:34px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:18px}
+.hav{flex:none;width:64px;height:64px;border-radius:18px;background:#fff;display:grid;place-items:center;font-size:32px}.hav.r{background:#FDECEC}.hav.o{background:#FFF1DB}
+.bx{display:inline-block;width:12px;height:12px;border:2px solid ${BLUE};border-radius:3px;margin-right:5px;vertical-align:-1px}
+.vh .hav{width:46px;height:46px;font-size:22px;border-radius:12px;margin-right:6px}
 .foot{position:absolute;left:.62in;right:.62in;bottom:.4in;display:flex;justify-content:space-between;font-size:9.5px;color:#8A93A8;border-top:1px solid #E6EBF3;padding-top:8px}`;
 
 (async () => {
