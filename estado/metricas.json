@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T17:52:46+00:00",
+  "actualizado": "2026-10-16T04:12:37+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -64,10 +64,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DefWoq4GAXB/",
-        "reach": 47,
+        "reach": 51,
         "saved": 0,
         "shares": 1,
-        "views": 62
+        "views": 66
       },
       "facebook": {
         "reacciones": 0,
@@ -81,14 +81,10 @@
       "fecha": "2026-10-14T15:30:00-06:00",
       "tema": "",
       "instagram": {
-        "id": "18164002855504973",
-        "comments_count": 0,
-        "like_count": 0,
-        "media_product_type": "STORY",
-        "permalink": "https://www.instagram.com/stories/checkonoff/4008021998450540282"
+        "error": "GET 18164002855504973: Unsupported get request. Object with ID '18164002855504973' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       },
       "facebook": {
-        "error": "GET 3822771977861693: (#100) Tried accessing nonexisting field (likes)"
+        "error": "GET 3822771977861693: Unsupported get request. Object with ID '3822771977861693' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       }
     },
     "2026-10-14-carrusel-reloj-checador": {
@@ -101,10 +97,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DefYwtvjzW_/",
-        "reach": 34,
+        "reach": 38,
         "saved": 0,
         "shares": 1,
-        "views": 39
+        "views": 43
       },
       "facebook": {
         "reacciones": 0,
@@ -199,6 +195,72 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122099652897512173"
+      }
+    },
+    "2026-10-15-sabias-tiempo-extra": {
+      "tipo": "imagen",
+      "fecha": "2026-10-15T12:00:00-06:00",
+      "tema": "📢 RRHH: desde mayo de 2026 cambiaron las reglas del tiempo extra ⏱️",
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/photo.php?fbid=122099720895512173&set=a.122097810891512173&type=3"
+      },
+      "instagram": {
+        "id": "18370898497213907",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DehlDtRF26K/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      }
+    },
+    "2026-10-15-reel-quincena": {
+      "tipo": "reel",
+      "fecha": "2026-10-15T18:00:00-06:00",
+      "tema": "POV: eres de RRHH y es jueves de quincena 😵‍💫",
+      "instagram": {
+        "id": "17904839397656707",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DeiMkbrjhuh/",
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "views": 1
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/2144895242769108/"
+      }
+    },
+    "2026-10-15-dos-cambios-2027": {
+      "tipo": "imagen",
+      "fecha": "2026-10-15T20:00:00-06:00",
+      "tema": "El 1 de enero de 2027 llegan 2 cambios a la vez. ¿Tu empresa ya está lista? 📅",
+      "instagram": {
+        "id": "18089847272665010",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DeiaerbH3Wz/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/photo.php?fbid=122099985069512173&set=a.122097810891512173&type=3"
       }
     }
   }
