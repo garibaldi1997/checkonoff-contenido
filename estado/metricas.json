@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16T04:14:35+00:00",
+  "actualizado": "2026-10-16T13:40:16+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -22,9 +22,6 @@
       "tema": "",
       "instagram": {
         "error": "GET 18099789665310469: Unsupported get request. Object with ID '18099789665310469' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-      },
-      "facebook": {
-        "error": "GET 1664451338624639: Unsupported get request. Object with ID '1664451338624639' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       }
     },
     "2026-10-14-guia-40-horas": {
@@ -82,9 +79,6 @@
       "tema": "",
       "instagram": {
         "error": "GET 18164002855504973: Unsupported get request. Object with ID '18164002855504973' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
-      },
-      "facebook": {
-        "error": "GET 3822771977861693: Unsupported get request. Object with ID '3822771977861693' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       }
     },
     "2026-10-14-carrusel-reloj-checador": {
