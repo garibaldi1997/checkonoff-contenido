@@ -235,6 +235,11 @@
     "linkedin": {
       "id": "urn:li:share:7516959086182043649",
       "fecha": "2026-10-16T20:30:18+00:00"
+    },
+    "instagram": {
+      "id": "bloqueado-por-duplicados",
+      "fecha": "2026-10-16T23:51:00+00:00",
+      "nota": "Se publicó varias veces por error al confirmar; se marca para detener reintentos"
     }
   }
 }
