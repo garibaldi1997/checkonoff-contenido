@@ -23,6 +23,7 @@ jobs:
       - name: Leer métricas
         env:
           META_TOKEN_CHECKONOFF: ${{ secrets.META_TOKEN_CHECKONOFF }}
+          META_TOKEN_DIELOXIA: ${{ secrets.META_TOKEN_DIELOXIA }}
           GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
         run: python scripts/metricas.py
       - name: Guardar métricas

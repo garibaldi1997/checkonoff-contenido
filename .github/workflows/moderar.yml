@@ -31,6 +31,7 @@ jobs:
       - name: Ejecutar
         env:
           META_TOKEN_CHECKONOFF: ${{ secrets.META_TOKEN_CHECKONOFF }}
+          META_TOKEN_DIELOXIA: ${{ secrets.META_TOKEN_DIELOXIA }}
           GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
           ACCION: ${{ inputs.accion }}
           OBJETIVO: ${{ inputs.objetivo }}

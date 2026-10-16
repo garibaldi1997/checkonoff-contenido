@@ -30,6 +30,7 @@ jobs:
         env:
           # Un token por cuenta (ver cuentas.json). Al agregar una cuenta, añade su línea aquí.
           META_TOKEN_CHECKONOFF: ${{ secrets.META_TOKEN_CHECKONOFF }}
+          META_TOKEN_DIELOXIA: ${{ secrets.META_TOKEN_DIELOXIA }}
           LINKEDIN_TOKEN_GARIBALDI: ${{ secrets.LINKEDIN_TOKEN_GARIBALDI }}
           GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
           RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}

@@ -6,5 +6,9 @@
       "secreto": "LINKEDIN_TOKEN_GARIBALDI",
       "nota": "Perfil personal de Garibaldi (app Publiqo). Al aprobar Community Management, agregar una cuenta con 'organizacion': '144005971'."
     }
+  },
+  "dieloxia": {
+    "nombre": "Dieloxia",
+    "secreto": "META_TOKEN_DIELOXIA"
   }
 }
