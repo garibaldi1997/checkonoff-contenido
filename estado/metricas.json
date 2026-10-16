@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-16T13:40:16+00:00",
+  "actualizado": "2026-10-16T17:41:31+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -256,6 +256,11 @@
         "compartidos": 0,
         "permalink": "https://www.facebook.com/photo.php?fbid=122099985069512173&set=a.122097810891512173&type=3"
       }
+    },
+    "2026-10-16-linkedin-presentacion-marcas": {
+      "tipo": "imagen",
+      "fecha": "2026-10-16T08:30:00-06:00",
+      "tema": "Estoy construyendo dos proyectos desde San Luis Potosí y hoy quiero compartirlos con usted"
     }
   }
 }
