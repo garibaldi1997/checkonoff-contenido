@@ -40,7 +40,9 @@ jobs:
           if [ "${{ inputs.modo }}" = "verificar" ]; then
             python scripts/publicar.py --verificar
           else
-            python scripts/publicar.py
+            s=0; python scripts/publicar.py || s=$?
+            python scripts/linkedin_dieloxia.py || true   # carrusel diario de Dieloxia en LinkedIn
+            exit $s
           fi
 
       - name: Guardar registro de publicaciones
