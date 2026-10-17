@@ -58,7 +58,8 @@ def main():
             continue  # solo lo que ya salió bien en Instagram
         if ahora - datetime.fromisoformat(e["fecha"]) > VENTANA:
             continue
-        texto = e.get("texto_linkedin") or (texto_linkedin(e.get("texto", "")) + PIE)
+        base = "\n".join(l for l in e.get("texto", "").splitlines() if "BOT" not in l)  # lección: sin "Escríbenos BOT"
+        texto = e.get("texto_linkedin") or (texto_linkedin(base).strip() + PIE)
         with tempfile.TemporaryDirectory() as tmp:
             rutas = []
             for i, img in enumerate(e.get("imagenes", [])[:9]):
