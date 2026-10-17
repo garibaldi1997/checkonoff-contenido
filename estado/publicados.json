@@ -241,5 +241,19 @@
       "fecha": "2026-10-16T23:51:00+00:00",
       "nota": "Se publicó varias veces por error al confirmar; se marca para detener reintentos"
     }
+  },
+  "2026-10-16-calculadora-horas-extra": {
+    "instagram": {
+      "id": "18002253176797304",
+      "fecha": "2026-10-17T00:00:21+00:00"
+    },
+    "facebook": {
+      "id": "122100783807512173",
+      "fecha": "2026-10-17T00:00:21+00:00"
+    },
+    "linkedin": {
+      "id": "urn:li:share:7517011750412685312",
+      "fecha": "2026-10-17T00:00:21+00:00"
+    }
   }
 }
