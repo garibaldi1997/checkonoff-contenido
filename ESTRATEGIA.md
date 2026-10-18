@@ -84,3 +84,12 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 ### Personas en las fotos (indicación del cliente)
 - Siempre personas con rasgos mexicanos o latinos, en escenas luminosas (no oscuras).
 - Estilo aprobado: foto clara a sangre + caja de titular redondeada + burbujas tipo chat con colita (ver `plantillas/render_premium.js`).
+
+## Aprendizajes semana 1 (14–18 oct 2026) · aplicados desde el 21 oct
+- **Ganó:** carrusel con gancho de "mito de la ley" en forma de pregunta ("¿Tu turno es vespertino?", "¿El reloj checador ya es obligatorio?"), publicado a mediodía (miércoles 15:00): 52 y 38 de alcance.
+- **Perdió:** imágenes sueltas en la mañana o en la noche (alcance 0–1) y reels (alcance 2–3).
+- **Cambios:**
+  - El carrusel del día pasa de 10:00 a **12:00** (y 14:30 el miércoles); el "Para RRHH" pasa de imagen suelta a **mini carrusel de 3 láminas** a las 14:30. Historias a las 13:15.
+  - Portadas con **pregunta-mito + "Depende"** o dato con número; láminas internas con ejemplo en pesos y artículo de la LFT (más guardables).
+  - Reels con **foto real a sangre** y movimiento (antes eran solo texto sobre fondo).
+- **Freno principal:** 0 seguidores en Instagram y Facebook. Sin una base inicial (invitar amigos de Facebook, grupo de WhatsApp, colaboraciones o un impulso pagado pequeño), el algoritmo casi no muestra los posts.
