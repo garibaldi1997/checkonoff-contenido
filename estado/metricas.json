@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-18T16:53:27+00:00",
+  "actualizado": "2026-10-18T22:52:05+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -352,11 +352,7 @@
       "fecha": "2026-10-17T12:30:00-06:00",
       "tema": "",
       "instagram": {
-        "id": "18118138129958362",
-        "comments_count": 0,
-        "like_count": 0,
-        "media_product_type": "STORY",
-        "permalink": "https://www.instagram.com/stories/checkonoff/4010105278075743077"
+        "error": "GET 18118138129958362: Unsupported get request. Object with ID '18118138129958362' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       }
     },
     "2026-10-17-reel-calculadora": {
@@ -391,6 +387,40 @@
         "like_count": 0,
         "media_product_type": "STORY",
         "permalink": "https://www.instagram.com/stories/checkonoff/4010316625638884141"
+      }
+    },
+    "2026-10-18-sabias-ley-silla": {
+      "tipo": "imagen",
+      "fecha": "2026-10-18T11:00:00-06:00",
+      "tema": "📢 RRHH: la \"Ley Silla\" ya es obligatoria. ¿Tu empresa cumple? 🪑",
+      "instagram": {
+        "id": "18225584899338869",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DepK36eGT9N/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/photo.php?fbid=122102466399512173&set=a.122097810891512173&type=3"
+      }
+    },
+    "2026-10-18-historia-tip": {
+      "tipo": "historia",
+      "fecha": "2026-10-18T12:30:00-06:00",
+      "tema": "",
+      "instagram": {
+        "id": "18223440424340279",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "STORY",
+        "permalink": "https://www.instagram.com/stories/checkonoff/4010830015554362592"
       }
     }
   }
