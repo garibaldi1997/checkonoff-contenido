@@ -1,0 +1,8 @@
+#voz es-MX-JorgeNeural +8%
+Siete de la mañana en el taller. ¿Quién llegó? ¿Quién checó por quién?
+La lista de papel dice una cosa… y la nómina, otra.
+Y el viernes, las horas extra se pagan a ojo.
+Ahora, con CheckONOFF: cada persona checa con foto y ubicación, aunque no haya internet.
+Retardos, faltas y horas extra se calculan solos.
+Y tú tienes la asistencia real en tu celular.
+Guárdalo si tienes personal operativo.
