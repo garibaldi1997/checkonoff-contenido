@@ -13,13 +13,19 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 | Blanco / fondo claro | `#FFFFFF` · `#F2F6FB` |
 | Negro | `#000000` |
 
+## Logo (indicación de Garibaldi, 19/10/2026)
+- **Nunca el logo en la parte superior** de posts, carruseles, historias ni reels: se ve feo.
+- En feed: logo pequeño abajo a la derecha (como `premium_base.js`) o solo en la última lámina.
+- En reels: sin logo durante el video; el logo grande va solo en la pantalla final de CTA.
+- En historias: logo pequeño abajo, por encima de la zona segura inferior.
+
 ## Estándar de calidad visual (referencias: Humand, Bain LATAM, Mandü/Visma, Experiencia SET)
 1. **Una sola idea por portada**: titular de 5 a 9 palabras, enorme (≥ 90 px en 1080), 2 pesos tipográficos máximo; una palabra clave en color de acento.
 2. **Foto real protagonista a sangre completa** (alta resolución, ≥ 1080 px), personas reales con emoción o acción; nada de ilustraciones caricaturescas ni íconos genéricos como protagonistas.
 3. **Recorte de persona sobre fondo de color de marca** (estilo Mandü) o **foto con degradado oscuro para el texto** (estilo Experiencia SET).
 4. **Burbujas tipo chat sobre la foto** para "dolores" (estilo Mandü: "340 CVs", "Coordinar entrevistas a las 22:40").
 5. **Mucho aire**: márgenes ≥ 70 px, máximo 25 palabras por lámina, sin cajas de texto apiladas.
-6. **Sistema consistente**: logo pequeño siempre en la misma esquina, contador 01/05 discreto, "Deslizá →" en la portada.
+6. **Sistema consistente**: logo pequeño siempre abajo a la derecha (nunca arriba), contador 01/05 discreto, "Deslizá →" en la portada.
 7. **Emojis**: máximo uno por lámina, nunca como ilustración principal.
 8. **Tono**: gancho emocional o provocador en la portada ("Tu cliente juzga lo que ve…"), datos y ley en las láminas internas, CTA solo en la última.
 

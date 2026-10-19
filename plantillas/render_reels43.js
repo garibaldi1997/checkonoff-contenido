@@ -6,6 +6,7 @@ const OUT = path.join(__dirname, 'out_reels43'); fs.mkdirSync(OUT, { recursive: 
 const FPS = 30;
 
 const RCSS = `${CSS}
+/* Sin logo arriba (indicación de Garibaldi, 19/10/2026) */ .f>.brand{display:none!important}
 *,*::before,*::after{animation-play-state:paused!important;animation-fill-mode:both!important}
 .f{width:1080px;height:1920px;background:${C.navy}}
 .sc{position:absolute;inset:0;overflow:hidden}

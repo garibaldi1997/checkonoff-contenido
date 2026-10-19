@@ -6,6 +6,7 @@ const OUT = path.join(__dirname, 'out_reels'); fs.mkdirSync(OUT, { recursive: tr
 const FPS = 30;
 
 const CSS = `
+/* Sin logo arriba (indicación de Garibaldi, 19/10/2026) */ .f>.brand{display:none!important}
 .tile,.brand .t,.brand .tile{background:transparent!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important}.tile img,.brand .t img,.brand img{object-fit:contain}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased;width:1080px;height:1920px;overflow:hidden}

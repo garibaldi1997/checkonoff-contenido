@@ -7,6 +7,7 @@ const LOGO = 'data:image/png;base64,' + fs.readFileSync(path.join(__dirname, 'lo
 const img = f => 'data:image/jpeg;base64,' + fs.readFileSync(path.join(__dirname, 'photos', f)).toString('base64');
 
 const CSS = `
+/* Sin logo arriba (indicación de Garibaldi, 19/10/2026) */ .logo{visibility:hidden!important}
 .tile,.brand .t,.brand .tile{background:transparent!important;box-shadow:none!important;border-radius:0!important;overflow:visible!important}.tile img,.brand .t img,.brand img{object-fit:contain}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
