@@ -1,0 +1,92 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;font-family:'Inter',sans-serif;background:#111C3B;-webkit-font-smoothing:antialiased;color:#111C3B}
+.sc{position:absolute;inset:0;overflow:hidden}
+.sc img.bg{position:absolute;left:0;top:0;width:1080px;height:1920px;object-fit:cover;transform-origin:50% 40%}
+.clock{position:absolute;top:240px;left:50%;transform:translateX(-50%);background:rgba(17,28,59,.85);color:#fff;font-weight:700;font-size:40px;padding:14px 30px;border-radius:99px;display:flex;gap:14px;align-items:center;z-index:20;white-space:nowrap}
+.clock svg{width:38px;height:38px}
+.cap{position:absolute;left:70px;right:70px;top:1300px;text-align:center;font-weight:800;font-size:66px;line-height:1.12;color:#fff;z-index:30;-webkit-text-stroke:7px #111C3B;paint-order:stroke fill;text-shadow:0 4px 18px rgba(0,0,0,.5)}
+.cap span.on{color:#7DD818}
+.chip{position:absolute;background:#fff;border-radius:26px;padding:20px 30px;font-size:36px;font-weight:700;box-shadow:0 16px 36px rgba(0,0,0,.25);z-index:15}
+.notif{position:absolute;left:60px;right:60px;background:rgba(255,255,255,.97);border-radius:32px;padding:22px 28px;display:flex;gap:22px;align-items:center;box-shadow:0 16px 36px rgba(0,0,0,.25);z-index:15}
+.ic{width:70px;height:70px;border-radius:20px;background:#25d366;display:grid;place-items:center;flex-shrink:0;font-size:36px}
+.notif b{font-size:31px}.notif p{font-size:29px;color:#4a5670;margin-top:4px}
+.notif small{position:absolute;right:26px;top:20px;font-size:23px;color:#8a93a6}
+.card{position:absolute;left:60px;right:60px;background:#fff;border-radius:36px;box-shadow:0 24px 60px rgba(0,0,0,.3);z-index:15;overflow:hidden}
+.xl td{border:1px solid #d7dde6;font-size:26px;padding:12px 10px;text-align:center}
+.xl th{background:#eef1f5;font-size:24px;padding:10px;border:1px solid #d7dde6;color:#4a5670}
+.tg{display:inline-block;font-size:24px;font-weight:800;border-radius:99px;padding:6px 14px}
+.end{position:absolute;inset:0;background:radial-gradient(ellipse 85% 55% at 50% 100%,rgba(52,182,20,.55),transparent 60%),#111C3B;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff}
+</style></head><body><div id="root"></div>
+<script>
+const SPEED = window.SPEED || 1, W = window.WORDS || [], P = window.PH || {};
+const CLK = `<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M12 7v5l3 2" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>`;
+const ease = x => 1 - Math.pow(1 - Math.min(Math.max(x, 0), 1), 3);
+const cl = (x, a, b) => Math.min(Math.max(x, a), b);
+const fade = (v, a, b, f = .25) => cl(Math.min((v - a) / f, (b - v) / f), 0, 1);
+const pop = (v, a) => { const k = ease((v - a) / .35); return `opacity:${k};transform:translateY(${(1 - k) * -50}px) scale(${.9 + .1 * k})`; };
+const bg = (src, v, a, b, pos = '50% 40%', z0 = 1.04, z1 = 1.16, f = '') => `<img class="bg" src="${src}" style="object-position:${pos};transform:scale(${z0 + (z1 - z0) * cl((v - a) / (b - a), 0, 1)});filter:${f}">`;
+const clock = t => `<div class="clock">${CLK}${t}</div>`;
+const N = (who, msg, top, st, ic = '💬', bgc = '#25d366') => `<div class="notif" style="top:${top}px;${st}"><div class="ic" style="background:${bgc}">${ic}</div><div><b>${who}</b><p>${msg}</p></div><small>ahora</small></div>`;
+function caption(v) {
+  let gi = -1; const groups = []; let g = [];
+  W.forEach((w, i) => { g.push(i); if (/[.,…:?]$/.test(w.raw) || g.length >= 4 || i === W.length - 1) { groups.push(g); g = []; } });
+  for (let k = 0; k < groups.length; k++) { const s = W[groups[k][0]].t, e = k + 1 < groups.length ? W[groups[k + 1][0]].t : 99; if (v >= s - .05 && v < e) gi = k; }
+  return gi < 0 ? '' : `<div class="cap">${groups[gi].map(i => `<span class="${v >= W[i].t - .03 ? 'on' : ''}">${W[i].w}</span>`).join(' ')}</div>`;
+}
+const EMP = [['Laura M.', 'Centro'], ['José R.', 'Norte'], ['Ana P.', 'Sur'], ['Luis G.', 'Norte'], ['Karla T.', 'Centro']];
+function render(t) {
+  const v = t * SPEED; let h = '';
+  // 1 · jueves de quincena
+  if (v < 3.6) h += `<div class="sc" style="opacity:${fade(v, -1, 3.6)}">${bg(P.phone, v, 0, 3.6, '45% 35%')}${clock('Jueves 15 · 4:30 pm')}
+    ${['Sucursal Centro', 'Sucursal Norte', 'Sucursal Sur'].map((s, i) => `<div class="chip" style="left:${70 + i * 40}px;top:${420 + i * 120}px;${pop(v, 1.6 + i * .25)}">🏪 ${s}</div>`).join('')}</div>`;
+  // 2 · fotos de listas en papel
+  if (v > 3.3 && v < 5.6) h += `<div class="sc" style="opacity:${fade(v, 3.3, 5.6)}">${bg(P.phone, v, 3.3, 5.6, '45% 35%', 1.2, 1.25, 'blur(14px) brightness(.7)')}${clock('5:10 pm')}
+    <div class="card" style="top:420px;${pop(v, 3.45)}"><div style="background:#075e54;color:#fff;padding:24px 32px;font-size:32px;font-weight:700">Supervisor · Sucursal Norte</div>
+    <div style="background:#efeae2;padding:30px"><div style="background:#fff;border-radius:20px;padding:14px;width:620px;transform:rotate(-1.5deg)">
+    <div style="background:repeating-linear-gradient(#fffef6 0 46px,#c9d7ee 46px 48px);height:520px;padding:20px 30px;font:italic 600 34px 'Comic Sans MS',cursive;color:#28348a;line-height:48px">Lista de asistencia<br>Laura — 8:05 ✓<br>José — ¿? <br>Ana — 9:20 (tarde)<br>Luis — falta<br>Karla — 8:00 ✓<br>Beto — ilegible…</div>
+    <div style="text-align:right;font-size:22px;color:#667;margin-top:6px">5:10 pm</div></div></div></div></div>`;
+  // 3 · Excel FINAL 7
+  if (v > 5.3 && v < 7.5) h += `<div class="sc" style="opacity:${fade(v, 5.3, 7.5)};background:#e9edf2">${clock('7:45 pm')}
+    <div class="card" style="top:400px;${pop(v, 5.45)}"><div style="background:#1d6f42;color:#fff;padding:22px 30px;font-size:30px;font-weight:700">📊 Asistencia_FINAL_v7 (2).xlsx</div>
+    <table class="xl" style="width:100%;border-collapse:collapse"><tr><th></th><th>L</th><th>M</th><th>M</th><th>J</th><th>Horas</th></tr>
+    ${EMP.map(([n], i) => `<tr><td style="text-align:left;font-weight:700">${n}</td>${[0, 1, 2, 3].map(j => `<td style="${(i + j) % 4 === 1 ? 'background:#fde1e1;color:#E21B20' : ''}">${(i + j) % 4 === 1 ? '#¡REF!' : (i + j) % 3 === 0 ? '¿?' : '8'}</td>`).join('')}<td style="background:#fff4d6">=SUMA(…</td></tr>`).join('')}</table></div></div>`;
+  // 4 · 40 mensajes
+  if (v > 7.2 && v < 10.1) h += `<div class="sc" style="opacity:${fade(v, 7.2, 10.1)}">${bg(P.phone, v, 7.2, 10.1, '45% 35%', 1.15, 1.2, 'blur(10px) brightness(.6)')}${clock('8:50 pm')}
+    ${[['Gerente Norte', '¿Quién faltó el martes?'], ['Nómina', '¿Ya tienes las horas extra?'], ['Sucursal Sur', 'Te mando otra foto de la lista'], ['Director', '¿A qué hora queda la nómina?']].map(([a, b], i) => N(a, b, 420 + i * 150, pop(v, 7.4 + i * .35))).join('')}
+    <div style="position:absolute;right:70px;top:1010px;background:#E21B20;color:#fff;font-weight:800;font-size:56px;border-radius:99px;padding:12px 34px;${pop(v, 8.4)}">40 sin leer</div></div>`;
+  // 5 · 10 de la noche
+  if (v > 9.8 && v < 13.7) h += `<div class="sc" style="opacity:${fade(v, 9.8, 13.7)}">${bg(P.phone, v, 9.8, 13.7, '40% 35%', 1.25, 1.1, 'brightness(.5) saturate(.55) contrast(1.1)')}<div style="position:absolute;inset:0;background:rgba(17,28,59,.45)"></div>${clock('10:00 pm')}</div>`;
+  // 6 · rebobinar
+  if (v > 13.5 && v < 14.6) { const g = fade(v, 13.5, 14.6, .2); h += `<div class="sc">${bg(P.phone, v, 13.5, 14.6, '45% 35%', 1.25, 1.04)}<div style="position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.1) 0 3px,transparent 3px 9px)"></div>
+    <div style="position:absolute;inset:0;background:rgba(125,216,24,${.25 * g});mix-blend-mode:screen;transform:translateX(${Math.sin(v * 90) * 14}px)"></div>
+    <div style="position:absolute;left:0;right:0;top:760px;text-align:center;font-size:200px;opacity:${g}">⏪</div>${clock('Jueves 15 · 4:30 pm')}</div>`; }
+  // 7 · ahora con CheckONOFF
+  if (v > 14.4 && v < 16.2) { const k = ease((v - 14.5) / .4); h += `<div class="sc" style="opacity:${fade(v, 14.4, 16.2)};background:radial-gradient(ellipse 75% 60% at 50% 45%,#34B614 0%,#45C21F 45%,#9BDC86 80%,#DDF3D6 100%)">
+    <div style="position:absolute;left:0;right:0;top:620px;text-align:center"><div style="display:inline-grid;place-items:center;width:260px;height:260px;border-radius:64px;background:#111C3B;transform:scale(${.7 + .3 * k})"><img src="${P.logo}" style="width:230px"></div>
+    <div style="font-size:90px;font-weight:800;letter-spacing:-.03em;margin-top:40px;opacity:${k}">CheckONOFF</div></div></div>`; }
+  // 8 · el equipo checa
+  if (v > 16.0 && v < 21.6) h += `<div class="sc" style="opacity:${fade(v, 16.0, 21.6)}">${bg(P.tel, v, 16, 21.6, '50% 30%')}${clock('8:58 am')}
+    <div class="card" style="top:400px;padding:30px 34px;${pop(v, 16.5)}"><div style="font-size:26px;font-weight:700;color:#34B614;letter-spacing:.1em">APP · ENTRADA</div><div style="font-size:44px;font-weight:800;margin-top:8px">Registrada ✅ 8:58 am</div><div style="font-size:30px;color:#4a5670;margin-top:10px">📍 Sucursal Norte · 📸 Foto verificada</div></div>
+    ${v > 18 ? N('Bot de WhatsApp', '🟢 Entrada registrada · 9:01 am', 680, pop(v, 18.1)) : ''}
+    ${v > 18.7 ? N('Checador biométrico', '🖐️ Entrada · 8:55 am · Sucursal Sur', 830, pop(v, 18.8), '🖐️', '#0A4E94') : ''}</div>`;
+  // 9 · cálculo automático
+  if (v > 21.3 && v < 25.5) h += `<div class="sc" style="opacity:${fade(v, 21.3, 25.5)};background:#F2F6FB">${clock('Jueves 15 · 5:30 pm')}
+    <div class="card" style="top:400px"><div style="background:#111C3B;color:#fff;padding:24px 32px;font-size:32px;font-weight:700">Asistencia · 1ª quincena octubre</div>
+    ${EMP.map(([n, s], i) => { const tags = [['Completa', '#D9F5CC', '#1F7A0E'], ['Retardo 12 min', '#FFF1D6', '#8A5A00'], ['Falta', '#FDE1E1', '#E21B20'], ['Extra 2 h', '#DCE8F7', '#0A4E94'], ['Completa', '#D9F5CC', '#1F7A0E']][i];
+      return `<div style="display:flex;justify-content:space-between;align-items:center;padding:24px 32px;border-bottom:1px solid #e6eaf0"><div><b style="font-size:34px">${n}</b><div style="font-size:26px;color:#6b7690">${s}</div></div><span class="tg" style="background:${tags[1]};color:${tags[2]};${pop(v, 21.6 + i * .5)}">${tags[0]}</span></div>`; }).join('')}</div></div>`;
+  // 10 · pre-nómina en un clic
+  if (v > 25.2 && v < 28.1) { const done = v > 26.8; h += `<div class="sc" style="opacity:${fade(v, 25.2, 28.1)};background:#F2F6FB">${clock('5:45 pm')}
+    <div style="position:absolute;left:0;right:0;top:640px;text-align:center"><div style="display:inline-block;background:${done ? '#34B614' : '#111C3B'};color:#fff;font-size:56px;font-weight:800;border-radius:99px;padding:40px 70px;transform:scale(${v > 26.6 && v < 26.9 ? .93 : 1});box-shadow:0 24px 60px rgba(17,28,59,.3)">${done ? 'Pre-nómina lista ✅' : 'Generar pre-nómina'}</div>
+    ${done ? `<div style="font-size:40px;font-weight:700;margin-top:40px;color:#4a5670;${pop(v, 26.9)}">48 colaboradores · 3 sucursales</div>` : ''}</div></div>`; }
+  // 11 · te vas a tu casa
+  if (v > 27.8 && v < 31.7) h += `<div class="sc" style="opacity:${fade(v, 27.8, 31.7)}">${bg(P.laugh, v, 27.8, 31.7, '55% 30%')}${clock('6:00 pm')}</div>`;
+  // 12 · cierre
+  if (v > 31.4) { const k = ease((v - 31.4) / .4); h += `<div class="end" style="opacity:${k}"><div style="display:grid;place-items:center;width:230px;height:230px;border-radius:58px;background:#fff"><img src="${P.logo}" style="width:200px"></div>
+    <div style="font-size:84px;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin-top:50px;padding:0 90px">Cierra la quincena <span style="color:#7DD818">a tiempo.</span></div>
+    <div style="font-size:42px;font-weight:700;margin-top:50px;background:#34B614;border-radius:99px;padding:24px 44px">Prueba 14 días gratis</div>
+    <div style="font-size:44px;font-weight:800;margin-top:30px">checkonoff.mx</div></div>`; }
+  if (v < 31.4) h += caption(v);
+  document.getElementById('root').innerHTML = h;
+}
+</script></body></html>
