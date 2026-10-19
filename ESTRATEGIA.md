@@ -99,3 +99,9 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
   - Portadas con **pregunta-mito + "Depende"** o dato con número; láminas internas con ejemplo en pesos y artículo de la LFT (más guardables).
   - Reels con **foto real a sangre** y movimiento (antes eran solo texto sobre fondo).
 - **Freno principal:** 0 seguidores en Instagram y Facebook. Sin una base inicial (invitar amigos de Facebook, grupo de WhatsApp, colaboraciones o un impulso pagado pequeño), el algoritmo casi no muestra los posts.
+
+## Reels con historia (desde 19/10/2026, referencia de la competencia de Dieloxia)
+- De los 3 reels semanales, **al menos 1 es una historia con voz en off** sobre CheckONOFF (ver `plantillas/reel_historia/`): dolor real de RRHH con reloj en pantalla → caos (listas en papel, Excel, WhatsApp) → rebobinar ⏪ → "Ahora, con CheckONOFF" → producto resolviendo → final feliz → cierre con logo al centro.
+- Varía el escenario cada semana: oficina de RRHH, taller/maquila, restaurante con turnos, obra, tienda con sucursales, clínica, logística/almacén, call center.
+- Siempre relacionado con lo que hace CheckONOFF: checadas por app/WhatsApp/checador con foto y ubicación, sin internet, faltas/retardos/extra automáticos, pre-nómina en 1 clic, reforma 40 h y registro electrónico 2027.
+- Guías para hacerlos con personajes en movimiento en Flow: `flow/`.
