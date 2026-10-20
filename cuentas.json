@@ -10,5 +10,12 @@
   "dieloxia": {
     "nombre": "Dieloxia",
     "secreto": "META_TOKEN_DIELOXIA"
+  },
+  "garibaldi": {
+    "nombre": "Garibaldi Corona (marca personal, solo LinkedIn)",
+    "linkedin": {
+      "secreto": "LINKEDIN_TOKEN_GARIBALDI",
+      "nota": "Contenido interactivo de marca personal: encuestas, quizzes, autoevaluaciones y retos."
+    }
   }
 }

@@ -231,8 +231,21 @@ def validar(calendario, config):
         cuenta = e.get("cuenta", CUENTA_POR_DEFECTO)
         if cuenta not in config:
             errores.append(f"{e['id']}: la cuenta '{cuenta}' no está en cuentas.json")
-        if e["tipo"] not in ("imagen", "carrusel", "historia", "reel"):
+        if e["tipo"] not in ("imagen", "carrusel", "historia", "reel", "encuesta", "documento"):
             errores.append(f"{e['id']}: tipo inválido {e['tipo']}")
+        if e["tipo"] in ("encuesta", "documento") and e.get("redes") != ["linkedin"]:
+            errores.append(f"{e['id']}: las encuestas y documentos son solo para LinkedIn")
+        if e["tipo"] == "encuesta":
+            enc = e.get("encuesta") or {}
+            ops = enc.get("opciones", [])
+            if not enc.get("pregunta") or len(enc["pregunta"]) > 140:
+                errores.append(f"{e['id']}: la encuesta necesita 'pregunta' de máximo 140 caracteres")
+            if not 2 <= len(ops) <= 4 or any(len(o) > 30 for o in ops):
+                errores.append(f"{e['id']}: la encuesta lleva de 2 a 4 opciones de máximo 30 caracteres")
+        if e["tipo"] == "documento":
+            d = e.get("documento", "")
+            if not d.lower().endswith(".pdf") or not os.path.exists(os.path.join(RAIZ, d)):
+                errores.append(f"{e['id']}: un documento necesita 'documento' con un .pdf existente")
         if e["tipo"] == "reel":
             v = e.get("video", "")
             if not v.lower().endswith(".mp4") or not os.path.exists(os.path.join(RAIZ, v)):
@@ -314,10 +327,22 @@ def main():
                     if not cuenta.li:
                         print("  ⏸️ sin token de LinkedIn")
                         continue
-                    pid = cuenta.li.publicar(
-                        e.get("texto_linkedin") or texto_linkedin(e.get("texto", "")),
-                        imagenes=[os.path.join(RAIZ, i) for i in e.get("imagenes", [])],
-                        video=os.path.join(RAIZ, e["video"]) if e["tipo"] == "reel" else None)
+                    texto_li = e.get("texto_linkedin") or texto_linkedin(e.get("texto", ""))
+                    imgs_li = [os.path.join(RAIZ, i) for i in e.get("imagenes", [])]
+                    if e["tipo"] in ("encuesta", "documento"):
+                        try:
+                            if e["tipo"] == "encuesta":
+                                enc = e["encuesta"]
+                                pid = cuenta.li.publicar_encuesta(texto_li, enc["pregunta"], enc["opciones"], enc.get("duracion", "THREE_DAYS"))
+                            else:
+                                pid = cuenta.li.publicar_documento(texto_li, os.path.join(RAIZ, e["documento"]), e.get("titulo_documento", e["id"]))
+                        except ErrorLinkedIn as err:
+                            # Plan B: publicar como post normal (imágenes y, en encuestas, opciones para votar en comentarios)
+                            print(f"  ⚠️ {e['tipo']} no disponible en LinkedIn ({str(err)[:160]}); se publica como post normal")
+                            pid = cuenta.li.publicar(e.get("texto_respaldo") or texto_li, imagenes=imgs_li)
+                    else:
+                        pid = cuenta.li.publicar(texto_li, imagenes=imgs_li,
+                                                 video=os.path.join(RAIZ, e["video"]) if e["tipo"] == "reel" else None)
                     hecho[red] = {"id": pid, "fecha": ahora.isoformat(timespec="seconds")}
                     print(f"  ✅ publicado ({pid})")
                     guardar(PUBLICADOS, publicados)

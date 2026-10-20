@@ -93,6 +93,54 @@ class CuentaLinkedIn:
         r, h = self._req("POST", f"{API}/ugcPosts", cuerpo)
         return r.get("id") or h.get("x-restli-id") or h.get("X-RestLi-Id")
 
+    # ---------- API REST (encuestas y documentos PDF) ----------
+    def _rest(self, metodo, ruta, cuerpo=None, binario=None, tipo="application/json"):
+        """Llama a la API REST versionada; prueba versiones recientes hasta encontrar una vigente."""
+        from datetime import date
+        hoy = date.today()
+        versiones = [self._version] if getattr(self, "_version", None) else [
+            f"{(hoy.year * 12 + hoy.month - 1 - k) // 12}{(hoy.month - 1 - k) % 12 + 1:02d}" for k in range(1, 13)]
+        ultimo = None
+        for v in versiones:
+            datos = binario if binario is not None else (json.dumps(cuerpo).encode() if cuerpo is not None else None)
+            req = urllib.request.Request(ruta if ruta.startswith("http") else f"https://api.linkedin.com/rest/{ruta}", data=datos, method=metodo)
+            req.add_header("Authorization", f"Bearer {self.token}")
+            req.add_header("X-Restli-Protocol-Version", "2.0.0")
+            req.add_header("LinkedIn-Version", v)
+            if datos is not None:
+                req.add_header("Content-Type", tipo)
+            try:
+                with urllib.request.urlopen(req, timeout=300) as r:
+                    self._version = v
+                    txt = r.read().decode() or "{}"
+                    return json.loads(txt), dict(r.headers)
+            except urllib.error.HTTPError as e:
+                msg = e.read().decode(errors="replace")[:400]
+                ultimo = ErrorLinkedIn(f"{metodo} {ruta.split('?')[0]}: {e.code} {msg}")
+                if "VERSION" in msg.upper() and e.code in (400, 426):
+                    continue  # versión no vigente: probar la anterior
+                raise ultimo from None
+        raise ultimo
+
+    def _post_rest(self, texto, contenido):
+        cuerpo = {"author": self.autor(), "commentary": little_text(texto), "visibility": "PUBLIC",
+                  "distribution": {"feedDistribution": "MAIN_FEED", "targetEntities": [], "thirdPartyDistributionChannels": []},
+                  "content": contenido, "lifecycleState": "PUBLISHED", "isReshareDisabledByAuthor": False}
+        r, h = self._rest("POST", "posts", cuerpo)
+        return r.get("id") or h.get("x-restli-id") or h.get("X-RestLi-Id")
+
+    def publicar_encuesta(self, texto, pregunta, opciones, duracion="THREE_DAYS"):
+        return self._post_rest(texto, {"poll": {"question": pregunta, "options": [{"text": o} for o in opciones],
+                                                "settings": {"duration": duracion}}})
+
+    def publicar_documento(self, texto, pdf, titulo):
+        r, _ = self._rest("POST", "documents?action=initializeUpload", {"initializeUploadRequest": {"owner": self.autor()}})
+        valor = r["value"]
+        with open(pdf, "rb") as f:
+            self._req("PUT", valor["uploadUrl"], binario=f.read(), tipo="application/octet-stream")
+        time.sleep(5)
+        return self._post_rest(texto, {"media": {"title": titulo, "id": valor["document"]}})
+
     def borrar(self, post_id):
         self._req("DELETE", f"{API}/ugcPosts/{urllib.parse.quote(post_id, safe='')}")
 
@@ -106,3 +154,9 @@ def texto_linkedin(texto):
     for extra in tags[5:]:
         t = t.replace(extra, "")
     return re.sub(r"[ \t]+\n", "\n", re.sub(r"\n{3,}", "\n\n", t)).strip()
+
+
+def little_text(texto):
+    """Escapa el texto para la API REST (formato "little text") y convierte #etiquetas en hashtags."""
+    t = re.sub(r"([\\|{}@\[\]()<>*_~])", r"\\\1", texto)
+    return re.sub(r"#(\w+)", lambda m: "{hashtag|\\#|" + m.group(1) + "}", t)
