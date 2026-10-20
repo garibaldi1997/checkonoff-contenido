@@ -3,7 +3,8 @@
 
 Lee el calendario público de garibaldi1997/dieloxia-contenido y, cuando una pieza
 ya salió en el Instagram de Dieloxia, la publica una vez en LinkedIn.
-Por defecto solo el carrusel del día (1 post diario), para no saturar el perfil.
+Hasta 3 piezas al día (carrusel, un reel y un post de imagen), separadas al menos 2 horas
+y solo entre 8:00 y 21:00 (hora CDMX), para equilibrar con las publicaciones de CheckONOFF.
 Estado en estado/linkedin_dieloxia.json.
 """
 import json
@@ -20,8 +21,10 @@ from linkedin import CuentaLinkedIn, ErrorLinkedIn, texto_linkedin  # noqa: E402
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ESTADO = os.path.join(RAIZ, "estado", "linkedin_dieloxia.json")
 BASE = "https://raw.githubusercontent.com/garibaldi1997/dieloxia-contenido/main/"
-TIPOS = {"carrusel"}          # qué piezas de Dieloxia van a LinkedIn
-MAX_DIA = 1                   # máximo de posts de Dieloxia por día en LinkedIn
+TIPOS = {"carrusel": 0, "reel": 1, "imagen": 2}   # qué piezas van a LinkedIn y en qué prioridad
+MAX_DIA = 3                   # máximo de posts de Dieloxia por día en LinkedIn (1 por tipo)
+SEPARACION = timedelta(hours=2)
+HORARIO = (8, 21)             # horas CDMX en que se publica
 VENTANA = timedelta(hours=36)
 CDMX = timezone(timedelta(hours=-6))
 PIE = "\n\n🤖 Esto lo comparto desde Dieloxia, mi proyecto de asistentes de WhatsApp con IA para negocios (con control humano en 1 clic). Más tips en instagram.com/dieloxia · dieloxia.com"
@@ -47,11 +50,21 @@ def main():
     ahora = datetime.now(timezone.utc)
     hoy = ahora.astimezone(CDMX).date().isoformat()
     ya_hoy = sum(1 for v in estado.values() if v.get("dia") == hoy)
+    tipos_hoy = {v.get("tipo") for v in estado.values() if v.get("dia") == hoy}
+    ultimo = max((datetime.fromisoformat(v["fecha"]) for v in estado.values() if v.get("fecha")), default=None)
+    if not HORARIO[0] <= ahora.astimezone(CDMX).hour < HORARIO[1]:
+        print("⏸️ Fuera del horario de LinkedIn")
+        return 0
+    if ultimo and ahora - ultimo < SEPARACION:
+        print("⏸️ Aún no pasan 2 h desde el último post de Dieloxia en LinkedIn")
+        return 0
     li = CuentaLinkedIn(token)
-    for e in sorted(cal, key=lambda x: x["fecha"]):
+    # Prioridad: carrusel, luego el reel (primero los reels con historia), luego un post de imagen
+    orden = lambda x: (TIPOS.get(x.get("tipo"), 9), "historia" not in x["id"], x["fecha"])
+    for e in sorted(cal, key=orden):
         if ya_hoy >= MAX_DIA:
             break
-        if e["id"] in estado or e.get("tipo") not in TIPOS:
+        if e["id"] in estado or e.get("tipo") not in TIPOS or e.get("tipo") in tipos_hoy:
             continue
         ig = (pub.get(e["id"]) or {}).get("instagram") or {}
         if not ig.get("id") or ig.get("borrado"):
@@ -66,15 +79,20 @@ def main():
                 ruta = os.path.join(tmp, f"{i:02d}.jpg")
                 open(ruta, "wb").write(leer(img))
                 rutas.append(ruta)
+            video = None
+            if e.get("tipo") == "reel" and e.get("video"):
+                video = os.path.join(tmp, "reel.mp4")
+                open(video, "wb").write(leer(e["video"]))
             try:
-                pid = li.publicar(texto, imagenes=rutas)
+                pid = li.publicar(texto, imagenes=rutas, video=video)
             except ErrorLinkedIn as err:
                 print(f"❌ {e['id']}: {err}")
                 return 1
-        estado[e["id"]] = {"id": pid, "dia": hoy, "fecha": ahora.isoformat(timespec="seconds")}
+        estado[e["id"]] = {"id": pid, "dia": hoy, "tipo": e.get("tipo"), "fecha": ahora.isoformat(timespec="seconds")}
         ya_hoy += 1
-        print(f"✅ Dieloxia → LinkedIn: {e['id']} ({pid})")
         json.dump(estado, open(ESTADO, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        print(f"✅ Dieloxia → LinkedIn: {e['id']} ({pid})")
+        break  # una pieza por corrida; la siguiente respeta la separación de 2 h
     return 0
 
 
