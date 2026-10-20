@@ -59,8 +59,8 @@ def main():
         print("⏸️ Aún no pasan 2 h desde el último post de Dieloxia en LinkedIn")
         return 0
     li = CuentaLinkedIn(token)
-    # Prioridad: carrusel, luego el reel (primero los reels con historia), luego un post de imagen
-    orden = lambda x: (TIPOS.get(x.get("tipo"), 9), "historia" not in x["id"], x["fecha"])
+    # Prioridad: carrusel, luego el reel (primero los reels con historia), luego un post de imagen; lo más reciente primero
+    orden = lambda x: (TIPOS.get(x.get("tipo"), 9), "historia" not in x["id"], -datetime.fromisoformat(x["fecha"]).timestamp())
     for e in sorted(cal, key=orden):
         if ya_hoy >= MAX_DIA:
             break
