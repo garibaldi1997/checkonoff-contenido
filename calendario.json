@@ -813,97 +813,59 @@
     "video": "contenido/checkonoff/2026-10-19-reel-historia-quincena/reel.mp4"
   },
   {
-    "id": "2026-10-21-li-encuesta-horas-sentado",
+    "id": "2026-10-21-li-mito-postura",
     "cuenta": "garibaldi",
     "fecha": "2026-10-21T07:40:00-06:00",
-    "tipo": "encuesta",
+    "tipo": "imagen",
     "redes": [
       "linkedin"
     ],
     "imagenes": [
-      "contenido/garibaldi/2026-10-21-li-encuesta-horas-sentado/01.jpg"
+      "contenido/garibaldi/2026-10-21-li-mito-postura/01.jpg"
     ],
-    "encuesta": {
-      "pregunta": "¿Cuántas horas al día pasa sentado tu equipo?",
-      "opciones": [
-        "Menos de 4 h",
-        "De 4 a 6 h",
-        "Más de 6 h",
-        "No lo medimos"
-      ],
-      "duracion": "THREE_DAYS"
-    },
-    "texto": "Como médico laboral, esta es una de las preguntas que más hago en las empresas… y casi nadie sabe la respuesta. 🪑\n\nPasar muchas horas en la misma postura, sentado o de pie, se nota en la espalda, el cuello y la productividad. Y desde 2025, con la Ley Silla, quien trabaja de pie también debe tener dónde sentarse y poder hacer pausas.\n\nVota 👇 En 3 días comparto los resultados con 3 ajustes simples que funcionan en cualquier oficina o planta.\n\n#SaludOcupacional #Ergonomía #RecursosHumanos #LeySilla",
-    "texto_respaldo": "Como médico laboral, esta es una de las preguntas que más hago en las empresas… y casi nadie sabe la respuesta. 🪑\n\nPasar muchas horas en la misma postura, sentado o de pie, se nota en la espalda, el cuello y la productividad. Y desde 2025, con la Ley Silla, quien trabaja de pie también debe tener dónde sentarse y poder hacer pausas.\n\nVota 👇 En 3 días comparto los resultados con 3 ajustes simples que funcionan en cualquier oficina o planta.\n\n#SaludOcupacional #Ergonomía #RecursosHumanos #LeySilla\n\nVota en comentarios con el número:\n1) Menos de 4 h\n2) De 4 a 6 h\n3) Más de 6 h\n4) No lo medimos"
+    "texto": "Toda la vida nos dijeron: “siéntate derecho, espalda recta, ángulo de 90 grados”.\n\nComo médico laboral te digo algo que sorprende en las capacitaciones: la postura perfecta no existe.\n\nEl problema casi nunca es CÓMO te sientas, sino CUÁNTO TIEMPO te quedas igual. Una espalda “perfecta” pero inmóvil durante 4 horas se cansa más que una espalda que cambia de posición.\n\nLo que sí recomiendo:\n→ Cambia de postura cada 30 a 60 minutos.\n→ Levántate aunque sea 1 minuto: a llenar el agua, a hablar con alguien en persona.\n→ Pantalla a la altura de los ojos y pies apoyados: eso sí ayuda.\n→ Y si tu equipo trabaja de pie, la Ley Silla ya obliga a darles dónde sentarse y pausas.\n\nLa mejor postura es la siguiente. 😉\n\n¿Cuántas horas llevas hoy sin levantarte? Te leo 👇\n\n#SaludOcupacional #Ergonomía #Bienestar #RecursosHumanos"
   },
   {
-    "id": "2026-10-22-li-quiz-salud-laboral",
+    "id": "2026-10-22-li-humor-registro",
     "cuenta": "garibaldi",
     "fecha": "2026-10-22T07:40:00-06:00",
-    "tipo": "documento",
+    "tipo": "imagen",
     "redes": [
       "linkedin"
     ],
     "imagenes": [
-      "contenido/garibaldi/2026-10-22-li-quiz-salud-laboral/01.jpg",
-      "contenido/garibaldi/2026-10-22-li-quiz-salud-laboral/02.jpg",
-      "contenido/garibaldi/2026-10-22-li-quiz-salud-laboral/03.jpg",
-      "contenido/garibaldi/2026-10-22-li-quiz-salud-laboral/04.jpg",
-      "contenido/garibaldi/2026-10-22-li-quiz-salud-laboral/05.jpg",
-      "contenido/garibaldi/2026-10-22-li-quiz-salud-laboral/06.jpg",
-      "contenido/garibaldi/2026-10-22-li-quiz-salud-laboral/07.jpg",
-      "contenido/garibaldi/2026-10-22-li-quiz-salud-laboral/08.jpg",
-      "contenido/garibaldi/2026-10-22-li-quiz-salud-laboral/09.jpg"
+      "contenido/garibaldi/2026-10-22-li-humor-registro/01.jpg"
     ],
-    "documento": "contenido/garibaldi/2026-10-22-li-quiz-salud-laboral/documento.pdf",
-    "titulo_documento": "Verdadero o falso: salud laboral",
-    "texto": "¿Verdadero o falso? 👇\n\n4 frases sobre salud laboral que escucho cada semana en empresas, sobre la NOM-035, la NOM-030 y la Ley Silla.\n\nDesliza, responde antes de ver la respuesta y cuéntame en comentarios cuántas acertaste del 0 al 4. Leo todos.\n\n#NOM035 #NOM030 #SaludOcupacional #RecursosHumanos #LeySilla"
+    "texto": "Jueves de “realidad con humor” 😅\n\nEl “quédate un ratito más” siempre ha existido. Lo que cambia es que, desde el 1 de enero de 2027, el registro de la jornada debe ser electrónico, y ese ratito queda registrado con hora de entrada y de salida.\n\nNo es para asustar a nadie: es para que las horas extra se paguen bien y se puedan demostrar, para la empresa y para el trabajador.\n\n¿Te ha pasado el “ratito más” que se volvió hora y media? Cuéntame tu mejor anécdota 👇\n\n#RecursosHumanos #HumorLaboral #ReformaLaboral #Jornada40Horas"
   },
   {
-    "id": "2026-10-23-li-encuesta-ia",
+    "id": "2026-10-23-li-senales-agotamiento",
     "cuenta": "garibaldi",
     "fecha": "2026-10-23T07:40:00-06:00",
-    "tipo": "encuesta",
+    "tipo": "imagen",
     "redes": [
       "linkedin"
     ],
     "imagenes": [
-      "contenido/garibaldi/2026-10-23-li-encuesta-ia/01.jpg"
+      "contenido/garibaldi/2026-10-23-li-senales-agotamiento/01.jpg"
     ],
-    "encuesta": {
-      "pregunta": "¿Cómo usas hoy la IA en tu trabajo?",
-      "opciones": [
-        "Todos los días",
-        "Algunas veces",
-        "Quiero empezar",
-        "No confío en ella"
-      ],
-      "duracion": "THREE_DAYS"
-    },
-    "texto": "Este año terminé el Google AI Professional Certificate y lo que más me sorprendió no fue la tecnología, sino lo poco que la usamos para lo simple: contestar mensajes, resumir juntas, preparar reportes. 🤖\n\nEn Dieloxia lo veo todos los días: los negocios no pierden clientes por falta de IA, los pierden por contestar tarde.\n\nVota 👇 y cuéntame en comentarios una tarea que te gustaría quitarte de encima con IA.\n\n#InteligenciaArtificial #Productividad #PyMEs #Emprendimiento",
-    "texto_respaldo": "Este año terminé el Google AI Professional Certificate y lo que más me sorprendió no fue la tecnología, sino lo poco que la usamos para lo simple: contestar mensajes, resumir juntas, preparar reportes. 🤖\n\nEn Dieloxia lo veo todos los días: los negocios no pierden clientes por falta de IA, los pierden por contestar tarde.\n\nVota 👇 y cuéntame en comentarios una tarea que te gustaría quitarte de encima con IA.\n\n#InteligenciaArtificial #Productividad #PyMEs #Emprendimiento\n\nVota en comentarios con el número:\n1) Todos los días\n2) Algunas veces\n3) Quiero empezar\n4) No confío en ella"
+    "texto": "El agotamiento casi nunca llega con un aviso. Llega en señales pequeñas que normalizamos. 🧠\n\nEn mi práctica como médico laboral veo siempre las mismas 7 (están en la imagen). La que más se pasa por alto es el presentismo: la persona sigue viniendo, pero ya no está.\n\nLa NOM-035 no pide diagnosticar a nadie: pide identificar y prevenir los factores de riesgo psicosocial (cargas excesivas, jornadas largas, liderazgo negativo). Y casi siempre empieza por algo medible: horarios que no se respetan y descansos que no existen.\n\n¿Cuál de estas 7 señales has visto más en tu equipo? Dime el número 👇\n\n#NOM035 #SaludMental #RecursosHumanos #Liderazgo"
   },
   {
-    "id": "2026-10-26-li-autoevaluacion-2027",
+    "id": "2026-10-26-li-costo-no-medir",
     "cuenta": "garibaldi",
     "fecha": "2026-10-26T07:40:00-06:00",
-    "tipo": "documento",
+    "tipo": "imagen",
     "redes": [
       "linkedin"
     ],
     "imagenes": [
-      "contenido/garibaldi/2026-10-26-li-autoevaluacion-2027/01.jpg",
-      "contenido/garibaldi/2026-10-26-li-autoevaluacion-2027/02.jpg",
-      "contenido/garibaldi/2026-10-26-li-autoevaluacion-2027/03.jpg",
-      "contenido/garibaldi/2026-10-26-li-autoevaluacion-2027/04.jpg",
-      "contenido/garibaldi/2026-10-26-li-autoevaluacion-2027/05.jpg"
+      "contenido/garibaldi/2026-10-26-li-costo-no-medir/01.jpg"
     ],
-    "documento": "contenido/garibaldi/2026-10-26-li-autoevaluacion-2027/documento.pdf",
-    "titulo_documento": "Autoevaluación: ¿tu empresa está lista para 2027?",
-    "texto": "Autoevaluación de 2 minutos: ¿tu empresa está lista para 2027? ✅\n\n8 preguntas sobre jornada, horas extra, NOM-035, NOM-030 y Ley Silla. Suma 1 punto por cada SÍ.\n\nDéjame tu puntaje en comentarios (solo el número). Con los resultados preparo una guía con los pendientes más comunes.\n\n#RecursosHumanos #ReformaLaboral #NOM035 #Jornada40Horas #SaludOcupacional"
+    "texto": "Lo que no se mide, se paga. Y casi siempre se paga de más. 💸\n\nCuando reviso la rentabilidad de una empresa, uno de los gastos que más se escapa no está en compras: está en la jornada que nadie registra.\n\nSin registro:\n→ Pagas horas extra que nadie autorizó.\n→ En una demanda no tienes cómo probar los horarios.\n→ La fatiga se vuelve errores y accidentes.\n→ Cada quincena se captura a mano.\n\nCon registro: pagas lo justo, tienes la prueba, cuidas los descansos y cierras la nómina en minutos.\n\nY a partir de 2027 deja de ser opcional: el registro de la jornada debe ser electrónico.\n\n¿Tu empresa hoy cómo registra la asistencia: papel, Excel, reloj checador o app? 👇\n\n#RecursosHumanos #Rentabilidad #ReformaLaboral #Nómina"
   },
   {
-    "id": "2026-10-27-li-encuesta-gasto-personal",
+    "id": "2026-10-27-li-encuesta-reto-rrhh-2027",
     "cuenta": "garibaldi",
     "fecha": "2026-10-27T07:40:00-06:00",
     "tipo": "encuesta",
@@ -911,72 +873,7 @@
       "linkedin"
     ],
     "imagenes": [
-      "contenido/garibaldi/2026-10-27-li-encuesta-gasto-personal/01.jpg"
-    ],
-    "encuesta": {
-      "pregunta": "¿Qué gasto de personal se le escapa más a tu empresa?",
-      "opciones": [
-        "Horas extra",
-        "Rotación",
-        "Ausentismo",
-        "Errores de nómina"
-      ],
-      "duracion": "THREE_DAYS"
-    },
-    "texto": "Cuando reviso la rentabilidad de una empresa, el gasto que más sorprende rara vez está en compras: está escondido en la nómina. 💸\n\nHoras extra que nadie autorizó, rotación que obliga a capacitar otra vez, faltas que se pagan como si se hubiera trabajado…\n\n¿Cuál es el que más se le escapa a tu empresa? Vota 👇 y en comentarios te digo cómo empezar a medirlo.\n\n#Finanzas #RecursosHumanos #Rentabilidad #PyMEs",
-    "texto_respaldo": "Cuando reviso la rentabilidad de una empresa, el gasto que más sorprende rara vez está en compras: está escondido en la nómina. 💸\n\nHoras extra que nadie autorizó, rotación que obliga a capacitar otra vez, faltas que se pagan como si se hubiera trabajado…\n\n¿Cuál es el que más se le escapa a tu empresa? Vota 👇 y en comentarios te digo cómo empezar a medirlo.\n\n#Finanzas #RecursosHumanos #Rentabilidad #PyMEs\n\nVota en comentarios con el número:\n1) Horas extra\n2) Rotación\n3) Ausentismo\n4) Errores de nómina"
-  },
-  {
-    "id": "2026-10-28-li-pausa-activa",
-    "cuenta": "garibaldi",
-    "fecha": "2026-10-28T07:40:00-06:00",
-    "tipo": "documento",
-    "redes": [
-      "linkedin"
-    ],
-    "imagenes": [
-      "contenido/garibaldi/2026-10-28-li-pausa-activa/01.jpg",
-      "contenido/garibaldi/2026-10-28-li-pausa-activa/02.jpg",
-      "contenido/garibaldi/2026-10-28-li-pausa-activa/03.jpg",
-      "contenido/garibaldi/2026-10-28-li-pausa-activa/04.jpg",
-      "contenido/garibaldi/2026-10-28-li-pausa-activa/05.jpg",
-      "contenido/garibaldi/2026-10-28-li-pausa-activa/06.jpg"
-    ],
-    "documento": "contenido/garibaldi/2026-10-28-li-pausa-activa/documento.pdf",
-    "titulo_documento": "Pausa activa de 2 minutos",
-    "texto": "Reto de hoy: 2 minutos de pausa activa conmigo. 🙆‍♂️\n\nSon 4 movimientos que recomiendo en consulta a quien pasa horas frente a la computadora: cuello, hombros, muñecas y levantarse a caminar.\n\nHazlos ahora y etiqueta a quien lleva 3 horas sin levantarse 👀\n\n(Si sientes dolor, detente; no sustituye una valoración médica.)\n\n#SaludOcupacional #Ergonomía #Bienestar #PausaActiva"
-  },
-  {
-    "id": "2026-10-29-li-lecciones-fundador",
-    "cuenta": "garibaldi",
-    "fecha": "2026-10-29T07:40:00-06:00",
-    "tipo": "documento",
-    "redes": [
-      "linkedin"
-    ],
-    "imagenes": [
-      "contenido/garibaldi/2026-10-29-li-lecciones-fundador/01.jpg",
-      "contenido/garibaldi/2026-10-29-li-lecciones-fundador/02.jpg",
-      "contenido/garibaldi/2026-10-29-li-lecciones-fundador/03.jpg",
-      "contenido/garibaldi/2026-10-29-li-lecciones-fundador/04.jpg",
-      "contenido/garibaldi/2026-10-29-li-lecciones-fundador/05.jpg",
-      "contenido/garibaldi/2026-10-29-li-lecciones-fundador/06.jpg",
-      "contenido/garibaldi/2026-10-29-li-lecciones-fundador/07.jpg"
-    ],
-    "documento": "contenido/garibaldi/2026-10-29-li-lecciones-fundador/documento.pdf",
-    "titulo_documento": "De médico laboral a fundador: 5 lecciones",
-    "texto": "De médico laboral a fundador de dos empresas tecnológicas desde San Luis Potosí. 🩺➡️💻\n\nEstas son 5 lecciones que me llevo de la consulta a los negocios (desliza).\n\n¿Cuál te hace más sentido? Dime el número. Y si estás emprendiendo, cuéntame tu lección #6 👇\n\n#Emprendimiento #Liderazgo #SanLuisPotosi #Startups"
-  },
-  {
-    "id": "2026-10-30-li-encuesta-reto-rrhh-2027",
-    "cuenta": "garibaldi",
-    "fecha": "2026-10-30T07:40:00-06:00",
-    "tipo": "encuesta",
-    "redes": [
-      "linkedin"
-    ],
-    "imagenes": [
-      "contenido/garibaldi/2026-10-30-li-encuesta-reto-rrhh-2027/01.jpg"
+      "contenido/garibaldi/2026-10-27-li-encuesta-reto-rrhh-2027/01.jpg"
     ],
     "encuesta": {
       "pregunta": "¿Cuál será el mayor reto de RRHH en 2027?",
@@ -990,5 +887,55 @@
     },
     "texto": "2027 llega con varios cambios al mismo tiempo para RRHH: la jornada baja a 46 horas, el registro de la jornada debe ser electrónico y la salud mental sigue siendo prioridad. 📅\n\n¿Cuál crees que será el mayor reto? Vota 👇 y explícame por qué en comentarios. Con los resultados preparo contenido para cada uno.\n\n#RecursosHumanos #ReformaLaboral #NOM035 #GestiónDeTalento",
     "texto_respaldo": "2027 llega con varios cambios al mismo tiempo para RRHH: la jornada baja a 46 horas, el registro de la jornada debe ser electrónico y la salud mental sigue siendo prioridad. 📅\n\n¿Cuál crees que será el mayor reto? Vota 👇 y explícame por qué en comentarios. Con los resultados preparo contenido para cada uno.\n\n#RecursosHumanos #ReformaLaboral #NOM035 #GestiónDeTalento\n\nVota en comentarios con el número:\n1) Jornada de 46 horas\n2) Registro electrónico\n3) Retener talento\n4) Salud mental (NOM-035)"
+  },
+  {
+    "id": "2026-10-28-li-frase-empresa-sana",
+    "cuenta": "garibaldi",
+    "fecha": "2026-10-28T07:40:00-06:00",
+    "tipo": "imagen",
+    "redes": [
+      "linkedin"
+    ],
+    "imagenes": [
+      "contenido/garibaldi/2026-10-28-li-frase-empresa-sana/01.jpg"
+    ],
+    "texto": "En medicina aprendí que casi ninguna enfermedad aparece de un día para otro: da señales antes.\n\nEn las empresas pasa lo mismo. La rotación, las demandas, el ausentismo o la nómina que nunca cuadra avisan meses antes… si alguien está midiendo.\n\nPor eso creo que una empresa sana no es la que no tiene problemas, sino la que los detecta a tiempo. 🌱\n\n¿Qué indicador revisas tú cada semana para saber cómo está tu equipo? 👇\n\n#Liderazgo #RecursosHumanos #SaludOcupacional #Emprendimiento"
+  },
+  {
+    "id": "2026-10-29-li-reto-pausa-activa",
+    "cuenta": "garibaldi",
+    "fecha": "2026-10-29T07:40:00-06:00",
+    "tipo": "imagen",
+    "redes": [
+      "linkedin"
+    ],
+    "imagenes": [
+      "contenido/garibaldi/2026-10-29-li-reto-pausa-activa/01.jpg"
+    ],
+    "texto": "Reto de hoy: 2 minutos de pausa activa conmigo. ⏱️\n\nSon 4 movimientos que recomiendo en consulta a quien pasa horas frente a la computadora: cuello, hombros, muñecas y caminar.\n\nHazlos ahora (sí, ahora 😄) y etiqueta a quien lleva 3 horas sin levantarse 👀\n\nSi sientes dolor, detente: esta rutina no sustituye una valoración médica.\n\n#PausaActiva #SaludOcupacional #Ergonomía #Bienestar"
+  },
+  {
+    "id": "2026-10-30-li-encuesta-horas-sentado",
+    "cuenta": "garibaldi",
+    "fecha": "2026-10-30T07:40:00-06:00",
+    "tipo": "encuesta",
+    "redes": [
+      "linkedin"
+    ],
+    "imagenes": [
+      "contenido/garibaldi/2026-10-30-li-encuesta-horas-sentado/01.jpg"
+    ],
+    "encuesta": {
+      "pregunta": "¿Cuántas horas al día pasa sentado tu equipo?",
+      "opciones": [
+        "Menos de 4 h",
+        "De 4 a 6 h",
+        "Más de 6 h",
+        "No lo medimos"
+      ],
+      "duracion": "THREE_DAYS"
+    },
+    "texto": "Cerramos la semana con una pregunta que hago en todas las empresas que visito… y casi nadie sabe la respuesta. 🪑\n\nPasar muchas horas en la misma postura, sentado o de pie, se nota en la espalda, el cuello y la productividad.\n\nVota 👇 y la próxima semana comparto los resultados con 3 ajustes simples que funcionan en cualquier oficina o planta.\n\n#SaludOcupacional #Ergonomía #RecursosHumanos #LeySilla",
+    "texto_respaldo": "Cerramos la semana con una pregunta que hago en todas las empresas que visito… y casi nadie sabe la respuesta. 🪑\n\nPasar muchas horas en la misma postura, sentado o de pie, se nota en la espalda, el cuello y la productividad.\n\nVota 👇 y la próxima semana comparto los resultados con 3 ajustes simples que funcionan en cualquier oficina o planta.\n\n#SaludOcupacional #Ergonomía #RecursosHumanos #LeySilla\n\nVota en comentarios con el número:\n1) Menos de 4 h\n2) De 4 a 6 h\n3) Más de 6 h\n4) No lo medimos"
   }
 ]
