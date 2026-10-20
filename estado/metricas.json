@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T13:40:18+00:00",
+  "actualizado": "2026-10-20T18:06:29+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -513,6 +513,28 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/2244965706066758/"
+      }
+    },
+    "2026-10-20-sabias-carga-prueba": {
+      "tipo": "imagen",
+      "fecha": "2026-10-20T12:00:00-06:00",
+      "tema": "¿Sabías que si un trabajador demanda por la jornada, le toca a la EMPRESA probarla? ⚖️",
+      "instagram": {
+        "id": "18091159223239106",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DeubVP4jC13/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/photo.php?fbid=122104637703512173&set=a.122097810891512173&type=3"
       }
     }
   }
