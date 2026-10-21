@@ -1,5 +1,5 @@
 # Aprendizajes automáticos
-_Actualizado: 20/10/2026 12:06 CDMX · 23 posts con más de 24 h (historias excluidas)._
+_Actualizado: 20/10/2026 20:01 CDMX · 25 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-10-20): Instagram 0 (+0 desde 2026-10-15), Facebook 0 (+0)
@@ -10,22 +10,22 @@ _Actualizado: 20/10/2026 12:06 CDMX · 23 posts con más de 24 h (historias excl
 - **POV: eres de RRHH y es jueves de quincena 😵‍💫** · reel · jueves 18:00 · alcance 3, vistas 5, guardados 0, compartidos 0, comentarios 0
 
 ## Peores 3 (no repetir ese gancho/formato/hora tal cual)
-- **RRHH: el permiso de paternidad es de 5 días laborables CON goce de sueldo 👶** · imagen · sábado 11:00 · alcance 0, puntaje 0
 - **📢 RRHH: la "Ley Silla" ya es obligatoria. ¿Tu empresa cumple? 🪑** · imagen · domingo 11:00 · alcance 0, puntaje 0
 - **5 errores que cometes al cerrar la quincena (y cómo evitarlos) ⚠️** · carrusel · lunes 12:00 · alcance 0, puntaje 0
+- **Diciembre se acerca 🏖️ ¿Sabes cuántos días de vacaciones le tocan a cada quien?** · carrusel · lunes 14:00 · alcance 0, puntaje 0
 
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| carrusel | 8 | 12 | 1.5 |
-| reel | 4 | 2 | 0.0 |
+| carrusel | 9 | 10 | 1.3 |
+| reel | 5 | 2 | 0.0 |
 | imagen | 11 | 1 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| mediodía (12–15) | 11 | 8 | 0.7 |
-| tarde (16–19) | 4 | 2 | 0.0 |
+| mediodía (12–15) | 12 | 8 | 0.7 |
+| tarde (16–19) | 5 | 2 | 0.0 |
 | mañana (6–11) | 5 | 1 | 0.0 |
 | noche (20–5) | 3 | 0 | 1.3 |
 
@@ -35,9 +35,9 @@ _Actualizado: 20/10/2026 12:06 CDMX · 23 posts con más de 24 h (historias excl
 | miércoles | 9 | 10 | 1.3 |
 | jueves | 5 | 1 | 0.0 |
 | sábado | 2 | 1 | 0.0 |
+| lunes | 3 | 1 | 0.0 |
 | viernes | 4 | 0 | 0.0 |
 | domingo | 2 | 0 | 0.0 |
-| lunes | 1 | 0 | 0.0 |
 
 ## Reglas para el siguiente post
 1. Formato con más alcance hasta hoy: **carrusel**. Dale más espacio en el calendario.
