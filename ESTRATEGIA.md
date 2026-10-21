@@ -13,6 +13,10 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 | Blanco / fondo claro | `#FFFFFF` · `#F2F6FB` |
 | Negro | `#000000` |
 
+## Solo el negocio, nunca la persona (indicación del dueño, 21/10/2026)
+- El contenido de la marca **nunca habla del dueño**: sin nombre, sin "soy el doctor…", sin su foto ni su cargo, ni en textos, ni en imágenes, ni en voz en off.
+- Los cierres de reels hablan del producto (qué resuelve) y terminan con guardar/compartir + logo al centro.
+
 ## Logo (indicación de Garibaldi, 19/10/2026)
 - **Nunca el logo en la parte superior** de posts, carruseles, historias ni reels: se ve feo.
 - En feed: logo pequeño abajo a la derecha (como `premium_base.js`) o solo en la última lámina.
