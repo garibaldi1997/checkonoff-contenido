@@ -33,7 +33,9 @@ async def generar(txt: pathlib.Path):
     print("ok", txt.name, len(palabras), "palabras")
 
 async def main():
-    pendientes = [t for t in sorted(pathlib.Path("voz").glob("*.txt")) if not t.with_suffix(".mp3").exists() or "--todo" in sys.argv]
+    pendientes = [t for t in sorted(pathlib.Path("voz").glob("*.txt"))
+                  if not t.read_text(encoding="utf-8").startswith("#voz clon")  # esos los genera voz_clon.py
+                  and (not t.with_suffix(".mp3").exists() or "--todo" in sys.argv)]
     for t in pendientes:
         await generar(t)
     if not pendientes:
