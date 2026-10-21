@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-21T13:40:18+00:00",
+  "actualizado": "2026-10-21T18:15:34+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -589,14 +589,60 @@
         "saved": 0,
         "shares": 0,
         "views": 0,
-        "ig_reels_avg_watch_time": 7269,
-        "ig_reels_video_view_total_time": 7269
+        "ig_reels_avg_watch_time": 4517,
+        "ig_reels_video_view_total_time": 9035
       },
       "facebook": {
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1677786857267389/"
+      }
+    },
+    "2026-10-21-reel-turno-vespertino": {
+      "tipo": "reel",
+      "fecha": "2026-10-21T09:20:00-06:00",
+      "tema": "¿Tu turno es vespertino? 🤔 Para la Ley Federal del Trabajo, ese turno no existe.",
+      "instagram": {
+        "id": "18073344893750104",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/Dewt8ELikMz/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0,
+        "ig_reels_avg_watch_time": 132372,
+        "ig_reels_video_view_total_time": 132372
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1089117687206029/"
+      }
+    },
+    "2026-10-21-sabias-registro-electronico": {
+      "tipo": "imagen",
+      "fecha": "2026-10-21T12:00:00-06:00",
+      "tema": "¿Todavía registras la entrada en tarjeta de papel o en Excel? 🤔 Desde el 1 de enero de 202",
+      "instagram": {
+        "id": "17917842168453996",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DexAIidlndE/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/photo.php?fbid=122105729499512173&set=a.122097810891512173&type=3"
       }
     }
   }
