@@ -266,26 +266,6 @@
     "texto": "Estoy construyendo dos proyectos desde San Luis Potosí y hoy quiero compartirlos con ustedes 👇\n\n🟢 CheckONOFF: control de asistencia y pre-nómina para equipos de RRHH. Ahí publico todo lo práctico sobre la reforma de las 40 horas: qué cambia el 1 de enero de 2027, cómo reorganizar turnos y cómo calcular horas extra sin salirte de la ley.\n👉 Instagram: instagram.com/checkonoff\n👉 Facebook: facebook.com/122098590447512173\n\n🤖 Dieloxia: asistentes de WhatsApp con IA para negocios, con control humano en 1 clic. Tips para atender, cotizar y agendar sin perder clientes por contestar tarde.\n👉 Instagram: instagram.com/dieloxia\n👉 Facebook: facebook.com/1337128936154285\n\nSi eres de RRHH o tienes un negocio, me ayudaría mucho que las sigas y las compartas con quien le sirva. Todo el contenido es práctico y sin tecnicismos.\n\n#RecursosHumanos #ReformaLaboral #WhatsAppBusiness #Emprendimiento #SanLuisPotosi"
   },
   {
-    "id": "2026-10-16-whatsapp",
-    "cuenta": "checkonoff",
-    "fecha": "2026-10-16T14:30:00-06:00",
-    "tipo": "carrusel",
-    "redes": [
-      "instagram",
-      "facebook",
-      "linkedin"
-    ],
-    "imagenes": [
-      "contenido/checkonoff/2026-10-16-whatsapp/01.jpg",
-      "contenido/checkonoff/2026-10-16-whatsapp/02.jpg",
-      "contenido/checkonoff/2026-10-16-whatsapp/03.jpg",
-      "contenido/checkonoff/2026-10-16-whatsapp/04.jpg",
-      "contenido/checkonoff/2026-10-16-whatsapp/05.jpg",
-      "contenido/checkonoff/2026-10-16-whatsapp/06.jpg"
-    ],
-    "texto": "Tu equipo ya usa WhatsApp todo el día. ¿Por qué no usarlo para checar? 📲\n\nAsí de fácil:\n1️⃣ Escribe \"Hola\" y elige 🟢 Entrada\n2️⃣ Comparte su ubicación 📍\n3️⃣ Se toma una selfie 🤳\n✅ ¡Registro exitoso! En segundos.\n\nSin descargar apps. Sin contraseñas. Sin el \"yo checo por él\".\n\n¿Sin señal? No pasa nada. El registro se guarda en el celular y se sincroniza al volver la señal, con la hora real del marcaje.\n\nIdeal para obras, rutas, tiendas y equipos en campo.\n\n👉 Prueba el bot GRATIS 14 días en checkonoff.mx\n📌 Guárdalo para cuando armes tu control de asistencia.\n🔁 Compártelo con quien tenga personal fuera de la oficina.\n\n#whatsapp #emprendedores #logistica #construccion #negociosmexico"
-  },
-  {
     "id": "2026-10-16-sabias-faltas",
     "cuenta": "checkonoff",
     "fecha": "2026-10-16T12:00:00-06:00",
@@ -313,6 +293,26 @@
       "contenido/checkonoff/2026-10-16-historia-registro-jornada/01.jpg"
     ],
     "texto": ""
+  },
+  {
+    "id": "2026-10-16-whatsapp",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-16T14:30:00-06:00",
+    "tipo": "carrusel",
+    "redes": [
+      "instagram",
+      "facebook",
+      "linkedin"
+    ],
+    "imagenes": [
+      "contenido/checkonoff/2026-10-16-whatsapp/01.jpg",
+      "contenido/checkonoff/2026-10-16-whatsapp/02.jpg",
+      "contenido/checkonoff/2026-10-16-whatsapp/03.jpg",
+      "contenido/checkonoff/2026-10-16-whatsapp/04.jpg",
+      "contenido/checkonoff/2026-10-16-whatsapp/05.jpg",
+      "contenido/checkonoff/2026-10-16-whatsapp/06.jpg"
+    ],
+    "texto": "Tu equipo ya usa WhatsApp todo el día. ¿Por qué no usarlo para checar? 📲\n\nAsí de fácil:\n1️⃣ Escribe \"Hola\" y elige 🟢 Entrada\n2️⃣ Comparte su ubicación 📍\n3️⃣ Se toma una selfie 🤳\n✅ ¡Registro exitoso! En segundos.\n\nSin descargar apps. Sin contraseñas. Sin el \"yo checo por él\".\n\n¿Sin señal? No pasa nada. El registro se guarda en el celular y se sincroniza al volver la señal, con la hora real del marcaje.\n\nIdeal para obras, rutas, tiendas y equipos en campo.\n\n👉 Prueba el bot GRATIS 14 días en checkonoff.mx\n📌 Guárdalo para cuando armes tu control de asistencia.\n🔁 Compártelo con quien tenga personal fuera de la oficina.\n\n#whatsapp #emprendedores #logistica #construccion #negociosmexico"
   },
   {
     "id": "2026-10-16-calculadora-horas-extra",
@@ -429,27 +429,6 @@
     "video": "contenido/checkonoff/2026-10-18-reel-3-errores/reel.mp4"
   },
   {
-    "id": "2026-10-19-vacaciones",
-    "cuenta": "checkonoff",
-    "fecha": "2026-10-19T14:30:00-06:00",
-    "tipo": "carrusel",
-    "redes": [
-      "instagram",
-      "facebook",
-      "linkedin"
-    ],
-    "imagenes": [
-      "contenido/checkonoff/2026-10-19-vacaciones/01.jpg",
-      "contenido/checkonoff/2026-10-19-vacaciones/02.jpg",
-      "contenido/checkonoff/2026-10-19-vacaciones/03.jpg",
-      "contenido/checkonoff/2026-10-19-vacaciones/04.jpg",
-      "contenido/checkonoff/2026-10-19-vacaciones/05.jpg",
-      "contenido/checkonoff/2026-10-19-vacaciones/06.jpg",
-      "contenido/checkonoff/2026-10-19-vacaciones/07.jpg"
-    ],
-    "texto": "Diciembre se acerca 🏖️ ¿Sabes cuántos días de vacaciones le tocan a cada quien?\n\nDesde 2023, la Ley Federal del Trabajo marca 12 días desde el primer año:\n\n1 año → 12 días\n2 años → 14\n3 años → 16\n4 años → 18\n5 años → 20\n6 a 10 años → 22\n11 a 15 años → 24\n…y +2 días por cada 5 años más. Prima vacacional mínima: 25 %.\n\nCon CheckONOFF:\n⚖️ Los días se calculan según la LFT\n🎂 El saldo se actualiza en cada aniversario\n✍️ Solicitudes y aprobaciones con firma digital, sin papeles\n\nCumplir con la ley no debería depender de un Excel.\n👉 Prueba 14 días GRATIS en checkonoff.mx\n\n📌 Guarda esta tabla para tu equipo de RRHH.\n\n#vacaciones #leyfederaldeltrabajo #derechoslaborales #trabajomexico #recursoshumanos"
-  },
-  {
     "id": "2026-10-19-carrusel-5-errores-quincena",
     "cuenta": "checkonoff",
     "fecha": "2026-10-19T12:00:00-06:00",
@@ -485,19 +464,39 @@
     "texto": ""
   },
   {
-    "id": "2026-10-20-reforma-40-horas",
+    "id": "2026-10-19-vacaciones",
     "cuenta": "checkonoff",
-    "fecha": "2026-10-20T14:30:00-06:00",
-    "tipo": "imagen",
+    "fecha": "2026-10-19T14:30:00-06:00",
+    "tipo": "carrusel",
     "redes": [
       "instagram",
       "facebook",
       "linkedin"
     ],
     "imagenes": [
-      "contenido/checkonoff/2026-10-20-reforma-40-horas/01.jpg"
+      "contenido/checkonoff/2026-10-19-vacaciones/01.jpg",
+      "contenido/checkonoff/2026-10-19-vacaciones/02.jpg",
+      "contenido/checkonoff/2026-10-19-vacaciones/03.jpg",
+      "contenido/checkonoff/2026-10-19-vacaciones/04.jpg",
+      "contenido/checkonoff/2026-10-19-vacaciones/05.jpg",
+      "contenido/checkonoff/2026-10-19-vacaciones/06.jpg",
+      "contenido/checkonoff/2026-10-19-vacaciones/07.jpg"
     ],
-    "texto": "⏰ La jornada de 48 a 40 horas YA ES LEY en México (DOF, 1 de mayo de 2026).\n\n📅 Así baja el máximo de horas por semana:\n2027 → 46 h\n2028 → 44 h\n2029 → 42 h\n2030 → 40 h\n\n💰 Sin reducción de salario ni prestaciones.\n📲 Y ahora registrar la jornada de forma electrónica es obligatorio (Art. 132 fr. XXXIV LFT), con multas de 250 a 5,000 UMA.\n\nEl verdadero reto no es trabajar menos: es REGISTRAR bien cada hora, cada break y cada hora extra.\n\nCon CheckONOFF tu equipo checa por WhatsApp, app o checador, y la pre-nómina se ajusta sola a la nueva jornada.\n\n👉 Prepárate hoy: 14 días gratis en checkonoff.mx\n\n#jornada40horas #reformalaboral #leyfederaldeltrabajo #recursoshumanos #empresasmexicanas"
+    "texto": "Diciembre se acerca 🏖️ ¿Sabes cuántos días de vacaciones le tocan a cada quien?\n\nDesde 2023, la Ley Federal del Trabajo marca 12 días desde el primer año:\n\n1 año → 12 días\n2 años → 14\n3 años → 16\n4 años → 18\n5 años → 20\n6 a 10 años → 22\n11 a 15 años → 24\n…y +2 días por cada 5 años más. Prima vacacional mínima: 25 %.\n\nCon CheckONOFF:\n⚖️ Los días se calculan según la LFT\n🎂 El saldo se actualiza en cada aniversario\n✍️ Solicitudes y aprobaciones con firma digital, sin papeles\n\nCumplir con la ley no debería depender de un Excel.\n👉 Prueba 14 días GRATIS en checkonoff.mx\n\n📌 Guarda esta tabla para tu equipo de RRHH.\n\n#vacaciones #leyfederaldeltrabajo #derechoslaborales #trabajomexico #recursoshumanos"
+  },
+  {
+    "id": "2026-10-19-reel-historia-quincena",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-19T18:00:00-06:00",
+    "tipo": "reel",
+    "redes": [
+      "instagram",
+      "facebook",
+      "linkedin"
+    ],
+    "imagenes": [],
+    "texto": "Jueves de quincena, 3 sucursales y 40 mensajes de \"¿quién faltó?\" 😵‍💫\n\nFotos de listas en papel, un Excel que se llama FINAL_v7 y la nómina sin cuadrar a las 10 de la noche.\n\nCon CheckONOFF tu equipo checa desde el celular, por WhatsApp o en su checador, con ubicación y foto. Faltas, retardos y horas extra se calculan solos, y la pre-nómina sale en 1 clic.\n\n📌 Guárdalo si eres de RRHH y etiqueta a quien cierra la quincena contigo.\n\n👉 Prueba 14 días gratis: checkonoff.mx\n\n#recursoshumanos #rrhh #nomina #quincena #controldeasistencia",
+    "video": "contenido/checkonoff/2026-10-19-reel-historia-quincena/reel.mp4"
   },
   {
     "id": "2026-10-20-sabias-carga-prueba",
@@ -529,6 +528,21 @@
     "texto": ""
   },
   {
+    "id": "2026-10-20-reforma-40-horas",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-20T14:30:00-06:00",
+    "tipo": "imagen",
+    "redes": [
+      "instagram",
+      "facebook",
+      "linkedin"
+    ],
+    "imagenes": [
+      "contenido/checkonoff/2026-10-20-reforma-40-horas/01.jpg"
+    ],
+    "texto": "⏰ La jornada de 48 a 40 horas YA ES LEY en México (DOF, 1 de mayo de 2026).\n\n📅 Así baja el máximo de horas por semana:\n2027 → 46 h\n2028 → 44 h\n2029 → 42 h\n2030 → 40 h\n\n💰 Sin reducción de salario ni prestaciones.\n📲 Y ahora registrar la jornada de forma electrónica es obligatorio (Art. 132 fr. XXXIV LFT), con multas de 250 a 5,000 UMA.\n\nEl verdadero reto no es trabajar menos: es REGISTRAR bien cada hora, cada break y cada hora extra.\n\nCon CheckONOFF tu equipo checa por WhatsApp, app o checador, y la pre-nómina se ajusta sola a la nueva jornada.\n\n👉 Prepárate hoy: 14 días gratis en checkonoff.mx\n\n#jornada40horas #reformalaboral #leyfederaldeltrabajo #recursoshumanos #empresasmexicanas"
+  },
+  {
     "id": "2026-10-20-reel-48-a-40-horas",
     "cuenta": "checkonoff",
     "fecha": "2026-10-20T18:00:00-06:00",
@@ -541,6 +555,33 @@
     "imagenes": [],
     "texto": "De 48 a 40 horas: así se reduce la jornada laboral en México ⏰\n\n2027 → 46 h\n2028 → 44 h\n2029 → 42 h\n2030 → 40 h\nSin bajar salarios.\n\n¿Tu empresa ya tiene un plan? Con menos horas, cada hora tendrá que quedar registrada.\n\n👉 Prepárate con CheckONOFF: checkonoff.mx\n\n#recursoshumanos #rrhh #nomina #capitalhumano #jornada40horas #reformalaboral",
     "video": "contenido/checkonoff/2026-10-20-reel-48-a-40-horas/reel.mp4"
+  },
+  {
+    "id": "2026-10-21-li-mito-postura",
+    "cuenta": "garibaldi",
+    "fecha": "2026-10-21T07:40:00-06:00",
+    "tipo": "imagen",
+    "redes": [
+      "linkedin"
+    ],
+    "imagenes": [
+      "contenido/garibaldi/2026-10-21-li-mito-postura/01.jpg"
+    ],
+    "texto": "Toda la vida nos dijeron: “siéntate derecho, espalda recta, ángulo de 90 grados”.\n\nComo médico laboral te digo algo que sorprende en las capacitaciones: la postura perfecta no existe.\n\nEl problema casi nunca es CÓMO te sientas, sino CUÁNTO TIEMPO te quedas igual. Una espalda “perfecta” pero inmóvil durante 4 horas se cansa más que una espalda que cambia de posición.\n\nLo que sí recomiendo:\n→ Cambia de postura cada 30 a 60 minutos.\n→ Levántate aunque sea 1 minuto: a llenar el agua, a hablar con alguien en persona.\n→ Pantalla a la altura de los ojos y pies apoyados: eso sí ayuda.\n→ Y si tu equipo trabaja de pie, la Ley Silla ya obliga a darles dónde sentarse y pausas.\n\nLa mejor postura es la siguiente. 😉\n\n¿Cuántas horas llevas hoy sin levantarte? Te leo 👇\n\n#SaludOcupacional #Ergonomía #Bienestar #RecursosHumanos"
+  },
+  {
+    "id": "2026-10-21-reel-turno-vespertino",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-21T09:20:00-06:00",
+    "tipo": "reel",
+    "redes": [
+      "instagram",
+      "facebook",
+      "linkedin"
+    ],
+    "imagenes": [],
+    "texto": "¿Tu turno es vespertino? 🤔 Para la Ley Federal del Trabajo, ese turno no existe.\n\nSolo hay 3 jornadas (art. 60 y 61 LFT):\n☀️ Diurna: 6 am a 8 pm · máx. 8 h\n🌙 Nocturna: 8 pm a 6 am · máx. 7 h\n🌗 Mixta: combina las dos · máx. 7.5 h\n\nUn turno de 2 pm a 10 pm es MIXTO: su máximo es 7.5 h, no 8. Esa media hora de más es tiempo extra.\n\nCon CheckONOFF cada entrada y salida queda registrada y las horas extra se calculan solas.\n\n📌 Guárdalo y compártelo con quien arma los turnos.\n\n👉 Prueba 14 días gratis: checkonoff.mx\n\n#recursoshumanos #rrhh #nomina #leyfederaldeltrabajo #jornadalaboral #horasextra",
+    "video": "contenido/checkonoff/2026-10-21-reel-turno-vespertino/reel.mp4"
   },
   {
     "id": "2026-10-21-sabias-registro-electronico",
@@ -558,19 +599,18 @@
     "texto": "¿Todavía registras la entrada en tarjeta de papel o en Excel? 🤔 Desde el 1 de enero de 2027 eso ya no basta.\n\nLa reforma a la LFT (DOF, 1 de mayo de 2026) agregó la fracción XXXIV al Art. 132:\n✅ Registrar electrónicamente la jornada de cada persona trabajadora, con hora de inicio y de fin\n✅ Entregar ese registro a la autoridad cuando lo pida\n📅 Las reglas de la STPS aplican desde el 1 de enero de 2027\n💸 Multa por incumplir: de 250 a 5,000 UMA (Art. 994 fr. IV Bis)\n\n🤝 Dato clave: el registro electrónico hace prueba plena si se acredita que fue acordado entre la empresa y el trabajador. Firma ese acuerdo con cada persona.\n\nLas tarjetas de papel y el Excel ya no alcanzan. CheckONOFF registra entradas, salidas, descansos y tiempo extra por WhatsApp, con hora, GPS y foto.\n👉 Prueba 14 días gratis en checkonoff.mx\n\n📌 Guárdalo y compártelo con tu equipo de RRHH.\n\n#registroelectronico #reformalaboral #jornada40horas #recursoshumanos #rrhh #nomina #leyfederaldeltrabajo"
   },
   {
-    "id": "2026-11-16-sabias-aguinaldo",
+    "id": "2026-10-21-historia-festivo",
     "cuenta": "checkonoff",
-    "fecha": "2026-11-16T10:00:00-06:00",
-    "tipo": "imagen",
+    "fecha": "2026-10-21T13:15:00-06:00",
+    "tipo": "historia",
     "redes": [
       "instagram",
-      "facebook",
-      "linkedin"
+      "facebook"
     ],
     "imagenes": [
-      "contenido/checkonoff/2026-11-16-sabias-aguinaldo/01.jpg"
+      "contenido/checkonoff/2026-10-21-historia-festivo/01.jpg"
     ],
-    "texto": "RRHH: el aguinaldo se paga ANTES del 20 de diciembre 🎄 ¿Ya tienes listo el cálculo?\n\n📌 Mínimo: 15 días de salario (Art. 87 LFT)\n📌 Quien no cumplió el año completo recibe la parte proporcional a los días trabajados\n📌 Un error en antigüedad o en faltas se convierte en reclamos en plena temporada\n\nEl cálculo es tan bueno como tus registros de asistencia.\n\nCon CheckONOFF tienes antigüedad, días trabajados y ausencias de cada colaborador en un solo lugar, listos para tu pre-nómina.\n👉 Prueba 14 días gratis en checkonoff.mx\n\n📌 Guárdalo para tu cierre de diciembre.\n\n#recursoshumanos #rrhh #nomina #capitalhumano #leyfederaldeltrabajo"
+    "texto": ""
   },
   {
     "id": "2026-10-21-carrusel-festivo-16-nov",
@@ -592,35 +632,17 @@
     "texto": "Lunes 16 de noviembre: si tu equipo trabaja, ¿cuánto le pagas? 🤔\n\nEs día de descanso obligatorio (art. 74 fr. VI LFT). Si alguien lo trabaja, le pagas su día + salario doble (art. 75).\n\nEjemplo con $400 diarios:\n• Su día: $400\n• Doble por trabajarlo: $800\n• Total: $1,200\n\nY ojo: la quincena cierra el 15 y el festivo cae al día siguiente.\n\n📌 Guárdalo para tu cierre de noviembre y compártelo con quien hace la nómina.\n\n#recursoshumanos #rrhh #nomina #leyfederaldeltrabajo #capitalhumano #diafestivo"
   },
   {
-    "id": "2026-10-21-historia-festivo",
-    "cuenta": "checkonoff",
-    "fecha": "2026-10-21T13:15:00-06:00",
-    "tipo": "historia",
+    "id": "2026-10-22-li-humor-registro",
+    "cuenta": "garibaldi",
+    "fecha": "2026-10-22T07:40:00-06:00",
+    "tipo": "imagen",
     "redes": [
-      "instagram",
-      "facebook"
-    ],
-    "imagenes": [
-      "contenido/checkonoff/2026-10-21-historia-festivo/01.jpg"
-    ],
-    "texto": ""
-  },
-  {
-    "id": "2026-10-22-para-rrhh-listas-asistencia",
-    "cuenta": "checkonoff",
-    "fecha": "2026-10-22T14:30:00-06:00",
-    "tipo": "carrusel",
-    "redes": [
-      "instagram",
-      "facebook",
       "linkedin"
     ],
     "imagenes": [
-      "contenido/checkonoff/2026-10-22-para-rrhh-listas-asistencia/01.jpg",
-      "contenido/checkonoff/2026-10-22-para-rrhh-listas-asistencia/02.jpg",
-      "contenido/checkonoff/2026-10-22-para-rrhh-listas-asistencia/03.jpg"
+      "contenido/garibaldi/2026-10-22-li-humor-registro/01.jpg"
     ],
-    "texto": "Para RRHH: ¿cuánto tiempo debes guardar las listas de asistencia? 🗂️\n\nDurante el último año de la relación laboral y un año después de que termina (art. 804 fr. III LFT).\n\n¿Por qué importa? Si en un juicio no las presentas, se presume cierto lo que diga el trabajador sobre su jornada (art. 805).\n\n📌 Guárdalo para tu próxima auditoría.\n\n#recursoshumanos #rrhh #nomina #leyfederaldeltrabajo #capitalhumano #asistencia"
+    "texto": "Jueves de “realidad con humor” 😅\n\nEl “quédate un ratito más” siempre ha existido. Lo que cambia es que, desde el 1 de enero de 2027, el registro de la jornada debe ser electrónico, y ese ratito queda registrado con hora de entrada y de salida.\n\nNo es para asustar a nadie: es para que las horas extra se paguen bien y se puedan demostrar, para la empresa y para el trabajador.\n\n¿Te ha pasado el “ratito más” que se volvió hora y media? Cuéntame tu mejor anécdota 👇\n\n#RecursosHumanos #HumorLaboral #ReformaLaboral #Jornada40Horas"
   },
   {
     "id": "2026-10-22-carrusel-hora-comida",
@@ -656,6 +678,23 @@
     "texto": ""
   },
   {
+    "id": "2026-10-22-para-rrhh-listas-asistencia",
+    "cuenta": "checkonoff",
+    "fecha": "2026-10-22T14:30:00-06:00",
+    "tipo": "carrusel",
+    "redes": [
+      "instagram",
+      "facebook",
+      "linkedin"
+    ],
+    "imagenes": [
+      "contenido/checkonoff/2026-10-22-para-rrhh-listas-asistencia/01.jpg",
+      "contenido/checkonoff/2026-10-22-para-rrhh-listas-asistencia/02.jpg",
+      "contenido/checkonoff/2026-10-22-para-rrhh-listas-asistencia/03.jpg"
+    ],
+    "texto": "Para RRHH: ¿cuánto tiempo debes guardar las listas de asistencia? 🗂️\n\nDurante el último año de la relación laboral y un año después de que termina (art. 804 fr. III LFT).\n\n¿Por qué importa? Si en un juicio no las presentas, se presume cierto lo que diga el trabajador sobre su jornada (art. 805).\n\n📌 Guárdalo para tu próxima auditoría.\n\n#recursoshumanos #rrhh #nomina #leyfederaldeltrabajo #capitalhumano #asistencia"
+  },
+  {
     "id": "2026-10-22-reel-hora-comida",
     "cuenta": "checkonoff",
     "fecha": "2026-10-22T18:00:00-06:00",
@@ -668,6 +707,19 @@
     "imagenes": [],
     "texto": "POV: tu equipo come en su lugar \"para avanzar\" 🌮\n\nPara la ley, si no pueden salir del lugar, esa hora cuenta como jornada (art. 64 LFT). 9:00 a 18:00 sin salir = 9 horas: 1 h extra al día, 5 a la semana.\n\n¿En tu empresa cómo lo manejan? Te leo 👇\n\n#recursoshumanos #rrhh #nomina #leyfederaldeltrabajo #capitalhumano #jornadalaboral",
     "video": "contenido/checkonoff/2026-10-22-reel-hora-comida/reel.mp4"
+  },
+  {
+    "id": "2026-10-23-li-senales-agotamiento",
+    "cuenta": "garibaldi",
+    "fecha": "2026-10-23T07:40:00-06:00",
+    "tipo": "imagen",
+    "redes": [
+      "linkedin"
+    ],
+    "imagenes": [
+      "contenido/garibaldi/2026-10-23-li-senales-agotamiento/01.jpg"
+    ],
+    "texto": "El agotamiento casi nunca llega con un aviso. Llega en señales pequeñas que normalizamos. 🧠\n\nEn mi práctica como médico laboral veo siempre las mismas 7 (están en la imagen). La que más se pasa por alto es el presentismo: la persona sigue viniendo, pero ya no está.\n\nLa NOM-035 no pide diagnosticar a nadie: pide identificar y prevenir los factores de riesgo psicosocial (cargas excesivas, jornadas largas, liderazgo negativo). Y casi siempre empieza por algo medible: horarios que no se respetan y descansos que no existen.\n\n¿Cuál de estas 7 señales has visto más en tu equipo? Dime el número 👇\n\n#NOM035 #SaludMental #RecursosHumanos #Liderazgo"
   },
   {
     "id": "2026-10-23-carrusel-checar-sin-internet",
@@ -799,59 +851,6 @@
     "texto": ""
   },
   {
-    "id": "2026-10-19-reel-historia-quincena",
-    "cuenta": "checkonoff",
-    "fecha": "2026-10-19T18:00:00-06:00",
-    "tipo": "reel",
-    "redes": [
-      "instagram",
-      "facebook",
-      "linkedin"
-    ],
-    "imagenes": [],
-    "texto": "Jueves de quincena, 3 sucursales y 40 mensajes de \"¿quién faltó?\" 😵‍💫\n\nFotos de listas en papel, un Excel que se llama FINAL_v7 y la nómina sin cuadrar a las 10 de la noche.\n\nCon CheckONOFF tu equipo checa desde el celular, por WhatsApp o en su checador, con ubicación y foto. Faltas, retardos y horas extra se calculan solos, y la pre-nómina sale en 1 clic.\n\n📌 Guárdalo si eres de RRHH y etiqueta a quien cierra la quincena contigo.\n\n👉 Prueba 14 días gratis: checkonoff.mx\n\n#recursoshumanos #rrhh #nomina #quincena #controldeasistencia",
-    "video": "contenido/checkonoff/2026-10-19-reel-historia-quincena/reel.mp4"
-  },
-  {
-    "id": "2026-10-21-li-mito-postura",
-    "cuenta": "garibaldi",
-    "fecha": "2026-10-21T07:40:00-06:00",
-    "tipo": "imagen",
-    "redes": [
-      "linkedin"
-    ],
-    "imagenes": [
-      "contenido/garibaldi/2026-10-21-li-mito-postura/01.jpg"
-    ],
-    "texto": "Toda la vida nos dijeron: “siéntate derecho, espalda recta, ángulo de 90 grados”.\n\nComo médico laboral te digo algo que sorprende en las capacitaciones: la postura perfecta no existe.\n\nEl problema casi nunca es CÓMO te sientas, sino CUÁNTO TIEMPO te quedas igual. Una espalda “perfecta” pero inmóvil durante 4 horas se cansa más que una espalda que cambia de posición.\n\nLo que sí recomiendo:\n→ Cambia de postura cada 30 a 60 minutos.\n→ Levántate aunque sea 1 minuto: a llenar el agua, a hablar con alguien en persona.\n→ Pantalla a la altura de los ojos y pies apoyados: eso sí ayuda.\n→ Y si tu equipo trabaja de pie, la Ley Silla ya obliga a darles dónde sentarse y pausas.\n\nLa mejor postura es la siguiente. 😉\n\n¿Cuántas horas llevas hoy sin levantarte? Te leo 👇\n\n#SaludOcupacional #Ergonomía #Bienestar #RecursosHumanos"
-  },
-  {
-    "id": "2026-10-22-li-humor-registro",
-    "cuenta": "garibaldi",
-    "fecha": "2026-10-22T07:40:00-06:00",
-    "tipo": "imagen",
-    "redes": [
-      "linkedin"
-    ],
-    "imagenes": [
-      "contenido/garibaldi/2026-10-22-li-humor-registro/01.jpg"
-    ],
-    "texto": "Jueves de “realidad con humor” 😅\n\nEl “quédate un ratito más” siempre ha existido. Lo que cambia es que, desde el 1 de enero de 2027, el registro de la jornada debe ser electrónico, y ese ratito queda registrado con hora de entrada y de salida.\n\nNo es para asustar a nadie: es para que las horas extra se paguen bien y se puedan demostrar, para la empresa y para el trabajador.\n\n¿Te ha pasado el “ratito más” que se volvió hora y media? Cuéntame tu mejor anécdota 👇\n\n#RecursosHumanos #HumorLaboral #ReformaLaboral #Jornada40Horas"
-  },
-  {
-    "id": "2026-10-23-li-senales-agotamiento",
-    "cuenta": "garibaldi",
-    "fecha": "2026-10-23T07:40:00-06:00",
-    "tipo": "imagen",
-    "redes": [
-      "linkedin"
-    ],
-    "imagenes": [
-      "contenido/garibaldi/2026-10-23-li-senales-agotamiento/01.jpg"
-    ],
-    "texto": "El agotamiento casi nunca llega con un aviso. Llega en señales pequeñas que normalizamos. 🧠\n\nEn mi práctica como médico laboral veo siempre las mismas 7 (están en la imagen). La que más se pasa por alto es el presentismo: la persona sigue viniendo, pero ya no está.\n\nLa NOM-035 no pide diagnosticar a nadie: pide identificar y prevenir los factores de riesgo psicosocial (cargas excesivas, jornadas largas, liderazgo negativo). Y casi siempre empieza por algo medible: horarios que no se respetan y descansos que no existen.\n\n¿Cuál de estas 7 señales has visto más en tu equipo? Dime el número 👇\n\n#NOM035 #SaludMental #RecursosHumanos #Liderazgo"
-  },
-  {
     "id": "2026-10-26-li-costo-no-medir",
     "cuenta": "garibaldi",
     "fecha": "2026-10-26T07:40:00-06:00",
@@ -937,5 +936,20 @@
     },
     "texto": "Cerramos la semana con una pregunta que hago en todas las empresas que visito… y casi nadie sabe la respuesta. 🪑\n\nPasar muchas horas en la misma postura, sentado o de pie, se nota en la espalda, el cuello y la productividad.\n\nVota 👇 y la próxima semana comparto los resultados con 3 ajustes simples que funcionan en cualquier oficina o planta.\n\n#SaludOcupacional #Ergonomía #RecursosHumanos #LeySilla",
     "texto_respaldo": "Cerramos la semana con una pregunta que hago en todas las empresas que visito… y casi nadie sabe la respuesta. 🪑\n\nPasar muchas horas en la misma postura, sentado o de pie, se nota en la espalda, el cuello y la productividad.\n\nVota 👇 y la próxima semana comparto los resultados con 3 ajustes simples que funcionan en cualquier oficina o planta.\n\n#SaludOcupacional #Ergonomía #RecursosHumanos #LeySilla\n\nVota en comentarios con el número:\n1) Menos de 4 h\n2) De 4 a 6 h\n3) Más de 6 h\n4) No lo medimos"
+  },
+  {
+    "id": "2026-11-16-sabias-aguinaldo",
+    "cuenta": "checkonoff",
+    "fecha": "2026-11-16T10:00:00-06:00",
+    "tipo": "imagen",
+    "redes": [
+      "instagram",
+      "facebook",
+      "linkedin"
+    ],
+    "imagenes": [
+      "contenido/checkonoff/2026-11-16-sabias-aguinaldo/01.jpg"
+    ],
+    "texto": "RRHH: el aguinaldo se paga ANTES del 20 de diciembre 🎄 ¿Ya tienes listo el cálculo?\n\n📌 Mínimo: 15 días de salario (Art. 87 LFT)\n📌 Quien no cumplió el año completo recibe la parte proporcional a los días trabajados\n📌 Un error en antigüedad o en faltas se convierte en reclamos en plena temporada\n\nEl cálculo es tan bueno como tus registros de asistencia.\n\nCon CheckONOFF tienes antigüedad, días trabajados y ausencias de cada colaborador en un solo lugar, listos para tu pre-nómina.\n👉 Prueba 14 días gratis en checkonoff.mx\n\n📌 Guárdalo para tu cierre de diciembre.\n\n#recursoshumanos #rrhh #nomina #capitalhumano #leyfederaldeltrabajo"
   }
 ]
