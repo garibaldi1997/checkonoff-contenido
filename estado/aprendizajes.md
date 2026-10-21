@@ -1,8 +1,8 @@
 # Aprendizajes automáticos
-_Actualizado: 20/10/2026 20:01 CDMX · 25 posts con más de 24 h (historias excluidas)._
+_Actualizado: 21/10/2026 07:41 CDMX · 25 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
-- **checkonoff** (2026-10-20): Instagram 0 (+0 desde 2026-10-15), Facebook 0 (+0)
+- **checkonoff** (2026-10-21): Instagram 0 (+0 desde 2026-10-15), Facebook 0 (+0)
 
 ## Mejores 3 (repetir el patrón: formato, tipo de gancho, hora)
 - **¿Tu turno es "vespertino"? 🤔 Para la Ley Federal del Trabajo, ese tipo de jornada NO exist** · carrusel · miércoles 15:00 · alcance 52, vistas 67, guardados 0, compartidos 1, comentarios 0
