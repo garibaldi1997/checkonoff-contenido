@@ -17,6 +17,9 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 - El contenido de la marca **nunca habla del dueño**: sin nombre, sin "soy el doctor…", sin su foto ni su cargo, ni en textos, ni en imágenes, ni en voz en off.
 - Los cierres de reels hablan del producto (qué resuelve) y terminan con guardar/compartir + logo al centro.
 
+## Reels: efectos obligatorios (indicación del dueño, 22/10/2026)
+- Todos los reels usan `plantillas/efectos/efectos.js` (10 efectos: orbit, frame break, UI world, digital zoom, phone mockup, headline wall, zoom through, chart grow, doodle boil, glass type): mínimo 4 por reel, cambio de escena cada 2–4 s, voz natural y subtítulos palabra por palabra. Detalle en `plantillas/efectos/README.md`.
+
 ## Logo (indicación de Garibaldi, 19/10/2026)
 - **Nunca el logo en la parte superior** de posts, carruseles, historias ni reels: se ve feo.
 - En feed: logo pequeño abajo a la derecha (como `premium_base.js`) o solo en la última lámina.
