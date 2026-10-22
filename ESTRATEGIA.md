@@ -18,7 +18,7 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 - Los cierres de reels hablan del producto (qué resuelve) y terminan con guardar/compartir + logo al centro.
 
 ## Reels: efectos obligatorios (indicación del dueño, 22/10/2026)
-- Todos los reels usan `plantillas/efectos/efectos.js` (10 efectos: orbit, frame break, UI world, digital zoom, phone mockup, headline wall, zoom through, chart grow, doodle boil, glass type): mínimo 4 por reel, cambio de escena cada 2–4 s, voz natural y subtítulos palabra por palabra. Detalle en `plantillas/efectos/README.md`.
+- Todos los reels usan `plantillas/efectos/efectos.js` (10 efectos: orbit, frame break, UI world, digital zoom, phone mockup, headline wall, zoom through, chart grow, doodle boil, glass type): mínimo 4 por reel, cambio de escena cada 2–4 s, voz de Edge alternando mujer/hombre (nunca la voz del dueño, indicación del 22/10/2026) y subtítulos palabra por palabra. Detalle en `plantillas/efectos/README.md`.
 
 ## Logo (indicación de Garibaldi, 19/10/2026)
 - **Nunca el logo en la parte superior** de posts, carruseles, historias ni reels: se ve feo.
