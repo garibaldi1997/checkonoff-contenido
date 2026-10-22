@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-21T18:15:34+00:00",
+  "actualizado": "2026-10-22T13:40:28+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -509,8 +509,8 @@
         "saved": 0,
         "shares": 0,
         "views": 2,
-        "ig_reels_avg_watch_time": 6472,
-        "ig_reels_video_view_total_time": 19418
+        "ig_reels_avg_watch_time": 4923,
+        "ig_reels_video_view_total_time": 19692
       },
       "facebook": {
         "reacciones": 0,
@@ -546,11 +546,7 @@
       "fecha": "2026-10-20T13:30:00-06:00",
       "tema": "",
       "instagram": {
-        "id": "18107384669258078",
-        "comments_count": 0,
-        "like_count": 0,
-        "media_product_type": "STORY",
-        "permalink": "https://www.instagram.com/stories/checkonoff/4012309817032720899"
+        "error": "GET 18107384669258078: Unsupported get request. Object with ID '18107384669258078' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       }
     },
     "2026-10-20-reforma-40-horas": {
@@ -589,8 +585,8 @@
         "saved": 0,
         "shares": 0,
         "views": 0,
-        "ig_reels_avg_watch_time": 4517,
-        "ig_reels_video_view_total_time": 9035
+        "ig_reels_avg_watch_time": 3308,
+        "ig_reels_video_view_total_time": 9925
       },
       "facebook": {
         "reacciones": 0,
@@ -609,12 +605,12 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/Dewt8ELikMz/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0,
-        "ig_reels_avg_watch_time": 132372,
-        "ig_reels_video_view_total_time": 132372
+        "views": 1,
+        "ig_reels_avg_watch_time": 58712,
+        "ig_reels_video_view_total_time": 176136
       },
       "facebook": {
         "reacciones": 0,
@@ -643,6 +639,40 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/photo.php?fbid=122105729499512173&set=a.122097810891512173&type=3"
+      }
+    },
+    "2026-10-21-historia-festivo": {
+      "tipo": "historia",
+      "fecha": "2026-10-21T13:15:00-06:00",
+      "tema": "",
+      "instagram": {
+        "id": "18148457347561309",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "STORY",
+        "permalink": "https://www.instagram.com/stories/checkonoff/4013027018607187393"
+      }
+    },
+    "2026-10-21-carrusel-festivo-16-nov": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-21T15:00:00-06:00",
+      "tema": "Lunes 16 de noviembre: si tu equipo trabaja, ¿cuánto le pagas? 🤔",
+      "instagram": {
+        "id": "18346553062281532",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DexUzYmEwtd/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122105892861512173"
       }
     }
   }

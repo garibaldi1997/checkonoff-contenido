@@ -1,8 +1,8 @@
 # Aprendizajes automáticos
-_Actualizado: 21/10/2026 12:16 CDMX · 26 posts con más de 24 h (historias excluidas)._
+_Actualizado: 22/10/2026 07:41 CDMX · 28 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
-- **checkonoff** (2026-10-21): Instagram 0 (+0 desde 2026-10-15), Facebook 0 (+0)
+- **checkonoff** (2026-10-22): Instagram 0 (+0 desde 2026-10-15), Facebook 0 (+0)
 
 ## Mejores 3 (repetir el patrón: formato, tipo de gancho, hora)
 - **¿Tu turno es "vespertino"? 🤔 Para la Ley Federal del Trabajo, ese tipo de jornada NO exist** · carrusel · miércoles 15:00 · alcance 52, vistas 67, guardados 0, compartidos 1, comentarios 0
@@ -10,22 +10,22 @@ _Actualizado: 21/10/2026 12:16 CDMX · 26 posts con más de 24 h (historias excl
 - **POV: eres de RRHH y es jueves de quincena 😵‍💫** · reel · jueves 18:00 · alcance 3, vistas 5, guardados 0, compartidos 0, comentarios 0
 
 ## Peores 3 (no repetir ese gancho/formato/hora tal cual)
-- **5 errores que cometes al cerrar la quincena (y cómo evitarlos) ⚠️** · carrusel · lunes 12:00 · alcance 0, puntaje 0
-- **Diciembre se acerca 🏖️ ¿Sabes cuántos días de vacaciones le tocan a cada quien?** · carrusel · lunes 14:00 · alcance 0, puntaje 0
 - **¿Sabías que si un trabajador demanda por la jornada, le toca a la EMPRESA probarla? ⚖️** · imagen · martes 12:00 · alcance 0, puntaje 0
+- **⏰ La jornada de 48 a 40 horas YA ES LEY en México (DOF, 1 de mayo de 2026).** · imagen · martes 14:00 · alcance 0, puntaje 0
+- **De 48 a 40 horas: así se reduce la jornada laboral en México ⏰** · reel · martes 18:00 · alcance 0, puntaje 0
 
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
 | carrusel | 9 | 10 | 1.3 |
-| reel | 5 | 2 | 0.0 |
-| imagen | 12 | 0 | 0.0 |
+| reel | 6 | 1 | 0.0 |
+| imagen | 13 | 0 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| mediodía (12–15) | 13 | 7 | 0.6 |
-| tarde (16–19) | 5 | 2 | 0.0 |
+| mediodía (12–15) | 14 | 7 | 0.6 |
+| tarde (16–19) | 6 | 2 | 0.0 |
 | mañana (6–11) | 5 | 1 | 0.0 |
 | noche (20–5) | 3 | 0 | 1.3 |
 
@@ -38,7 +38,7 @@ _Actualizado: 21/10/2026 12:16 CDMX · 26 posts con más de 24 h (historias excl
 | lunes | 3 | 1 | 0.0 |
 | viernes | 4 | 0 | 0.0 |
 | domingo | 2 | 0 | 0.0 |
-| martes | 1 | 0 | 0.0 |
+| martes | 3 | 0 | 0.0 |
 
 ## Reglas para el siguiente post
 1. Formato con más alcance hasta hoy: **carrusel**. Dale más espacio en el calendario.
