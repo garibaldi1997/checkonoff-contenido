@@ -16,7 +16,7 @@ function pantalla(v, t0) {
 }
 function render(t) {
   const v = t * SPEED;
-  const S = { si: at(W, 'si'), ten: at(W, 'tienes'), sin: at(W, 'sin'), con: at(W, 'con'), desde: at(W, 'desde', 1), pre: at(W, 'pre-'), gua: at(W, 'guárdalo') };
+  const S = { si: at(W, 'si'), ten: at(W, 'tienes'), sin: at(W, 'sin'), con: at(W, 'con'), desde: at(W, 'desde', 1), pre: at(W, 'prenómina'), gua: at(W, 'guárdalo') };
   let h = FX.css() + FX.fondo(v, { brillo: v > S.con ? 1.2 : .8 });
   // 1 · Glass type: 2027
   if (v < S.si + .1) h += FX.kicker(v, .1, 'DESDE EL 1 DE ENERO', 470) + FX.glassType(v, .25, S.si + .1, '2027', { y: 560, size: 300 })
