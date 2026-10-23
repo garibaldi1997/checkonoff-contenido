@@ -17,6 +17,7 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 - **Ninguna foto se repite**, en ninguna pieza ni marca. Una misma persona o sesión de fotos solo puede volver como "personaje ocasional", **máximo 1 vez cada 30 días**.
 - La biblioteca `plantillas/hq/` ya está toda usada: cada pieza nueva lleva fotos NUEVAS de Unsplash (personas mexicanas/latinas, en empresas).
 - Antes de usar una foto: `python scripts/fotos.py revisar foto.jpg --fotografo "<autor Unsplash>"` (rechaza la misma foto aunque cambie de nombre o recorte, y la misma sesión antes de 30 días). Al usarla: `python scripts/fotos.py usar foto.jpg <id-pieza> --unsplash <id> --fotografo "<autor>"`. Registro en `estado/fotos_usadas.json` (se sube con cada commit).
+- El script no reconoce a la misma persona en OTRA foto: antes de elegir, arma una hoja de contacto con las fotos usadas en los últimos 30 días (`python scripts/fotos.py lista`) y compárala con Read; si la persona ya salió, elige otra. Evita usar dos fotos del mismo fotógrafo en 30 días.
 
 ## Público y formatos (indicación del dueño y métricas, 23/10/2026)
 - **Todo el contenido va dirigido a las EMPRESAS** (dueños, gerentes, RRHH, nómina, supervisores), nunca a los empleados: se habla de obligaciones, costos, riesgos y soluciones de la empresa, no de "tus derechos como trabajador". Si un tema es un derecho del trabajador, se cuenta como lo que la empresa debe cumplir.

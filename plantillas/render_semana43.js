@@ -85,7 +85,7 @@ add('com_05', cierre(`Cada pausa,<br>${GD('registrada.')}`, 'Con CheckONOFF tu e
 add('lis_01', `${ph('mx_enserio', -60)}
 ${bb(40, 150, 'w l', 'Listas de 2024… ¿se tiran? 🗑️', 'l')}
 ${ast(930, 360, .7)}
-<div class="box n" style="bottom:140px;font-size:56px">¿Cuánto tiempo debes ${G('guardar')} las listas de asistencia?<div style="font-size:32px;font-weight:600;margin-top:16px;opacity:.85">Para RRHH · Deslizá →</div></div>
+<div class="box n" style="bottom:140px;font-size:56px">¿Cuánto tiempo debes ${G('guardar')} las listas de asistencia?<div style="font-size:32px;font-weight:600;margin-top:16px;opacity:.85">Para RRHH · Desliza →</div></div>
 ${logo}`);
 add('lis_02', `${BG}${CNT(2, 3)}${K('La respuesta', 170)}${H(`El último año<br>${GD('+ 1 año más.')}`, 220, 92)}
 ${lista([card(`<div style="font-size:38px;font-weight:700;line-height:1.25">Los controles de asistencia se conservan durante <span style="color:${C.b}">el último año de la relación laboral</span> y <span style="color:${C.b}">un año después</span> de que termina.</div><div style="font-size:28px;opacity:.65;margin-top:12px">Art. 804 fr. III LFT</div>`),
@@ -117,10 +117,10 @@ ${logo}`);
 add('sin_05', cierre(`Pruébalo con<br>tu equipo ${GD('gratis.')}`, '14 días sin costo y sin tarjeta. Funciona en todos los planes: app, WhatsApp y checador.'));
 
 // ═════ VIE 23 · Para RRHH: lactancia ═════
-add('lac_01', `${ph('mx_feliz', -100)}
+add('lac_01', `${ph('u_YlgfoL_5iRs', -260)}
 ${bb(560, 150, 'm r', 'Regreso de mi<br>incapacidad 👶', 'r')}
 ${ast(70, 360, .6)}
-<div class="box n" style="bottom:140px;font-size:56px">Lactancia en el trabajo: ${G('lo que tu empresa debe dar.')}<div style="font-size:32px;font-weight:600;margin-top:16px;opacity:.85">Para RRHH · Deslizá →</div></div>
+<div class="box n" style="bottom:140px;font-size:56px">Lactancia en el trabajo: ${G('lo que tu empresa debe dar.')}<div style="font-size:32px;font-weight:600;margin-top:16px;opacity:.85">Para RRHH · Desliza →</div></div>
 ${logo}`);
 add('lac_02', `${BG}${CNT(2, 3)}${K('Lo que dice la ley', 170)}${H(`2 descansos de<br>${GD('30 minutos.')}`, 220, 92)}
 ${lista([card(`<div style="font-size:38px;font-weight:700;line-height:1.25">Hasta por <span style="color:${C.b}">6 meses</span>, la trabajadora tiene dos reposos extra al día de media hora cada uno para alimentar a su bebé.</div><div style="font-size:28px;opacity:.65;margin-top:12px">Art. 170 fr. IV LFT</div>`),
@@ -132,7 +132,7 @@ ${lista([card(`<div style="font-size:38px;font-weight:700;line-height:1.25">Si n
 <div style="position:absolute;left:72px;bottom:66px;font-size:26px;font-weight:700;opacity:.75">📌 Compártelo con quien lleva la nómina</div>${logo}`);
 
 // ═════ SÁB 24 · carrusel aguinaldo ═════
-add('agu_01', `${ph('mx_laptop', -140)}
+add('agu_01', `${ph('u_N_l8ldK_Vmc', -40)}
 ${bb(40, 130, 'w l', 'Entró en junio… 🤔')}
 ${bb(600, 260, 'm r', '¿Le toca<br>aguinaldo?', 'r')}
 ${ast(930, 470, .7)}
