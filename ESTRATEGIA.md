@@ -13,6 +13,11 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 | Blanco / fondo claro | `#FFFFFF` · `#F2F6FB` |
 | Negro | `#000000` |
 
+## Fotos: nunca repetir (indicación del dueño, 23/10/2026)
+- **Ninguna foto se repite**, en ninguna pieza ni marca. Una misma persona o sesión de fotos solo puede volver como "personaje ocasional", **máximo 1 vez cada 30 días**.
+- La biblioteca `plantillas/hq/` ya está toda usada: cada pieza nueva lleva fotos NUEVAS de Unsplash (personas mexicanas/latinas, en empresas).
+- Antes de usar una foto: `python scripts/fotos.py revisar foto.jpg --fotografo "<autor Unsplash>"` (rechaza la misma foto aunque cambie de nombre o recorte, y la misma sesión antes de 30 días). Al usarla: `python scripts/fotos.py usar foto.jpg <id-pieza> --unsplash <id> --fotografo "<autor>"`. Registro en `estado/fotos_usadas.json` (se sube con cada commit).
+
 ## Público y formatos (indicación del dueño y métricas, 23/10/2026)
 - **Todo el contenido va dirigido a las EMPRESAS** (dueños, gerentes, RRHH, nómina, supervisores), nunca a los empleados: se habla de obligaciones, costos, riesgos y soluciones de la empresa, no de "tus derechos como trabajador". Si un tema es un derecho del trabajador, se cuenta como lo que la empresa debe cumplir.
 - Métricas al 23/10: carruseles 7.9 de alcance promedio, reels 1, imágenes 0.5, historias 0 (sin seguidores nadie las ve).
