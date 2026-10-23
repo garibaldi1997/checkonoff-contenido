@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-22T18:09:50+00:00",
+  "actualizado": "2026-10-23T05:33:58+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -629,10 +629,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DexAIidlndE/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 1
       },
       "facebook": {
         "reacciones": 0,
@@ -646,11 +646,7 @@
       "fecha": "2026-10-21T13:15:00-06:00",
       "tema": "",
       "instagram": {
-        "id": "18148457347561309",
-        "comments_count": 0,
-        "like_count": 0,
-        "media_product_type": "STORY",
-        "permalink": "https://www.instagram.com/stories/checkonoff/4013027018607187393"
+        "error": "GET 18148457347561309: Unsupported get request. Object with ID '18148457347561309' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       }
     },
     "2026-10-21-carrusel-festivo-16-nov": {
@@ -663,10 +659,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DexUzYmEwtd/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 3
       },
       "facebook": {
         "reacciones": 0,
@@ -685,16 +681,98 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/Dezk_hlDGqZ/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 3
       },
       "facebook": {
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122106758883512173"
+      }
+    },
+    "2026-10-22-historia-comida": {
+      "tipo": "historia",
+      "fecha": "2026-10-22T13:15:00-06:00",
+      "tema": "",
+      "instagram": {
+        "id": "18120045247920694",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "STORY",
+        "permalink": "https://www.instagram.com/stories/checkonoff/4013751874516347737"
+      }
+    },
+    "2026-10-22-para-rrhh-listas-asistencia": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-22T15:00:00-06:00",
+      "tema": "¿Ya vas a tirar las listas de asistencia del año pasado? 🗂️ Espera: la ley te pide guardar",
+      "instagram": {
+        "id": "17991900341861827",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/Dez5kC7l-Vp/",
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "views": 1
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122106877221512173"
+      }
+    },
+    "2026-10-22-reel-hora-comida": {
+      "tipo": "reel",
+      "fecha": "2026-10-22T18:00:00-06:00",
+      "tema": "POV: tu equipo come en su lugar \"para avanzar\" 🌮",
+      "instagram": {
+        "id": "18386598226230311",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/De0OInUCVkb/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0,
+        "ig_reels_avg_watch_time": 0,
+        "ig_reels_video_view_total_time": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1439153015025084/"
+      }
+    },
+    "2026-10-22-reel-registro-2027": {
+      "tipo": "reel",
+      "fecha": "2026-10-22T19:30:00-06:00",
+      "tema": "2027 llega con una obligación nueva para RRHH 📲",
+      "instagram": {
+        "id": "18205803631372869",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/De0Yb3ok40_/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0,
+        "ig_reels_avg_watch_time": 0,
+        "ig_reels_video_view_total_time": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1415510166878884/"
       }
     }
   }

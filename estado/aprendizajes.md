@@ -1,5 +1,5 @@
 # Aprendizajes automáticos
-_Actualizado: 22/10/2026 12:10 CDMX · 30 posts con más de 24 h (historias excluidas)._
+_Actualizado: 22/10/2026 23:34 CDMX · 31 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-10-22): Instagram 0 (+0 desde 2026-10-15), Facebook 0 (+0)
@@ -10,21 +10,21 @@ _Actualizado: 22/10/2026 12:10 CDMX · 30 posts con más de 24 h (historias excl
 - **POV: eres de RRHH y es jueves de quincena 😵‍💫** · reel · jueves 18:00 · alcance 3, vistas 5, guardados 0, compartidos 0, comentarios 0
 
 ## Peores 3 (no repetir ese gancho/formato/hora tal cual)
+- **¿Sabías que si un trabajador demanda por la jornada, le toca a la EMPRESA probarla? ⚖️** · imagen · martes 12:00 · alcance 0, puntaje 0
 - **⏰ La jornada de 48 a 40 horas YA ES LEY en México (DOF, 1 de mayo de 2026).** · imagen · martes 14:00 · alcance 0, puntaje 0
 - **De 48 a 40 horas: así se reduce la jornada laboral en México ⏰** · reel · martes 18:00 · alcance 0, puntaje 0
-- **¿Todavía registras la entrada en tarjeta de papel o en Excel? 🤔 Desde el 1 de enero de 202** · imagen · miércoles 12:00 · alcance 0, puntaje 0
 
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| carrusel | 9 | 10 | 1.3 |
+| carrusel | 10 | 9 | 1.2 |
 | reel | 7 | 1 | 0.0 |
 | imagen | 14 | 0 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| mediodía (12–15) | 15 | 6 | 0.5 |
+| mediodía (12–15) | 16 | 6 | 0.5 |
 | tarde (16–19) | 6 | 2 | 0.0 |
 | mañana (6–11) | 6 | 1 | 0.0 |
 | noche (20–5) | 3 | 0 | 1.3 |
@@ -32,7 +32,7 @@ _Actualizado: 22/10/2026 12:10 CDMX · 30 posts con más de 24 h (historias excl
 ### Por día
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| miércoles | 11 | 8 | 1.1 |
+| miércoles | 12 | 8 | 1.0 |
 | jueves | 5 | 1 | 0.0 |
 | sábado | 2 | 1 | 0.0 |
 | lunes | 3 | 1 | 0.0 |
