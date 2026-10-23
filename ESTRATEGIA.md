@@ -13,6 +13,14 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 | Blanco / fondo claro | `#FFFFFF` · `#F2F6FB` |
 | Negro | `#000000` |
 
+## Público y formatos (indicación del dueño y métricas, 23/10/2026)
+- **Todo el contenido va dirigido a las EMPRESAS** (dueños, gerentes, RRHH, nómina, supervisores), nunca a los empleados: se habla de obligaciones, costos, riesgos y soluciones de la empresa, no de "tus derechos como trabajador". Si un tema es un derecho del trabajador, se cuenta como lo que la empresa debe cumplir.
+- Métricas al 23/10: carruseles 7.9 de alcance promedio, reels 1, imágenes 0.5, historias 0 (sin seguidores nadie las ve).
+- **Historias pausadas** hasta tener 100 seguidores.
+- **Más reels con historia del día a día de RRHH** (jueves de quincena, hora de comida, inspección, el que llega tarde, el Excel FINAL_v7) con gancho en el primer segundo y los efectos de `plantillas/efectos`.
+- Se mantiene el carrusel de mediodía; las imágenes sueltas bajan al mínimo.
+- Semana tipo: carrusel diario 12:00, "Para RRHH" (mini carrusel) 15:00 de lunes a viernes, 1 reel con historia diario a las 18:00 (alternando voz de mujer y hombre), máximo 1 imagen suelta por semana.
+
 ## Solo el negocio, nunca la persona (indicación del dueño, 21/10/2026)
 - El contenido de la marca **nunca habla del dueño**: sin nombre, sin "soy el doctor…", sin su foto ni su cargo, ni en textos, ni en imágenes, ni en voz en off.
 - Los cierres de reels hablan del producto (qué resuelve) y terminan con guardar/compartir + logo al centro.
