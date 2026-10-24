@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-23T17:57:14+00:00",
+  "actualizado": "2026-10-24T13:40:16+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -698,11 +698,7 @@
       "fecha": "2026-10-22T13:15:00-06:00",
       "tema": "",
       "instagram": {
-        "id": "18120045247920694",
-        "comments_count": 0,
-        "like_count": 0,
-        "media_product_type": "STORY",
-        "permalink": "https://www.instagram.com/stories/checkonoff/4013751874516347737"
+        "error": "GET 18120045247920694: Unsupported get request. Object with ID '18120045247920694' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https://developers.facebook.com/docs/graph-api"
       }
     },
     "2026-10-22-para-rrhh-listas-asistencia": {
@@ -765,14 +761,58 @@
         "saved": 0,
         "shares": 0,
         "views": 0,
-        "ig_reels_avg_watch_time": 19458,
-        "ig_reels_video_view_total_time": 38917
+        "ig_reels_avg_watch_time": 13394,
+        "ig_reels_video_view_total_time": 40183
       },
       "facebook": {
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1415510166878884/"
+      }
+    },
+    "2026-10-23-carrusel-checar-sin-internet": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-23T12:00:00-06:00",
+      "tema": "Tu equipo puede checar aunque no haya internet 📵",
+      "instagram": {
+        "id": "18108367693959134",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/De2JxwOjBlg/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122107501437512173"
+      }
+    },
+    "2026-10-23-para-rrhh-lactancia": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-23T15:00:00-06:00",
+      "tema": "¿Una colaboradora regresa de su incapacidad por maternidad? 👶 Esto es lo que tu empresa le",
+      "instagram": {
+        "id": "18127573825857320",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/De2eXEHl_uW/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122107574697512173"
       }
     }
   }
