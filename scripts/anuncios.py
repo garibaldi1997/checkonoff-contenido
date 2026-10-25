@@ -53,7 +53,19 @@ def crear(clave):
         c[nombre] = r.get("id") or r; c.pop("error", None); guardar()
         return c[nombre]
 
-    ig = paso("instagram_id", lambda: (lambda r: {"id": r["instagram_business_account"]["id"]} if "instagram_business_account" in r else {"error": "la página no tiene Instagram conectado", **r})(get(cfg["pagina_id"], fields="instagram_business_account")))
+    def buscar_ig():
+        r = get(cfg["pagina_id"], fields="instagram_business_account")
+        if "instagram_business_account" in r:
+            return {"id": r["instagram_business_account"]["id"]}
+        # respaldo: el token de publicación de la página (el mismo que usa publicar.py)
+        tok = os.environ.get("META_TOKEN_CHECKONOFF", "").strip()
+        if tok:
+            with urllib.request.urlopen(f"{GRAPH}/me?{urllib.parse.urlencode({'fields': 'instagram_business_account', 'access_token': tok})}", timeout=30) as x:
+                r2 = json.load(x)
+            if "instagram_business_account" in r2:
+                return {"id": r2["instagram_business_account"]["id"]}
+        return {"error": "no se encontró la cuenta de Instagram de la página", "detalle": str(r.get("error", ""))}
+    ig = paso("instagram_id", buscar_ig)
     if not c.get("intereses"):
         ints = []
         for q in cfg["intereses"]:

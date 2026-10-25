@@ -28,6 +28,7 @@ jobs:
       - name: Anuncios
         env:
           META_ADS_TOKEN: ${{ secrets.META_ADS_TOKEN }}
+          META_TOKEN_CHECKONOFF: ${{ secrets.META_TOKEN_CHECKONOFF }}
           META_AD_ACCOUNT: act_1648565720071394
           GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
           ACCION: ${{ inputs.accion }}
