@@ -27,6 +27,17 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 - Se mantiene el carrusel de mediodía; las imágenes sueltas bajan al mínimo.
 - Semana tipo: carrusel diario 12:00, "Para RRHH" (mini carrusel) 15:00 de lunes a viernes, 1 reel con historia diario a las 18:00 (alternando voz de mujer y hombre), máximo 1 imagen suelta por semana.
 
+## Aprendizaje: meme de humor laboral en LinkedIn (dato del dueño, 25/10/2026)
+El post del 22/10 "Jueves de realidad con humor" (diálogo Jefe/Yo + cara expresiva en primer plano + remate en la foto) en el LinkedIn personal llegó a **10,015 impresiones**: el mayor alcance de todo el contenido (las páginas de empresa rondan 7–100). Pero solo 6 reacciones y 0 comentarios (0.06 %).
+- **Qué funcionó:** situación que todo RRHH reconoce, diálogo corto de 4 líneas, cara con emoción fuerte, remate legible en la imagen, fondo blanco limpio. LinkedIn reparte mucho más el perfil personal que la página.
+- **Qué falló:** el CTA ("cuéntame tu anécdota") pide exponerse en público contra su jefe; nadie comenta. Y no había camino a nada (ni grupo ni prueba).
+- **Reglas desde ahora:**
+  1. Serie fija **"Jueves de realidad con humor"** cada jueves 7:40 en el LinkedIn personal, mismo formato (marca_personal/render_marca2.js → P.humor_*), un tema de RRHH distinto cada semana con dato legal verificado en el texto.
+  2. CTA de baja fricción: responder con una letra (A/B/C) o una palabra, nunca "cuéntame tu anécdota".
+  3. Sin enlaces en el texto (LinkedIn baja el alcance); el dueño pone el enlace del grupo de WhatsApp en el primer comentario.
+  4. Probar el mismo formato meme en Instagram/Facebook de CheckONOFF 1 vez por semana (como imagen suelta o carrusel de 2 láminas) y comparar.
+  5. Foto: cara expresiva en primer plano, nunca repetida.
+
 ## Solo el negocio, nunca la persona (indicación del dueño, 21/10/2026)
 - El contenido de la marca **nunca habla del dueño**: sin nombre, sin "soy el doctor…", sin su foto ni su cargo, ni en textos, ni en imágenes, ni en voz en off.
 - Los cierres de reels hablan del producto (qué resuelve) y terminan con guardar/compartir + logo al centro.

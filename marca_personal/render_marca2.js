@@ -35,6 +35,15 @@ P.humor_registro = `<div style="position:absolute;inset:0;background:#fff"></div
  <div style="position:absolute;left:40px;bottom:40px;font-size:66px;font-weight:800;color:#fff;-webkit-text-stroke:8px #0F1E36;paint-order:stroke fill">Ya lo apunté yo. 👀</div></div>
 ${firma(true)}`;
 
+// 2b · Humor laboral (serie "Jueves de realidad con humor": el formato con más alcance en LinkedIn, 10,015 impresiones)
+P.humor_horas_extra = `<div style="position:absolute;inset:0;background:#fff"></div>
+<div style="position:absolute;left:60px;right:60px;top:60px;color:#0F1E36;font-size:44px;font-weight:600;line-height:1.38">
+— RRHH: ¿Quién autorizó 14 horas extra?<br>— Supervisor: Nadie, se fueron juntando solitas.<br>— RRHH: ¿Y el tope no era de 9?<br>— La nómina del jueves:</div>
+<div style="position:absolute;left:60px;right:60px;top:440px;bottom:150px;border-radius:24px;overflow:hidden">
+ <img src="${F('sorpresa')}" style="position:absolute;left:0;top:-180px;width:960px">
+ <div style="position:absolute;left:40px;bottom:40px;font-size:66px;font-weight:800;color:#fff;-webkit-text-stroke:8px #0F1E36;paint-order:stroke fill">¿Las triples también? 😳</div></div>
+${firma(true)}`;
+
 // 3 · Infografía de lista
 const senales = [['😴', 'Cansancio que no se quita', 'ni después del fin de semana'], ['📅', 'Más faltas y retardos', 'sin motivo claro'], ['⚠️', 'Errores en lo que ya dominaban', 'tareas de siempre, mal hechas'], ['😤', 'Irritabilidad', 'discusiones por cosas pequeñas'], ['🔇', 'Silencio en las juntas', 'nadie propone nada'], ['🪑', 'Presentismo', 'están, pero no rinden'], ['🚪', 'Hablan de irse', 'o actualizan su CV en horario']];
 P.info_burnout = `<div style="position:absolute;inset:0;background:#F4F6FA"></div>
