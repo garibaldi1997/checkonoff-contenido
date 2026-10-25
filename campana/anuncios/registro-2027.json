@@ -8,5 +8,10 @@
  "pais": "MX",
  "edad_min": 28,
  "edad_max": 55,
- "intereses": ["Recursos humanos", "Nómina", "Administración de empresas", "Pequeñas y medianas empresas", "Gestión de recursos humanos"]
+ "intereses": [
+  "Recursos humanos",
+  "Administración de empresas",
+  "Pequeñas y medianas empresas",
+  "Gestión de recursos humanos"
+ ]
 }

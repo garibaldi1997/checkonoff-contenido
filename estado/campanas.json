@@ -12,7 +12,6 @@
    "edad_max": 55,
    "intereses": [
     "Recursos humanos",
-    "Nómina",
     "Administración de empresas",
     "Pequeñas y medianas empresas",
     "Gestión de recursos humanos"
@@ -24,10 +23,6 @@
    {
     "id": "6003069499982",
     "name": "Administración de recursos humanos (negocios y finanzas)"
-   },
-   {
-    "id": "6003288833051",
-    "name": "Nómina"
    },
    {
     "id": "6004037932409",
@@ -42,7 +37,6 @@
     "name": "Sistema de administración de recursos humanos"
    }
   ],
-  "campana_id": "120251633612460036",
-  "error": "conjunto_id: Actualiza las especificaciones de segmentación para eliminarlas o sustituirlas por opciones alternativas. Opciones alternativas relevantes: [{\"deprecated_interest_id\":\"6003288833051\",\"deprecated_interest_name\":\"Payroll\",\"alternative_interest_id\":\"6003142845761\",\"alternative_interest_name\":\"Employment\"}] Se combinaron algunas opciones de segmentación detallada"
+  "campana_id": "120251633612460036"
  }
 }
