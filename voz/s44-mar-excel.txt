@@ -1,0 +1,7 @@
+#voz es-MX-JorgeNeural +4%
+Martes de cierre. Asistencia final, versión siete.
+Tres sucursales, tres archivos, y ninguno cuadra.
+Cada quincena se van horas capturando, corrigiendo y volviendo a capturar.
+Con CheckONOFF, las checadas de todas las sucursales llegan solas a un solo panel.
+La prenómina sale en un clic, con faltas, retardos y horas extra.
+Guárdalo y compártelo con quien cierra la nómina.
