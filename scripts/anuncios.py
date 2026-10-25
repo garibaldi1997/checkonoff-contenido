@@ -7,7 +7,7 @@ Reglas del dueño: las campañas se crean SIEMPRE en pausa; nunca se activan ni 
 
 Variables: META_ADS_TOKEN (secreto), META_AD_ACCOUNT (p. ej. act_1648565720071394), GRAPH_VERSION.
 """
-import json, os, pathlib, sys, urllib.parse, urllib.request
+import json, os, pathlib, sys, time, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
 GRAPH = "https://graph.facebook.com/" + os.environ.get("GRAPH_VERSION", "v26.0")
@@ -84,8 +84,21 @@ def crear(clave):
                                              status="PAUSED", daily_budget=int(cfg["presupuesto_diario_mxn"] * 100), billing_event="IMPRESSIONS",
                                              optimization_goal="VISIT_INSTAGRAM_PROFILE", destination_type="INSTAGRAM_PROFILE",
                                              bid_strategy="LOWEST_COST_WITHOUT_CAP", targeting=targeting))
-    creat = paso("creativo_id", lambda: post(f"{CUENTA}/adcreatives", name=cfg["nombre"], object_id=cfg["pagina_id"], instagram_user_id=ig,
-                                             source_instagram_media_id=cfg["instagram_media_id"]))
+    if cfg.get("video"):  # anuncio nuevo a partir del MP4 (no depende de la app con la que se publicó el post original)
+        vid = paso("video_id", lambda: post(f"{CUENTA}/advideos", name=cfg["nombre"], file_url=cfg["video"]))
+        for _ in range(30):  # espera a que Meta procese el video
+            st = get(vid, fields="status,thumbnails{uri,is_preferred}")
+            if st.get("status", {}).get("video_status") == "ready" and st.get("thumbnails", {}).get("data"):
+                break
+            time.sleep(10)
+        thumbs = st.get("thumbnails", {}).get("data", [])
+        miniatura = next((t["uri"] for t in thumbs if t.get("is_preferred")), thumbs[0]["uri"] if thumbs else None)
+        creat = paso("creativo_id", lambda: post(f"{CUENTA}/adcreatives", name=cfg["nombre"], object_story_spec={
+            "page_id": cfg["pagina_id"], "instagram_user_id": ig,
+            "video_data": {"video_id": vid, "message": cfg["texto"], "image_url": miniatura}}))
+    else:
+        creat = paso("creativo_id", lambda: post(f"{CUENTA}/adcreatives", name=cfg["nombre"], object_id=cfg["pagina_id"], instagram_user_id=ig,
+                                                 source_instagram_media_id=cfg["instagram_media_id"]))
     ad = paso("anuncio_id", lambda: post(f"{CUENTA}/ads", name=cfg["nombre"], adset_id=adset, creative={"creative_id": creat}, status="PAUSED"))
     prev = get(f"{ad}/previews", ad_format="INSTAGRAM_REELS")
     if prev.get("data"):
