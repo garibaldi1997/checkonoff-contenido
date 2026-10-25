@@ -42,6 +42,7 @@
     "name": "Sistema de administración de recursos humanos"
    }
   ],
-  "campana_id": "120251633612460036"
+  "campana_id": "120251633612460036",
+  "error": "conjunto_id: Actualiza las especificaciones de segmentación para eliminarlas o sustituirlas por opciones alternativas. Opciones alternativas relevantes: [{\"deprecated_interest_id\":\"6003288833051\",\"deprecated_interest_name\":\"Payroll\",\"alternative_interest_id\":\"6003142845761\",\"alternative_interest_name\":\"Employment\"}] Se combinaron algunas opciones de segmentación detallada"
  }
 }
