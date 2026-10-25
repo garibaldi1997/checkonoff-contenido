@@ -42,7 +42,6 @@
     "name": "Sistema de administración de recursos humanos"
    }
   ],
-  "campana_id": "120251633612460036",
-  "error": "conjunto_id: La ubicación de la sección \"Explorar\" de Instagram quedó obsoleta para esta versión de la API y no se puede seleccionar. Elimínala de tu segmentación. La ubicación de la sección \"Explorar\" de Instagram quedó obsoleta"
+  "campana_id": "120251633612460036"
  }
 }
