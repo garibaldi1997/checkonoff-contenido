@@ -2,7 +2,8 @@
 
 Reglas del dueño: las campañas se crean SIEMPRE en pausa; nunca se activan ni se sube el gasto sin su autorización escrita.
 
-  python scripts/anuncios.py verificar   → revisa el acceso (solo lectura) y deja estado/anuncios.json
+  python scripts/anuncios.py verificar        → revisa el acceso (solo lectura) y deja estado/anuncios.json
+  python scripts/anuncios.py crear <clave>    → crea EN PAUSA la campaña de campana/anuncios/<clave>.json (no gasta nada)
 
 Variables: META_ADS_TOKEN (secreto), META_AD_ACCOUNT (p. ej. act_1648565720071394), GRAPH_VERSION.
 """
@@ -24,6 +25,62 @@ def get(ruta, **params):
         return {"error": json.load(e).get("error", {}).get("message", str(e))}
 
 
+def post(ruta, **params):
+    datos = {k: (json.dumps(v) if isinstance(v, (dict, list)) else v) for k, v in params.items()}
+    datos["access_token"] = TOKEN
+    try:
+        with urllib.request.urlopen(urllib.request.Request(f"{GRAPH}/{ruta}", data=urllib.parse.urlencode(datos).encode()), timeout=60) as r:
+            return json.load(r)
+    except urllib.error.HTTPError as e:
+        err = json.load(e).get("error", {})
+        return {"error": err.get("error_user_msg") or err.get("message", str(e)), "detalle": err.get("error_user_title", "")}
+
+
+def crear(clave):
+    """Crea campaña, conjunto y anuncio EN PAUSA. Guarda los ids en estado/campanas.json; si ya existen, los reutiliza."""
+    cfg = json.loads((ESTADO.parent.parent / "campana" / "anuncios" / f"{clave}.json").read_text(encoding="utf-8"))
+    reg_path = ESTADO.parent / "campanas.json"
+    reg = json.loads(reg_path.read_text(encoding="utf-8")) if reg_path.exists() else {}
+    c = reg.setdefault(clave, {"config": cfg, "estado": "PAUSADA (falta autorización del dueño)"})
+    guardar = lambda: reg_path.write_text(json.dumps(reg, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    def paso(nombre, fn):
+        if c.get(nombre):
+            return c[nombre]
+        r = fn()
+        if "error" in r:
+            c["error"] = f"{nombre}: {r['error']} {r.get('detalle', '')}".strip(); guardar(); sys.exit(c["error"])
+        c[nombre] = r.get("id") or r; c.pop("error", None); guardar()
+        return c[nombre]
+
+    ig = paso("instagram_id", lambda: (lambda r: {"id": r["instagram_business_account"]["id"]} if "instagram_business_account" in r else {"error": "la página no tiene Instagram conectado", **r})(get(cfg["pagina_id"], fields="instagram_business_account")))
+    if not c.get("intereses"):
+        ints = []
+        for q in cfg["intereses"]:
+            r = get("search", type="adinterest", q=q, locale="es_LA", limit=1)
+            if r.get("data"):
+                ints.append({"id": r["data"][0]["id"], "name": r["data"][0]["name"]})
+        c["intereses"] = ints; guardar()
+    camp = paso("campana_id", lambda: post(f"{CUENTA}/campaigns", name=cfg["nombre"], objective="OUTCOME_TRAFFIC", status="PAUSED",
+                                            special_ad_categories=[], is_adset_budget_sharing_enabled="false"))
+    targeting = {"geo_locations": {"countries": [cfg["pais"]]}, "age_min": cfg["edad_min"], "age_max": cfg["edad_max"],
+                 "publisher_platforms": ["instagram"], "instagram_positions": ["stream", "reels", "explore"]}
+    if c["intereses"]:
+        targeting["flexible_spec"] = [{"interests": c["intereses"]}]
+    adset = paso("conjunto_id", lambda: post(f"{CUENTA}/adsets", name=f"{cfg['nombre']} · MX {cfg['edad_min']}-{cfg['edad_max']}", campaign_id=camp,
+                                             status="PAUSED", daily_budget=int(cfg["presupuesto_diario_mxn"] * 100), billing_event="IMPRESSIONS",
+                                             optimization_goal="VISIT_INSTAGRAM_PROFILE", destination_type="INSTAGRAM_PROFILE",
+                                             bid_strategy="LOWEST_COST_WITHOUT_CAP", targeting=targeting))
+    creat = paso("creativo_id", lambda: post(f"{CUENTA}/adcreatives", name=cfg["nombre"], object_id=cfg["pagina_id"], instagram_user_id=ig,
+                                             source_instagram_media_id=cfg["instagram_media_id"]))
+    ad = paso("anuncio_id", lambda: post(f"{CUENTA}/ads", name=cfg["nombre"], adset_id=adset, creative={"creative_id": creat}, status="PAUSED"))
+    prev = get(f"{ad}/previews", ad_format="INSTAGRAM_REELS")
+    if prev.get("data"):
+        c["vista_previa"] = prev["data"][0].get("body", "")
+    c["revisado"] = datetime.now(timezone.utc).isoformat(timespec="seconds"); guardar()
+    print(json.dumps({k: v for k, v in c.items() if k != "vista_previa"}, ensure_ascii=False, indent=1))
+
+
 def verificar():
     if not TOKEN:
         sys.exit("Falta el secreto META_ADS_TOKEN.")
@@ -41,4 +98,7 @@ def verificar():
 
 
 if __name__ == "__main__":
-    {"verificar": verificar}[sys.argv[1] if len(sys.argv) > 1 else "verificar"]()
+    accion = (sys.argv[1] if len(sys.argv) > 1 else "verificar").split()
+    if not TOKEN:
+        sys.exit("Falta el secreto META_ADS_TOKEN.")
+    {"verificar": lambda: verificar(), "crear": lambda: crear(accion[1])}[accion[0]]()

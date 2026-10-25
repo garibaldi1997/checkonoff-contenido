@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       accion:
-        description: "verificar"
+        description: "verificar | crear <clave>"
         default: verificar
 
 permissions:
@@ -30,11 +30,12 @@ jobs:
           META_ADS_TOKEN: ${{ secrets.META_ADS_TOKEN }}
           META_AD_ACCOUNT: act_1648565720071394
           GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
-        run: python scripts/anuncios.py ${{ inputs.accion }}
+          ACCION: ${{ inputs.accion }}
+        run: python scripts/anuncios.py "$ACCION"
       - name: Guardar estado
         if: always()
         run: |
           git config user.name "checkonoff-bot"
           git config user.email "checkonoff-bot@users.noreply.github.com"
-          git add estado/anuncios.json 2>/dev/null || true
+          for f in estado/anuncios.json estado/campanas.json; do [ -f "$f" ] && git add "$f"; done
           git diff --cached --quiet || (git commit -m "Estado de anuncios [skip ci]" && git pull --rebase -q origin main && git push origin main)
