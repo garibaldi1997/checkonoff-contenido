@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T16:57:01+00:00",
+  "actualizado": "2026-10-25T13:40:14+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -91,10 +91,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DefYwtvjzW_/",
-        "reach": 38,
+        "reach": 39,
         "saved": 0,
         "shares": 1,
-        "views": 43
+        "views": 44
       },
       "facebook": {
         "reacciones": 0,
@@ -113,10 +113,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DegJPpGIBfK/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 1
       },
       "facebook": {
         "reacciones": 0,
@@ -135,10 +135,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DegRCYSoE2s/",
-        "reach": 0,
+        "reach": 1,
         "saved": 1,
         "shares": 0,
-        "views": 0
+        "views": 1
       },
       "facebook": {
         "reacciones": 0,
@@ -157,10 +157,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DegX3SwjO8T/",
-        "reach": 1,
+        "reach": 2,
         "saved": 0,
         "shares": 0,
-        "views": 1
+        "views": 2
       },
       "facebook": {
         "reacciones": 0,
@@ -179,10 +179,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DehVr3OgGzN/",
-        "reach": 1,
+        "reach": 2,
         "saved": 0,
         "shares": 0,
-        "views": 2
+        "views": 3
       },
       "facebook": {
         "reacciones": 0,
@@ -681,10 +681,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/Dezk_hlDGqZ/",
-        "reach": 1,
+        "reach": 2,
         "saved": 0,
         "shares": 0,
-        "views": 3
+        "views": 4
       },
       "facebook": {
         "reacciones": 0,
@@ -711,10 +711,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/Dez5kC7l-Vp/",
-        "reach": 1,
+        "reach": 2,
         "saved": 0,
         "shares": 0,
-        "views": 1
+        "views": 2
       },
       "facebook": {
         "reacciones": 0,
@@ -733,12 +733,12 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/De0OInUCVkb/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0,
-        "ig_reels_avg_watch_time": 8111,
-        "ig_reels_video_view_total_time": 8111
+        "views": 2,
+        "ig_reels_avg_watch_time": 4784,
+        "ig_reels_video_view_total_time": 14352
       },
       "facebook": {
         "reacciones": 0,
@@ -757,12 +757,12 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/De0Yb3ok40_/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0,
-        "ig_reels_avg_watch_time": 13394,
-        "ig_reels_video_view_total_time": 40183
+        "views": 2,
+        "ig_reels_avg_watch_time": 12873,
+        "ig_reels_video_view_total_time": 64365
       },
       "facebook": {
         "reacciones": 0,
@@ -781,10 +781,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/De2JxwOjBlg/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 2
       },
       "facebook": {
         "reacciones": 0,
@@ -803,16 +803,62 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/De2eXEHl_uW/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 2
       },
       "facebook": {
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122107574697512173"
+      }
+    },
+    "2026-10-24-carrusel-aguinaldo-3-pasos": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-24T12:00:00-06:00",
+      "tema": "¿Cuánto aguinaldo le toca a quien entró a mitad de año? 🎄 El cálculo en 3 pasos.",
+      "instagram": {
+        "id": "18128360606492310",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/De4uksFmB7H/",
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "views": 2
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122108006415512173"
+      }
+    },
+    "2026-10-24-reel-aguinaldo": {
+      "tipo": "reel",
+      "fecha": "2026-10-24T18:00:00-06:00",
+      "tema": "Entró en julio, ¿le toca aguinaldo? 🤔",
+      "instagram": {
+        "id": "18249288598311204",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/De5X1KeD_cL/",
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "views": 1,
+        "ig_reels_avg_watch_time": 2286,
+        "ig_reels_video_view_total_time": 2286
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1814566039757698/"
       }
     }
   }
