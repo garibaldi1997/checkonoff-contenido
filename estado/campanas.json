@@ -37,7 +37,6 @@
     "name": "Sistema de administración de recursos humanos"
    }
   ],
-  "campana_id": "120251633612460036",
-  "error": "conjunto_id: Para crear el conjunto de anuncios, debes activar o desactivar la función de público Advantage. Para ello, configura la marca advantage_audience como 1 o 0 en el campo targeting_automation de las especificaciones de segmentación. Se requiere la marca de público Advantage"
+  "campana_id": "120251633612460036"
  }
 }

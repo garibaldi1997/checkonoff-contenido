@@ -76,7 +76,8 @@ def crear(clave):
     camp = paso("campana_id", lambda: post(f"{CUENTA}/campaigns", name=cfg["nombre"], objective="OUTCOME_TRAFFIC", status="PAUSED",
                                             special_ad_categories=[], is_adset_budget_sharing_enabled="false"))
     targeting = {"geo_locations": {"countries": [cfg["pais"]]}, "age_min": cfg["edad_min"], "age_max": cfg["edad_max"],
-                 "publisher_platforms": ["instagram"], "instagram_positions": ["stream", "reels"]}
+                 "publisher_platforms": ["instagram"], "instagram_positions": ["stream", "reels"],
+                 "targeting_automation": {"advantage_audience": 0}}  # público exacto, sin ampliación automática
     if c["intereses"]:
         targeting["flexible_spec"] = [{"interests": c["intereses"]}]
     adset = paso("conjunto_id", lambda: post(f"{CUENTA}/adsets", name=f"{cfg['nombre']} · MX {cfg['edad_min']}-{cfg['edad_max']}", campaign_id=camp,
