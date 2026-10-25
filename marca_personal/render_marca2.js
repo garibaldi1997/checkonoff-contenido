@@ -89,6 +89,48 @@ P.info_pausa = `<div style="position:absolute;inset:0;background:radial-gradient
 <div style="position:absolute;left:60px;right:60px;top:1100px;text-align:center;font-size:22px;color:${K.s}">Si sientes dolor, detente. No sustituye una valoración médica.</div>
 ${firma()}`;
 
+// ═════ Semana 2–6 nov 2026 ═════
+// Adivina el dato (lunes)
+const opc = (l, t, x) => `<div style="position:absolute;left:${x}px;width:300px;top:700px;height:300px;border-radius:30px;background:${K.bg2};border:3px solid rgba(255,255,255,.12);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px"><div style="width:76px;height:76px;border-radius:50%;background:${K.o};color:${K.bg};font-size:44px;font-weight:800;display:grid;place-items:center">${l}</div><div style="font-size:44px;font-weight:800;text-align:center;line-height:1.1">${t}</div></div>`;
+P.dato_triples = `<div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 55% at 50% 0%,#1d3a66,${K.bg})"></div>
+<div style="position:absolute;left:60px;top:60px;background:${K.o};color:${K.bg};font-weight:800;font-size:26px;letter-spacing:.1em;padding:10px 20px;border-radius:12px">ADIVINA EL DATO</div>
+<div class="up" style="position:absolute;left:60px;right:60px;top:170px;font-size:68px">¿Cuántas horas extra <span class="or">triples</span> se pueden pagar a la semana desde la reforma?</div>
+${opc('A', '0 horas', 60)}${opc('B', '4 horas', 390)}${opc('C', 'Sin límite', 720)}
+<div style="position:absolute;left:60px;right:60px;top:1080px;text-align:center;font-size:34px;font-weight:700;color:${K.t}">Responde con A, B o C 👇 · la respuesta va al final del post</div>
+${firma()}`;
+// Mito sin foto (martes)
+P.mito_nom035 = `<div style="position:absolute;inset:0;background:${K.bg}"></div>
+<div style="position:absolute;left:60px;top:60px;background:${K.r};color:#fff;font-weight:800;font-size:26px;letter-spacing:.1em;padding:10px 20px;border-radius:12px">MITO DE RRHH</div>
+<div class="up" style="position:absolute;left:60px;right:60px;top:170px;font-size:78px;text-decoration:line-through;text-decoration-color:${K.r}cc;text-decoration-thickness:5px;color:#C9D3E2">“La NOM-035 es solo un cuestionario”</div>
+<div style="position:absolute;left:60px;top:520px;background:${K.t};color:${K.bg};font-weight:800;font-size:26px;letter-spacing:.1em;padding:10px 20px;border-radius:12px">LA REALIDAD</div>
+<div style="position:absolute;left:60px;right:60px;top:600px;display:flex;flex-direction:column;gap:26px">${[['📝', 'Una política de prevención', 'de riesgos psicosociales, escrita y difundida'], ['🔎', 'Identificar y analizar', 'los factores de riesgo de tu centro de trabajo'], ['🛠️', 'Medidas concretas', 'para prevenir y controlar lo que encuentres'], ['📂', 'Registros y seguimiento', 'no una encuesta que se archiva']].map(([e, t, d]) => `<div style="display:flex;gap:22px;align-items:center"><div style="width:84px;height:84px;border-radius:24px;background:${K.bg2};display:grid;place-items:center;font-size:42px;flex-shrink:0">${e}</div><div><div style="font-size:40px;font-weight:800">${t}</div><div style="font-size:28px;color:${K.s}">${d}</div></div></div>`).join('')}</div>
+${firma()}`;
+// Comparativa finanzas (miércoles)
+const malo2 = [['📋', 'Copia el del año pasado', 'más un porcentaje “por si acaso”'], ['🤷', 'Gastos sin dueño', 'nadie responde por cada partida'], ['📅', 'Se revisa en diciembre', 'cuando ya no hay nada que corregir'], ['✂️', 'Recortes parejos', 'a todo por igual, sirva o no']];
+const bueno2 = [['🎯', 'Cada gasto, un resultado', 'que se puede medir'], ['🙋', 'Un responsable por partida', 'que rinde cuentas'], ['📈', 'Revisión mensual', 'para corregir a tiempo'], ['🔁', 'Recortas lo que no da', 'y reinviertes en lo que sí']];
+P.info_presupuesto = `<div class="up" style="position:absolute;left:60px;right:60px;top:60px;font-size:60px;text-align:center">¿Tu presupuesto<br><span class="or" style="font-size:84px">trabaja para ti?</span></div>
+<div style="position:absolute;left:60px;right:60px;top:330px;text-align:center;font-size:30px;color:${K.s};line-height:1.35">Lo que veo en muchas empresas<br>vs. lo que sí funciona.</div>
+<div style="position:absolute;left:180px;right:180px;top:440px;height:3px;background:${K.o}"></div>
+<div class="up" style="position:absolute;left:60px;top:480px;font-size:34px"><span class="rd">✕ Por inercia</span></div>
+<div class="up" style="position:absolute;left:570px;top:480px;font-size:34px"><span class="ac">✓ Por resultados</span></div>
+${col(malo2, K.r, 60)}${col(bueno2, K.t, 570)}
+<div style="position:absolute;left:540px;top:490px;width:2px;height:640px;background:rgba(255,255,255,.15)"></div>
+${firma()}`;
+// Humor laboral (jueves, serie "Jueves de realidad con humor")
+P.humor_ley_silla = `<div style="position:absolute;inset:0;background:#fff"></div>
+<div style="position:absolute;left:60px;right:60px;top:60px;color:#0F1E36;font-size:44px;font-weight:600;line-height:1.38">
+— Gerente: Aquí siempre se ha trabajado de pie.<br>— Cajera: ¿Y si me pongo una silla?<br>— Gerente: Las sillas son para los clientes.<br>— La Ley Silla:</div>
+<div style="position:absolute;left:60px;right:60px;top:440px;bottom:150px;border-radius:24px;overflow:hidden">
+ <img src="${F('seria')}" style="position:absolute;left:0;top:-420px;width:960px">
+ <div style="position:absolute;left:40px;bottom:40px;font-size:66px;font-weight:800;color:#fff;-webkit-text-stroke:8px #0F1E36;paint-order:stroke fill">¿Perdón? 🪑</div></div>
+${firma(true)}`;
+// Frase sin foto (viernes)
+P.frase_fundador = `<div style="position:absolute;inset:0;background:radial-gradient(ellipse 90% 60% at 50% 100%,#123b4a,${K.bg})"></div>
+<div style="position:absolute;left:70px;top:120px;font-family:PF,serif;font-size:220px;line-height:1;color:${K.t};opacity:.6">“</div>
+<div style="position:absolute;left:80px;right:80px;top:400px;font-family:PF,serif;font-weight:700;font-size:72px;line-height:1.15">No construí CheckONOFF para vigilar a nadie.<br><span style="color:${K.o}">Lo construí para que nadie trabaje horas que no se pagan… ni se paguen horas que no se trabajaron.</span></div>
+<div style="position:absolute;left:80px;top:1080px;font-size:28px;font-weight:700;letter-spacing:.14em;color:${K.s}">— DR. GARIBALDI CORONA · FUNDADOR</div>
+${firma()}`;
+
 (async () => {
   const OUT = path.join(D, 'out2'); fs.mkdirSync(OUT, { recursive: true });
   const b = await chromium.launch(); const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
