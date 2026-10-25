@@ -18,6 +18,31 @@
     "Gestión de recursos humanos"
    ]
   },
-  "estado": "PAUSADA (falta autorización del dueño)"
+  "estado": "PAUSADA (falta autorización del dueño)",
+  "instagram_id": "17841415891192650",
+  "intereses": [
+   {
+    "id": "6003069499982",
+    "name": "Administración de recursos humanos (negocios y finanzas)"
+   },
+   {
+    "id": "6003288833051",
+    "name": "Nómina"
+   },
+   {
+    "id": "6004037932409",
+    "name": "Administración (negocios y finanzas)"
+   },
+   {
+    "id": "6003136069408",
+    "name": "Pequeñas y medianas empresas (negocios y finanzas)"
+   },
+   {
+    "id": "6003113957192",
+    "name": "Sistema de administración de recursos humanos"
+   }
+  ],
+  "campana_id": "120251633612460036",
+  "error": "conjunto_id: La ubicación de la sección \"Explorar\" de Instagram quedó obsoleta para esta versión de la API y no se puede seleccionar. Elimínala de tu segmentación. La ubicación de la sección \"Explorar\" de Instagram quedó obsoleta"
  }
 }
