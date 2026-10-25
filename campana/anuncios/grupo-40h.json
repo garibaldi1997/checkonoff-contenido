@@ -1,0 +1,37 @@
+{
+ "clave": "grupo-40h",
+ "tipo": "enlace",
+ "nombre": "Grupo WhatsApp · Jornada 40 hrs MX",
+ "pagina_id": "1413919435136937",
+ "presupuesto_diario_mxn": 150,
+ "dias": 7,
+ "pais": "MX",
+ "edad_min": 25,
+ "edad_max": 55,
+ "intereses": [
+  "Recursos humanos",
+  "Administración de empresas",
+  "Pequeñas y medianas empresas",
+  "Gestión de recursos humanos"
+ ],
+ "enlace": "https://chat.whatsapp.com/DyoKg8wa7IQCWzT9UgOyge",
+ "boton": "LEARN_MORE",
+ "titulos": {
+  "A": "¿Tu empresa pasaría una inspección de la STPS?",
+  "B": "Grupo gratis para RRHH: jornada de 40 horas"
+ },
+ "descripcion": "Guía PDF fijada · clases en vivo · plantillas",
+ "texto": "La jornada laboral en México baja a 40 horas, y en 2027 empiezan los primeros cambios para las empresas 📉\n\nCreamos una comunidad gratuita en WhatsApp para equipos de RRHH y dueños de negocio:\n\n📌 Guía PDF fijada: calendario 2026–2030, horas extra, registro electrónico y checklist\n🎓 Clases en vivo y plantillas\n🔕 Solo los administradores publican: cero spam\n\n👉 Únete gratis y prepara a tu empresa antes de enero.",
+ "conjuntos": {
+  "feed": {
+   "presupuesto_mxn": 75,
+   "posiciones": {"publisher_platforms": ["facebook", "instagram"], "facebook_positions": ["feed"], "instagram_positions": ["stream"]},
+   "anuncios": {"A": "campana/A_feed.jpg", "B": "campana/B_feed.jpg"}
+  },
+  "historias": {
+   "presupuesto_mxn": 75,
+   "posiciones": {"publisher_platforms": ["facebook", "instagram"], "facebook_positions": ["story"], "instagram_positions": ["story", "reels"]},
+   "anuncios": {"A": "campana/A_historia.jpg", "B": "campana/B_historia.jpg"}
+  }
+ }
+}

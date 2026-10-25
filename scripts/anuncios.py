@@ -4,11 +4,13 @@ Reglas del dueño: las campañas se crean SIEMPRE en pausa; nunca se activan ni 
 
   python scripts/anuncios.py verificar        → revisa el acceso (solo lectura) y deja estado/anuncios.json
   python scripts/anuncios.py crear <clave>    → crea EN PAUSA la campaña de campana/anuncios/<clave>.json (no gasta nada)
+  Si el json trae "tipo": "enlace", crea anuncios de imagen (A/B) que llevan a un enlace (p. ej. el grupo de WhatsApp),
+  con un conjunto por grupo de posiciones (feed / historias) y un anuncio por imagen.
   python scripts/anuncios.py renovar <clave>  → borra el anuncio en pausa y lo vuelve a crear con el video actual (p. ej. tras corregir el audio)
 
 Variables: META_ADS_TOKEN (secreto), META_AD_ACCOUNT (p. ej. act_1648565720071394), GRAPH_VERSION.
 """
-import json, os, pathlib, sys, time, urllib.parse, urllib.request
+import base64, json, os, pathlib, sys, time, urllib.parse, urllib.request
 from datetime import datetime, timezone
 
 GRAPH = "https://graph.facebook.com/" + os.environ.get("GRAPH_VERSION", "v26.0")
@@ -76,6 +78,8 @@ def crear(clave):
         c["intereses"] = ints; guardar()
     camp = paso("campana_id", lambda: post(f"{CUENTA}/campaigns", name=cfg["nombre"], objective="OUTCOME_TRAFFIC", status="PAUSED",
                                             special_ad_categories=[], is_adset_budget_sharing_enabled="false"))
+    if cfg.get("tipo") == "enlace":
+        return crear_enlace(cfg, c, paso, ig, camp, guardar)
     targeting = {"geo_locations": {"countries": [cfg["pais"]]}, "age_min": cfg["edad_min"], "age_max": cfg["edad_max"],
                  "publisher_platforms": ["instagram"], "instagram_positions": ["stream", "reels"],
                  "targeting_automation": {"advantage_audience": 0}}  # público exacto, sin ampliación automática
@@ -106,6 +110,36 @@ def crear(clave):
         c["vista_previa"] = prev["data"][0].get("body", "")
     c["revisado"] = datetime.now(timezone.utc).isoformat(timespec="seconds"); guardar()
     print(json.dumps({k: v for k, v in c.items() if k != "vista_previa"}, ensure_ascii=False, indent=1))
+
+
+def crear_enlace(cfg, c, paso, ig, camp, guardar):
+    """Anuncios de imagen hacia cfg["enlace"]: un conjunto por grupo de posiciones y un anuncio por imagen (prueba A/B)."""
+    raiz = ESTADO.parent.parent
+    for g, conj in cfg["conjuntos"].items():
+        targeting = {"geo_locations": {"countries": [cfg["pais"]]}, "age_min": cfg["edad_min"], "age_max": cfg["edad_max"],
+                     "targeting_automation": {"advantage_audience": 0}, **conj["posiciones"]}
+        if c["intereses"]:
+            targeting["flexible_spec"] = [{"interests": c["intereses"]}]
+        adset = paso(f"conjunto_{g}", lambda: post(f"{CUENTA}/adsets", name=f"{cfg['nombre']} · {g}", campaign_id=camp, status="PAUSED",
+                                                   daily_budget=int(conj["presupuesto_mxn"] * 100), billing_event="IMPRESSIONS",
+                                                   optimization_goal="LINK_CLICKS", destination_type="WEBSITE",
+                                                   bid_strategy="LOWEST_COST_WITHOUT_CAP", targeting=targeting))
+        for v, img in conj["anuncios"].items():
+            def subir():
+                r = post(f"{CUENTA}/adimages", bytes=base64.b64encode((raiz / img).read_bytes()).decode(), name=pathlib.Path(img).name)
+                return r if "error" in r else {"id": next(iter(r["images"].values()))["hash"]}
+            h = paso(f"imagen_{v}_{g}", subir)
+            creat = paso(f"creativo_{v}_{g}", lambda: post(f"{CUENTA}/adcreatives", name=f"{cfg['nombre']} · {v} · {g}", object_story_spec={
+                "page_id": cfg["pagina_id"], "instagram_user_id": ig,
+                "link_data": {"link": cfg["enlace"], "message": cfg["texto"], "image_hash": h, "name": cfg["titulos"][v],
+                              "description": cfg.get("descripcion", ""), "call_to_action": {"type": cfg.get("boton", "LEARN_MORE"), "value": {"link": cfg["enlace"]}}}}))
+            ad = paso(f"anuncio_{v}_{g}", lambda: post(f"{CUENTA}/ads", name=f"{cfg['nombre']} · {v} · {g}", adset_id=adset,
+                                                      creative={"creative_id": creat}, status="PAUSED"))
+            prev = get(f"{ad}/previews", ad_format="INSTAGRAM_STANDARD" if g == "feed" else "INSTAGRAM_STORY")
+            if prev.get("data"):
+                c.setdefault("vistas_previas", {})[f"{v}_{g}"] = prev["data"][0].get("body", "")
+    c["revisado"] = datetime.now(timezone.utc).isoformat(timespec="seconds"); guardar()
+    print(json.dumps({k: v for k, v in c.items() if k not in ("vista_previa", "vistas_previas", "config")}, ensure_ascii=False, indent=1))
 
 
 def renovar(clave):
