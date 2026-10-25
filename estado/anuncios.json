@@ -1,0 +1,36 @@
+{
+ "revisado": "2026-10-25T15:24:55+00:00",
+ "usuario": {
+  "id": "122095142187531851",
+  "name": "claude-anuncios"
+ },
+ "cuenta": {
+  "name": "CheckONOFF Ads",
+  "account_status": 1,
+  "currency": "MXN",
+  "timezone_name": "America/Mexico_City",
+  "amount_spent": "0",
+  "spend_cap": "0",
+  "funding_source_details": {
+   "tipo": 1
+  },
+  "id": "act_1648565720071394"
+ },
+ "campanas": {
+  "data": []
+ },
+ "paginas": {
+  "data": [
+   {
+    "name": "Checkonoff",
+    "id": "1413919435136937"
+   }
+  ],
+  "paging": {
+   "cursors": {
+    "before": "QVFIVExsR3QtS3VrWl82WXdVcDgxVV9xVVZA4Q2ZAFdFRmNnBWaFJsX2pPSEZAQVWZAhLWQxWmczVVZAQd2ZAXUmwwSDJlWjBvUEM4SXNaWHBmcEpfQ29QZAlRESHh3",
+    "after": "QVFIVExsR3QtS3VrWl82WXdVcDgxVV9xVVZA4Q2ZAFdFRmNnBWaFJsX2pPSEZAQVWZAhLWQxWmczVVZAQd2ZAXUmwwSDJlWjBvUEM4SXNaWHBmcEpfQ29QZAlRESHh3"
+   }
+  }
+ }
+}
