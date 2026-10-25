@@ -4,6 +4,7 @@ Reglas del dueño: las campañas se crean SIEMPRE en pausa; nunca se activan ni 
 
   python scripts/anuncios.py verificar        → revisa el acceso (solo lectura) y deja estado/anuncios.json
   python scripts/anuncios.py crear <clave>    → crea EN PAUSA la campaña de campana/anuncios/<clave>.json (no gasta nada)
+  python scripts/anuncios.py renovar <clave>  → borra el anuncio en pausa y lo vuelve a crear con el video actual (p. ej. tras corregir el audio)
 
 Variables: META_ADS_TOKEN (secreto), META_AD_ACCOUNT (p. ej. act_1648565720071394), GRAPH_VERSION.
 """
@@ -107,6 +108,20 @@ def crear(clave):
     print(json.dumps({k: v for k, v in c.items() if k != "vista_previa"}, ensure_ascii=False, indent=1))
 
 
+def renovar(clave):
+    reg_path = ESTADO.parent / "campanas.json"
+    reg = json.loads(reg_path.read_text(encoding="utf-8"))
+    c = reg[clave]
+    if c.get("anuncio_id"):
+        r = post(c["anuncio_id"], status="DELETED")
+        if "error" in r:
+            sys.exit(f"no se pudo borrar el anuncio anterior: {r['error']}")
+    for k in ("video_id", "creativo_id", "anuncio_id", "vista_previa", "error"):
+        c.pop(k, None)
+    reg_path.write_text(json.dumps(reg, ensure_ascii=False, indent=1), encoding="utf-8")
+    crear(clave)
+
+
 def verificar():
     if not TOKEN:
         sys.exit("Falta el secreto META_ADS_TOKEN.")
@@ -127,4 +142,4 @@ if __name__ == "__main__":
     accion = (sys.argv[1] if len(sys.argv) > 1 else "verificar").split()
     if not TOKEN:
         sys.exit("Falta el secreto META_ADS_TOKEN.")
-    {"verificar": lambda: verificar(), "crear": lambda: crear(accion[1])}[accion[0]]()
+    {"verificar": lambda: verificar(), "crear": lambda: crear(accion[1]), "renovar": lambda: renovar(accion[1])}[accion[0]]()
