@@ -46,5 +46,115 @@
   "creativo_id": "29786301707638143",
   "anuncio_id": "120251633838720036",
   "vista_previa": "<iframe src=\"https://business.facebook.com/ads/api/preview_iframe.php?d=AQKtJvBFjKeekukTwkqtRR4ZX6IollB-r8Zkh3hYTre_cZn1tLy-S4yua-S_T3Xr0UVq5Dqxze-xw0afDYxWFXdou870VI6-ZrEF-c-jiWRwpZJHngwsuMA3-JLUmmItnvMaGAD3qoun8hF24-gw1ypiSVbjVwsb9z23hglcZZE8np_joyG9yodpOeIwJGnuaPBQU5qsQ1KlN1AYIE4SP2xZrT-d-85tMDO6dJ4mQbzRsXOHydTMIul7S11sPeOU9rxy9hHbe4GBJlFIi2avhd_g2nrWKZL9lPMo7FDGEGw6ye00SY59vvh0mLqVuhpZCleO1xl6qtBbOuB3pLpff0efysCrzcGWNtLnrZN48sQNr480AEHsNzdyNy4z_URdea80XIgfSiEujnuIEJ3cxGJAPaAfb64nc303B5FrdqKj-JxgCpdqIbSsL9arjA34RqY&amp;t=AQLyzO7YT3zd4rIJy1Y\" width=\"274\" height=\"213\" scrolling=\"yes\" style=\"border: none;\" allow=\"autoplay\"></iframe>"
+ },
+ "grupo-40h": {
+  "config": {
+   "clave": "grupo-40h",
+   "tipo": "enlace",
+   "nombre": "Grupo WhatsApp · Jornada 40 hrs MX",
+   "pagina_id": "1413919435136937",
+   "presupuesto_diario_mxn": 150,
+   "dias": 7,
+   "pais": "MX",
+   "edad_min": 25,
+   "edad_max": 55,
+   "intereses": [
+    "Recursos humanos",
+    "Administración de empresas",
+    "Pequeñas y medianas empresas",
+    "Gestión de recursos humanos"
+   ],
+   "enlace": "https://chat.whatsapp.com/DyoKg8wa7IQCWzT9UgOyge",
+   "boton": "LEARN_MORE",
+   "titulos": {
+    "A": "¿Tu empresa pasaría una inspección de la STPS?",
+    "B": "Grupo gratis para RRHH: jornada de 40 horas"
+   },
+   "descripcion": "Guía PDF fijada · clases en vivo · plantillas",
+   "texto": "La jornada laboral en México baja a 40 horas, y en 2027 empiezan los primeros cambios para las empresas 📉\n\nCreamos una comunidad gratuita en WhatsApp para equipos de RRHH y dueños de negocio:\n\n📌 Guía PDF fijada: calendario 2026–2030, horas extra, registro electrónico y checklist\n🎓 Clases en vivo y plantillas\n🔕 Solo los administradores publican: cero spam\n\n👉 Únete gratis y prepara a tu empresa antes de enero.",
+   "conjuntos": {
+    "feed": {
+     "presupuesto_mxn": 75,
+     "posiciones": {
+      "publisher_platforms": [
+       "facebook",
+       "instagram"
+      ],
+      "facebook_positions": [
+       "feed"
+      ],
+      "instagram_positions": [
+       "stream"
+      ]
+     },
+     "anuncios": {
+      "A": "campana/A_feed.jpg",
+      "B": "campana/B_feed.jpg"
+     }
+    },
+    "historias": {
+     "presupuesto_mxn": 75,
+     "posiciones": {
+      "publisher_platforms": [
+       "facebook",
+       "instagram"
+      ],
+      "facebook_positions": [
+       "story"
+      ],
+      "instagram_positions": [
+       "story",
+       "reels"
+      ]
+     },
+     "anuncios": {
+      "A": "campana/A_historia.jpg",
+      "B": "campana/B_historia.jpg"
+     }
+    }
+   }
+  },
+  "estado": "PAUSADA (falta autorización del dueño)",
+  "instagram_id": "17841415891192650",
+  "intereses": [
+   {
+    "id": "6003069499982",
+    "name": "Administración de recursos humanos (negocios y finanzas)"
+   },
+   {
+    "id": "6004037932409",
+    "name": "Administración (negocios y finanzas)"
+   },
+   {
+    "id": "6003136069408",
+    "name": "Pequeñas y medianas empresas (negocios y finanzas)"
+   },
+   {
+    "id": "6003113957192",
+    "name": "Sistema de administración de recursos humanos"
+   }
+  ],
+  "campana_id": "120251634194810036",
+  "conjunto_feed": "120251634195000036",
+  "imagen_A_feed": "d9ff4d07f5a9524907981f097c1aee5d",
+  "creativo_A_feed": "1373409667978298",
+  "anuncio_A_feed": "120251634198190036",
+  "vistas_previas": {
+   "A_feed": "<iframe src=\"https://business.facebook.com/ads/api/preview_iframe.php?d=AQI_hSyTf1WyXmKXzEWsFL0igCadecAMxnYkb9Pg33X1mo8U5qiP74A36TgduQeGonkt6dcBD3YxwHJlDcE_lLrXljjG-7TMVlTttL1Qn0xQ85EIVcC-3DsqsMQRo7cPp9xaQes_uPFhdIXCSROB8vQNr1_GOUbeQsw-yeoZlCKacXVRDox2Mybaju7T18M3ShAfCF6IH5MjjkBwTwJsz1j0yp_AFs2d6EoM6ikM618sbuaZERoiblTwUzR1oBQnDgXzbBahFdOAJ2gWjH8rzdFjxwbj-uULOZIrCia3aCC1t9ApIIX8A1W5uWvb6qMULIVVaPmuA_sB40pCfdK09Fcf3x9Dci9Netle-lTvxNafspZZ0DAM999p_XmVXWRbf-CiQ_G16tlz2LhDNIeVDRCLlLN6qnlJFkh5-Ic9MwnGkNJqSxkKDwIOBIc_kjHjvxY&amp;t=AQIVGjjvwHqjdgKf0Bs\" width=\"320\" height=\"525\" scrolling=\"yes\" style=\"border: none;\" allow=\"autoplay\"></iframe>",
+   "B_feed": "<iframe src=\"https://business.facebook.com/ads/api/preview_iframe.php?d=AQLVfGqF7gzHX8nHIycNGSB33vdAkt8sERrR759U23fqtxlfwG5R7oe-suspFnIa0niHyHJD5Jn6OnmMIwSVF8819SWinOpVSkGeOPVZENg7szH5bFcLYhPLv_LqLocJ7nZXTgBiGM3c2hc2wfgzD6zcQr_F5iw_ATGNGzvkMLj0uZiZJlH4J3zNx1nF0TYdtoB1divcFDFO5s5UjvVke9R0I58NXcwjBACnDkLkXaEISP4AkNgEWhnydK0xOHKJe6bIhQLQFRc9irptyVAgRk_8tMyX0qfORhplvJOGmliqsGokNyAiN5M13JLFLk8MMg1QQIwBnO7Qo7ZXMsURe6YE04npl15jaHsh8VDV3GZvixLjF5qjG5wQiIusQgRyMj95C3ZMBNH6siOEczxSpjFYsInae58o2ZX9-lkfv0N_Zt0ZVOO3NnK8M4OpWp8UMC4&amp;t=AQKFR637ikjk8HsakxE\" width=\"320\" height=\"525\" scrolling=\"yes\" style=\"border: none;\" allow=\"autoplay\"></iframe>",
+   "A_historias": "<iframe src=\"https://business.facebook.com/ads/api/preview_iframe.php?d=AQK7sOtUcUwi55nhFpnmPK2HOeVW6VGzNoM6pYaP0i8E6ebiIQbBNKWKtZBVZeEcbOJg-1hTUcT5VIziybzY5EKwag0u8INGRhD-zoO85nzNaT7Bb84EsTHLEFHIM3AwiZu1iS7aZSHC6QKH0T2JTAmL_H251KxVx4s01HzuXvHOBp57pOAdhLTatmzvLfxIcEu6gcmYymcFL7GvD_oiyGX-JsULV4HSukCD3p9FiZTIwDDNLbgtInhPQ6u-cBYjcYfuA3ch6fXc90XmA7w8f6cNWVcB3ZbPtDhNyiiTW62INFjSvI8vAwbWcqhO7UEhCw9HTgiIkl1PAxe3vL7SkiDWelPRge2FVNhVOUMXMnQoZVueWA320QPH8UFMFSy3Ag4qrPBEgtr4xrr-SFjeQatYIBl6RFibjA6Z6JwTSBJD47OZ_3sb8-jkZkkiWHrOH5U&amp;t=AQIgpMfM9pJ8Bnnsg_Q\" width=\"320\" height=\"567\" scrolling=\"yes\" style=\"border: none;\" allow=\"autoplay\"></iframe>",
+   "B_historias": "<iframe src=\"https://business.facebook.com/ads/api/preview_iframe.php?d=AQIH49zSOhZUnu8pmvdICV8yGe1zs1CY7zLFENo-9V91ta4t2O46GnLUpHLZsocg372lbsLJopGkzMSsXHBmBI77V8Vt0kxMhPT2YcrBNti6zmGvDK-qPOrzLwpECK2qF3FDknAu-THfqQw2BNLDU7M9qaInN9mi-2yHeLNeaykGjyzKE4kc-4bDK5gwgwJjUMVhSLVufrOZd-klevJsWWNLU8LDRNsWWpoLltJzyI7ffJZQ2-qgLekWdFoppVrCWSPXo5-fRnWn741Au9jiASuxkwkM8Ye5eBWqbULJea710mU_qYmpF_6ElLFYMvuxO8y3ztl_vRyog3dimfcQcNEWe4vbkmi17le-V1LgWWHGcJsnGNxFXWAObxoZQscNvkL6TbNsze0yciEAtiCwE5hq8YpPu6sYR3ZQlKi6EpnDDbMvTTfE59AeTykmiYnvlFw&amp;t=AQJw_4hUxnvW43MQq98\" width=\"320\" height=\"567\" scrolling=\"yes\" style=\"border: none;\" allow=\"autoplay\"></iframe>"
+  },
+  "imagen_B_feed": "30f75eafa8201007528acae8eaf0447b",
+  "creativo_B_feed": "1810329600241479",
+  "anuncio_B_feed": "120251634200610036",
+  "conjunto_historias": "120251634201490036",
+  "imagen_A_historias": "a6d53622c127f877ecb7ec25c962e597",
+  "creativo_A_historias": "1419485683630116",
+  "anuncio_A_historias": "120251634204540036",
+  "imagen_B_historias": "00670f9e992c3563c06122862ab853fd",
+  "creativo_B_historias": "1651296206641260",
+  "anuncio_B_historias": "120251634206870036",
+  "revisado": "2026-10-25T16:07:07+00:00"
  }
 }
