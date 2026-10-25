@@ -1,0 +1,13 @@
+{
+ "semana": 44,
+ "mensajes": [
+  {"fecha": "2026-10-26", "tipo": "texto", "tema": "Dato de ley: el calendario 48 → 40 h",
+   "texto": "📅 *El calendario de la jornada de 40 horas*\n\nLa reforma (DOF 1/05/2026) baja el tope semanal poco a poco:\n\n• 2026: 48 h\n• 2027: 46 h\n• 2028: 44 h\n• 2029: 42 h\n• 2030: 40 h\n\nEl cambio entra cada *1 de enero*. Y no se puede bajar el sueldo ni las prestaciones por trabajar menos horas.\n\n⚠️ Lo que pocos ven: el tope semanal no pega igual a todos los turnos.\n• *Diurno:* cambia desde 2027.\n• *Mixto:* desde 2028.\n• *Nocturno:* hasta 2030.\n\nAdemás, desde el *1 de enero de 2027* el registro de la jornada debe ser electrónico (art. 132 fr. XXXIV LFT).\n\n📌 El detalle está en la guía fijada arriba, página del calendario."},
+  {"fecha": "2026-10-28", "tipo": "texto", "tema": "Ejemplo: 3 turnos diurnos legales de 46 h para 2027",
+   "texto": "🗓️ *3 formas legales de armar un turno diurno de 46 h para 2027*\n\nEl máximo diario sigue siendo 8 h en jornada diurna (art. 61), así que no se trata de meter horas de más en un día, sino de repartir la semana:\n\n1️⃣ Lunes a viernes 8 h + sábado 6 h = 46 h\n2️⃣ Lunes a sábado 7 h 40 min = 46 h\n3️⃣ Lunes a jueves 8 h + viernes y sábado 7 h = 46 h\n\nDomingo de descanso en los tres casos (art. 69). Si alguien trabaja domingo, recuerda la prima dominical de al menos 25 % (art. 71).\n\n💡 La distribución se puede pactar de común acuerdo con el equipo (art. 58). Déjala por escrito.\n\n¿Tu turno es mixto o nocturno? En 2027 no cambia: el tope de 46 h todavía no lo alcanza."},
+  {"fecha": "2026-10-30", "tipo": "encuesta", "tema": "Encuesta: cómo registran hoy la asistencia",
+   "texto": "¿Cómo registra hoy la asistencia tu empresa?",
+   "opciones": ["Papel o Excel", "Reloj checador", "App en el celular", "No la registramos"],
+   "despues": "Gracias por votar 🙌\n\nDesde el 1 de enero de 2027 el registro de entrada y salida debe ser *electrónico*, y la multa por no tenerlo va de 250 a 5,000 UMA (art. 994 fr. IV Bis LFT).\n\nSi votaste *papel o Excel* o *no la registramos*, este es el momento de resolverlo con calma, no en diciembre.\n\nLa próxima semana: las nuevas reglas de horas extra (dobles, triples y el tope de 12 h al día)."}
+ ]
+}

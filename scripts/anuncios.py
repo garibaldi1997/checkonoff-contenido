@@ -6,6 +6,8 @@ Reglas del dueño: las campañas se crean SIEMPRE en pausa; nunca se activan ni 
   python scripts/anuncios.py crear <clave>    → crea EN PAUSA la campaña de campana/anuncios/<clave>.json (no gasta nada)
   Si el json trae "tipo": "enlace", crea anuncios de imagen (A/B) que llevan a un enlace (p. ej. el grupo de WhatsApp),
   con un conjunto por grupo de posiciones (feed / historias) y un anuncio por imagen.
+  python scripts/anuncios.py metricas         → resultados por anuncio de cada campaña de estado/campanas.json → estado/anuncios_metricas.json
+  python scripts/anuncios.py pausar <ad_id>   → pausa un anuncio (solo baja el gasto; activar o subir gasto requiere al dueño)
   python scripts/anuncios.py renovar <clave>  → borra el anuncio en pausa y lo vuelve a crear con el video actual (p. ej. tras corregir el audio)
 
 Variables: META_ADS_TOKEN (secreto), META_AD_ACCOUNT (p. ej. act_1648565720071394), GRAPH_VERSION.
@@ -156,6 +158,27 @@ def renovar(clave):
     crear(clave)
 
 
+def metricas():
+    reg = json.loads((ESTADO.parent / "campanas.json").read_text(encoding="utf-8"))
+    res = {"revisado": datetime.now(timezone.utc).isoformat(timespec="seconds"), "campanas": {}}
+    campos = "ad_id,ad_name,impressions,reach,frequency,inline_link_clicks,cost_per_inline_link_click,ctr,spend,actions"
+    for clave, c in reg.items():
+        if not c.get("campana_id"):
+            continue
+        estado = get(c["campana_id"], fields="status,effective_status,start_time,stop_time")
+        ins = get(f"{c['campana_id']}/insights", level="ad", fields=campos, date_preset="maximum", limit=50)
+        res["campanas"][clave] = {"estado": estado, "anuncios": ins.get("data", ins)}
+    (ESTADO.parent / "anuncios_metricas.json").write_text(json.dumps(res, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(json.dumps(res, ensure_ascii=False, indent=1))
+
+
+def pausar(ad_id):
+    r = post(ad_id, status="PAUSED")
+    print(json.dumps(r, ensure_ascii=False))
+    if "error" in r:
+        sys.exit(1)
+
+
 def verificar():
     if not TOKEN:
         sys.exit("Falta el secreto META_ADS_TOKEN.")
@@ -176,4 +199,5 @@ if __name__ == "__main__":
     accion = (sys.argv[1] if len(sys.argv) > 1 else "verificar").split()
     if not TOKEN:
         sys.exit("Falta el secreto META_ADS_TOKEN.")
-    {"verificar": lambda: verificar(), "crear": lambda: crear(accion[1]), "renovar": lambda: renovar(accion[1])}[accion[0]]()
+    {"verificar": lambda: verificar(), "crear": lambda: crear(accion[1]), "renovar": lambda: renovar(accion[1]),
+     "metricas": lambda: metricas(), "pausar": lambda: pausar(accion[1])}[accion[0]]()
