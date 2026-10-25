@@ -1,0 +1,94 @@
+{
+ "voz": "voz/s44-lun-tarde",
+ "salida": "contenido/checkonoff/2026-10-26-reel-llega-tarde",
+ "escenas": [
+  {
+   "fx": "glass",
+   "w": "lunes",
+   "texto": "8:20",
+   "kicker": "LUNES · ENTRADA 8:00",
+   "size": 300,
+   "sub": "Otra vez <span style='color:#FF4D4F'>tarde</span>",
+   "sy": 930,
+   "ss": 80
+  },
+  {
+   "fx": "doodle",
+   "w": "papel",
+   "texto": "¿Quién dice<br>la verdad?",
+   "size": 96,
+   "sub": "Lista en papel = palabra contra palabra",
+   "ss": 40,
+   "sy": 1180
+  },
+  {
+   "fx": "wall",
+   "w": "retardo",
+   "items": [
+    "Retardo sin registro",
+    "Discusión",
+    "Descuento mal hecho",
+    "Queja en la junta"
+   ],
+   "kicker": "CADA SEMANA"
+  },
+  {
+   "fx": "orbit",
+   "w": "con",
+   "items": [
+    "⏱️",
+    "📍",
+    "📸",
+    "📱",
+    "✅",
+    "📊"
+   ],
+   "sub": "Hora · ubicación · foto"
+  },
+  {
+   "fx": "phone",
+   "w": "retardos",
+   "n": 1,
+   "big": "8:20",
+   "sub": "lunes · entrada",
+   "boton": [
+    "Registrar entrada",
+    "✓ Entrada registrada"
+   ],
+   "filas": [
+    [
+     "⏱️",
+     "Retardo: 20 min",
+     "Sello del servidor"
+    ],
+    [
+     "📍",
+     "Ubicación verificada",
+     "Dentro de la sucursal"
+    ],
+    [
+     "📊",
+     "Va directo a la prenómina",
+     "Sin capturar"
+    ]
+   ],
+   "cards": [
+    [
+     "Retardos del mes",
+     "3",
+     1
+    ],
+    [
+     "Prenómina",
+     "✓ Lista",
+     1
+    ]
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con tu equipo de recursos humanos"
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "voz": "voz/s44-mie-inspeccion",
+ "salida": "contenido/checkonoff/2026-10-28-reel-inspeccion",
+ "escenas": [
+  {
+   "fx": "glass",
+   "w": "miércoles",
+   "texto": "10:00",
+   "kicker": "MIÉRCOLES · LLEGA LA STPS",
+   "size": 300,
+   "sub": "<span style='color:#FF4D4F'>Inspección</span>",
+   "sy": 930,
+   "ss": 84
+  },
+  {
+   "fx": "wall",
+   "w": "piden",
+   "items": [
+    "Registros de jornada",
+    "Últimos meses",
+    "Horas extra",
+    "Descansos"
+   ],
+   "kicker": "TE PIDEN"
+  },
+  {
+   "fx": "doodle",
+   "w": "listas",
+   "texto": "¿Y la<br>carpeta?",
+   "size": 110,
+   "sub": "Listas incompletas",
+   "ss": 44,
+   "sy": 1180
+  },
+  {
+   "fx": "zoom",
+   "w": "desde",
+   "valor": 586550,
+   "pre": "$",
+   "kicker": "MULTA MÁXIMA · 5,000 UMA",
+   "nota": "Art. 994 fr. IV Bis LFT · registro electrónico desde 2027"
+  },
+  {
+   "fx": "orbit",
+   "w": "con",
+   "items": [
+    "☁️",
+    "📄",
+    "⏱️",
+    "📍",
+    "✅",
+    "📊"
+   ],
+   "sub": "Tus registros, en segundos"
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con tu equipo de recursos humanos"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "voz": "voz/s44-jue-extras",
+ "salida": "contenido/checkonoff/2026-10-29-reel-horas-extra",
+ "escenas": [
+  {
+   "fx": "zoom",
+   "w": "jueves",
+   "valor": 14,
+   "suf": " h extra",
+   "kicker": "JUEVES DE QUINCENA",
+   "size": 150,
+   "dur": 1.0
+  },
+  {
+   "fx": "doodle",
+   "w": "nadie",
+   "texto": "¿Quién las<br>autorizó?",
+   "size": 100
+  },
+  {
+   "fx": "chart",
+   "w": "tope",
+   "datos": [
+    [
+     "Dobles",
+     9
+    ],
+    [
+     "Triples",
+     4
+    ]
+   ],
+   "suf": " h",
+   "titulo": "Tope semanal 2026",
+   "kicker": "LO QUE DICE LA LEY"
+  },
+  {
+   "fx": "glass",
+   "w": "nunca",
+   "texto": "12 h",
+   "kicker": "MÁXIMO AL DÍA",
+   "size": 300,
+   "sub": "ordinaria + extra",
+   "ss": 56,
+   "sy": 930
+  },
+  {
+   "fx": "orbit",
+   "w": "con",
+   "items": [
+    "⏱️",
+    "✅",
+    "📊",
+    "📱",
+    "➕",
+    "🔔"
+   ],
+   "sub": "Horas extra en tiempo real"
+  },
+  {
+   "fx": "phone",
+   "w": "así",
+   "big": "6 h",
+   "sub": "horas extra esta semana",
+   "boton": [
+    "Autorizar",
+    "✓ Autorizadas"
+   ],
+   "filas": [
+    [
+     "➕",
+     "Dobles: 6 de 9",
+     "Dentro del tope"
+    ],
+    [
+     "🔔",
+     "Aviso al supervisor",
+     "Antes de pagar"
+    ],
+    [
+     "📊",
+     "Directo a la prenómina",
+     "Sin sorpresas"
+    ]
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con quien autoriza las horas extra"
+  }
+ ]
+}

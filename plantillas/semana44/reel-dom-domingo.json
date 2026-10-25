@@ -1,0 +1,65 @@
+{
+ "voz": "voz/s44-dom-domingo",
+ "salida": "contenido/checkonoff/2026-11-01-reel-prima-dominical",
+ "escenas": [
+  {
+   "fx": "glass",
+   "w": "domingo",
+   "texto": "Domingo",
+   "kicker": "MEDIO EQUIPO TRABAJA HOY",
+   "size": 200,
+   "sub": "y descansa el lunes",
+   "sy": 900,
+   "ss": 64
+  },
+  {
+   "fx": "doodle",
+   "w": "sabías",
+   "texto": "+25 %",
+   "size": 150,
+   "sub": "Prima dominical · art. 71 LFT",
+   "ss": 44,
+   "sy": 1180
+  },
+  {
+   "fx": "zoom",
+   "w": "con",
+   "valor": 125,
+   "pre": "$",
+   "suf": " más",
+   "kicker": "SALARIO DE $500 DIARIOS",
+   "color": "#34B614",
+   "nota": "por persona, cada domingo trabajado"
+  },
+  {
+   "fx": "wall",
+   "w": "si",
+   "items": [
+    "Sin registro",
+    "Pago incompleto",
+    "Reclamo",
+    "Demanda"
+   ],
+   "kicker": "SI NO LO REGISTRAS"
+  },
+  {
+   "fx": "orbit",
+   "w": "con",
+   "n": 1,
+   "items": [
+    "📅",
+    "⏱️",
+    "💰",
+    "📊",
+    "✅",
+    "📱"
+   ],
+   "sub": "La prima se calcula sola"
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con quien hace la nómina"
+  }
+ ]
+}

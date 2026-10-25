@@ -1,0 +1,85 @@
+{
+ "voz": "voz/s44-vie-checa",
+ "salida": "contenido/checkonoff/2026-10-30-reel-checa-por-mi",
+ "escenas": [
+  {
+   "fx": "wall",
+   "w": "viernes",
+   "items": [
+    "“Checa por mí”",
+    "Tarjeta prestada",
+    "Lista firmada por otro",
+    "“Ya viene en camino”"
+   ],
+   "kicker": "VIERNES · 8:00",
+   "size": 50
+  },
+  {
+   "fx": "doodle",
+   "w": "listas",
+   "texto": "¿Checa<br>por mí?",
+   "size": 110,
+   "sub": "Con papel es facilísimo",
+   "ss": 44,
+   "sy": 1180
+  },
+  {
+   "fx": "glass",
+   "w": "paga",
+   "texto": "$$$",
+   "kicker": "HORAS QUE NADIE TRABAJÓ",
+   "size": 300,
+   "sub": "las paga tu empresa",
+   "ss": 56,
+   "sy": 930
+  },
+  {
+   "fx": "orbit",
+   "w": "con",
+   "n": 1,
+   "items": [
+    "📸",
+    "📍",
+    "⏱️",
+    "🔒",
+    "✅",
+    "📱"
+   ],
+   "sub": "Foto + ubicación en cada checada"
+  },
+  {
+   "fx": "phone",
+   "w": "tu",
+   "big": "📸",
+   "bigSize": 120,
+   "sub": "checada con foto",
+   "boton": [
+    "Registrar entrada",
+    "✓ Es la misma persona"
+   ],
+   "filas": [
+    [
+     "📸",
+     "Foto al checar",
+     "Imposible checar por otro"
+    ],
+    [
+     "📍",
+     "Dentro de la sucursal",
+     "Geocerca"
+    ],
+    [
+     "💰",
+     "Pagas lo trabajado",
+     "Ni un minuto más"
+    ]
+   ],
+   "n": 1
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con tu equipo de recursos humanos"
+  }
+ ]
+}

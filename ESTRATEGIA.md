@@ -27,6 +27,13 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 - Se mantiene el carrusel de mediodía; las imágenes sueltas bajan al mínimo.
 - Semana tipo: carrusel diario 12:00, "Para RRHH" (mini carrusel) 15:00 de lunes a viernes, 1 reel con historia diario a las 18:00 (alternando voz de mujer y hombre), máximo 1 imagen suelta por semana.
 
+## Aprendizajes semana 43 (21–25 oct 2026) · aplicados en la semana del 26 oct
+- **Alcance:** carruseles 7 de alcance promedio, reels 1, imágenes 1 (38 posts medidos). Instagram sigue sin seguidores (0–1): el algoritmo casi no reparte.
+- **Los 2 mejores posts de la historia** ("¿Tu turno es vespertino?" 52 y "¿El reloj checador ya es obligatorio?" 39) tenían **portada tipográfica**: pregunta-mito grande sobre azul marino, palabra clave en rojo, respuesta corta en verde ("No existe", "Ya está en la ley") y botón "Desliza". Desde que pasamos a portadas con foto (semana 43) el alcance bajó.
+- **Prueba A/B de esta semana:** los 5 "Para RRHH" y 4 carruseles de mediodía vuelven a la portada tipográfica (con el logo abajo, nunca arriba); 3 carruseles mantienen la portada con foto. El domingo 1/11 se compara alcance, guardados y compartidos de cada grupo y se queda el formato ganador.
+- **Reels:** 7 reels con efectos (plantilla por escenas `plantillas/efectos/reel_spec.html` + `armar_reel.py`), voces Dalia/Jorge alternadas.
+- **Meme de humor** (formato que llegó a 10,015 impresiones en LinkedIn) se prueba también en Instagram y Facebook el jueves.
+
 ## Aprendizaje: meme de humor laboral en LinkedIn (dato del dueño, 25/10/2026)
 El post del 22/10 "Jueves de realidad con humor" (diálogo Jefe/Yo + cara expresiva en primer plano + remate en la foto) en el LinkedIn personal llegó a **10,015 impresiones**: el mayor alcance de todo el contenido (las páginas de empresa rondan 7–100). Pero solo 6 reacciones y 0 comentarios (0.06 %).
 - **Qué funcionó:** situación que todo RRHH reconoce, diálogo corto de 4 líneas, cara con emoción fuerte, remate legible en la imagen, fondo blanco limpio. LinkedIn reparte mucho más el perfil personal que la página.

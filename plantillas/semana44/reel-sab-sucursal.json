@@ -1,0 +1,82 @@
+{
+ "voz": "voz/s44-sab-sucursal",
+ "salida": "contenido/checkonoff/2026-10-31-reel-sucursal-whatsapp",
+ "escenas": [
+  {
+   "fx": "glass",
+   "w": "sábado",
+   "texto": "23:00",
+   "kicker": "SÁBADO · SUCURSAL NORTE",
+   "size": 300,
+   "sub": "📸 foto de la libreta",
+   "sy": 930,
+   "ss": 64
+  },
+  {
+   "fx": "phone",
+   "w": "gerente",
+   "app": "WHATSAPP",
+   "big": "📸 x 4",
+   "bigSize": 90,
+   "sub": "Sucursal Norte · 23:04",
+   "filas": [
+    [
+     "📸",
+     "Foto 1",
+     "Libreta de asistencia",
+     "#25D366"
+    ],
+    [
+     "📸",
+     "Foto 2",
+     "Hoja 2 (borrosa)",
+     "#25D366"
+    ],
+    [
+     "💬",
+     "“Faltan las firmas”",
+     "23:06",
+     "#25D366"
+    ]
+   ]
+  },
+  {
+   "fx": "doodle",
+   "w": "hay",
+   "texto": "¿Dice 8<br>o dice 9?",
+   "size": 100,
+   "sub": "Letras que nadie entiende",
+   "ss": 44,
+   "sy": 1180
+  },
+  {
+   "fx": "wall",
+   "w": "lunes",
+   "items": [
+    "Capturar",
+    "Corregir",
+    "Cuadrar",
+    "Volver a capturar"
+   ],
+   "kicker": "EL LUNES"
+  },
+  {
+   "fx": "orbit",
+   "w": "con",
+   "items": [
+    "💬",
+    "📱",
+    "🖐️",
+    "📊",
+    "🏬",
+    "✅"
+   ],
+   "sub": "WhatsApp · app · checador"
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con quien lleva las sucursales"
+  }
+ ]
+}

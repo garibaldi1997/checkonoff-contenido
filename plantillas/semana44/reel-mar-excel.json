@@ -1,0 +1,106 @@
+{
+ "voz": "voz/s44-mar-excel",
+ "salida": "contenido/checkonoff/2026-10-27-reel-excel-final",
+ "escenas": [
+  {
+   "fx": "wall",
+   "w": "martes",
+   "items": [
+    "Asistencia_FINAL.xlsx",
+    "FINAL_v7.xlsx",
+    "ahora_si_FINAL.xlsx",
+    "NO_TOCAR.xlsx"
+   ],
+   "kicker": "MARTES DE CIERRE",
+   "size": 50
+  },
+  {
+   "fx": "doodle",
+   "w": "tres",
+   "texto": "¿Cuál es<br>la buena?",
+   "size": 100,
+   "sub": "3 sucursales · 3 archivos · 0 cuadran",
+   "ss": 40,
+   "sy": 1180
+  },
+  {
+   "fx": "chart",
+   "w": "cada",
+   "datos": [
+    [
+     "Capturar",
+     4
+    ],
+    [
+     "Corregir",
+     3
+    ],
+    [
+     "Recapturar",
+     2
+    ]
+   ],
+   "suf": " h",
+   "titulo": "Ejemplo por quincena",
+   "kicker": "TIEMPO QUE SE VA"
+  },
+  {
+   "fx": "orbit",
+   "w": "con",
+   "items": [
+    "🏬",
+    "🏭",
+    "🏪",
+    "📱",
+    "💬",
+    "📊"
+   ],
+   "sub": "Todas las sucursales en un panel"
+  },
+  {
+   "fx": "phone",
+   "w": "prenómina",
+   "big": "✓",
+   "bigSize": 120,
+   "sub": "Prenómina · quincena 2",
+   "boton": [
+    "Generar prenómina",
+    "✓ Lista en 1 clic"
+   ],
+   "filas": [
+    [
+     "📅",
+     "Faltas",
+     "Calculadas solas"
+    ],
+    [
+     "⏰",
+     "Retardos",
+     "Con minutos exactos"
+    ],
+    [
+     "➕",
+     "Horas extra",
+     "Dobles y triples"
+    ]
+   ],
+   "cards": [
+    [
+     "Sucursales",
+     "3 de 3",
+     1
+    ],
+    [
+     "Capturas a mano",
+     "0",
+     1
+    ]
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con quien cierra la nómina"
+  }
+ ]
+}

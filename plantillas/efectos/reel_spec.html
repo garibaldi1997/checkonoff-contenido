@@ -1,0 +1,55 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;background:#0b1330;color:#fff;font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
+#root{position:absolute;inset:0}
+</style><script src="efectos.js"></script></head><body><div id="root"></div>
+<script>
+// Reel por escenas (plantillas/efectos/armar_reel.py reemplaza SPEC). Cada escena empieza cuando la voz dice su palabra (w, ocurrencia n).
+const SPEC = /*SPEC*/;
+const SPEED = window.SPEED || 1, W = window.WORDS || [], P = window.PH || {};
+const { at, up, pop, T } = FX;
+const LOGO = () => `<img src="${P.logo}" style="width:170px">`;
+const ab = (top, size, html, st = '') => `<div class="fx-ab" style="left:60px;right:60px;top:${top}px;text-align:center;font-size:${size}px;${st}">${html}</div>`;
+function pantalla(e, v, t0) {
+  const fila = (r, i) => `<div style="display:flex;gap:16px;align-items:center;padding:18px 22px;background:#fff;border-radius:22px;margin:0 22px 14px;box-shadow:0 6px 16px rgba(17,28,59,.08);${up(v, t0 + 1 + i * .45, .35, 30)}"><div style="width:56px;height:56px;border-radius:16px;background:${r[3] || '#34B614'};display:grid;place-items:center;font-size:28px">${r[0]}</div><div><div style="font-size:26px;font-weight:800">${r[1]}</div><div style="font-size:20px;color:#5b667a">${r[2]}</div></div></div>`;
+  const ok = v > t0 + .8;
+  return `<div style="padding:80px 0 0"><div style="text-align:center;font-size:22px;font-weight:800;letter-spacing:.14em;color:#34B614">${e.app || 'CHECKONOFF'}</div>
+    <div style="text-align:center;font-size:${e.bigSize || 96}px;font-weight:900;letter-spacing:-.03em;margin:10px 0 4px">${e.big}</div><div style="text-align:center;font-size:24px;color:#5b667a;margin-bottom:26px">${e.sub || ''}</div>
+    ${e.boton ? `<div style="margin:0 60px 30px;height:110px;border-radius:60px;background:${ok ? '#34B614' : '#111C3B'};color:#fff;display:grid;place-items:center;font-size:30px;white-space:nowrap;font-weight:900">${ok ? e.boton[1] : e.boton[0]}</div>` : ''}
+    ${(e.filas || []).map(fila).join('')}</div>`;
+}
+function escena(e, v) {
+  const a = e.a, b = e.b;
+  const kick = e.kicker ? FX.kicker(v, a, e.kicker, e.ky || 470) : '';
+  const sub = e.sub ? ab(e.sy || 1150, e.ss || 64, e.sub, `font-weight:900;letter-spacing:-.02em;line-height:1.05;${up(v, a + (e.sd ?? .5), .4, 40)}`) : '';
+  switch (e.fx) {
+    case 'glass': return kick + FX.glassType(v, a, b, e.texto, { y: e.y || 560, size: e.size || 280 }) + sub;
+    case 'wall': return kick + FX.headlineWall(v, a, b, e.items, { y: e.y || 540, size: e.size || 52, paso: e.paso || .3 }) + sub;
+    case 'doodle': return kick + FX.doodle(v, a, b, e.texto, { y: e.y || 860, size: e.size || 120, rx: e.rx || 420, ry: e.ry || 210 }) + sub;
+    case 'zoom': return kick + FX.digitalZoom(v, a + .15, b, e.valor, { pre: e.pre || '', suf: e.suf || '', y: e.y || 700, size: e.size || 140, dur: e.dur || 1.2, color: e.color }) + (e.nota ? ab(1150, 30, e.nota, `color:${T.s};${up(v, a + .8, .4, 20)}`) : '') + sub;
+    case 'orbit': return FX.orbit(v, a, b, LOGO(), e.items, { y: 860, r: 360 }) + ab(1180, 84, 'CheckONOFF', `font-weight:900;letter-spacing:-.03em;${up(v, a + .3, .4)}`) + (e.sub ? ab(1300, 40, e.sub, `font-weight:700;color:${T.s};${up(v, a + .7, .4, 30)}`) : '');
+    case 'phone': return FX.phone(v, a, b, vv => pantalla(e, vv, a), { x: 300, y: 330 }) + (e.cards ? FX.uiWorld(v, a + .6, b, e.cards.map((c, i) => ({ x: i % 2 ? 800 : 20, y: 420 + i * 320, w: 260, html: `<div style="font-size:24px;color:${T.s}">${c[0]}</div><div style="font-size:38px;font-weight:900;${c[2] ? `color:${T.a2}` : ''}">${c[1]}</div>` }))) : '');
+    case 'chart': return kick + FX.chartGrow(v, a, b, e.datos, { y: e.y || 540, h: 640, suf: e.suf || '', pre: e.pre || '', titulo: e.titulo || '' }) + sub;
+    case 'cierre': {
+      const icono = `<div style="width:300px;height:300px;border-radius:70px;background:#fff;display:grid;place-items:center;box-shadow:0 0 80px ${T.a}99"><img src="${P.logo}" style="width:220px"></div>`;
+      return FX.frameBreak(v, a - .1, 999, icono, { x: 240, y: 680, w: 600, h: 200 })
+        + ab(960, 70, `Guárdalo <span style="color:${T.a2}">·</span> compártelo`, `font-weight:900;letter-spacing:-.035em;line-height:.98;text-transform:uppercase;white-space:nowrap;${up(v, a + .2, .4)}`)
+        + ab(1080, 40, e.linea || '', `font-weight:700;color:${T.s};${up(v, a + .7, .4, 30)}`)
+        + ab(1230, 52, 'checkonoff.mx', `font-weight:900;${up(v, a + 1.2, .5, 30)}`);
+    }
+  }
+  return '';
+}
+function render(t) {
+  const v = t * SPEED;
+  const S = SPEC.escenas.map((e, i) => Object.assign({}, e, { a: i === 0 ? .05 : at(W, e.w, e.n || 0) - .12 }));
+  S.forEach((e, i) => e.b = i + 1 < S.length ? S[i + 1].a + .15 : 999);
+  const fin = S[S.length - 1].a, orb = S.find(e => e.fx === 'orbit');
+  let h = FX.css() + FX.fondo(v, { brillo: orb && v > orb.a ? 1.2 : .8 });
+  for (const e of S) if (v > e.a - .25 && v < e.b + .25) h += escena(e, v);
+  if (orb) h += FX.zoomThrough(v, orb.a, { dur: .8 });
+  if (v < fin - .1) h += FX.subtitulos(v, W);
+  h += FX.grano(v);
+  document.getElementById('root').innerHTML = h;
+}
+</script></body></html>
