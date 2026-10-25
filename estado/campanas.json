@@ -42,6 +42,9 @@
   "campana_id": "120251633612460036",
   "conjunto_id": "120251633629220036",
   "video_id": "1125202370266252",
-  "error": "creativo_id: La publicación con contenido publicitario se creó con una app que se encuentra en modo de desarrollo. Debe estar en modo público para crear este anuncio. La publicación con contenido publicitario se creó con una app que se encuentra en modo de desarrollo"
+  "creativo_id": "1678984226987704",
+  "anuncio_id": "120251633719780036",
+  "vista_previa": "<iframe src=\"https://business.facebook.com/ads/api/preview_iframe.php?d=AQKFcNCY56F7kED4jnDQjbjidbbd3YVJ4WHbKwaq7e6VRnAZhSQWllMiNce8XxpG8hnCMSsIfeUhaq99WgwkFCjTas3G5oG2WRrEr_zGy0dzkCWY6AzxJF_8U0oLdKE8Vqnru07kRJwxV2kQgFNr0Yrt30A6diqgy3VFjLgiKdZri2jElvppilEJYMpOznY5EIZxVFpqN6_UEk1md8mM32gstdonR5KTcnW7C74uBZUSitcezdY5jZtsBx-pv9XTdXuNtdcgQ6fqgdFKEzMXoSo5CHzd52TO8ZmAD8Fi0a2Qsqsof7C5Dkiphp0wzb1aas06iNEq2-Mb9AT9WcJv5J1zvRgL1yF2yIOr28y9WLk4L3BSCDzWqo0EzUoOHWrb9YtDW3ApTW0YZ2v0aaaBftTcNyZGhjgHE-Ei9GK_5osOJGhpL2Mb6ov-WqXCuopFbgo&amp;t=AQLwpJboFTTZmWFkB2U\" width=\"274\" height=\"213\" scrolling=\"yes\" style=\"border: none;\" allow=\"autoplay\"></iframe>",
+  "revisado": "2026-10-25T15:44:28+00:00"
  }
 }
