@@ -1,0 +1,23 @@
+{
+ "revisado": "2026-10-25T16:29:35+00:00",
+ "campanas": {
+  "registro-2027": {
+   "estado": {
+    "id": "120251633612460036",
+    "status": "PAUSED",
+    "effective_status": "PAUSED",
+    "start_time": "2026-10-25T09:34:24-0600"
+   },
+   "anuncios": []
+  },
+  "grupo-40h": {
+   "estado": {
+    "id": "120251634194810036",
+    "status": "PAUSED",
+    "effective_status": "PAUSED",
+    "start_time": "2026-10-25T10:06:41-0600"
+   },
+   "anuncios": []
+  }
+ }
+}
