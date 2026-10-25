@@ -37,6 +37,8 @@
     "name": "Sistema de administración de recursos humanos"
    }
   ],
-  "campana_id": "120251633612460036"
+  "campana_id": "120251633612460036",
+  "conjunto_id": "120251633629220036",
+  "error": "creativo_id: La publicación con contenido publicitario se creó con una app que se encuentra en modo de desarrollo. Debe estar en modo público para crear este anuncio. La publicación con contenido publicitario se creó con una app que se encuentra en modo de desarrollo"
  }
 }
