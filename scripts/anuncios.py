@@ -7,13 +7,14 @@ Reglas del dueño: las campañas se crean SIEMPRE en pausa; nunca se activan ni 
   Si el json trae "tipo": "enlace", crea anuncios de imagen (A/B) que llevan a un enlace (p. ej. el grupo de WhatsApp),
   con un conjunto por grupo de posiciones (feed / historias) y un anuncio por imagen.
   python scripts/anuncios.py metricas         → resultados por anuncio de cada campaña de estado/campanas.json → estado/anuncios_metricas.json
+  python scripts/anuncios.py activar <clave> <dias>  → SOLO con autorización escrita del dueño: enciende campaña, conjuntos y anuncios con fecha de fin
   python scripts/anuncios.py pausar <ad_id>   → pausa un anuncio (solo baja el gasto; activar o subir gasto requiere al dueño)
   python scripts/anuncios.py renovar <clave>  → borra el anuncio en pausa y lo vuelve a crear con el video actual (p. ej. tras corregir el audio)
 
 Variables: META_ADS_TOKEN (secreto), META_AD_ACCOUNT (p. ej. act_1648565720071394), GRAPH_VERSION.
 """
 import base64, json, os, pathlib, sys, time, urllib.parse, urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 GRAPH = "https://graph.facebook.com/" + os.environ.get("GRAPH_VERSION", "v26.0")
 TOKEN = os.environ.get("META_ADS_TOKEN", "").strip()
@@ -172,6 +173,25 @@ def metricas():
     print(json.dumps(res, ensure_ascii=False, indent=1))
 
 
+def activar(clave, dias):
+    reg_path = ESTADO.parent / "campanas.json"
+    reg = json.loads(reg_path.read_text(encoding="utf-8")); c = reg[clave]
+    fin = (datetime.now(timezone.utc) + timedelta(days=int(dias))).replace(microsecond=0)
+    ids = [("conjunto", v) for k, v in c.items() if k.startswith("conjunto") and isinstance(v, str)]
+    ids += [("anuncio", v) for k, v in c.items() if k.startswith("anuncio") and isinstance(v, str)]
+    for tipo, i in ids:
+        r = post(i, status="ACTIVE", **({"end_time": fin.isoformat()} if tipo == "conjunto" else {}))
+        if "error" in r:
+            sys.exit(f"{tipo} {i}: {r['error']}")
+    r = post(c["campana_id"], status="ACTIVE")
+    if "error" in r:
+        sys.exit(f"campaña: {r['error']}")
+    c["estado"] = f"ACTIVA hasta {fin.isoformat()} (autorizada por el dueño)"
+    c["activada"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    reg_path.write_text(json.dumps(reg, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(c["estado"])
+
+
 def pausar(ad_id):
     r = post(ad_id, status="PAUSED")
     print(json.dumps(r, ensure_ascii=False))
@@ -200,4 +220,5 @@ if __name__ == "__main__":
     if not TOKEN:
         sys.exit("Falta el secreto META_ADS_TOKEN.")
     {"verificar": lambda: verificar(), "crear": lambda: crear(accion[1]), "renovar": lambda: renovar(accion[1]),
-     "metricas": lambda: metricas(), "pausar": lambda: pausar(accion[1])}[accion[0]]()
+     "metricas": lambda: metricas(), "pausar": lambda: pausar(accion[1]),
+     "activar": lambda: activar(accion[1], accion[2])}[accion[0]]()
