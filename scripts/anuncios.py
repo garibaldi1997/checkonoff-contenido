@@ -225,8 +225,8 @@ def diagnostico():
     """Solo lectura: qué permisos trae el token (sin imprimir el token) y si se obtiene el token de la página."""
     d = get("debug_token", input_token=TOKEN).get("data", {})
     print("permisos:", d.get("scopes"), "· válido:", d.get("is_valid"), "· app:", d.get("app_id"))
-    pag = get("1413919435136937", fields="name,access_token,tasks")
-    print("página:", pag.get("name"), "· token de página:", "sí" if pag.get("access_token") else "no", "· tareas:", pag.get("tasks"), "· error:", pag.get("error"))
+    pag = get("1413919435136937", fields="name,access_token")
+    print("página:", pag.get("name"), "· token de página:", "sí" if pag.get("access_token") else "no", "· error:", pag.get("error"))
 
 
 def verificar():
