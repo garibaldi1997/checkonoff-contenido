@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-26T13:40:30+00:00",
+  "actualizado": "2026-10-26T19:33:07+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -881,6 +881,28 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122108470233512173"
+      }
+    },
+    "2026-10-26-carrusel-turno-nocturno-2027": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-26T12:00:00-06:00",
+      "tema": "¿La reforma cambia tu turno nocturno en 2027? No. 🌙",
+      "instagram": {
+        "id": "18495923320129771",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/De94Lhvl4Wf/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122109198231512173"
       }
     }
   }
