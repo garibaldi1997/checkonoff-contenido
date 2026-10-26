@@ -325,6 +325,26 @@
   ],
   "campana_id": "120251649183270036",
   "formulario_id": "2317304209123736",
-  "error": "conjunto_feed: No puedes publicar anuncios para clientes potenciales hasta que tu página de Facebook acepte las Condiciones del servicio de generación de clientes potenciales de Facebook. Condiciones del servicio no aceptadas"
+  "conjunto_feed": "120251649745340036",
+  "imagen_A_feed": "b2081d52679ba102fdd29f7d54c0edae",
+  "creativo_A_feed": "919990627718153",
+  "anuncio_A_feed": "120251649747690036",
+  "vistas_previas": {
+   "A_feed": "<iframe src=\"https://business.facebook.com/ads/api/preview_iframe.php?d=AQJDB0-t6BUhMVeYiqoYwwjvW-KZ4KKqGPb7-jpnUbBylhn4ywLUw7rdKfRFk_PbAxNKM5G6_QJ3WAP51jpIkTLtd2y3-sx4Jb_2CI2c4EjcSMfqZRwDFVxWijTm1OmKFHLuOFjxKdQ7z7bFqXnWXgqbUOJYme__dybYhXJ_jsmZloj1ctks1s94AbUnNLG-_04mQ5ZBQC4AEy8OWa8mDt8t85-lgbLvlWabFocZPpKP3onP9jJQkRlWWONoL-FdChvcoyoijq2lhxBQGuQXQ2MIga4S-yEErS3VRve52YK0ZyJ0TiTdAY8rQy2EnyhkCe9RUExYqIs6eHVbwPjw9uZKssIbkWdgjbWe_vf-gF_L8s8mPUfHb_8d_9bK1Xd13a2y8zeVvg9L2mv7yrOctj8bL5T2lpc7LN8ZcH-zsmjS0Ejhsy0tGMQ0cJDesS1vWxU&amp;t=AQISu7Z7W54Rv_v2s-c\" width=\"320\" height=\"525\" scrolling=\"yes\" style=\"border: none;\" allow=\"autoplay\"></iframe>",
+   "B_feed": "<iframe src=\"https://business.facebook.com/ads/api/preview_iframe.php?d=AQKW4oaufx09hMzn9iAZhQN4DmRRneAus3zFV4ksdlT-m_9ne50AZ_1bPOYMTJkrbkBgiRn0D1HNuYB3vmUABHMVyk3cfOAm8N_AzZ2buGPcB9arq6wmpazAimE4UJLZX2ImXeTfaaOG1RcKmpFaQaxtGArnQyWpBA4D6-hk4O1l_yJYUzeu483Ecj_Mqa2qzckILJN_0peQ0rU7lNLSGbSwJTbGEVhz7Ok_BKFR-shl-GoCJDotQ9E39pXeoyiQ1TYRBLKqMOWw-QN0K9kM8EcVr9HVLaTkGxoQE_MmKuEJtigzAWQ7uBlvmZPnjFV9GRZ028d7NU740VT3WaXi5X7u5YsE0406EtZrvk2vS_AKuBSOpet74SykpazLm_Vgtd7b4yCYHO2lzrIN5W9f2FEfb2ZFELPlzSR5zFIHycH7pm3ylfWqby2LBlMgudmVQGs&amp;t=AQI-sNaFUWhp5KMTFL0\" width=\"320\" height=\"525\" scrolling=\"yes\" style=\"border: none;\" allow=\"autoplay\"></iframe>",
+   "A_historias": "<iframe src=\"https://business.facebook.com/ads/api/preview_iframe.php?d=AQKyBVVYgcVk-KN7a2ts-7FVB6DltxkUg67QRwdHKvu2OqmXBamfhF5ghxIJjW_gFUpKpUWUwzbFclEnqIAg829Y3KNb4tgUlyqUMg-ii_-GT41DSyadWgsBjfouAQZOyJ61KdbSGQmT5BB32mPKLTaF2_kBH6c6eCoFOeYTvVUMDi1vj-UgNHtdlJah-Y_L76h2JP5GZqdTNRFJr6k5EU8AigiDwE4ZRIwiT-I7l6Z6P83ObI6ojJLeWamEvwbASqZGoT_lpq-Czp-4ATtW0IhLZR9Np8zEMN71j2X4MUi7Rn0UJbipVoBzQpvv3yNvtk6ihqvNVXypNaQ4PF8fftoqm_NUKdaWs6ub1-zKdA-Gcrh2aZtyDUIaiLX8V5Co3as87WtT-ODNzFptxzRw2rb3KIo33a7aimWLxN49N0AQ3613hSN0AvdEvhZQNDeDKKk&amp;t=AQJztI5UshdxJSp7tLU\" width=\"320\" height=\"567\" scrolling=\"yes\" style=\"border: none;\" allow=\"autoplay\"></iframe>",
+   "B_historias": "<iframe src=\"https://business.facebook.com/ads/api/preview_iframe.php?d=AQKkE1Z2YBASljb8UhyGhWkvj_GKj9wBpBSNMHi6Uu_7Ffu-1uWwRXtvBNc-vh62ZlL8aGcxP7QgdgooxnyCw8jdKSHwH44hMmBh5VFoEhCedFLm3nY0p9B_PoB_KwkvU_CH8sMP2TS_AWhH0x0G8tObfw-YN_TkdpHF7wHbl0T1kII8WkMJddOIH1VZQ9zEklc-fJw5_hVAGIqFe3ASG6yHRr1v-kauavr2WZYcJzfYlIL3RCaRfsHiYGiXabw4rOq_6axidM9QCvQNa3g9dgEfmLxZJo2kKmsAlZeoO9YcH6BLwTX_J0Xgqi5JXmtb7cWYPaJCvoIoSj65rQy0DYVZUINuhKx1RuYdZLKuv-usc2wfBHnplkbi4XcCu-80Zl5VEafmAgR1vOqGJTgg9YK9be__5GaBWT6Z62MpRQhpT2WcrwvF6faHgabqwwenZ_4&amp;t=AQJMGT43Vz9wBgrnOaI\" width=\"320\" height=\"567\" scrolling=\"yes\" style=\"border: none;\" allow=\"autoplay\"></iframe>"
+  },
+  "imagen_B_feed": "a89ec225a46b5ef4336b90af67fbd710",
+  "creativo_B_feed": "1137464869213532",
+  "anuncio_B_feed": "120251649748920036",
+  "conjunto_historias": "120251649749540036",
+  "imagen_A_historias": "17274d8ef978968902bb684cdc9dffc9",
+  "creativo_A_historias": "2317444825773168",
+  "anuncio_A_historias": "120251649752460036",
+  "imagen_B_historias": "abf95335f88bdc5d115e05d32a8585f3",
+  "creativo_B_historias": "4629337354011555",
+  "anuncio_B_historias": "120251649754870036",
+  "revisado": "2026-10-26T15:48:44+00:00"
  }
 }
