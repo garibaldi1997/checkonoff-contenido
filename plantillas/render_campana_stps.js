@@ -1,4 +1,4 @@
-// Campaña pagada: unirse al grupo de WhatsApp "Jornada 40 hrs MX" (la guía 40 h está fijada ahí) · estándar premium
+// Campaña pagada de formulario (contactos): guía 40 h gratis a cambio de nombre, WhatsApp y empresa · estándar premium
 const { chromium } = require('/opt/node-tools/node_modules/playwright');
 const fs = require('fs'), path = require('path');
 const { b64, LOGO, C, CSS, ph, G } = require('./premium_base');
@@ -11,8 +11,8 @@ const libro = (x, y, w, rot) => `<div style="position:absolute;left:${x}px;top:$
   <img src="${GUIA}" style="position:relative;display:block;width:100%;border-radius:10px;box-shadow:0 40px 80px rgba(17,28,59,.45)"></div>`;
 const chip = (t, bg, col, x, y, s = 30) => `<div style="position:absolute;left:${x}px;top:${y}px;background:${bg};color:${col};font-weight:800;font-size:${s}px;letter-spacing:.06em;padding:12px 22px;border-radius:14px;z-index:7">${t}</div>`;
 const cta = (x, y, s = 40) => `<div style="position:absolute;left:${x}px;top:${y}px;z-index:7;display:flex;flex-direction:column;gap:14px">
-  <div style="background:${C.g};color:#fff;font-weight:800;font-size:${s}px;padding:22px 38px;border-radius:99px;box-shadow:0 16px 36px rgba(52,182,20,.4)">Únete gratis al grupo →</div>
-  <div style="color:#fff;font-weight:600;font-size:${s * .62}px;opacity:.9;padding-left:8px">Comunidad RRHH en WhatsApp · guía PDF fijada</div></div>`;
+  <div style="background:${C.g};color:#fff;font-weight:800;font-size:${s}px;padding:22px 38px;border-radius:99px;box-shadow:0 16px 36px rgba(52,182,20,.4)">Descarga la guía gratis →</div>
+  <div style="color:#fff;font-weight:600;font-size:${s * .62}px;opacity:.9;padding-left:8px">Guía práctica · 20 páginas · sin costo</div></div>`;
 const grad = h => `<div style="position:absolute;left:0;right:0;bottom:0;height:${h}px;background:linear-gradient(180deg,rgba(17,28,59,0) 0%,rgba(17,28,59,.88) 38%,${C.navy} 70%);z-index:2"></div>`;
 const lista = (items, x, y, s) => `<div style="position:absolute;left:${x}px;top:${y}px;z-index:7;color:#fff;font-size:${s}px;font-weight:600;line-height:1.55">${items.map(t => `<div><span style="color:${C.lime};font-weight:800">✓</span> ${t}</div>`).join('')}</div>`;
 const marca = bottom => `<div class="logo" style="bottom:${bottom}px;z-index:8"><img src="${LOGO}">CheckONOFF</div>`;
@@ -20,11 +20,11 @@ const marca = bottom => `<div class="logo" style="bottom:${bottom}px;z-index:8">
 const piezas = {
   A: { foto: 'u_SoiVEdJKzhY', top: -260, ext: '', chip: ['INSPECCIÓN STPS · ENERO 2027', C.r, '#fff'],
        t: `¿Tu empresa pasaría una inspección de la ${G('STPS')} en enero?`,
-       s: 'Únete al grupo gratuito de RRHH: la guía de 40 horas está fijada arriba.',
+       s: 'Desde el 1 de enero de 2027 el registro de la jornada debe ser electrónico.',
        l: ['Calendario 2026–2030', 'Horas extra: reglas nuevas', 'Checklist de registro', 'Plan año por año'] },
-  B: { foto: 'u_CGio_d3e1uc', top: -200, ext: '', chip: ['GRUPO GRATIS PARA RRHH', C.lime, C.navy],
+  B: { foto: 'u_CGio_d3e1uc', top: -200, ext: '', chip: ['GUÍA GRATIS PARA RRHH', C.lime, C.navy],
        t: `En 2027 la jornada baja a ${G('46 horas.')}`,
-       s: 'Únete al grupo de WhatsApp: guía PDF, clases en vivo y plantillas para tu empresa.',
+       s: 'Turnos, horas extra y registro electrónico: lo que tu empresa debe hacer antes de enero.',
        l: ['Ejemplos de turnos legales', 'Dobles, triples y sus topes', 'Multas y cómo evitarlas', 'Checklist imprimible'] },
 };
 for (const [k, p] of Object.entries(piezas)) {

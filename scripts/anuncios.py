@@ -4,6 +4,7 @@ Reglas del dueño: las campañas se crean SIEMPRE en pausa; nunca se activan ni 
 
   python scripts/anuncios.py verificar        → revisa el acceso (solo lectura) y deja estado/anuncios.json
   python scripts/anuncios.py crear <clave>    → crea EN PAUSA la campaña de campana/anuncios/<clave>.json (no gasta nada)
+  Si el json trae "tipo": "formulario", además crea el formulario instantáneo (clientes potenciales) en la página y los anuncios llevan a él.
   Si el json trae "tipo": "enlace", crea anuncios de imagen (A/B) que llevan a un enlace (p. ej. el grupo de WhatsApp),
   con un conjunto por grupo de posiciones (feed / historias) y un anuncio por imagen.
   python scripts/anuncios.py metricas         → resultados por anuncio de cada campaña de estado/campanas.json → estado/anuncios_metricas.json
@@ -79,8 +80,28 @@ def crear(clave):
             if r.get("data"):
                 ints.append({"id": r["data"][0]["id"], "name": r["data"][0]["name"]})
         c["intereses"] = ints; guardar()
-    camp = paso("campana_id", lambda: post(f"{CUENTA}/campaigns", name=cfg["nombre"], objective="OUTCOME_TRAFFIC", status="PAUSED",
+    camp = paso("campana_id", lambda: post(f"{CUENTA}/campaigns", name=cfg["nombre"], objective=cfg.get("objetivo", "OUTCOME_TRAFFIC"), status="PAUSED",
                                             special_ad_categories=[], is_adset_budget_sharing_enabled="false"))
+    if cfg.get("tipo") == "formulario":
+        def hacer_form():
+            pag = get(cfg["pagina_id"], fields="access_token")
+            tok = pag.get("access_token") or os.environ.get("META_TOKEN_CHECKONOFF", "").strip()
+            f = cfg["formulario"]
+            datos = {"name": f["nombre"], "locale": "ES_LA", "questions": f["preguntas"], "is_optimized_for_quality": "true",
+                     "privacy_policy": {"url": f["privacidad"], "link_text": "Aviso de privacidad"}, "follow_up_action_url": f["guia"],
+                     "context_card": {"title": f["intro_titulo"], "style": "LIST_STYLE", "content": f["intro_puntos"]},
+                     "thank_you_page": {"title": f["gracias_titulo"], "body": f["gracias_texto"], "button_type": "VIEW_WEBSITE",
+                                        "button_text": "Descargar la guía", "website_url": f["guia"]}}
+            datos = {k: (json.dumps(v, ensure_ascii=False) if isinstance(v, (dict, list)) else v) for k, v in datos.items()}
+            datos["access_token"] = tok
+            try:
+                with urllib.request.urlopen(urllib.request.Request(f"{GRAPH}/{cfg['pagina_id']}/leadgen_forms", data=urllib.parse.urlencode(datos).encode()), timeout=60) as r:
+                    return json.load(r)
+            except urllib.error.HTTPError as e:
+                err = json.load(e).get("error", {})
+                return {"error": err.get("error_user_msg") or err.get("message", str(e)), "detalle": err.get("error_user_title", "")}
+        cfg["_form"] = paso("formulario_id", hacer_form)
+        return crear_enlace(cfg, c, paso, ig, camp, guardar)
     if cfg.get("tipo") == "enlace":
         return crear_enlace(cfg, c, paso, ig, camp, guardar)
     targeting = {"geo_locations": {"countries": [cfg["pais"]]}, "age_min": cfg["edad_min"], "age_max": cfg["edad_max"],
@@ -125,7 +146,8 @@ def crear_enlace(cfg, c, paso, ig, camp, guardar):
             targeting["flexible_spec"] = [{"interests": c["intereses"]}]
         adset = paso(f"conjunto_{g}", lambda: post(f"{CUENTA}/adsets", name=f"{cfg['nombre']} · {g}", campaign_id=camp, status="PAUSED",
                                                    daily_budget=int(conj["presupuesto_mxn"] * 100), billing_event="IMPRESSIONS",
-                                                   optimization_goal="LINK_CLICKS", destination_type="WEBSITE",
+                                                   **({"optimization_goal": "LEAD_GENERATION", "destination_type": "ON_AD", "promoted_object": {"page_id": cfg["pagina_id"]}}
+                                                      if cfg.get("_form") else {"optimization_goal": "LINK_CLICKS", "destination_type": "WEBSITE"}),
                                                    bid_strategy="LOWEST_COST_WITHOUT_CAP", targeting=targeting))
         for v, img in conj["anuncios"].items():
             def subir():
@@ -135,7 +157,7 @@ def crear_enlace(cfg, c, paso, ig, camp, guardar):
             creat = paso(f"creativo_{v}_{g}", lambda: post(f"{CUENTA}/adcreatives", name=f"{cfg['nombre']} · {v} · {g}", object_story_spec={
                 "page_id": cfg["pagina_id"], "instagram_user_id": ig,
                 "link_data": {"link": cfg["enlace"], "message": cfg["texto"], "image_hash": h, "name": cfg["titulos"][v],
-                              "description": cfg.get("descripcion", ""), "call_to_action": {"type": cfg.get("boton", "LEARN_MORE"), "value": {"link": cfg["enlace"]}}}}))
+                              "description": cfg.get("descripcion", ""), "call_to_action": {"type": cfg.get("boton", "LEARN_MORE"), "value": {"lead_gen_form_id": cfg["_form"]} if cfg.get("_form") else {"link": cfg["enlace"]}}}}))
             ad = paso(f"anuncio_{v}_{g}", lambda: post(f"{CUENTA}/ads", name=f"{cfg['nombre']} · {v} · {g}", adset_id=adset,
                                                       creative={"creative_id": creat}, status="PAUSED"))
             prev = get(f"{ad}/previews", ad_format="INSTAGRAM_STANDARD" if g == "feed" else "INSTAGRAM_STORY")

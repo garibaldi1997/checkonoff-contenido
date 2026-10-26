@@ -1,0 +1,142 @@
+{
+ "clave": "formulario-40h",
+ "tipo": "formulario",
+ "objetivo": "OUTCOME_LEADS",
+ "nombre": "Formulario · Guía 40 horas",
+ "pagina_id": "1413919435136937",
+ "presupuesto_diario_mxn": 150,
+ "pais": "MX",
+ "edad_min": 25,
+ "edad_max": 55,
+ "intereses": [
+  "Recursos humanos",
+  "Administración de empresas",
+  "Pequeñas y medianas empresas",
+  "Gestión de recursos humanos"
+ ],
+ "enlace": "https://checkonoff.mx/",
+ "boton": "DOWNLOAD",
+ "titulos": {
+  "A": "¿Tu empresa pasaría una inspección de la STPS?",
+  "B": "Guía gratis: jornada de 40 horas para RRHH"
+ },
+ "descripcion": "Guía práctica · 20 páginas · sin costo",
+ "texto": "¿Tu empresa pasaría hoy una inspección de la STPS? 🔍\n\nDesde el 1 de enero de 2027 el registro de la jornada debe ser electrónico, y la jornada baja a 46 horas.\n\nPreparamos una guía práctica para RRHH (20 páginas, sin costo):\n✅ Calendario 2026–2030\n✅ Reglas nuevas de horas extra (dobles y triples)\n✅ Multas y cómo evitarlas\n✅ Checklist año por año\n\nDescárgala gratis 👇",
+ "formulario": {
+  "nombre": "Guía 40 horas · oct 2026",
+  "guia": "https://raw.githubusercontent.com/garibaldi1997/checkonoff-contenido/main/guias/guia-40-horas-checkonoff.pdf",
+  "privacidad": "https://app.checkonoff.mx/privacy-policy",
+  "intro_titulo": "Guía práctica: jornada de 40 horas para RRHH",
+  "intro_puntos": [
+   "Calendario 2026–2030 de la reducción de jornada",
+   "Reglas nuevas de horas extra con ejemplos",
+   "Registro electrónico 2027 y checklist imprimible"
+  ],
+  "preguntas": [
+   {
+    "type": "FULL_NAME"
+   },
+   {
+    "type": "PHONE"
+   },
+   {
+    "type": "EMAIL"
+   },
+   {
+    "type": "COMPANY_NAME"
+   },
+   {
+    "type": "JOB_TITLE"
+   },
+   {
+    "type": "CUSTOM",
+    "key": "colaboradores",
+    "label": "¿Cuántos colaboradores tiene tu empresa?",
+    "options": [
+     {
+      "key": "c1",
+      "value": "1 a 10"
+     },
+     {
+      "key": "c2",
+      "value": "11 a 50"
+     },
+     {
+      "key": "c3",
+      "value": "51 a 200"
+     },
+     {
+      "key": "c4",
+      "value": "Más de 200"
+     }
+    ]
+   },
+   {
+    "type": "CUSTOM",
+    "key": "registro",
+    "label": "¿Cómo registran hoy la asistencia?",
+    "options": [
+     {
+      "key": "r1",
+      "value": "Papel o Excel"
+     },
+     {
+      "key": "r2",
+      "value": "Reloj checador"
+     },
+     {
+      "key": "r3",
+      "value": "App"
+     },
+     {
+      "key": "r4",
+      "value": "No la registramos"
+     }
+    ]
+   }
+  ],
+  "gracias_titulo": "¡Listo! Aquí está tu guía",
+  "gracias_texto": "En la última página encontrarás el acceso gratis a la comunidad Jornada 40 hrs MX en WhatsApp. Un asesor de CheckONOFF te escribirá para resolver tus dudas."
+ },
+ "conjuntos": {
+  "feed": {
+   "presupuesto_mxn": 75,
+   "posiciones": {
+    "publisher_platforms": [
+     "facebook",
+     "instagram"
+    ],
+    "facebook_positions": [
+     "feed"
+    ],
+    "instagram_positions": [
+     "stream"
+    ]
+   },
+   "anuncios": {
+    "A": "campana/formulario/A_feed.jpg",
+    "B": "campana/formulario/B_feed.jpg"
+   }
+  },
+  "historias": {
+   "presupuesto_mxn": 75,
+   "posiciones": {
+    "publisher_platforms": [
+     "facebook",
+     "instagram"
+    ],
+    "facebook_positions": [
+     "story"
+    ],
+    "instagram_positions": [
+     "story",
+     "reels"
+    ]
+   },
+   "anuncios": {
+    "A": "campana/formulario/A_historia.jpg",
+    "B": "campana/formulario/B_historia.jpg"
+   }
+  }
+ }
+}
