@@ -324,6 +324,7 @@
    }
   ],
   "campana_id": "120251649183270036",
-  "error": "formulario_id: (#200) Requires pages_manage_ads permission to manage the object"
+  "formulario_id": "2317304209123736",
+  "error": "conjunto_feed: No puedes publicar anuncios para clientes potenciales hasta que tu página de Facebook acepte las Condiciones del servicio de generación de clientes potenciales de Facebook. Condiciones del servicio no aceptadas"
  }
 }
