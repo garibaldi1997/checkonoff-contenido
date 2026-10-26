@@ -12,3 +12,4 @@ IA aplicada a negocios, finanzas y rentabilidad, y su historia como fundador de 
   y `texto_respaldo` (votar en comentarios).
 - Render: `node marca_personal/render_marca.js` → `marca_personal/out/`.
 - Hora: 7:40 CDMX, lunes a viernes. Cada post termina con una pregunta fácil de contestar.
+- **Series fijas (desde 26/10/2026):** jueves = meme "Jueves de realidad con humor" (`P.humor_*`, 10,015 impresiones el 22/10); viernes = "nota a mano" con un dilema de RRHH (`P.nota_control` como base: hoja de libreta, letra Kalam, resaltador, firma; referencia de alto impacto: post "REINGRESO" de Alexis Ibarra). Texto: pregunta polémica en la 1.ª línea, postura personal equilibrada, "¿Tú qué opinas?" y llamado a comentar una palabra ("GUÍA") en lugar de enlace. Más detalle en ESTRATEGIA.md.
