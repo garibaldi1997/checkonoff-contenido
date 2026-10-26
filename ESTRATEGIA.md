@@ -34,6 +34,13 @@ Colores tomados del logo oficial (`marca/logo-checkonoff.png`, ícono en `marca/
 - **Reels:** 7 reels con efectos (plantilla por escenas `plantillas/efectos/reel_spec.html` + `armar_reel.py`), voces Dalia/Jorge alternadas.
 - **Meme de humor** (formato que llegó a 10,015 impresiones en LinkedIn) se prueba también en Instagram y Facebook el jueves.
 
+## Referencia: "nota a mano" de Alexis Ibarra (LinkedIn, 26/10/2026)
+Post de una headhunter: 48 reacciones, 4 comentarios y 3 compartidos en 3 h (nuestro mejor post personal: 6 reacciones).
+- **Imagen:** hoja de libreta con "ASUNTO:", letra a mano, frase central con resaltador rosa, 4 flechas con resaltador amarillo y firma en óvalo. Se siente escrita por una persona, no por una marca.
+- **Tema:** un dilema donde todos tienen opinión ("¿Regresarías a una empresa de la que renunciaste?"), con postura personal clara pero equilibrada.
+- **Texto:** pregunta en la primera línea, párrafos de 1–2 renglones, "desde mi experiencia…", cierre con "¿Tú qué opinas?" y al final una oferta de su servicio.
+- **Lo aplicamos:** plantilla `P.nota_control` en marca_personal/render_marca2.js (letra Kalam). Serie semanal de "nota a mano" con un dilema de RRHH (los viernes en el LinkedIn personal), postura propia + pregunta de opinión + "comenta GUÍA" como llamado (comentarios en lugar de enlace).
+
 ## Aprendizaje: meme de humor laboral en LinkedIn (dato del dueño, 25/10/2026)
 El post del 22/10 "Jueves de realidad con humor" (diálogo Jefe/Yo + cara expresiva en primer plano + remate en la foto) en el LinkedIn personal llegó a **10,015 impresiones**: el mayor alcance de todo el contenido (las páginas de empresa rondan 7–100). Pero solo 6 reacciones y 0 comentarios (0.06 %).
 - **Qué funcionó:** situación que todo RRHH reconoce, diálogo corto de 4 líneas, cara con emoción fuerte, remate legible en la imagen, fondo blanco limpio. LinkedIn reparte mucho más el perfil personal que la página.

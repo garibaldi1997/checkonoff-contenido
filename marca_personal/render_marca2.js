@@ -131,6 +131,27 @@ P.frase_fundador = `<div style="position:absolute;inset:0;background:radial-grad
 <div style="position:absolute;left:80px;top:1080px;font-size:28px;font-weight:700;letter-spacing:.14em;color:${K.s}">— DR. GARIBALDI CORONA · FUNDADOR</div>
 ${firma()}`;
 
+// Nota a mano (referencia: post de Alexis Ibarra "REINGRESO", 48 reacciones en 3 h): hoja de libreta, letra a mano, resaltador, firma.
+const MANO = `@font-face{font-family:Mano;font-weight:700;src:url(${b64('kalam_700.ttf', 'font/ttf')})}`;
+const hl = (t, c = '#FFE36E') => `<span style="background:linear-gradient(transparent 38%,${c} 38%,${c} 88%,transparent 88%);padding:0 6px">${t}</span>`;
+const flecha = `<span style="color:#F06B7A;font-family:IT,sans-serif;font-weight:800;margin-right:18px">→</span>`;
+P.nota_control = `<style>${MANO}</style><div style="position:absolute;inset:0;background:#EFE9DD"></div>
+<div style="position:absolute;left:40px;top:50px;width:1040px;height:1300px;background:#FBF8F1;box-shadow:0 20px 60px rgba(60,40,10,.18);transform:rotate(-2.2deg);transform-origin:0 0">
+ <div style="position:absolute;left:60px;right:60px;top:70px;height:120px;border:2px solid #9a9488;display:flex">
+  <div style="width:220px;border-right:2px solid #9a9488;display:grid;place-items:center;font-size:30px;letter-spacing:.14em;color:#6d675c">ASUNTO:</div>
+  <div style="flex:1;display:flex;align-items:center;padding-left:34px;font-family:Mano;font-size:60px;color:#1d2433">${hl('REGISTRO DE JORNADA')}</div></div>
+ <div style="position:absolute;left:60px;right:60px;top:190px;bottom:60px;border:2px solid #9a9488;border-top:0"></div>
+ <div style="position:absolute;left:100px;right:90px;top:240px;font-family:Mano;color:#1d2433;font-size:62px;line-height:1.28">
+  Registrar la hora de entrada no es desconfiar de tu equipo:<br>${hl('es proteger a los dos.', '#F7A1AC')}
+  <div style="margin-top:44px;font-size:48px;line-height:1.25">
+   <div>${flecha}${hl('Protege al trabajador.')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Cada hora extra queda probada y se paga.</div></div>
+   <div>${flecha}${hl('Protege a la empresa.')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Pagas lo trabajado, ni más ni menos.</div></div>
+   <div>${flecha}${hl('Se acaban las discusiones.')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Nadie pelea por "a qué hora llegó".</div></div>
+   <div>${flecha}${hl('Y desde 2027 es obligatorio.')}<div style="font-size:36px;margin:4px 0 0 58px;color:#3a4152">El registro debe ser electrónico.</div></div>
+  </div></div>
+ <div style="position:absolute;right:110px;bottom:110px;font-family:Mano;font-size:46px;color:#1d2433;padding:14px 34px;border:3px solid #F06B7A;border-radius:50%;transform:rotate(-6deg)">Dr. Garibaldi Corona</div>
+</div>`;
+
 (async () => {
   const OUT = path.join(D, 'out2'); fs.mkdirSync(OUT, { recursive: true });
   const b = await chromium.launch(); const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
