@@ -1,5 +1,5 @@
 {
- "revisado": "2026-10-26T13:55:39+00:00",
+ "revisado": "2026-10-26T23:05:00+00:00",
  "campanas": {
   "registro-2027": {
    "estado": {
@@ -13,8 +13,8 @@
   "grupo-40h": {
    "estado": {
     "id": "120251634194810036",
-    "status": "ACTIVE",
-    "effective_status": "ACTIVE",
+    "status": "PAUSED",
+    "effective_status": "PAUSED",
     "start_time": "2026-10-25T10:06:41-0600",
     "stop_time": "2026-11-01T10:36:44-0600"
    },
@@ -22,33 +22,33 @@
     {
      "ad_id": "120251634198190036",
      "ad_name": "Grupo WhatsApp · Jornada 40 hrs MX · A · feed",
-     "impressions": "451",
-     "reach": "431",
-     "frequency": "1.046404",
-     "inline_link_clicks": "25",
-     "cost_per_inline_link_click": "0.3204",
-     "ctr": "9.534368",
-     "spend": "8.01",
+     "impressions": "480",
+     "reach": "461",
+     "frequency": "1.041215",
+     "inline_link_clicks": "26",
+     "cost_per_inline_link_click": "0.328846",
+     "ctr": "9.375",
+     "spend": "8.55",
      "actions": [
       {
        "action_type": "link_click",
-       "value": "25"
+       "value": "26"
       },
       {
        "action_type": "landing_page_view",
-       "value": "6"
+       "value": "7"
       },
       {
        "action_type": "omni_landing_page_view",
-       "value": "6"
+       "value": "7"
       },
       {
        "action_type": "post_engagement",
-       "value": "25"
+       "value": "26"
       },
       {
        "action_type": "page_engagement",
-       "value": "25"
+       "value": "26"
       }
      ],
      "date_start": "2026-10-25",
@@ -57,17 +57,17 @@
     {
      "ad_id": "120251634200610036",
      "ad_name": "Grupo WhatsApp · Jornada 40 hrs MX · B · feed",
-     "impressions": "938",
-     "reach": "892",
-     "frequency": "1.05157",
-     "inline_link_clicks": "50",
-     "cost_per_inline_link_click": "0.3456",
-     "ctr": "8.315565",
-     "spend": "17.28",
+     "impressions": "968",
+     "reach": "928",
+     "frequency": "1.043103",
+     "inline_link_clicks": "52",
+     "cost_per_inline_link_click": "0.341154",
+     "ctr": "8.57438",
+     "spend": "17.74",
      "actions": [
       {
        "action_type": "link_click",
-       "value": "50"
+       "value": "52"
       },
       {
        "action_type": "post_reaction",
@@ -75,15 +75,15 @@
       },
       {
        "action_type": "landing_page_view",
-       "value": "15"
+       "value": "16"
       },
       {
        "action_type": "omni_landing_page_view",
-       "value": "15"
+       "value": "16"
       },
       {
        "action_type": "post_engagement",
-       "value": "52"
+       "value": "54"
       },
       {
        "action_type": "post_interaction_gross",
@@ -91,7 +91,7 @@
       },
       {
        "action_type": "page_engagement",
-       "value": "52"
+       "value": "54"
       },
       {
        "action_type": "post_interaction_net",
@@ -176,6 +176,15 @@
      "date_stop": "2026-10-26"
     }
    ]
+  },
+  "formulario-40h": {
+   "estado": {
+    "id": "120251649183270036",
+    "status": "PAUSED",
+    "effective_status": "PAUSED",
+    "start_time": "2026-10-26T09:48:19-0600"
+   },
+   "anuncios": []
   }
  }
 }
