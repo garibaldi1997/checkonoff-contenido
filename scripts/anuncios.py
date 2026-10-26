@@ -221,6 +221,14 @@ def pausar(ad_id):
         sys.exit(1)
 
 
+def diagnostico():
+    """Solo lectura: qué permisos trae el token (sin imprimir el token) y si se obtiene el token de la página."""
+    d = get("debug_token", input_token=TOKEN).get("data", {})
+    print("permisos:", d.get("scopes"), "· válido:", d.get("is_valid"), "· app:", d.get("app_id"))
+    pag = get("1413919435136937", fields="name,access_token,tasks")
+    print("página:", pag.get("name"), "· token de página:", "sí" if pag.get("access_token") else "no", "· tareas:", pag.get("tasks"), "· error:", pag.get("error"))
+
+
 def verificar():
     if not TOKEN:
         sys.exit("Falta el secreto META_ADS_TOKEN.")
@@ -242,5 +250,5 @@ if __name__ == "__main__":
     if not TOKEN:
         sys.exit("Falta el secreto META_ADS_TOKEN.")
     {"verificar": lambda: verificar(), "crear": lambda: crear(accion[1]), "renovar": lambda: renovar(accion[1]),
-     "metricas": lambda: metricas(), "pausar": lambda: pausar(accion[1]),
+     "metricas": lambda: metricas(), "diagnostico": lambda: diagnostico(), "pausar": lambda: pausar(accion[1]),
      "activar": lambda: activar(accion[1], accion[2])}[accion[0]]()
