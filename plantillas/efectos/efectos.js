@@ -134,13 +134,15 @@
       <span style="position:absolute;inset:0;background:linear-gradient(100deg,transparent ${sw}%,rgba(255,255,255,.9) ${sw + 6}%,transparent ${sw + 12}%);-webkit-background-clip:text;background-clip:text;color:transparent">${texto}</span></div></div></div>`;
   }
 
-  // Subtítulos palabra por palabra (W = [{t,w,raw}] de make_reel.py)
+  // Subtítulos palabra por palabra (W = [{t,w,raw}] de make_reel.py); opt.claves = palabras que van en caja
   function subtitulos(v, W, opt = {}) {
     let gi = -1; const g = []; let cur = [];
     W.forEach((w, i) => { cur.push(i); if (/[.,…:?;!]$/.test(w.raw || w.w) || cur.length >= (opt.max ?? 4) || i === W.length - 1) { g.push(cur); cur = []; } });
     for (let k = 0; k < g.length; k++) { const s = W[g[k][0]].t, e = k + 1 < g.length ? W[g[k + 1][0]].t : 99; if (v >= s - .05 && v < e) gi = k; }
     if (gi < 0) return '';
-    return `<div class="fx-ab" style="left:70px;right:70px;top:${opt.y ?? 1500}px;text-align:center;font-weight:800;font-size:${opt.size ?? 60}px;line-height:1.14;color:#fff;-webkit-text-stroke:7px ${T.bg};paint-order:stroke fill;z-index:40">${g[gi].map(i => { const on = v >= W[i].t - .03, p = back((v - W[i].t) / .2); return `<span style="display:inline-block;color:${on ? T.a2 : '#fff'};transform:scale(${on ? .9 + .1 * p : 1})">${W[i].w}</span>`; }).join(' ')}</div>`;
+    return `<div class="fx-ab" style="left:70px;right:70px;top:${opt.y ?? 1500}px;text-align:center;font-weight:800;font-size:${opt.size ?? 60}px;line-height:1.14;color:#fff;-webkit-text-stroke:7px ${T.bg};paint-order:stroke fill;z-index:40">${g[gi].map(i => { const on = v >= W[i].t - .03, p = back((v - W[i].t) / .2); const n = (W[i].w || '').toLowerCase().replace(/[¿¡?!.,;:…]/g, ''), clave = (opt.claves || []).some(c => n.startsWith(c.toLowerCase()));
+      if (clave) return `<span style="display:inline-block;padding:0 .18em;margin:0 .05em;border-radius:.16em;-webkit-text-stroke:0;background:${on ? T.a2 : 'rgba(255,255,255,.14)'};color:${on ? T.bg : '#fff'};transform:scale(${on ? .9 + .14 * p : 1}) rotate(${on ? -2 : 0}deg)">${W[i].w}</span>`;
+      return `<span style="display:inline-block;color:${on ? T.a2 : '#fff'};transform:scale(${on ? .9 + .1 * p : 1})">${W[i].w}</span>`; }).join(' ')}</div>`;
   }
 
   // Momento de una palabra del guion (n = ocurrencia); palabras cortas se comparan exactas

@@ -151,3 +151,23 @@ El post del 22/10 "Jueves de realidad con humor" (diálogo Jefe/Yo + cara expres
 - Varía el escenario cada semana: oficina de RRHH, taller/maquila, restaurante con turnos, obra, tienda con sucursales, clínica, logística/almacén, call center.
 - Siempre relacionado con lo que hace CheckONOFF: checadas por app/WhatsApp/checador con foto y ubicación, sin internet, faltas/retardos/extra automáticos, pre-nómina en 1 clic, reforma 40 h y registro electrónico 2027.
 - Guías para hacerlos con personajes en movimiento en Flow: `flow/`.
+
+## Referencia: reel explicativo "¿Por qué los aviones no vuelan en línea recta?" (26/10/2026)
+Reel de 67 s (cuenta de divulgación) con formato de alto alcance. Lo que copiamos es la **estructura**, no el tema:
+
+| Seg. | Paso | En el video | Cómo lo usamos |
+|---|---|---|---|
+| 0–3 | **Pregunta-paradoja** | "¿Por qué los aviones no vuelan en línea recta?" | "¿Por qué tu nómina sale cara si nadie hace horas extra?" |
+| 3–10 | Caso concreto con nombres | Santiago → Sydney baja hasta la Antártida | "Turno de 7 a 3 en la maquila de Juárez…" |
+| 10–18 | **Giro** | "Esa vuelta es el camino más corto: 1,400 km menos" | "Esos 10 minutos diarios suman 43 horas al año" |
+| 18–24 | **Culpable inesperado** | "El que te engaña es el mapa" | "El que te engaña es el Excel / la lista en papel" |
+| 24–28 | **Una sola analogía física** | Aplastar la cáscara de una naranja | Una cubeta con fuga, una báscula mal calibrada |
+| 28–39 | Dato comparativo que sorprende | África es 14 veces Groenlandia | "Un minuto por checada × 50 personas = 2 quincenas" |
+| 39–54 | Demostración + **remate que voltea la frase** | "El avión sí va recto; el torcido es el mapa" | "Tu equipo sí cumple; el que no cuadra es el registro" |
+| 54–60 | **CTA: comenta una palabra → recibe algo** | "Comenta IA y obtén…" | "Comenta **GUÍA** y te la mando" (guía 40 h por mensaje directo) |
+
+Reglas que salen de aquí (desde la semana 45):
+- Al menos 1 reel por semana es **explicativo** con esta estructura (45–60 s, ~2.6 palabras/s, voz Dalia o Jorge).
+- Subtítulos con **2–4 palabras clave en caja** (en el spec del reel: `"claves": ["engaña", "torcido"]`).
+- Cierre con `"cta": "GUÍA"` en la escena `cierre` → "COMENTA GUÍA" en lugar de "Guárdalo · compártelo". El texto del post debe repetir la instrucción y la guía se entrega por mensaje directo (nunca pedimos datos en comentarios).
+- Una idea por reel, una analogía por reel. Nada de listas.
