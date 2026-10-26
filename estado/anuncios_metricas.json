@@ -1,5 +1,5 @@
 {
- "revisado": "2026-10-25T16:29:35+00:00",
+ "revisado": "2026-10-26T04:30:49+00:00",
  "campanas": {
   "registro-2027": {
    "estado": {
@@ -13,11 +13,79 @@
   "grupo-40h": {
    "estado": {
     "id": "120251634194810036",
-    "status": "PAUSED",
-    "effective_status": "PAUSED",
-    "start_time": "2026-10-25T10:06:41-0600"
+    "status": "ACTIVE",
+    "effective_status": "ACTIVE",
+    "start_time": "2026-10-25T10:06:41-0600",
+    "stop_time": "2026-11-01T10:36:44-0600"
    },
-   "anuncios": []
+   "anuncios": [
+    {
+     "ad_id": "120251634198190036",
+     "ad_name": "Grupo WhatsApp · Jornada 40 hrs MX · A · feed",
+     "impressions": "28",
+     "reach": "20",
+     "frequency": "1.4",
+     "inline_link_clicks": "1",
+     "cost_per_inline_link_click": "0.63",
+     "ctr": "17.857143",
+     "spend": "0.63",
+     "actions": [
+      {
+       "action_type": "link_click",
+       "value": "1"
+      },
+      {
+       "action_type": "post_engagement",
+       "value": "1"
+      },
+      {
+       "action_type": "page_engagement",
+       "value": "1"
+      }
+     ],
+     "date_start": "2026-10-25",
+     "date_stop": "2026-10-25"
+    },
+    {
+     "ad_id": "120251634200610036",
+     "ad_name": "Grupo WhatsApp · Jornada 40 hrs MX · B · feed",
+     "impressions": "24",
+     "reach": "13",
+     "frequency": "1.846154",
+     "inline_link_clicks": "2",
+     "cost_per_inline_link_click": "0.315",
+     "ctr": "12.5",
+     "spend": "0.63",
+     "actions": [
+      {
+       "action_type": "link_click",
+       "value": "2"
+      },
+      {
+       "action_type": "post_engagement",
+       "value": "2"
+      },
+      {
+       "action_type": "page_engagement",
+       "value": "2"
+      }
+     ],
+     "date_start": "2026-10-25",
+     "date_stop": "2026-10-25"
+    },
+    {
+     "ad_id": "120251634204540036",
+     "ad_name": "Grupo WhatsApp · Jornada 40 hrs MX · A · historias",
+     "impressions": "1",
+     "reach": "1",
+     "frequency": "1",
+     "inline_link_clicks": "0",
+     "ctr": "0",
+     "spend": "0",
+     "date_start": "2026-10-25",
+     "date_stop": "2026-10-25"
+    }
+   ]
   }
  }
 }
