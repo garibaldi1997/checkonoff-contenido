@@ -44,6 +44,11 @@ class CuentaLinkedIn:
         if self._autor is None:
             if self.organizacion:
                 self._autor = f"urn:li:organization:{self.organizacion}"
+                try:  # solo para mostrar el nombre; publicar no lo necesita
+                    org, _ = self._req("GET", f"{API}/organizations/{self.organizacion}")
+                    self.nombre = org.get("localizedName", "")
+                except ErrorLinkedIn:
+                    self.nombre = ""
             else:
                 info, _ = self._req("GET", f"{API}/userinfo")
                 self._autor = f"urn:li:person:{info['sub']}"

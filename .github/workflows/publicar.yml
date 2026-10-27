@@ -39,6 +39,7 @@ jobs:
           META_TOKEN_CHECKONOFF: ${{ secrets.META_TOKEN_CHECKONOFF }}
           META_TOKEN_DIELOXIA: ${{ secrets.META_TOKEN_DIELOXIA }}
           LINKEDIN_TOKEN_GARIBALDI: ${{ secrets.LINKEDIN_TOKEN_GARIBALDI }}
+          LINKEDIN_TOKEN_CHECKONOFF: ${{ secrets.LINKEDIN_TOKEN_CHECKONOFF }}
           GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
           RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ env.SHA }}
           VIDEO_BASE: https://cdn.jsdelivr.net/gh/${{ github.repository }}@${{ env.SHA }}

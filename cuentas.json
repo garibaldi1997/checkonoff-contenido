@@ -3,8 +3,9 @@
     "nombre": "CheckONOFF",
     "secreto": "META_TOKEN_CHECKONOFF",
     "linkedin": {
-      "secreto": "LINKEDIN_TOKEN_GARIBALDI",
-      "nota": "Perfil personal de Garibaldi (app Publiqo). Al aprobar Community Management, agregar una cuenta con 'organizacion': '144005971'."
+      "secreto": "LINKEDIN_TOKEN_CHECKONOFF",
+      "organizacion": "144005971",
+      "nota": "Página de empresa de CheckONOFF (app Publiqo Pages, Community Management API, nivel desarrollo: el token dura 60 días)."
     }
   },
   "dieloxia": {
