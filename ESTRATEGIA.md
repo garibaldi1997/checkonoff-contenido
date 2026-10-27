@@ -115,6 +115,7 @@ El post del 22/10 "Jueves de realidad con humor" (diálogo Jefe/Yo + cara expres
 
 ## Datos del negocio (fuente: checkonoff.mx y llms.txt, 14/10/2026)
 - Registro con 14 días gratis, sin tarjeta: https://app.checkonoff.mx/registro-empresa
+- Bot de ventas (agente IA en Dieloxia, canal CheckONOFF-Contacto): +52 440 180 2213 (https://wa.me/524401802213) · ver `bot/agente-checkonoff-contacto.md`.
 - Asesor por WhatsApp: +52 333 021 3199 (https://wa.me/523330213199) · contacto@checkonoff.mx · San Luis Potosí.
 - Planes (MXN por colaborador al mes + IVA): Esencial $39 (mín. 13), Profesional $59 (mín. 9), Corporativo $89 (mín. 6).
 - Registro por app Android/iOS (geocercas + foto, sin internet), checador biométrico existente conectado a la nube, o bot de WhatsApp (todos los planes).
