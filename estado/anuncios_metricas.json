@@ -1,5 +1,5 @@
 {
- "revisado": "2026-10-26T23:05:00+00:00",
+ "revisado": "2026-10-27T14:07:18+00:00",
  "campanas": {
   "registro-2027": {
    "estado": {
@@ -22,13 +22,13 @@
     {
      "ad_id": "120251634198190036",
      "ad_name": "Grupo WhatsApp · Jornada 40 hrs MX · A · feed",
-     "impressions": "480",
-     "reach": "461",
-     "frequency": "1.041215",
+     "impressions": "484",
+     "reach": "466",
+     "frequency": "1.038627",
      "inline_link_clicks": "26",
-     "cost_per_inline_link_click": "0.328846",
-     "ctr": "9.375",
-     "spend": "8.55",
+     "cost_per_inline_link_click": "0.331154",
+     "ctr": "9.504132",
+     "spend": "8.61",
      "actions": [
       {
        "action_type": "link_click",
@@ -52,18 +52,18 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-10-26"
+     "date_stop": "2026-10-27"
     },
     {
      "ad_id": "120251634200610036",
      "ad_name": "Grupo WhatsApp · Jornada 40 hrs MX · B · feed",
-     "impressions": "968",
-     "reach": "928",
-     "frequency": "1.043103",
+     "impressions": "974",
+     "reach": "934",
+     "frequency": "1.042827",
      "inline_link_clicks": "52",
-     "cost_per_inline_link_click": "0.341154",
-     "ctr": "8.57438",
-     "spend": "17.74",
+     "cost_per_inline_link_click": "0.342115",
+     "ctr": "8.62423",
+     "spend": "17.79",
      "actions": [
       {
        "action_type": "link_click",
@@ -111,7 +111,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-10-26"
+     "date_stop": "2026-10-27"
     },
     {
      "ad_id": "120251634204540036",
@@ -138,7 +138,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-10-26"
+     "date_stop": "2026-10-27"
     },
     {
      "ad_id": "120251634206870036",
@@ -173,7 +173,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-10-26"
+     "date_stop": "2026-10-27"
     }
    ]
   },
