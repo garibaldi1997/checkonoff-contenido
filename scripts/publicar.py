@@ -291,6 +291,12 @@ def main():
             if cu.li:
                 try:
                     print(f"✅ {nombre}: LinkedIn {cu.li.autor()} {getattr(cu.li, 'nombre', '')}")
+                    if cu.li.organizacion:  # confirma que el token administra esa página
+                        acl, _ = cu.li._req("GET", "https://api.linkedin.com/v2/organizationAcls?q=roleAssignee&state=APPROVED")
+                        orgs = {x.get("organization"): x.get("role") for x in acl.get("elements", [])}
+                        print(f"   páginas que administra el token: {orgs}")
+                        if f"urn:li:organization:{cu.li.organizacion}" not in orgs:
+                            raise ErrorLinkedIn("el token no administra esa página (revisa el id en cuentas.json)")
                 except ErrorLinkedIn as err:
                     print(f"❌ {nombre} LinkedIn: {err}")
                     malos += 1
