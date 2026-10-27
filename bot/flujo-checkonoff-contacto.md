@@ -33,3 +33,10 @@ Mensaje entrante
 ```
 
 Si escriben otra cosa en lugar de tocar un botón, el menú le pasa la pregunta a la IA (así está programado Dieloxia).
+
+## Ajustes que salieron de las pruebas (28/10/2026)
+- El menú llega como lista numerada; contestar 1, 2 o 3 funciona.
+- La guía va como **enlace** en un mensaje (subir el PDF al bloque Imagen/Doc/Video falló).
+- Agente de IA (ai_goal-10): datos `nombre, empresa, colaboradores, registro`; mensaje inicial "Para recomendarte lo mejor para tu empresa, ¿me compartes tu nombre y el de tu empresa? 🙌"; sin listas numeradas.
+- **Nunca pedirle a la IA que no conteste al terminar**: Dieloxia manda primero la última respuesta de la IA y luego sigue el flujo; si la respuesta sale vacía, WhatsApp la rechaza y el flujo se detiene. Por eso la instrucción es: "Cuando ya tengas todos los datos, responde solo una línea corta como: 'Perfecto, ya tengo tus datos ✅'".
+- Objetivo alcanzado → Nota interna (datos) → mensaje de gracias + prueba gratis → Etiqueta Interesado_Demo → Pasar a humano (avisar al admin).
