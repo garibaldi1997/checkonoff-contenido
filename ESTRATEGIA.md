@@ -187,3 +187,15 @@ Post de LinkedIn con **545 reacciones, 7 comentarios y 54 compartidos**. Lo que 
   - 1 cartel por semana en el LinkedIn personal. Le sumamos lo que ella no tiene: el dato legal verificado (LFT art. 58, jornada = tiempo a disposición del patrón) y el ángulo de empresa.
   - Primer cartel: 28/10, "Ese WhatsApp de trabajo a las 10 de la noche…".
   - Probar el mismo formato 1 vez por semana en Instagram/Facebook de CheckONOFF, con el logo abajo y sin firma personal.
+
+## Referencia: reel "5 conectores que la mayoría no tiene instalados" (@isa.munuzuri, 27/10/2026)
+- **Formato:** lista de 5 en 70 s. La mitad de arriba es una grabación de pantalla de la herramienta funcionando; la de abajo, la persona hablando a cámara. Subtítulo de una palabra clave a la vez.
+- **Gancho:** "Hay 5 ___ que la mayoría no tiene y que cambian completamente lo que puedes hacer". Mezcla curiosidad ("la mayoría no lo sabe") con una promesa.
+- **Cada punto, en una metáfora del cuerpo o de un oficio:** "le da ojos", "le da manos", "tu detective privado". Así se recuerda sin explicar lo técnico.
+- **Cierre:** "Si quieres ___, comenta CONECTOR y te lo mando", la misma mecánica de palabra clave que ya usamos con "GUÍA".
+- **Cómo lo usamos en CheckONOFF (sin la cara del dueño):**
+  - Arriba, grabación de pantalla real de la app o del panel; abajo, una foto o escena con voz de Dalia o Jorge.
+  - Temas: "5 funciones de CheckONOFF que casi nadie usa" (checar sin internet, geocerca con foto, prenómina en 1 clic, alertas de horas extra, checador biométrico conectado) o "5 errores al registrar la asistencia".
+  - Metáforas: "la geocerca es tu portero", "la foto es tu testigo", "la prenómina es tu contador que no se cansa".
+  - Cierre: "Comenta GUÍA o escríbenos GUÍA al WhatsApp".
+- **LinkedIn personal:** el dueño sí puede hacer este formato a cámara.
