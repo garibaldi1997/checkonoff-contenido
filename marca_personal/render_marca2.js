@@ -152,6 +152,25 @@ P.nota_control = `<style>${MANO}</style><div style="position:absolute;inset:0;ba
  <div style="position:absolute;right:110px;bottom:110px;font-family:Mano;font-size:46px;color:#1d2433;padding:14px 34px;border:3px solid #F06B7A;border-radius:50%;transform:rotate(-6deg)">Dr. Garibaldi Corona</div>
 </div>`;
 
+// Cartel de frase con marcatexto (referencia de Alexis Ibarra, 27/10/2026: 545 reacciones y 54 compartidos):
+// fondo crema, letra negra muy gruesa, marcatexto amarillo/rosa en las palabras emocionales, rayitas de dibujo, sin foto.
+const NUN = `@font-face{font-family:NU;font-weight:900;src:url(${b64('nunito_900.woff2', 'font/woff2')})}`;
+const mk = (t, c = '#FFE36E') => `<span style="background:linear-gradient(100deg,transparent 1%,${c} 3%,${c} 96%,transparent 99%);border-radius:10px 4px 12px 6px;padding:0 12px;box-decoration-break:clone;-webkit-box-decoration-break:clone">${t}</span>`;
+const rayas = (x, y, c, rot = 0) => `<svg style="position:absolute;left:${x}px;top:${y}px;transform:rotate(${rot}deg)" width="90" height="120" viewBox="0 0 90 120"><g stroke="${c}" stroke-width="9" stroke-linecap="round"><line x1="20" y1="14" x2="44" y2="38"/><line x1="8" y1="60" x2="44" y2="60"/><line x1="20" y1="106" x2="44" y2="82"/></g></svg>`;
+const subr = (w, c = '#F06B7A') => `<svg width="${w}" height="22" viewBox="0 0 ${w} 22" style="display:block;margin:8px auto 0"><path d="M6 14 Q ${w / 2} 2 ${w - 6} 12" stroke="${c}" stroke-width="7" fill="none" stroke-linecap="round"/></svg>`;
+P.cartel_desconexion = `<style>${NUN}</style><div style="position:absolute;inset:0;background:#FBF7EE"></div>
+<div style="position:absolute;left:50px;right:50px;top:170px;text-align:center;font-family:NU;font-weight:900;color:#111;letter-spacing:-.03em">
+ <div style="font-size:70px;line-height:1.05;white-space:nowrap">Ese WhatsApp de trabajo</div>
+ <div style="font-size:88px;line-height:1.15;margin-top:6px;white-space:nowrap">${mk('a las 10 de la noche')}</div>
+ <div style="font-size:56px;line-height:1.3;margin-top:26px;white-space:nowrap">interrumpe ${mk('una cena familiar', '#F7A1AC')}</div>
+ <div style="font-size:56px;line-height:1.3;white-space:nowrap">o el descanso de ${mk('quien entra a las 7.', '#F7A1AC')}</div>
+ <div style="font-family:IT;font-weight:500;font-size:42px;letter-spacing:-.01em;line-height:1.25;color:#2b2b2b;margin-top:56px">Y si esperas respuesta inmediata,<br>tu equipo sigue a tu disposición.${subr(560)}</div>
+ <div style="margin-top:84px;display:inline-block;background:#FFE36E;border-radius:70px;padding:8px 50px;white-space:nowrap;font-size:86px;line-height:1.1">No todo es urgente.</div>
+ <div style="font-size:48px;line-height:1.15;margin-top:24px">Respetar la hora de salida<br>también es liderar.${subr(380)}</div>
+</div>
+${rayas(14, 290, '#F06B7A', 0)}${rayas(976, 590, '#F06B7A', 180)}${rayas(14, 790, '#F5C518', 0)}${rayas(976, 960, '#F5C518', 180)}
+${firma(true)}`;
+
 (async () => {
   const OUT = path.join(D, 'out2'); fs.mkdirSync(OUT, { recursive: true });
   const b = await chromium.launch(); const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });

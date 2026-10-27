@@ -171,3 +171,18 @@ Reglas que salen de aquí (desde la semana 45):
 - Subtítulos con **2–4 palabras clave en caja** (en el spec del reel: `"claves": ["engaña", "torcido"]`).
 - Cierre con `"cta": "GUÍA"` en la escena `cierre` → "COMENTA GUÍA" en lugar de "Guárdalo · compártelo". El texto del post debe repetir la instrucción y la guía se entrega por mensaje directo (nunca pedimos datos en comentarios).
 - Una idea por reel, una analogía por reel. Nada de listas.
+
+## Referencia: cartel con marcatexto de Alexis Ibarra (27/10/2026)
+Post de LinkedIn con **545 reacciones, 7 comentarios y 54 compartidos**. Lo que más vale aquí son los compartidos: la gente lo reenvía para decirle algo a su jefe o a su equipo sin decirlo directo.
+- **Imagen:** cartel sin foto, fondo crema, letra negra muy gruesa y marcatexto amarillo o rosa en las palabras que duelen ("fuera de horario", "a un bebé", "cuidador"). Lleva rayitas de dibujo, una frase corta subrayada y un remate en píldora amarilla ("No todo es urgente.").
+- **Texto:**
+  - Abre con una mirada personal ("No vivo en el mundo corporativo, pero mi esposo sí…").
+  - Sigue con una escena que todos reconocen ("¿tienes cinco minutos?") y tres "Quizá…" seguidos, con imágenes concretas (bebé, familiar enfermo, comida en familia).
+  - Equilibra con "Las empresas necesitan resultados, por supuesto. Pero…". Así no ataca a nadie y el jefe también lo comparte.
+  - Cierra con una pregunta directa.
+- **Por qué funciona:** es un tema de valores donde todos están de acuerdo, y la emoción va antes que el dato.
+- **Cómo lo usamos:**
+  - Plantilla `P.cartel_*` en `marca_personal/render_marca2.js` (fuente Nunito 900 en `marca_personal/nunito_900.woff2`, marcatexto `mk()`, rayitas `rayas()`, subrayado `subr()`).
+  - 1 cartel por semana en el LinkedIn personal. Le sumamos lo que ella no tiene: el dato legal verificado (LFT art. 58, jornada = tiempo a disposición del patrón) y el ángulo de empresa.
+  - Primer cartel: 28/10, "Ese WhatsApp de trabajo a las 10 de la noche…".
+  - Probar el mismo formato 1 vez por semana en Instagram/Facebook de CheckONOFF, con el logo abajo y sin firma personal.
