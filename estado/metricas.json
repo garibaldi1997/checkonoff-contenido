@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-27T13:40:25+00:00",
+  "actualizado": "2026-10-27T18:58:21+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -937,18 +937,40 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/De-hU83CpWR/",
-        "reach": 5,
+        "reach": 7,
         "saved": 0,
         "shares": 0,
-        "views": 7,
-        "ig_reels_avg_watch_time": 1369,
-        "ig_reels_video_view_total_time": 6845
+        "views": 9,
+        "ig_reels_avg_watch_time": 2538,
+        "ig_reels_video_view_total_time": 17771
       },
       "facebook": {
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1988112228528663/"
+      }
+    },
+    "2026-10-27-carrusel-horas-extra-reglas-nuevas": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-27T12:00:00-06:00",
+      "tema": "¿Sigues pagando horas extra con la regla del \"3 y 3\"? Ya cambió. ⏰",
+      "instagram": {
+        "id": "18075767006735199",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfAdC3MjThe/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122109807285512173"
       }
     }
   }
