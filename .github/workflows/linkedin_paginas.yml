@@ -1,0 +1,36 @@
+name: "LinkedIn: publicar ahora en las páginas"
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Publicar en las páginas de CheckONOFF y Dieloxia
+        env:
+          LINKEDIN_TOKEN_CHECKONOFF: ${{ secrets.LINKEDIN_TOKEN_CHECKONOFF }}
+        run: python scripts/linkedin_paginas_ahora.py
+      - name: Guardar registro
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain estado/)" ]; then
+            git config user.name "checkonoff-bot"
+            git config user.email "checkonoff-bot@users.noreply.github.com"
+            git add estado/
+            git commit -m "Registro de LinkedIn (páginas) [skip ci]"
+            git pull --rebase -q && git push
+          fi
