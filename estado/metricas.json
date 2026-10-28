@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-27T18:58:21+00:00",
+  "actualizado": "2026-10-28T13:40:22+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -585,8 +585,8 @@
         "saved": 0,
         "shares": 0,
         "views": 0,
-        "ig_reels_avg_watch_time": 3914,
-        "ig_reels_video_view_total_time": 15656
+        "ig_reels_avg_watch_time": 3359,
+        "ig_reels_video_view_total_time": 16798
       },
       "facebook": {
         "reacciones": 0,
@@ -659,10 +659,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DexUzYmEwtd/",
-        "reach": 1,
+        "reach": 2,
         "saved": 0,
         "shares": 0,
-        "views": 3
+        "views": 4
       },
       "facebook": {
         "reacciones": 0,
@@ -803,10 +803,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/De2eXEHl_uW/",
-        "reach": 1,
+        "reach": 2,
         "saved": 0,
         "shares": 0,
-        "views": 2
+        "views": 4
       },
       "facebook": {
         "reacciones": 0,
@@ -825,10 +825,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/De4uksFmB7H/",
-        "reach": 1,
+        "reach": 2,
         "saved": 0,
         "shares": 0,
-        "views": 2
+        "views": 5
       },
       "facebook": {
         "reacciones": 0,
@@ -918,7 +918,7 @@
         "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 1
+        "views": 2
       },
       "facebook": {
         "reacciones": 0,
@@ -937,12 +937,12 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/De-hU83CpWR/",
-        "reach": 7,
+        "reach": 8,
         "saved": 0,
         "shares": 0,
-        "views": 9,
-        "ig_reels_avg_watch_time": 2538,
-        "ig_reels_video_view_total_time": 17771
+        "views": 10,
+        "ig_reels_avg_watch_time": 2535,
+        "ig_reels_video_view_total_time": 22821
       },
       "facebook": {
         "reacciones": 0,
@@ -961,16 +961,62 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DfAdC3MjThe/",
-        "reach": 0,
+        "reach": 3,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 4
       },
       "facebook": {
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122109807285512173"
+      }
+    },
+    "2026-10-27-para-rrhh-sueldo-40-horas": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-27T15:00:00-06:00",
+      "tema": "Para RRHH: ¿puedes bajar el sueldo al reducir la jornada a 40 horas? No. 💵",
+      "instagram": {
+        "id": "17926171740472707",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfAxi4PE714/",
+        "reach": 2,
+        "saved": 0,
+        "shares": 0,
+        "views": 3
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122109855783512173"
+      }
+    },
+    "2026-10-27-reel-excel-final": {
+      "tipo": "reel",
+      "fecha": "2026-10-27T18:00:00-06:00",
+      "tema": "Martes de cierre: Asistencia_FINAL_v7.xlsx 😵‍💫",
+      "instagram": {
+        "id": "17977669860148401",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DfBGHMeCtyb/",
+        "reach": 2,
+        "saved": 0,
+        "shares": 0,
+        "views": 4,
+        "ig_reels_avg_watch_time": 2696,
+        "ig_reels_video_view_total_time": 5392
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/2159856531274014/"
       }
     }
   }
