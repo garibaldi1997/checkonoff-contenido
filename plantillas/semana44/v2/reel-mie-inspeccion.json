@@ -1,0 +1,95 @@
+{
+ "voz": "voz/s44-mie-inspeccion",
+ "salida": "contenido/checkonoff/2026-10-28-reel-inspeccion",
+ "estilo": "papel",
+ "claves": [
+  "inspección",
+  "electrónico",
+  "segundos"
+ ],
+ "escenas": [
+  {
+   "fx": "nota",
+   "w": "miércoles",
+   "titulo": "Miércoles · 10:00 a.m.",
+   "lineas": [
+    "Llega la inspección",
+    "de la STPS 😰"
+   ],
+   "marca": [
+    0
+   ],
+   "y": 420,
+   "size": 92
+  },
+  {
+   "fx": "lista",
+   "w": "piden",
+   "kicker": "TE PIDEN",
+   "ky": 300,
+   "items": [
+    [
+     "Registros de jornada",
+     "✗"
+    ],
+    [
+     "De los últimos meses",
+     "✗"
+    ],
+    [
+     "Horas extra y descansos",
+     "✗"
+    ]
+   ],
+   "y": 520,
+   "size": 66
+  },
+  {
+   "fx": "sello",
+   "w": "listas",
+   "texto": "Incompleto",
+   "y": 640,
+   "sub": "¿Y la carpeta? 🤷",
+   "sy": 1020,
+   "ss": 72
+  },
+  {
+   "fx": "numero",
+   "w": "desde",
+   "antes": "Desde 2027 el registro es electrónico",
+   "valor": "5,000 UMA",
+   "despues": "multa máxima · art. 994 LFT",
+   "y": 720,
+   "size": 150,
+   "as": 46,
+   "ds": 44
+  },
+  {
+   "fx": "lista",
+   "w": "con",
+   "kicker": "CON CHECKONOFF",
+   "ky": 300,
+   "items": [
+    [
+     "Todo en la nube",
+     "✓"
+    ],
+    [
+     "Lo descargas en segundos",
+     "✓"
+    ],
+    [
+     "Listo para la STPS",
+     "✓"
+    ]
+   ],
+   "y": 520,
+   "size": 66
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con tu equipo de recursos humanos"
+  }
+ ]
+}

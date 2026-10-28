@@ -1,0 +1,91 @@
+{
+ "voz": "voz/s44-jue-extras",
+ "salida": "contenido/checkonoff/2026-10-29-reel-horas-extra",
+ "estilo": "claro",
+ "claves": [
+  "nueve",
+  "triple",
+  "real"
+ ],
+ "escenas": [
+  {
+   "fx": "chat",
+   "w": "jueves",
+   "nombre": "Recursos Humanos",
+   "avatar": "💼",
+   "msgs": [
+    [
+     "el",
+     "Jefe, ya cerré la quincena 📋",
+     "9:02"
+    ],
+    [
+     "el",
+     "Salieron 14 horas extra 😳",
+     "9:02"
+    ],
+    [
+     "yo",
+     "¿¿Quién las autorizó??",
+     "9:03"
+    ]
+   ],
+   "paso": 0.9,
+   "y": 330,
+   "h": 820,
+   "size": 52
+  },
+  {
+   "fx": "numero",
+   "w": "tope",
+   "antes": "Tope 2026 de horas dobles",
+   "valor": "9 h",
+   "despues": "a la semana",
+   "color": "#2a9b10",
+   "y": 640,
+   "size": 300
+  },
+  {
+   "fx": "numero",
+   "w": "pasa",
+   "antes": "Lo que pasa de ahí se paga",
+   "valor": "TRIPLE",
+   "despues": "y nunca más de 12 h al día",
+   "color": "#E21B20",
+   "y": 680,
+   "size": 200
+  },
+  {
+   "fx": "chat",
+   "w": "con",
+   "nombre": "Recursos Humanos",
+   "avatar": "💼",
+   "msgs": [
+    [
+     "el",
+     "Ya las ves en tiempo real en CheckONOFF 📲",
+     "9:10"
+    ],
+    [
+     "yo",
+     "Autorizo 6 ✅ y rechazo 8 ❌",
+     "9:11"
+    ],
+    [
+     "el",
+     "Listo. La quincena ya cuadra 🙌",
+     "9:11"
+    ]
+   ],
+   "paso": 1.0,
+   "y": 330,
+   "h": 820,
+   "size": 52
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con quien autoriza las horas extra"
+  }
+ ]
+}

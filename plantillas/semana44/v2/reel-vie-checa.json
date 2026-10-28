@@ -1,0 +1,54 @@
+{
+ "voz": "voz/s44-vie-checa",
+ "salida": "contenido/checkonoff/2026-10-30-reel-checa-por-mi",
+ "estilo": "vibrante",
+ "claves": [
+  "foto",
+  "ubicación"
+ ],
+ "escenas": [
+  {
+   "fx": "palabra",
+   "w": "viernes",
+   "texto": "Viernes<br>8:00 a.m.",
+   "sub": "Checa por él… y por su compañero",
+   "y": 520,
+   "size": 170
+  },
+  {
+   "fx": "palabra",
+   "w": "listas",
+   "texto": "Checa<br>por mí",
+   "sub": "Con papel o tarjetas, facilísimo",
+   "y": 520,
+   "size": 200
+  },
+  {
+   "fx": "palabra",
+   "w": "paga",
+   "texto": "Pagas horas<br>fantasma 👻",
+   "y": 560,
+   "size": 140
+  },
+  {
+   "fx": "palabra",
+   "w": "cada",
+   "texto": "Foto +<br>ubicación",
+   "sub": "Imposible checar por otro",
+   "y": 520,
+   "size": 150
+  },
+  {
+   "fx": "palabra",
+   "w": "nómina",
+   "texto": "Pagas solo<br>lo real ✅",
+   "y": 560,
+   "size": 150
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con tu equipo de recursos humanos"
+  }
+ ]
+}

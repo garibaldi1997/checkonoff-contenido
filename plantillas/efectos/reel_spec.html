@@ -2,6 +2,8 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{width:1080px;height:1920px;overflow:hidden;background:#0b1330;color:#fff;font-family:'Inter',sans-serif;-webkit-font-smoothing:antialiased}
 #root{position:absolute;inset:0}
+@font-face{font-family:Mano;font-weight:700;src:url(kalam_700.ttf)}
+@font-face{font-family:NU;font-weight:900;src:url(nunito_900.woff2)}
 </style><script src="efectos.js"></script></head><body><div id="root"></div>
 <script>
 // Reel por escenas (plantillas/efectos/armar_reel.py reemplaza SPEC). Cada escena empieza cuando la voz dice su palabra (w, ocurrencia n).
@@ -18,8 +20,70 @@ function pantalla(e, v, t0) {
     ${e.boton ? `<div style="margin:0 60px 30px;height:110px;border-radius:60px;background:${ok ? '#34B614' : '#111C3B'};color:#fff;display:grid;place-items:center;font-size:30px;white-space:nowrap;font-weight:900">${ok ? e.boton[1] : e.boton[0]}</div>` : ''}
     ${(e.filas || []).map(fila).join('')}</div>`;
 }
+
+// ESTILOS: cambian colores, fondo, tipografía y subtítulos. Regla: nunca el mismo estilo en dos reels seguidos.
+const ESTILOS = {
+  noche: { tema: {}, fondo: 'vivo' },
+  papel: { tema: { bg: '#F3EDE1', bg2: '#FBF8F1', a: '#E8505B', a2: '#E8505B', t: '#1d2433', s: '#5a5f6b', font: "'Mano',sans-serif" }, fondo: 'papel' },
+  claro: { tema: { bg: '#F5F7FA', bg2: '#ffffff', a: '#34B614', a2: '#2a9b10', t: '#111C3B', s: '#5b667a', font: "'Inter',sans-serif" }, fondo: 'claro' },
+  vibrante: { tema: { bg: '#111C3B', bg2: '#111C3B', a: '#FFD84D', a2: '#FFD84D', t: '#ffffff', s: '#eef1f7', font: "'NU','Inter',sans-serif" }, fondo: 'solido' },
+};
+const EST = ESTILOS[SPEC.estilo || 'noche'];
+FX.tema(EST.tema);
+const PALETA = ['#FFD84D', '#E21B20', '#34B614', '#0A4E94', '#111C3B'];
+const tinta = c => ['#FFD84D', '#34B614'].includes(c) ? '#111C3B' : '#ffffff';
+function fondoEstilo(v, e) {
+  const i = e.i;
+  if (EST.fondo === 'papel') return `<div class="fx"><div class="fx-ab" style="inset:0;background:${T.bg}"></div>
+    <div class="fx-ab" style="left:70px;right:70px;top:120px;bottom:120px;background:${T.bg2};border-radius:18px;box-shadow:0 20px 60px rgba(60,40,10,.15);background-image:repeating-linear-gradient(transparent 0 86px,rgba(80,110,170,.22) 86px 88px);transform:rotate(${Math.sin(v * .3) * .6 - .8}deg)"></div>
+    <div class="fx-ab" style="left:170px;top:120px;bottom:120px;width:3px;background:rgba(232,80,91,.45)"></div></div>`;
+  if (EST.fondo === 'claro') return `<div class="fx"><div class="fx-ab" style="inset:0;background:${T.bg}"></div>
+    <div class="fx-ab" style="left:${-200 + Math.sin(v * .4) * 80}px;top:${150 + Math.cos(v * .3) * 60}px;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,#D9F5CC,transparent 70%)"></div>
+    <div class="fx-ab" style="right:${-260 + Math.cos(v * .35) * 80}px;bottom:${160 + Math.sin(v * .3) * 60}px;width:820px;height:820px;border-radius:50%;background:radial-gradient(circle,#DCE8F8,transparent 70%)"></div></div>`;
+  if (EST.fondo === 'solido') { const c = e.fx === 'cierre' ? '#111C3B' : PALETA[i % PALETA.length]; return `<div class="fx"><div class="fx-ab" style="inset:0;background:${c}"></div>
+    <div class="fx-ab" style="inset:-200px;opacity:.12;background-image:radial-gradient(${tinta(c)} 3px,transparent 3px);background-size:60px 60px;transform:translate(${(v * 20) % 60}px,${(v * 14) % 60}px)"></div></div>`; }
+  return FX.fondo(v, { brillo: .8 });
+}
+// Escenas nuevas
+const revela = (v, a, d = .5) => `clip-path:inset(0 ${100 - Math.max(0, Math.min(1, (v - a) / d)) * 100}% 0 0)`;
+function nota(e, v, a) {
+  const tit = e.titulo ? `<div style="font-size:${e.ts || 64}px;margin-bottom:34px;color:${T.a}">${e.titulo}</div>` : '';
+  return `<div class="fx-ab" style="left:200px;right:110px;top:${e.y || 300}px;font-family:Mano,sans-serif;font-weight:700;color:${T.t};font-size:${e.size || 76}px;line-height:1.18;${up(v, a, .3, 20)}">${tit}${(e.lineas || []).map((l, i) => {
+    const t0 = a + .25 + i * (e.paso || .55), mk = (e.marca || []).includes(i);
+    return `<div style="${revela(v, t0, .55)};margin-bottom:14px"><span style="${mk ? `background:linear-gradient(transparent 45%,#FFD84D 45%,#FFD84D 90%,transparent 90%);padding:0 8px` : ''}">${l}</span></div>`; }).join('')}</div>`;
+}
+function sello(e, v, a) {
+  const k = Math.max(0, Math.min(1, (v - a - .2) / .25));
+  return `<div class="fx-ab" style="left:0;right:0;top:${e.y || 760}px;text-align:center;opacity:${k};transform:scale(${1.7 - .7 * k}) rotate(-9deg)"><span style="display:inline-block;border:12px solid #D7263D;color:#D7263D;border-radius:22px;padding:16px 44px;font-family:'NU','Inter',sans-serif;font-weight:900;font-size:${e.size || 120}px;letter-spacing:.04em;text-transform:uppercase;mix-blend-mode:multiply">${e.texto}</span></div>`;
+}
+function lista(e, v, a) {
+  return `<div class="fx-ab" style="left:${e.x || 150}px;right:110px;top:${e.y || 420}px;font-size:${e.size || 64}px;font-weight:800;color:${T.t};line-height:1.1">${(e.items || []).map((it, i) => {
+    const t0 = a + .2 + i * (e.paso || .4), ok = it[1] === '✓';
+    return `<div style="display:flex;align-items:center;gap:30px;margin-bottom:40px;${up(v, t0, .35, 40)}"><span style="flex:none;width:${(e.size || 64) * 1.25}px;height:${(e.size || 64) * 1.25}px;border-radius:50%;display:grid;place-items:center;font-size:${(e.size || 64) * .8}px;color:#fff;background:${ok ? '#34B614' : '#D7263D'};${pop(v, t0 + .2, .3)}">${it[1]}</span><span>${it[0]}</span></div>`; }).join('')}</div>`;
+}
+function numero(e, v, a, i) {
+  const c = EST.fondo === 'solido' ? tinta(PALETA[i % PALETA.length]) : T.t;
+  const circ = EST.fondo === 'papel' ? `<svg class="fx-ab" style="left:90px;top:${(e.y || 640) - 70}px" width="900" height="420"><ellipse cx="450" cy="210" rx="420" ry="180" fill="none" stroke="#E8505B" stroke-width="10" stroke-dasharray="2000" stroke-dashoffset="${2000 * (1 - Math.max(0, Math.min(1, (v - a - .5) / .6)))}" transform="rotate(-4 450 210)"/></svg>` : '';
+  return `${e.antes ? ab((e.y || 640) - 150, e.as || 54, e.antes, `font-weight:800;color:${c};${up(v, a, .35, 30)}`) : ''}
+    <div class="fx-ab" style="left:0;right:0;top:${e.y || 640}px;text-align:center;font-family:'NU','Inter',sans-serif;font-weight:900;font-size:${e.size || 230}px;letter-spacing:-.03em;line-height:1;color:${e.color || c};${pop(v, a + .15, .45)}">${e.valor}</div>${circ}
+    ${e.despues ? ab((e.y || 640) + (e.size || 230) + 40, e.ds || 52, e.despues, `font-weight:800;color:${c};${up(v, a + .5, .35, 30)}`) : ''}`;
+}
+function palabra(e, v, a, i) {
+  const c = tinta(PALETA[i % PALETA.length]);
+  return `<div class="fx-ab" style="left:50px;right:50px;top:${e.y || 560}px;text-align:center;font-family:'NU','Inter',sans-serif;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;color:${c};font-size:${e.size || 170}px">${e.texto.split('<br>').map((l, k) => `<div style="${pop(v, a + k * .18, .35)}">${l}</div>`).join('')}</div>
+    ${e.sub ? ab((e.y || 560) + (e.size || 170) * (e.texto.split('<br>').length) + 50, e.ss || 56, e.sub, `font-weight:800;color:${c};${up(v, a + .5, .35, 30)}`) : ''}`;
+}
+function chat(e, v, a) {
+  const hdr = `<div style="height:150px;background:#075E54;color:#fff;display:flex;align-items:center;gap:22px;padding:0 40px;font-size:38px;font-weight:700"><div style="width:84px;height:84px;border-radius:50%;background:#25D366;display:grid;place-items:center;font-size:42px">${e.avatar || '👤'}</div><div>${e.nombre || 'Recursos Humanos'}<div style="font-size:24px;font-weight:400;opacity:.8">en línea</div></div></div>`;
+  const msgs = (e.msgs || []).map((m, k) => {
+    const t0 = a + .3 + k * (e.paso || .9), yo = m[0] === 'yo', vis = v >= t0;
+    const typing = !vis && v >= t0 - .5 ? `<div style="align-self:${yo ? 'flex-end' : 'flex-start'};background:${yo ? '#DCF8C6' : '#fff'};border-radius:26px;padding:22px 30px;font-size:40px;letter-spacing:6px;color:#8a8f98">•••</div>` : '';
+    return vis ? `<div style="align-self:${yo ? 'flex-end' : 'flex-start'};max-width:780px;background:${yo ? '#DCF8C6' : '#fff'};border-radius:${yo ? '30px 30px 6px 30px' : '30px 30px 30px 6px'};padding:24px 32px;font-size:${e.size || 44}px;line-height:1.25;color:#111;box-shadow:0 4px 10px rgba(0,0,0,.08);${pop(v, t0, .3)}">${m[1]}<div style="text-align:right;font-size:22px;color:#8a8f98;margin-top:6px">${m[2] || ''}</div></div>` : typing;
+  }).join('');
+  return `<div class="fx-ab" style="left:70px;right:70px;top:${e.y || 230}px;height:${e.h || 1150}px;border-radius:44px;overflow:hidden;background:#ECE5DD;box-shadow:0 30px 80px rgba(17,28,59,.25);${up(v, a, .4, 60)}">${hdr}<div style="display:flex;flex-direction:column;gap:22px;padding:34px 30px">${msgs}</div></div>`;
+}
 function escena(e, v) {
-  const a = e.a, b = e.b;
+  const a = e.a, b = e.b, i = e.i || 0;
   const kick = e.kicker ? FX.kicker(v, a, e.kicker, e.ky || 470) : '';
   const sub = e.sub ? ab(e.sy || 1150, e.ss || 64, e.sub, `font-weight:900;letter-spacing:-.02em;line-height:1.05;${up(v, a + (e.sd ?? .5), .4, 40)}`) : '';
   switch (e.fx) {
@@ -30,6 +94,12 @@ function escena(e, v) {
     case 'orbit': return FX.orbit(v, a, b, LOGO(), e.items, { y: 860, r: 360 }) + ab(1180, 84, 'CheckONOFF', `font-weight:900;letter-spacing:-.03em;${up(v, a + .3, .4)}`) + (e.sub ? ab(1300, 40, e.sub, `font-weight:700;color:${T.s};${up(v, a + .7, .4, 30)}`) : '');
     case 'phone': return FX.phone(v, a, b, vv => pantalla(e, vv, a), { x: 300, y: 330 }) + (e.cards ? FX.uiWorld(v, a + .6, b, e.cards.map((c, i) => ({ x: i % 2 ? 800 : 20, y: 420 + i * 320, w: 260, html: `<div style="font-size:24px;color:${T.s}">${c[0]}</div><div style="font-size:38px;font-weight:900;${c[2] ? `color:${T.a2}` : ''}">${c[1]}</div>` }))) : '');
     case 'chart': return kick + FX.chartGrow(v, a, b, e.datos, { y: e.y || 540, h: 640, suf: e.suf || '', pre: e.pre || '', titulo: e.titulo || '' }) + sub;
+    case 'nota': return kick + nota(e, v, a) + sub;
+    case 'sello': return kick + sello(e, v, a) + sub;
+    case 'lista': return kick + lista(e, v, a) + sub;
+    case 'numero': return kick + numero(e, v, a, i) + sub;
+    case 'palabra': return palabra(e, v, a, i);
+    case 'chat': return kick + chat(e, v, a) + sub;
     case 'cierre': {
       const icono = `<div style="width:300px;height:300px;border-radius:70px;background:#fff;display:grid;place-items:center;box-shadow:0 0 80px ${T.a}99"><img src="${P.logo}" style="width:220px"></div>`;
       return FX.frameBreak(v, a - .1, 999, icono, { x: 240, y: 680, w: 600, h: 200 })
@@ -42,14 +112,17 @@ function escena(e, v) {
 }
 function render(t) {
   const v = t * SPEED;
-  const S = SPEC.escenas.map((e, i) => Object.assign({}, e, { a: i === 0 ? .05 : at(W, e.w, e.n || 0) - .12 }));
+  const S = SPEC.escenas.map((e, i) => Object.assign({}, e, { i, a: i === 0 ? .05 : at(W, e.w, e.n || 0) - .12 }));
   S.forEach((e, i) => e.b = i + 1 < S.length ? S[i + 1].a + .15 : 999);
   const fin = S[S.length - 1].a, orb = S.find(e => e.fx === 'orbit');
-  let h = FX.css() + FX.fondo(v, { brillo: orb && v > orb.a ? 1.2 : .8 });
+  const actual = S.filter(e => v >= e.a - .05).pop() || S[0];
+  let h = FX.css() + (EST.fondo === 'vivo' ? FX.fondo(v, { brillo: orb && v > orb.a ? 1.2 : .8 }) : fondoEstilo(v, actual));
+  document.body.style.color = T.t;
   for (const e of S) if (v > e.a - .25 && v < e.b + .25) h += escena(e, v);
   if (orb) h += FX.zoomThrough(v, orb.a, { dur: .8 });
+  if (EST.fondo === 'solido') { const c = actual.fx === 'cierre' ? '#111C3B' : PALETA[actual.i % PALETA.length]; FX.tema({ t: tinta(c), bg: c, a2: c === '#FFD84D' ? '#E21B20' : '#FFD84D' }); }
   if (v < fin - .1) h += FX.subtitulos(v, W, { claves: SPEC.claves || [] });
-  h += FX.grano(v);
+  if (EST.fondo !== 'claro') h += FX.grano(v);
   document.getElementById('root').innerHTML = h;
 }
 </script></body></html>

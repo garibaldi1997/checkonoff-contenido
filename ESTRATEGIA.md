@@ -199,3 +199,28 @@ Post de LinkedIn con **545 reacciones, 7 comentarios y 54 compartidos**. Lo que 
   - Metáforas: "la geocerca es tu portero", "la foto es tu testigo", "la prenómina es tu contador que no se cansa".
   - Cierre: "Comenta GUÍA o escríbenos GUÍA al WhatsApp".
 - **LinkedIn personal:** el dueño sí puede hacer este formato a cámara.
+
+## Variedad obligatoria en los reels (pedido del dueño, 27/10/2026: "todos los haces igual")
+Los 7 reels de la semana 44 salieron con la misma plantilla (fondo azul oscuro, verde, glass, orbit y el mismo cierre). Desde ahora:
+- **4 estilos visuales** en `plantillas/efectos/reel_spec.html` (campo `"estilo"` del spec):
+  - `noche`: azul oscuro con brillo verde (el de antes).
+  - `papel`: hoja de cuaderno, letra a mano y sello rojo.
+  - `claro`: fondo blanco con manchas suaves, números grandes y chat de WhatsApp.
+  - `vibrante`: un color sólido por escena (amarillo, rojo, verde, azul) con palabras gigantes.
+- **Escenas nuevas:** `nota` (texto a mano que se escribe), `lista` (✓/✗), `sello`, `numero` (cifra gigante, con círculo a mano en papel), `palabra` (bloque de color) y `chat` (conversación de WhatsApp que se va escribiendo). Siguen las de antes: glass, wall, doodle, zoom, orbit, phone y chart.
+- **Formatos que se alternan:**
+  - Historia con personajes (`reel_historia`).
+  - Explicativo con pregunta-paradoja.
+  - Lista "5 cosas".
+  - Chat de WhatsApp.
+  - Nota a mano.
+  - Pantalla dividida (app arriba, escena abajo).
+  - Palabras gigantes de color.
+  - POV o meme.
+- **Reglas:**
+  1. Nunca el mismo estilo dos días seguidos.
+  2. Cada semana usa al menos 4 estilos y 4 formatos distintos.
+  3. No repetir la misma secuencia de escenas.
+  4. Alternar la duración (15–20 s, 25–30 s, 45–60 s).
+  5. Variar el cierre (comenta GUÍA, escríbenos por WhatsApp, guárdalo, pregunta).
+- **Semana 44:** el miércoles salió en papel, el jueves en claro con chat, el viernes en vibrante y el domingo en claro con números (re-render del 27/10).

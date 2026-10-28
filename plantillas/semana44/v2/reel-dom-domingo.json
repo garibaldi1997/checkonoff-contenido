@@ -1,0 +1,14 @@
+{
+ "voz": "voz/s44-dom-domingo",
+ "salida": "contenido/checkonoff/2026-11-01-reel-prima-dominical",
+ "estilo": "claro",
+ "claves": ["prima", "25", "125"],
+ "escenas": [
+  {"fx": "numero", "w": "domingo", "antes": "Domingo", "valor": "½ equipo", "despues": "trabaja hoy y descansa el lunes", "y": 680, "size": 190},
+  {"fx": "numero", "w": "sabías", "antes": "Prima dominical", "valor": "+25 %", "despues": "como mínimo · art. 71 LFT", "color": "#2a9b10", "y": 660, "size": 260},
+  {"fx": "numero", "w": "500", "antes": "Salario diario de $500", "valor": "+$125", "despues": "por persona, cada domingo", "color": "#0A4E94", "y": 660, "size": 260},
+  {"fx": "sello", "w": "si", "texto": "Demanda", "y": 700, "sub": "si no lo registras bien", "sy": 1060, "ss": 60},
+  {"fx": "lista", "w": "con", "n": 1, "kicker": "CON CHECKONOFF", "ky": 300, "items": [["Quién trabajó cada domingo", "✓"], ["La prima se calcula sola", "✓"], ["Respaldo de cada registro", "✓"]], "y": 520, "size": 62},
+  {"fx": "cierre", "w": "guárdalo", "linea": "con quien hace la nómina"}
+ ]
+}
