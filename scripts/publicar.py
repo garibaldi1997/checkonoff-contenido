@@ -294,7 +294,12 @@ def main():
                     if cu.li.organizacion:  # confirma que el token administra esa página
                         acl, _ = cu.li._req("GET", "https://api.linkedin.com/v2/organizationAcls?q=roleAssignee&state=APPROVED")
                         orgs = {x.get("organization"): x.get("role") for x in acl.get("elements", [])}
-                        print(f"   páginas que administra el token: {orgs}")
+                        for urn in orgs:
+                            try:
+                                o, _ = cu.li._req("GET", f"https://api.linkedin.com/v2/organizations/{urn.split(':')[-1]}")
+                                print(f"   administra: {urn} · {o.get('localizedName', '')}")
+                            except ErrorLinkedIn:
+                                print(f"   administra: {urn}")
                         if f"urn:li:organization:{cu.li.organizacion}" not in orgs:
                             raise ErrorLinkedIn("el token no administra esa página (revisa el id en cuentas.json)")
                 except ErrorLinkedIn as err:
