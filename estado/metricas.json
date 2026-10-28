@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-28T13:40:22+00:00",
+  "actualizado": "2026-10-28T19:06:16+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1017,6 +1017,28 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/2159856531274014/"
+      }
+    },
+    "2026-10-28-carrusel-prima-dominical": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-28T12:00:00-06:00",
+      "tema": "¿Que tu equipo descanse en domingo o en lunes cuesta lo mismo? No. 📅",
+      "instagram": {
+        "id": "17913886863490341",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfDBzYbFxgH/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122110238607512173"
       }
     }
   }

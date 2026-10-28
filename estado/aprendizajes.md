@@ -1,5 +1,5 @@
 # Aprendizajes automáticos
-_Actualizado: 28/10/2026 07:41 CDMX · 43 posts con más de 24 h (historias excluidas)._
+_Actualizado: 28/10/2026 13:07 CDMX · 44 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-10-28): Instagram 1 (+1 desde 2026-10-15), Facebook 0 (+0)
@@ -17,14 +17,14 @@ _Actualizado: 28/10/2026 07:41 CDMX · 43 posts con más de 24 h (historias excl
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| carrusel | 18 | 6 | 0.7 |
+| carrusel | 19 | 6 | 0.6 |
 | reel | 11 | 2 | 0.0 |
 | imagen | 14 | 1 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| mediodía (12–15) | 24 | 5 | 0.3 |
+| mediodía (12–15) | 25 | 4 | 0.3 |
 | tarde (16–19) | 10 | 2 | 0.0 |
 | noche (20–5) | 3 | 1 | 1.3 |
 | mañana (6–11) | 6 | 1 | 0.0 |
@@ -37,8 +37,8 @@ _Actualizado: 28/10/2026 07:41 CDMX · 43 posts con más de 24 h (historias excl
 | jueves | 9 | 2 | 0.0 |
 | sábado | 4 | 1 | 0.0 |
 | viernes | 6 | 1 | 0.0 |
+| martes | 4 | 1 | 0.0 |
 | domingo | 3 | 1 | 0.0 |
-| martes | 3 | 0 | 0.0 |
 
 ## Reglas para el siguiente post
 1. Formato con más alcance hasta hoy: **carrusel**. Dale más espacio en el calendario.
