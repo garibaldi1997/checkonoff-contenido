@@ -46,7 +46,6 @@ jobs:
           DRY_RUN: ${{ inputs.modo == 'simular' && '1' || '0' }}
         run: |
           if [ "${{ inputs.modo }}" = "verificar" ]; then
-            python scripts/diag_linkedin.py || true
             python scripts/publicar.py --verificar
           else
             s=0; python scripts/publicar.py || s=$?

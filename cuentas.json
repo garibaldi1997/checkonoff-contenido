@@ -3,8 +3,9 @@
     "nombre": "CheckONOFF",
     "secreto": "META_TOKEN_CHECKONOFF",
     "linkedin": {
-      "secreto": "LINKEDIN_TOKEN_GARIBALDI",
-      "nota": "Temporal: perfil personal mientras se corrige LINKEDIN_TOKEN_CHECKONOFF (401). Después: secreto LINKEDIN_TOKEN_CHECKONOFF + organizacion 144005971."
+      "secreto": "LINKEDIN_TOKEN_CHECKONOFF",
+      "organizacion": "144005971",
+      "nota": "Página de empresa de CheckONOFF (app Publiqo Pages, Community Management API, nivel desarrollo: el token dura 60 días, generado el 27/10/2026)."
     }
   },
   "dieloxia": {
