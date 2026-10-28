@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lleva a LinkedIn (perfil de Garibaldi) el mejor contenido diario de Dieloxia.
+"""Lleva a la página de LinkedIn de Dieloxia el mejor contenido diario de Dieloxia.
 
 Lee el calendario público de garibaldi1997/dieloxia-contenido y, cuando una pieza
 ya salió en el Instagram de Dieloxia, la publica una vez en LinkedIn.
@@ -27,7 +27,8 @@ SEPARACION = timedelta(hours=2)
 HORARIO = (8, 21)             # horas CDMX en que se publica
 VENTANA = timedelta(hours=36)
 CDMX = timezone(timedelta(hours=-6))
-PIE = "\n\n🤖 Esto lo comparto desde Dieloxia, mi proyecto de asistentes de WhatsApp con IA para negocios (con control humano en 1 clic). Más tips en instagram.com/dieloxia · dieloxia.com"
+PIE = "\n\n🤖 Dieloxia: asistentes de WhatsApp con IA para negocios, con control humano en 1 clic. Más tips en instagram.com/dieloxia · dieloxia.com"
+ORG_DIELOXIA = "143944437"  # página de empresa de Dieloxia en LinkedIn
 
 
 def leer(ruta):
@@ -36,7 +37,8 @@ def leer(ruta):
 
 
 def main():
-    token = os.environ.get("LINKEDIN_TOKEN_GARIBALDI", "").strip()
+    # Token de páginas (app Publiqo Pages); el mismo que usa la página de CheckONOFF
+    token = os.environ.get("LINKEDIN_TOKEN_CHECKONOFF", "").strip()
     if not token:
         print("⏸️ Sin token de LinkedIn")
         return 0
@@ -58,7 +60,7 @@ def main():
     if ultimo and ahora - ultimo < SEPARACION:
         print("⏸️ Aún no pasan 2 h desde el último post de Dieloxia en LinkedIn")
         return 0
-    li = CuentaLinkedIn(token)
+    li = CuentaLinkedIn(token, ORG_DIELOXIA)
     # Prioridad: carrusel, luego el reel (primero los reels con historia), luego un post de imagen; lo más reciente primero
     orden = lambda x: (TIPOS.get(x.get("tipo"), 9), "historia" not in x["id"], -datetime.fromisoformat(x["fecha"]).timestamp())
     for e in sorted(cal, key=orden):
