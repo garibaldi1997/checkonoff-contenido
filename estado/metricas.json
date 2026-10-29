@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-28T19:06:16+00:00",
+  "actualizado": "2026-10-29T19:12:15+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1005,7 +1005,7 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/DfBGHMeCtyb/",
-        "reach": 2,
+        "reach": 3,
         "saved": 0,
         "shares": 0,
         "views": 4,
@@ -1029,6 +1029,28 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DfDBzYbFxgH/",
+        "reach": 2,
+        "saved": 0,
+        "shares": 0,
+        "views": 5
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122110238607512173"
+      }
+    },
+    "2026-10-28-para-rrhh-horas-triples": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-28T15:00:00-06:00",
+      "tema": "Para RRHH: ¿cuántas horas extra triples puedes pagar a la semana? Máximo 4. 3️⃣",
+      "instagram": {
+        "id": "18091730132692289",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfDWU_OF7L3/",
         "reach": 0,
         "saved": 0,
         "shares": 0,
@@ -1038,7 +1060,53 @@
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
-        "permalink": "https://www.facebook.com/122098590447512173/posts/122110238607512173"
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122110284297512173"
+      }
+    },
+    "2026-10-28-reel-inspeccion": {
+      "tipo": "reel",
+      "fecha": "2026-10-28T18:00:00-06:00",
+      "tema": "Miércoles, 10:00: llega la inspección de la STPS. 📋",
+      "instagram": {
+        "id": "18055322948589895",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DfDq6fNj0_o/",
+        "reach": 4,
+        "saved": 0,
+        "shares": 0,
+        "views": 5,
+        "ig_reels_avg_watch_time": 1943,
+        "ig_reels_video_view_total_time": 7773
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/907140429033534/"
+      }
+    },
+    "2026-10-29-carrusel-registro-3-capas": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-29T12:00:00-06:00",
+      "tema": "¿Basta con instalar un checador para cumplir en 2027? No. 🔐",
+      "instagram": {
+        "id": "18121303094050121",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfFmiqyDTrA/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122110595409512173"
       }
     }
   }

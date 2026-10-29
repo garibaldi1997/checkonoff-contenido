@@ -1,8 +1,8 @@
 # Aprendizajes automáticos
-_Actualizado: 28/10/2026 13:07 CDMX · 44 posts con más de 24 h (historias excluidas)._
+_Actualizado: 29/10/2026 13:12 CDMX · 47 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
-- **checkonoff** (2026-10-28): Instagram 1 (+1 desde 2026-10-15), Facebook 0 (+0)
+- **checkonoff** (2026-10-29): Instagram 1 (+1 desde 2026-10-15), Facebook 0 (+0)
 
 ## Mejores 3 (repetir el patrón: formato, tipo de gancho, hora)
 - **¿Tu turno es "vespertino"? 🤔 Para la Ley Federal del Trabajo, ese tipo de jornada NO exist** · carrusel · miércoles 15:00 · alcance 52, vistas 67, guardados 0, compartidos 1, comentarios 0
@@ -17,27 +17,27 @@ _Actualizado: 28/10/2026 13:07 CDMX · 44 posts con más de 24 h (historias excl
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| carrusel | 19 | 6 | 0.6 |
-| reel | 11 | 2 | 0.0 |
+| carrusel | 21 | 6 | 0.6 |
+| reel | 12 | 2 | 0.0 |
 | imagen | 14 | 1 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| mediodía (12–15) | 25 | 4 | 0.3 |
-| tarde (16–19) | 10 | 2 | 0.0 |
+| mediodía (12–15) | 27 | 4 | 0.3 |
+| tarde (16–19) | 11 | 2 | 0.0 |
 | noche (20–5) | 3 | 1 | 1.3 |
 | mañana (6–11) | 6 | 1 | 0.0 |
 
 ### Por día
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| miércoles | 12 | 8 | 1.0 |
+| miércoles | 13 | 8 | 0.9 |
 | lunes | 6 | 2 | 0.0 |
 | jueves | 9 | 2 | 0.0 |
+| martes | 6 | 1 | 0.0 |
 | sábado | 4 | 1 | 0.0 |
 | viernes | 6 | 1 | 0.0 |
-| martes | 4 | 1 | 0.0 |
 | domingo | 3 | 1 | 0.0 |
 
 ## Reglas para el siguiente post
