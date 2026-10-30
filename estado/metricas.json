@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-30T13:40:23+00:00",
+  "actualizado": "2026-10-30T18:50:57+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1175,6 +1175,28 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1018796051245699/"
+      }
+    },
+    "2026-10-30-carrusel-multa-autodiagnostico": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-30T12:00:00-06:00",
+      "tema": "¿Cuánto le puede costar a tu empresa no registrar la jornada? 💸",
+      "instagram": {
+        "id": "17937364266404311",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfILW4xF9MM/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122110994271512173"
       }
     }
   }
