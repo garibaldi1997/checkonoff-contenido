@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-29T19:12:15+00:00",
+  "actualizado": "2026-10-30T13:40:23+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -343,10 +343,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DemmYpbF5yH/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 1
       }
     },
     "2026-10-17-historia-pregunta": {
@@ -1107,6 +1107,74 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122110595409512173"
+      }
+    },
+    "2026-10-29-meme-cierre-quincena": {
+      "tipo": "imagen",
+      "fecha": "2026-10-29T13:30:00-06:00",
+      "tema": "Jueves de realidad con humor 😅",
+      "instagram": {
+        "id": "17938915788127653",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfFwybMjRLA/",
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "views": 1
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/photo.php?fbid=122110623987512173&set=a.122097810891512173&type=3"
+      }
+    },
+    "2026-10-29-para-rrhh-jornada-nocturna": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-29T15:00:00-06:00",
+      "tema": "Para RRHH: ¿una jornada nocturna puede durar 8 horas? No. 🌙",
+      "instagram": {
+        "id": "18115580399135689",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfF7ISOl71y/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122110670019512173"
+      }
+    },
+    "2026-10-29-reel-horas-extra": {
+      "tipo": "reel",
+      "fecha": "2026-10-29T18:00:00-06:00",
+      "tema": "Jueves de quincena: 14 horas extra que nadie autorizó. 😳",
+      "instagram": {
+        "id": "18130390567787428",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DfGPsy6Ajk4/",
+        "reach": 4,
+        "saved": 0,
+        "shares": 0,
+        "views": 5,
+        "ig_reels_avg_watch_time": 13500,
+        "ig_reels_video_view_total_time": 81001
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1018796051245699/"
       }
     }
   }
