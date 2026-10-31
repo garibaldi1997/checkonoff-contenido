@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-30T18:50:57+00:00",
+  "actualizado": "2026-10-31T13:40:19+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1077,8 +1077,8 @@
         "saved": 0,
         "shares": 0,
         "views": 5,
-        "ig_reels_avg_watch_time": 1943,
-        "ig_reels_video_view_total_time": 7773
+        "ig_reels_avg_watch_time": 2343,
+        "ig_reels_video_view_total_time": 11718
       },
       "facebook": {
         "reacciones": 0,
@@ -1141,10 +1141,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DfF7ISOl71y/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 1
       },
       "facebook": {
         "reacciones": 0,
@@ -1163,12 +1163,12 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/DfGPsy6Ajk4/",
-        "reach": 4,
+        "reach": 5,
         "saved": 0,
         "shares": 0,
-        "views": 5,
-        "ig_reels_avg_watch_time": 13500,
-        "ig_reels_video_view_total_time": 81001
+        "views": 7,
+        "ig_reels_avg_watch_time": 11245,
+        "ig_reels_video_view_total_time": 89963
       },
       "facebook": {
         "reacciones": 0,
@@ -1187,16 +1187,62 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DfILW4xF9MM/",
-        "reach": 0,
+        "reach": 30,
         "saved": 0,
-        "shares": 0,
-        "views": 0
+        "shares": 1,
+        "views": 41
       },
       "facebook": {
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122110994271512173"
+      }
+    },
+    "2026-10-30-para-rrhh-biometricos-aviso": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-30T15:00:00-06:00",
+      "tema": "Para RRHH: ¿si usas huella o reconocimiento facial necesitas aviso de privacidad? Sí. 👆",
+      "instagram": {
+        "id": "18132755080694147",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfIf6DzjmjN/",
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "views": 1
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122111056083512173"
+      }
+    },
+    "2026-10-30-reel-checa-por-mi": {
+      "tipo": "reel",
+      "fecha": "2026-10-30T18:00:00-06:00",
+      "tema": "\"¿Me checas, porfa?\" 👀",
+      "instagram": {
+        "id": "18063109562533715",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DfI0fSbFJ7o/",
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "views": 1,
+        "ig_reels_avg_watch_time": 5050,
+        "ig_reels_video_view_total_time": 10100
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1427161362410285/"
       }
     }
   }
