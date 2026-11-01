@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-01T13:40:18+00:00",
+  "actualizado": "2026-11-01T18:33:08+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1277,18 +1277,40 @@
         "like_count": 1,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/DfLZSzfDBTZ/",
-        "reach": 123,
+        "reach": 124,
         "saved": 0,
         "shares": 0,
-        "views": 136,
-        "ig_reels_avg_watch_time": 4720,
-        "ig_reels_video_view_total_time": 585283
+        "views": 138,
+        "ig_reels_avg_watch_time": 4918,
+        "ig_reels_video_view_total_time": 614780
       },
       "facebook": {
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1489808446352845/"
+      }
+    },
+    "2026-11-01-carrusel-turnos-40-horas-2030": {
+      "tipo": "carrusel",
+      "fecha": "2026-11-01T12:00:00-06:00",
+      "tema": "¿Cómo se verá un turno de 40 horas en 2030? Así. 🗓️",
+      "instagram": {
+        "id": "17922782310451684",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfNU7VmlzGG/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122111717511512173"
       }
     }
   }

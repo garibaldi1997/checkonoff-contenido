@@ -1,5 +1,5 @@
 # Aprendizajes automáticos
-_Actualizado: 01/11/2026 07:41 CDMX · 56 posts con más de 24 h (historias excluidas)._
+_Actualizado: 01/11/2026 12:34 CDMX · 57 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-11-01): Instagram 1 (+1 desde 2026-10-15), Facebook 0 (+0)
@@ -10,21 +10,21 @@ _Actualizado: 01/11/2026 07:41 CDMX · 56 posts con más de 24 h (historias excl
 - **⏰ ¿El reloj checador ya es obligatorio en México?** · carrusel · miércoles 15:00 · alcance 39, vistas 44, guardados 0, compartidos 1, comentarios 0
 
 ## Peores 3 (no repetir ese gancho/formato/hora tal cual)
-- **¿La reforma cambia tu turno nocturno en 2027? No. 🌙** · carrusel · lunes 12:00 · alcance 0, puntaje 0
 - **Para RRHH: ¿cuántas horas extra triples puedes pagar a la semana? Máximo 4. 3️⃣** · carrusel · miércoles 15:00 · alcance 0, puntaje 0
 - **¿Basta con instalar un checador para cumplir en 2027? No. 🔐** · carrusel · jueves 12:00 · alcance 0, puntaje 0
+- **¿Tu nómina y tu registro de asistencia dicen lo mismo? Deberían. 🧾** · carrusel · sábado 12:00 · alcance 0, puntaje 0
 
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| carrusel | 26 | 7 | 0.6 |
+| carrusel | 27 | 7 | 0.6 |
 | reel | 15 | 2 | 0.0 |
 | imagen | 15 | 1 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| mediodía (12–15) | 33 | 6 | 0.4 |
+| mediodía (12–15) | 34 | 6 | 0.4 |
 | tarde (16–19) | 14 | 2 | 0.0 |
 | mañana (6–11) | 6 | 1 | 0.0 |
 | noche (20–5) | 3 | 1 | 1.3 |
@@ -36,8 +36,8 @@ _Actualizado: 01/11/2026 07:41 CDMX · 56 posts con más de 24 h (historias excl
 | miércoles | 15 | 7 | 0.8 |
 | lunes | 6 | 2 | 0.0 |
 | jueves | 13 | 2 | 0.0 |
-| sábado | 4 | 2 | 0.0 |
 | martes | 6 | 1 | 0.0 |
+| sábado | 5 | 1 | 0.0 |
 | domingo | 3 | 1 | 0.0 |
 
 ## Reglas para el siguiente post
