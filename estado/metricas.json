@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31T17:55:21+00:00",
+  "actualizado": "2026-11-01T13:40:18+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1187,10 +1187,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DfILW4xF9MM/",
-        "reach": 48,
+        "reach": 68,
         "saved": 0,
         "shares": 1,
-        "views": 65
+        "views": 87
       },
       "facebook": {
         "reacciones": 0,
@@ -1243,6 +1243,52 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1427161362410285/"
+      }
+    },
+    "2026-10-31-carrusel-cfdi-vs-registro": {
+      "tipo": "carrusel",
+      "fecha": "2026-10-31T12:00:00-06:00",
+      "tema": "¿Tu nómina y tu registro de asistencia dicen lo mismo? Deberían. 🧾",
+      "instagram": {
+        "id": "18109904750459933",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfKwJffFwSg/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122111357067512173"
+      }
+    },
+    "2026-10-31-reel-sucursal-whatsapp": {
+      "tipo": "reel",
+      "fecha": "2026-10-31T18:00:00-06:00",
+      "tema": "Sábado, 11 de la noche: llegan fotos de la libreta de asistencia por WhatsApp. 📸",
+      "instagram": {
+        "id": "18153073966531601",
+        "comments_count": 0,
+        "like_count": 1,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DfLZSzfDBTZ/",
+        "reach": 123,
+        "saved": 0,
+        "shares": 0,
+        "views": 136,
+        "ig_reels_avg_watch_time": 4720,
+        "ig_reels_video_view_total_time": 585283
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1489808446352845/"
       }
     }
   }
