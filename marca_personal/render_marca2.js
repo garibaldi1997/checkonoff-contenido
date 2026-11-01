@@ -171,6 +171,19 @@ P.cartel_desconexion = `<style>${NUN}</style><div style="position:absolute;inset
 ${rayas(14, 290, '#F06B7A', 0)}${rayas(976, 590, '#F06B7A', 180)}${rayas(14, 790, '#F5C518', 0)}${rayas(976, 960, '#F5C518', 180)}
 ${firma(true)}`;
 
+P.cartel_descanso = `<style>${NUN}</style><div style="position:absolute;inset:0;background:#FBF7EE"></div>
+<div style="position:absolute;left:50px;right:50px;top:170px;text-align:center;font-family:NU;font-weight:900;color:#111;letter-spacing:-.03em">
+ <div style="font-size:70px;line-height:1.05;white-space:nowrap">Ese "nomás un ratito"</div>
+ <div style="font-size:88px;line-height:1.15;margin-top:6px;white-space:nowrap">${mk('en domingo')}</div>
+ <div style="font-size:56px;line-height:1.3;margin-top:26px;white-space:nowrap">se lleva ${mk('el único día', '#F7A1AC')}</div>
+ <div style="font-size:56px;line-height:1.3;white-space:nowrap">que alguien tenía ${mk('para su familia.', '#F7A1AC')}</div>
+ <div style="font-family:IT;font-weight:500;font-size:42px;letter-spacing:-.01em;line-height:1.25;color:#2b2b2b;margin-top:56px">El descanso semanal no es un favor:<br>es parte del trabajo bien hecho.${subr(560)}</div>
+ <div style="margin-top:84px;display:inline-block;background:#FFE36E;border-radius:70px;padding:8px 50px;white-space:nowrap;font-size:68px">Descansar también rinde.</div>
+ <div style="font-size:48px;line-height:1.15;margin-top:24px">Cuidar el domingo<br>también es liderar.${subr(380)}</div>
+</div>
+${rayas(14, 290, '#F06B7A', 0)}${rayas(976, 590, '#F06B7A', 180)}${rayas(14, 790, '#F5C518', 0)}${rayas(976, 960, '#F5C518', 180)}
+${firma(true)}`;
+
 (async () => {
   const OUT = path.join(D, 'out2'); fs.mkdirSync(OUT, { recursive: true });
   const b = await chromium.launch(); const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
