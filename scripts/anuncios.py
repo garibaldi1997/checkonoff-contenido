@@ -141,8 +141,8 @@ def crear_enlace(cfg, c, paso, ig, camp, guardar):
     raiz = ESTADO.parent.parent
     for g, conj in cfg["conjuntos"].items():
         targeting = {"geo_locations": {"countries": [cfg["pais"]]}, "age_min": cfg["edad_min"], "age_max": cfg["edad_max"],
-                     "targeting_automation": {"advantage_audience": 0}, **conj["posiciones"]}
-        if c["intereses"]:
+                     "targeting_automation": {"advantage_audience": 1 if cfg.get("audiencia_abierta") else 0}, **conj.get("posiciones", {})}
+        if c.get("intereses") and not cfg.get("audiencia_abierta"):  # audiencia abierta: el anuncio hace la segmentación
             targeting["flexible_spec"] = [{"interests": c["intereses"]}]
         adset = paso(f"conjunto_{g}", lambda: post(f"{CUENTA}/adsets", name=f"{cfg['nombre']} · {g}", campaign_id=camp, status="PAUSED",
                                                    daily_budget=int(conj["presupuesto_mxn"] * 100), billing_event="IMPRESSIONS",
@@ -156,7 +156,7 @@ def crear_enlace(cfg, c, paso, ig, camp, guardar):
             h = paso(f"imagen_{v}_{g}", subir)
             creat = paso(f"creativo_{v}_{g}", lambda: post(f"{CUENTA}/adcreatives", name=f"{cfg['nombre']} · {v} · {g}", object_story_spec={
                 "page_id": cfg["pagina_id"], "instagram_user_id": ig,
-                "link_data": {"link": cfg["enlace"], "message": cfg["texto"], "image_hash": h, "name": cfg["titulos"][v],
+                "link_data": {"link": cfg["enlace"], "message": cfg.get("textos", {}).get(v, cfg["texto"]), "image_hash": h, "name": cfg["titulos"][v],
                               "description": cfg.get("descripcion", ""), "call_to_action": {"type": cfg.get("boton", "LEARN_MORE"), "value": {"lead_gen_form_id": cfg["_form"]} if cfg.get("_form") else {"link": cfg["enlace"]}}}}))
             ad = paso(f"anuncio_{v}_{g}", lambda: post(f"{CUENTA}/ads", name=f"{cfg['nombre']} · {v} · {g}", adset_id=adset,
                                                       creative={"creative_id": creat}, status="PAUSED"))

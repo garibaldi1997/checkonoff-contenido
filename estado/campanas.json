@@ -346,5 +346,132 @@
   "creativo_B_historias": "4629337354011555",
   "anuncio_B_historias": "120251649754870036",
   "revisado": "2026-10-26T15:58:16+00:00"
+ },
+ "personas-40h": {
+  "config": {
+   "clave": "personas-40h",
+   "tipo": "formulario",
+   "objetivo": "OUTCOME_LEADS",
+   "nombre": "Personas · Guía 40 horas",
+   "pagina_id": "1413919435136937",
+   "presupuesto_diario_mxn": 150,
+   "pais": "MX",
+   "edad_min": 25,
+   "edad_max": 60,
+   "intereses": [],
+   "audiencia_abierta": true,
+   "enlace": "https://checkonoff.mx/",
+   "boton": "DOWNLOAD",
+   "descripcion": "Guía gratis · prueba 14 días",
+   "titulos": {
+    "restaurante": "¿Tu mesero llegó tarde y nadie lo anotó?",
+    "planta": "14 horas extra que nadie autorizó",
+    "sucursales": "3 sucursales, 3 libretas, 0 control",
+    "familiar": "¿Todavía haces la lista de asistencia a mano?",
+    "despachos": "Tu cliente te manda la asistencia en fotos",
+    "obra": "¿Tu cuadrilla de verdad llegó a la obra?"
+   },
+   "texto": "🏪 Negocios con sucursales: 3 sucursales, 3 libretas, 0 control.\n\nTu equipo checa por app, WhatsApp o el checador que ya tienes, y todo llega al mismo panel. Sin fotos de libretas ni captura el lunes.\n\nDesde el 1 de enero de 2027 el registro de la jornada debe ser electrónico (art. 132 fr. XXXIV LFT) y la jornada máxima baja a 46 horas.\n\n📘 Descarga gratis la guía práctica para RRHH y prueba CheckONOFF 14 días sin tarjeta 👇",
+   "textos": {
+    "restaurante": "🍽️ Dueños de restaurante: ¿tu mesero llegó tarde y nadie lo anotó?\n\nCon turnos rotativos, descansos y personal que cambia cada semana, la lista en papel no alcanza. Con CheckONOFF cada quien checa con foto y ubicación, y los retardos se calculan solos.\n\nDesde el 1 de enero de 2027 el registro de la jornada debe ser electrónico (art. 132 fr. XXXIV LFT) y la jornada máxima baja a 46 horas.\n\n📘 Descarga gratis la guía práctica para RRHH y prueba CheckONOFF 14 días sin tarjeta 👇",
+    "planta": "🏭 RRHH de planta y maquila: 14 horas extra que nadie autorizó aparecen el día de la quincena.\n\nCon CheckONOFF ves las horas extra en tiempo real y las apruebas antes de pagarlas. Dobles hasta 9 a la semana y triples después, calculadas solas.\n\nDesde el 1 de enero de 2027 el registro de la jornada debe ser electrónico (art. 132 fr. XXXIV LFT) y la jornada máxima baja a 46 horas.\n\n📘 Descarga gratis la guía práctica para RRHH y prueba CheckONOFF 14 días sin tarjeta 👇",
+    "sucursales": "🏪 Negocios con sucursales: 3 sucursales, 3 libretas, 0 control.\n\nTu equipo checa por app, WhatsApp o el checador que ya tienes, y todo llega al mismo panel. Sin fotos de libretas ni captura el lunes.\n\nDesde el 1 de enero de 2027 el registro de la jornada debe ser electrónico (art. 132 fr. XXXIV LFT) y la jornada máxima baja a 46 horas.\n\n📘 Descarga gratis la guía práctica para RRHH y prueba CheckONOFF 14 días sin tarjeta 👇",
+    "familiar": "👨‍👩‍👧 Negocios familiares: ¿todavía haces la lista de asistencia a mano cada sábado?\n\nCon CheckONOFF cada quien checa al entrar y salir de su turno, y el cierre de semana sale en un clic: horas, retardos y prenómina.\n\nDesde el 1 de enero de 2027 el registro de la jornada debe ser electrónico (art. 132 fr. XXXIV LFT) y la jornada máxima baja a 46 horas.\n\n📘 Descarga gratis la guía práctica para RRHH y prueba CheckONOFF 14 días sin tarjeta 👇",
+    "despachos": "📊 Contadores y despachos: ¿tus clientes te mandan la asistencia en fotos de WhatsApp?\n\nCon CheckONOFF recibes horas, faltas e incidencias listas para calcular la nómina de cada cliente, en un solo lugar.\n\nDesde el 1 de enero de 2027 el registro de la jornada debe ser electrónico (art. 132 fr. XXXIV LFT) y la jornada máxima baja a 46 horas.\n\n📘 Descarga gratis la guía práctica para RRHH y prueba CheckONOFF 14 días sin tarjeta 👇",
+    "obra": "🏗️ Constructoras: ¿tu cuadrilla de verdad llegó a la obra?\n\nCon CheckONOFF checan con foto dentro de la geocerca de cada obra, aunque no haya señal: el registro se sube al reconectar.\n\nDesde el 1 de enero de 2027 el registro de la jornada debe ser electrónico (art. 132 fr. XXXIV LFT) y la jornada máxima baja a 46 horas.\n\n📘 Descarga gratis la guía práctica para RRHH y prueba CheckONOFF 14 días sin tarjeta 👇"
+   },
+   "formulario": {
+    "nombre": "Guía 40 horas · oct 2026",
+    "guia": "https://raw.githubusercontent.com/garibaldi1997/checkonoff-contenido/main/guias/guia-40-horas-checkonoff.pdf",
+    "privacidad": "https://app.checkonoff.mx/privacy-policy",
+    "intro_titulo": "Guía práctica: jornada de 40 horas para RRHH",
+    "intro_puntos": [
+     "Calendario 2026–2030 de la reducción de jornada",
+     "Reglas nuevas de horas extra con ejemplos",
+     "Registro electrónico 2027 y checklist imprimible"
+    ],
+    "preguntas": [
+     {
+      "type": "FULL_NAME"
+     },
+     {
+      "type": "PHONE"
+     },
+     {
+      "type": "EMAIL"
+     },
+     {
+      "type": "COMPANY_NAME"
+     },
+     {
+      "type": "JOB_TITLE"
+     },
+     {
+      "type": "CUSTOM",
+      "key": "colaboradores",
+      "label": "¿Cuántos colaboradores tiene tu empresa?",
+      "options": [
+       {
+        "key": "c1",
+        "value": "1 a 10"
+       },
+       {
+        "key": "c2",
+        "value": "11 a 50"
+       },
+       {
+        "key": "c3",
+        "value": "51 a 200"
+       },
+       {
+        "key": "c4",
+        "value": "Más de 200"
+       }
+      ]
+     },
+     {
+      "type": "CUSTOM",
+      "key": "registro",
+      "label": "¿Cómo registran hoy la asistencia?",
+      "options": [
+       {
+        "key": "r1",
+        "value": "Papel o Excel"
+       },
+       {
+        "key": "r2",
+        "value": "Reloj checador"
+       },
+       {
+        "key": "r3",
+        "value": "App"
+       },
+       {
+        "key": "r4",
+        "value": "No la registramos"
+       }
+      ]
+     }
+    ],
+    "gracias_titulo": "¡Listo! Aquí está tu guía",
+    "gracias_texto": "En la última página encontrarás el acceso gratis a la comunidad Jornada 40 hrs MX en WhatsApp. Un asesor de CheckONOFF te escribirá para resolver tus dudas."
+   },
+   "nota": "Lección Andrómeda (01/11/2026): audiencia abierta y un anuncio distinto por tipo de cliente; reutiliza el formulario de formulario-40h.",
+   "conjuntos": {
+    "todos": {
+     "presupuesto_mxn": 150,
+     "anuncios": {
+      "restaurante": "campana/personas/restaurante.jpg",
+      "planta": "campana/personas/planta.jpg",
+      "sucursales": "campana/personas/sucursales.jpg",
+      "familiar": "campana/personas/familiar.jpg",
+      "despachos": "campana/personas/despachos.jpg",
+      "obra": "campana/personas/obra.jpg"
+     }
+    }
+   }
+  },
+  "estado": "PAUSADA (falta autorización del dueño)",
+  "formulario_id": "2317304209123736"
  }
 }
