@@ -1,0 +1,80 @@
+{
+ "voz": "voz/s45-mar-dialogo",
+ "salida": "contenido/checkonoff/2026-11-03-reel-dialogo-horas-fantasma",
+ "estilo": "claro",
+ "sinSubs": true,
+ "escenas": [
+  {
+   "fx": "dialogo",
+   "w": "¿cuánto",
+   "lineas": [
+    {
+     "quien": "J",
+     "t": 0.0,
+     "texto": "¿Cuánto pagamos de más este mes?"
+    },
+    {
+     "quien": "D",
+     "t": 2.94,
+     "texto": "Seis mil pesos."
+    },
+    {
+     "quien": "J",
+     "t": 5.43,
+     "texto": "¿Por qué?"
+    },
+    {
+     "quien": "D",
+     "t": 7.65,
+     "texto": "Horas que nadie trabajó."
+    },
+    {
+     "quien": "J",
+     "t": 10.33,
+     "texto": "¿Cómo que nadie?"
+    },
+    {
+     "quien": "D",
+     "t": 12.55,
+     "texto": "Unos checaban por los que llegaban tarde."
+    },
+    {
+     "quien": "J",
+     "t": 15.76,
+     "texto": "¿Y la lista?"
+    },
+    {
+     "quien": "D",
+     "t": 17.98,
+     "texto": "En papel. Nadie la revisa."
+    },
+    {
+     "quien": "J",
+     "t": 21.76,
+     "texto": "¿Y cómo lo arreglamos?"
+    },
+    {
+     "quien": "D",
+     "t": 24.27,
+     "texto": "Con CheckONOFF. Cada checada lleva foto y ubicación."
+    },
+    {
+     "quien": "J",
+     "t": 29.49,
+     "texto": "¿Y si alguien checa por otro?"
+    },
+    {
+     "quien": "D",
+     "t": 32.34,
+     "texto": "Imposible. La foto no miente."
+    }
+   ],
+   "y": 480
+  },
+  {
+   "fx": "cierre",
+   "w": "guárdalo",
+   "linea": "con quien hace la nómina"
+  }
+ ]
+}

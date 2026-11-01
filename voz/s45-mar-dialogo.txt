@@ -1,0 +1,14 @@
+#voz dialogo (Jorge y Dalia, armado de voz/s45-dlg-*)
+¿Cuánto pagamos de más este mes?
+Seis mil pesos.
+¿Por qué?
+Horas que nadie trabajó.
+¿Cómo que nadie?
+Unos checaban por los que llegaban tarde.
+¿Y la lista?
+En papel. Nadie la revisa.
+¿Y cómo lo arreglamos?
+Con CheckONOFF. Cada checada lleva foto y ubicación.
+¿Y si alguien checa por otro?
+Imposible. La foto no miente.
+Guárdalo y compártelo con quien hace la nómina.

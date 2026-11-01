@@ -256,3 +256,21 @@ Los 7 reels de la semana 44 salieron con la misma plantilla (fondo azul oscuro, 
 - El video mismo es un **diálogo** con preguntas cortas y respuestas de una palabra ("¿Y cuántas visitas?" "11 millones."). Formato nuevo para CheckONOFF: **reel de diálogo a dos voces (Dalia y Jorge)**, por ejemplo dueño y RRHH: "¿Y cuántas horas extra salieron?" "Catorce." "¿Y quién las autorizó?" "Nadie."
 - **Retención:** los reels con más tiempo de vista hasta ahora son "horas extra" en estilo claro con chat (11.2 s promedio) y "sucursal WhatsApp" (124 de alcance). Si un reel baja de 3 s de retención promedio, el siguiente cambia de gancho.
 - Distribución pendiente: subir los mismos reels a **YouTube Shorts** (canal de CheckONOFF), cuando el dueño cree el canal y autorice la conexión.
+
+## Semana 45 (2–8 nov 2026): prueba "menos y mejor"
+Diagnóstico al 01/11:
+- 53 posts en 18 días y 1 seguidor en Instagram.
+- Más de la mitad de los posts tuvo alcance de 0–1.
+- Solo 1 guardado en total.
+- Los únicos posts que despegaron fueron prácticos de autodiagnóstico ("multa", 68) y la sucursal por WhatsApp (124).
+
+**Qué cambia en la semana 45:**
+- 1 carrusel práctico al día (lunes a sábado, 12:00): autodiagnóstico o checklist con portada tipográfica.
+- 3 reels (martes, jueves y sábado, 18:00), con estilos y formatos distintos:
+  - Diálogo a dos voces (estilo claro).
+  - Explicativo (estilo papel).
+  - Palabras gigantes (estilo vibrante).
+- Se quitan los "Para RRHH" de las 15:00 (alcance promedio ≈1).
+- Cierre: "Escríbenos GUÍA al WhatsApp +52 440 180 2213" (el bot Ana) en lugar de solo "guárdalo".
+
+**Cómo se mide el domingo 8:** alcance por post contra las semanas 43–44, y sobre todo conversaciones nuevas en el WhatsApp del bot. Si no mejora, el problema es de distribución (pauta y base de seguidores), no de volumen.

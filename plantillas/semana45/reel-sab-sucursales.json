@@ -1,0 +1,64 @@
+{
+ "voz": "voz/s45-sab-sucursales",
+ "salida": "contenido/checkonoff/2026-11-07-reel-sucursales-un-panel",
+ "estilo": "vibrante",
+ "claves": [
+  "whatsapp",
+  "panel"
+ ],
+ "escenas": [
+  {
+   "fx": "palabra",
+   "w": "sábado",
+   "texto": "3 sucursales<br>3 libretas",
+   "y": 520,
+   "size": 140
+  },
+  {
+   "fx": "palabra",
+   "w": "una",
+   "texto": "Fotos<br>borrosas",
+   "sub": "📸 por WhatsApp",
+   "y": 520,
+   "size": 170
+  },
+  {
+   "fx": "palabra",
+   "w": "otra",
+   "texto": "Otra no<br>manda nada",
+   "y": 540,
+   "size": 160
+  },
+  {
+   "fx": "palabra",
+   "w": "lunes",
+   "texto": "Lunes:<br>captura",
+   "sub": "todo a mano ⌨️",
+   "y": 520,
+   "size": 180
+  },
+  {
+   "fx": "palabra",
+   "w": "con",
+   "texto": "App<br>WhatsApp<br>checador",
+   "sub": "Cada sucursal checa como le acomode",
+   "y": 440,
+   "size": 130
+  },
+  {
+   "fx": "palabra",
+   "w": "llega",
+   "texto": "Un solo<br>panel ✅",
+   "sub": "en tiempo real",
+   "y": 520,
+   "size": 170
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

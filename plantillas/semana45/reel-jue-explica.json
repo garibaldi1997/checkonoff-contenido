@@ -1,0 +1,119 @@
+{
+ "voz": "voz/s45-jue-explica",
+ "salida": "contenido/checkonoff/2026-11-05-reel-explicativo-nomina-cara",
+ "estilo": "papel",
+ "claves": [
+  "nadie",
+  "engaña",
+  "cubeta",
+  "mil"
+ ],
+ "escenas": [
+  {
+   "fx": "nota",
+   "w": "por",
+   "titulo": "La pregunta del jueves",
+   "lineas": [
+    "¿Por qué tu nómina",
+    "sale cara si nadie",
+    "hace horas extra?"
+   ],
+   "marca": [
+    1
+   ],
+   "y": 420,
+   "size": 84
+  },
+  {
+   "fx": "numero",
+   "w": "tienda",
+   "antes": "Una tienda con",
+   "valor": "20 personas",
+   "despues": "cada una llega 10 min tarde",
+   "y": 700,
+   "size": 130
+  },
+  {
+   "fx": "numero",
+   "w": "pero",
+   "antes": "10 min × 6 días",
+   "valor": "1 hora",
+   "despues": "a la semana, por persona",
+   "y": 700,
+   "size": 200
+  },
+  {
+   "fx": "numero",
+   "w": "veinte",
+   "n": 1,
+   "antes": "× 20 personas",
+   "valor": "20 h",
+   "despues": "pagadas cada semana sin trabajar",
+   "y": 700,
+   "size": 240
+  },
+  {
+   "fx": "sello",
+   "w": "engaña",
+   "texto": "Lista en papel",
+   "y": 640,
+   "size": 100,
+   "sub": "El que te engaña no es tu equipo",
+   "sy": 1000,
+   "ss": 54
+  },
+  {
+   "fx": "nota",
+   "w": "cubeta",
+   "lineas": [
+    "Es como una cubeta",
+    "con una fuga chiquita 🪣",
+    "no la ves… pero se vacía"
+   ],
+   "marca": [
+    1
+   ],
+   "y": 440,
+   "size": 76
+  },
+  {
+   "fx": "numero",
+   "w": "año",
+   "antes": "En un año",
+   "valor": "+1,000 h",
+   "despues": "20 h × 52 semanas",
+   "color": "#D7263D",
+   "y": 700,
+   "size": 200
+  },
+  {
+   "fx": "lista",
+   "w": "con",
+   "n": 2,
+   "kicker": "CON CHECKONOFF",
+   "ky": 300,
+   "items": [
+    [
+     "Hora exacta de cada checada",
+     "✓"
+    ],
+    [
+     "Foto y ubicación",
+     "✓"
+    ],
+    [
+     "Retardos directo a la prenómina",
+     "✓"
+    ]
+   ],
+   "y": 500,
+   "size": 60
+  },
+  {
+   "fx": "cierre",
+   "w": "comenta",
+   "cta": "GUÍA",
+   "linea": "y te mando la guía de 40 horas"
+  }
+ ]
+}
