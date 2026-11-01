@@ -472,6 +472,10 @@
    }
   },
   "estado": "PAUSADA (falta autorización del dueño)",
-  "formulario_id": "2317304209123736"
+  "formulario_id": "2317304209123736",
+  "instagram_id": "17841415891192650",
+  "intereses": [],
+  "campana_id": "120251742661660036",
+  "error": "conjunto_todos: En cambio, puedes agregar una edad máxima inferior como sugerencia al crear o editar un conjunto de anuncios. Con los conjuntos de anuncios que usan público Advantage+, el control de público de edad máxima no se puede establecer en menos de 65 años"
  }
 }
