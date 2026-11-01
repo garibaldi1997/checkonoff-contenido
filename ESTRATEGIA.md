@@ -224,3 +224,35 @@ Los 7 reels de la semana 44 salieron con la misma plantilla (fondo azul oscuro, 
   4. Alternar la duración (15–20 s, 25–30 s, 45–60 s).
   5. Variar el cierre (comenta GUÍA, escríbenos por WhatsApp, guárdalo, pregunta).
 - **Semana 44:** el miércoles salió en papel, el jueves en claro con chat, el viernes en vibrante y el domingo en claro con números (re-render del 27/10).
+
+## Aprendizajes del 01/11/2026: anuncio de Humand y 3 videos de referencia
+**Humand (competencia, anuncio pagado):**
+- Fondo de color oscuro, titular grande de producto ("La app de RR. HH. que tu empresa necesita") y un celular con la app.
+- Prueba social: 4.9 en App Store y Google Play.
+- En el propio anuncio, la pregunta "¿Cuántos empleados tiene su empresa?" con botones por rango. Filtra y hace que la persona se sienta aludida.
+
+**Andrómeda (cómo decide Meta a quién mostrar un anuncio):**
+- El anuncio ES la segmentación: Meta lee la imagen, el video y el texto para adivinar a quién le interesa.
+- Diez anuncios con la misma foto y distinto texto, para Meta, son el mismo anuncio. Le llegan a la misma gente y cada vez salen más caros.
+- Lo que funciona: cada anuncio le habla a un cliente distinto, con otra persona, otro lugar u otro formato. En los primeros segundos dice para quién es y qué problema le resuelve.
+- Público abierto (Advantage+) e ideas nuevas todo el tiempo.
+- **Aplicado:** campaña `personas-40h`, con 6 anuncios distintos (restaurante, planta/maquila, sucursales, negocio familiar, despachos contables, constructoras), audiencia abierta y la pregunta de colaboradores en la imagen. Usa el formulario de la guía. Se creó EN PAUSA el 01/11/2026.
+- **Regla:** en cada campaña nueva, mínimo 4 creativos realmente distintos (persona, escenario, color y formato). Nunca variantes de la misma foto. Cada 2 semanas se cambian los 2 peores por ideas nuevas.
+
+**"Instagram Agent" (habilidades para manejar Instagram):**
+- Las ideas que valen: un radar que encuentra los reels que mejor funcionan en el nicho, analiza por qué funcionaron y los convierte en guiones propios; además, planear la semana y responder comentarios.
+- Ya hacemos plan, métricas y guiones. Falta el **radar de tendencias**: cada semana revisar los reels con más vistas de cuentas de RRHH y nómina en México y adaptar 1 o 2 formatos.
+- La API de Instagram no permite comentar automáticamente en publicaciones de otras cuentas; eso se hace a mano.
+
+**"Granja de videos" (canal sin cara, 90 videos y 11 millones de vistas):**
+- Equipo por roles:
+  - Radar: avisa cuando un video hace 10 veces el promedio del nicho.
+  - Guionista: gancho en el primer segundo.
+  - Voz.
+  - Animador: no repite ninguna escena.
+  - Miniaturas: hace 10 versiones y se queda con la de más clics.
+  - Publicador: sube a la hora de la audiencia.
+  - Analista: si la gente se va en el segundo 3, avisa al guionista.
+- El video mismo es un **diálogo** con preguntas cortas y respuestas de una palabra ("¿Y cuántas visitas?" "11 millones."). Formato nuevo para CheckONOFF: **reel de diálogo a dos voces (Dalia y Jorge)**, por ejemplo dueño y RRHH: "¿Y cuántas horas extra salieron?" "Catorce." "¿Y quién las autorizó?" "Nadie."
+- **Retención:** los reels con más tiempo de vista hasta ahora son "horas extra" en estilo claro con chat (11.2 s promedio) y "sucursal WhatsApp" (124 de alcance). Si un reel baja de 3 s de retención promedio, el siguiente cambia de gancho.
+- Distribución pendiente: subir los mismos reels a **YouTube Shorts** (canal de CheckONOFF), cuando el dueño cree el canal y autorice la conexión.
