@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-01T18:33:08+00:00",
+  "actualizado": "2026-11-02T13:40:25+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1311,6 +1311,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122111717511512173"
+      }
+    },
+    "2026-11-01-reel-prima-dominical": {
+      "tipo": "reel",
+      "fecha": "2026-11-01T18:00:00-06:00",
+      "tema": "Domingo: medio equipo trabaja hoy. ¿Le pagas la prima dominical? 📅",
+      "instagram": {
+        "id": "18109099574631539",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DfN-FZbmNtN/",
+        "reach": 4,
+        "saved": 0,
+        "shares": 0,
+        "views": 4,
+        "ig_reels_avg_watch_time": 624,
+        "ig_reels_video_view_total_time": 2497
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1470050925237431/"
       }
     }
   }
