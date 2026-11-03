@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-03T13:40:21+00:00",
+  "actualizado": "2026-11-03T20:17:21+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1357,6 +1357,28 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122112055047512173"
+      }
+    },
+    "2026-11-03-carrusel-cierre-quincena": {
+      "tipo": "carrusel",
+      "fecha": "2026-11-03T12:00:00-06:00",
+      "tema": "¿Cuánto tardas en cerrar la quincena? ⏱️",
+      "instagram": {
+        "id": "18642712804043948",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfSesr7l3QG/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122112459309512173"
       }
     }
   }
