@@ -1,0 +1,29 @@
+name: Radar de reels del nicho
+
+on:
+  schedule:
+    - cron: "17 22 * * 0"   # domingos 4:17 p. m. CDMX, antes del plan semanal
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Revisar cuentas
+        env:
+          META_TOKEN_CHECKONOFF: ${{ secrets.META_TOKEN_CHECKONOFF }}
+          GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v26.0' }}
+        run: python scripts/radar.py
+      - name: Guardar
+        run: |
+          git config user.name "checkonoff-bot"
+          git config user.email "checkonoff-bot@users.noreply.github.com"
+          git add estado/radar.json estado/radar.md
+          git diff --cached --quiet || (git commit -m "Radar de reels [skip ci]" && git pull --rebase origin main && git push)

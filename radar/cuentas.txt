@@ -1,0 +1,17 @@
+# Cuentas públicas (empresas o creadores) que el radar revisa cada semana. Una por línea, sin @.
+# Competencia y plataformas de RRHH
+humand.co
+humandapp
+runahr
+factorialhr
+factorial.mx
+workymx
+buk.mx
+sesamehr
+bizneohr
+# Nómina, contabilidad y software para pymes en México
+contpaqi
+aspelmx
+nominax
+# Ideas de formato (negocio / pymes)
+emprendedormx
