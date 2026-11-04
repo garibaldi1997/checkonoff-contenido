@@ -1,0 +1,35 @@
+name: Generar con IA (fal.ai)
+
+# Convierte ia/*.json en imágenes y videos (Veo, Kling, Flux…) y los guarda en el repo.
+on:
+  push:
+    branches: [main]
+    paths: ["ia/*.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fal
+  cancel-in-progress: false
+
+jobs:
+  fal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: python scripts/fal_ia.py
+        env:
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "checkonoff-bot"
+          git config user.email "checkonoff-bot@users.noreply.github.com"
+          git add marca contenido ia || true
+          git diff --cached --quiet || (git commit -m "Generado con IA [skip ci]" && git pull --rebase origin main && git push origin main)

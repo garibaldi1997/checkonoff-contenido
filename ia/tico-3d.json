@@ -1,0 +1,12 @@
+{
+ "tareas": [
+  {"modelo": "fal-ai/flux-pro/kontext",
+   "entrada": {"image_url": "repo:marca/tico/tico-linea.png", "aspect_ratio": "1:1",
+    "prompt": "Turn this line-art character into a cute 3D animated movie character in Pixar style: a round white wall-clock mascot with a glossy white body, black clock tick marks, big expressive eyes, rosy cheeks, thin black arms with white round gloves, thin black legs with small black shoes, and a small bright green checkmark sprouting from the top of its head like a leaf. Same pose (waving), friendly smile, soft studio lighting, plain light gray background, full body, centered."},
+   "salida": "marca/tico/tico-3d-a.png"},
+  {"modelo": "fal-ai/imagen4/preview",
+   "entrada": {"aspect_ratio": "1:1",
+    "prompt": "Cute 3D Pixar-style mascot character: a round white analog wall clock with a face, big shiny black eyes, rosy cheeks, happy smile, four black tick marks on the clock face, thin black cartoon arms with white round gloves waving hello, thin black legs with small black sneakers, a small bright green checkmark sprouting from the top of its head like a sprout. Full body, centered, plain light warm-gray background, soft studio lighting, high detail, no text."},
+   "salida": "marca/tico/tico-3d-b.png"}
+ ]
+}
