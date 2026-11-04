@@ -26,6 +26,7 @@ const ESTILOS = {
   noche: { tema: {}, fondo: 'vivo' },
   papel: { tema: { bg: '#F3EDE1', bg2: '#FBF8F1', a: '#E8505B', a2: '#E8505B', t: '#1d2433', s: '#5a5f6b', font: "'Mano',sans-serif" }, fondo: 'papel' },
   claro: { tema: { bg: '#F5F7FA', bg2: '#ffffff', a: '#34B614', a2: '#2a9b10', t: '#111C3B', s: '#5b667a', font: "'Inter',sans-serif" }, fondo: 'claro' },
+  linea: { tema: { bg: '#F3F2EE', bg2: '#ffffff', a: '#2FB36A', a2: '#2FB36A', t: '#16181D', s: '#6b6f78', font: "'NU','Inter',sans-serif" }, fondo: 'linea' },
   vibrante: { tema: { bg: '#111C3B', bg2: '#111C3B', a: '#FFD84D', a2: '#FFD84D', t: '#ffffff', s: '#eef1f7', font: "'NU','Inter',sans-serif" }, fondo: 'solido' },
 };
 const EST = ESTILOS[SPEC.estilo || 'noche'];
@@ -37,6 +38,7 @@ function fondoEstilo(v, e) {
   if (EST.fondo === 'papel') return `<div class="fx"><div class="fx-ab" style="inset:0;background:${T.bg}"></div>
     <div class="fx-ab" style="left:70px;right:70px;top:120px;bottom:120px;background:${T.bg2};border-radius:18px;box-shadow:0 20px 60px rgba(60,40,10,.15);background-image:repeating-linear-gradient(transparent 0 86px,rgba(80,110,170,.22) 86px 88px);transform:rotate(${Math.sin(v * .3) * .6 - .8}deg)"></div>
     <div class="fx-ab" style="left:170px;top:120px;bottom:120px;width:3px;background:rgba(232,80,91,.45)"></div></div>`;
+  if (EST.fondo === 'linea') return `<div class="fx"><div class="fx-ab" style="inset:0;background:${T.bg}"></div><div class="fx-ab" style="left:70px;right:70px;top:150px;display:flex;justify-content:space-between;font-family:monospace;font-size:26px;letter-spacing:.12em;color:${T.s}"><span>${SPEC.etiqueta || 'CHECKONOFF'}</span><span>${String(i + 1).padStart(2, '0')} / ${String(SPEC.escenas.length).padStart(2, '0')}</span></div><div class="fx-ab" style="left:70px;right:70px;top:200px;height:3px;background:rgba(22,24,29,.12)"><div style="height:3px;width:${(i + 1) / SPEC.escenas.length * 100}%;background:${T.a}"></div></div></div>`;
   if (EST.fondo === 'claro') return `<div class="fx"><div class="fx-ab" style="inset:0;background:${T.bg}"></div>
     <div class="fx-ab" style="left:${-200 + Math.sin(v * .4) * 80}px;top:${150 + Math.cos(v * .3) * 60}px;width:760px;height:760px;border-radius:50%;background:radial-gradient(circle,#D9F5CC,transparent 70%)"></div>
     <div class="fx-ab" style="right:${-260 + Math.cos(v * .35) * 80}px;bottom:${160 + Math.sin(v * .3) * 60}px;width:820px;height:820px;border-radius:50%;background:radial-gradient(circle,#DCE8F8,transparent 70%)"></div></div>`;
@@ -95,15 +97,11 @@ function dialogo(e, v) {
 }
 // TICO, la mascota (lección "personaje", 04/11/2026): el reloj checador protagoniza el reel y habla con la voz.
 function tico(e, v, a) {
-  const tam = e.tam || 600, x = e.x ?? (540 - tam / 2), y = e.y || 760;
+  const tam = e.tam || 760, x = 540 - tam / 2, y = e.y || 760;
   const k = Math.max(0, Math.min(1, (v - a) / .35)), salto = e.entra ? (1 - FX.back(k)) * 160 : 0;
-  const cuerpo = `<div class="fx-ab" style="left:${x}px;top:${y + salto}px;transform:scale(${e.voltea ? -1 : 1},1)">${TICO.svg({ cara: e.cara, pose: e.pose, t: v, habla: e.mudo ? 0 : TICO.habla(v, W), tam })}</div>`;
-  const tit = e.titulo ? `<div class="fx-ab" style="left:60px;right:60px;top:${e.ty || 300}px;text-align:center;font-family:'NU','Inter',sans-serif;font-weight:900;font-size:${e.size || 110}px;line-height:1;letter-spacing:-.02em;color:${T.t};${pop(v, a + .1, .3)}">${e.titulo}</div>` : '';
-  const tarjetas = (e.tarjetas || []).map((c, j) => {
-    const t0 = a + .3 + j * (e.paso || .5), izq = j % 2 === 0;
-    return `<div class="fx-ab" style="${izq ? 'left' : 'right'}:50px;top:${(e.cy || 520) + j * 130}px;background:#fff;color:#111C3B;border-radius:28px;padding:22px 32px;font-size:46px;font-weight:800;box-shadow:0 16px 40px rgba(17,28,59,.18);transform:rotate(${izq ? -3 : 3}deg);${pop(v, t0, .3)}">${c}</div>`;
-  }).join('');
-  return tit + tarjetas + cuerpo;
+  const tit = e.titulo ? `<div class="fx-ab" style="left:70px;right:70px;top:${e.ty || 300}px;font-family:'NU','Inter',sans-serif;font-weight:900;font-size:${e.size || 112}px;line-height:1.02;letter-spacing:-.025em;color:${T.t};${up(v, a + .05, .3, 30)}">${e.titulo}</div>` : '';
+  const nota = e.nota ? `<div class="fx-ab" style="left:70px;right:70px;top:${(e.ty || 300) + (e.size || 112) * (e.lineasT || 2) + 30}px;font-size:46px;font-weight:700;color:${T.s};${up(v, a + .4, .3, 20)}">${e.nota}</div>` : '';
+  return tit + nota + `<div class="fx-ab" style="left:${x}px;top:${y + salto}px">${TICO.svg({ cara: e.cara, pose: e.pose, t: v, habla: e.mudo ? 0 : TICO.habla(v, W), tam })}</div>`;
 }
 function escena(e, v) {
   const a = e.a, b = e.b, i = e.i || 0;
@@ -147,7 +145,7 @@ function render(t) {
   if (orb) h += FX.zoomThrough(v, orb.a, { dur: .8 });
   if (EST.fondo === 'solido') { const c = actual.fx === 'cierre' ? '#111C3B' : PALETA[actual.i % PALETA.length]; FX.tema({ t: tinta(c), bg: c, a2: c === '#FFD84D' ? '#E21B20' : '#FFD84D' }); document.body.style.color = T.t; }
   if (v < fin - .1 && !SPEC.sinSubs) h += FX.subtitulos(v, W, { claves: SPEC.claves || [], y: SPEC.subY });
-  if (EST.fondo !== 'claro') h += FX.grano(v);
+  if (!['claro', 'linea'].includes(EST.fondo)) h += FX.grano(v);
   document.getElementById('root').innerHTML = h;
 }
 </script></body></html>

@@ -1,19 +1,19 @@
 {
  "voz": "voz/s46-tico-piloto",
  "salida": "contenido/checkonoff/piloto-tico",
- "estilo": "claro",
- "subY": 1560,
- "claves": ["pedro", "foto", "ubicación", "guía"],
+ "estilo": "linea",
+ "etiqueta": "TICO · EPISODIO 01",
+ "sinSubs": true,
  "escenas": [
-  {"fx": "tico", "w": "hola", "cara": "feliz", "pose": "saluda", "entra": true, "titulo": "Soy <span style='color:#34B614'>Tico</span>", "kicker": "EL CHECADOR DE CHECKONOFF", "ky": 230},
-  {"fx": "tico", "w": "secreto", "cara": "guino", "pose": "pulgar", "titulo": "Un secreto 🤫"},
-  {"fx": "tico", "w": "lunes", "cara": "serio", "pose": "brazos", "titulo": "Lunes", "tarjetas": ["8:00 · Juan ✓"], "cy": 560},
-  {"fx": "tico", "w": "ocho", "n": 1, "cara": "sorpresa", "pose": "panico", "titulo": "¿Otra vez?", "tarjetas": ["8:00 · Juan ✓", "8:01 · Juan ✓"], "cy": 520},
-  {"fx": "tico", "w": "porque", "cara": "enojado", "pose": "jarra", "titulo": "Checó por <span style='color:#E21B20'>Pedro</span>"},
-  {"fx": "tico", "w": "pedro", "n": 1, "cara": "pensando", "pose": "hombros", "titulo": "Pedro: 🛌 en su casa"},
-  {"fx": "numero", "w": "pagas", "antes": "y tú le pagas", "valor": "100%", "despues": "del día", "y": 700},
-  {"fx": "tico", "w": "conmigo", "cara": "habla", "pose": "senala", "x": 60, "tam": 520, "titulo": "Conmigo, no", "tarjetas": ["📸 foto", "📍 ubicación"], "cy": 600},
-  {"fx": "tico", "w": "siento", "cara": "risa", "pose": "normal", "titulo": "Lo siento, Pedro 😅"},
-  {"fx": "cierre", "w": "escribe", "ctaVerbo": "Escribe", "cta": "GUÍA", "linea": "al WhatsApp +52 440 180 2213"}
+  {"fx": "tico", "w": "hola", "cara": "feliz", "pose": "saluda", "entra": true, "titulo": "Hola, soy <span style='color:#2FB36A'>Tico</span>", "nota": "el checador de CheckONOFF", "lineasT": 1},
+  {"fx": "tico", "w": "secreto", "cara": "guino", "pose": "normal", "titulo": "Les cuento<br>un secreto"},
+  {"fx": "tico", "w": "lunes", "cara": "serio", "pose": "normal", "titulo": "Lunes, 8:00.<br>Juan checa <span style='color:#2FB36A'>✓</span>"},
+  {"fx": "tico", "w": "ocho", "n": 1, "cara": "sorpresa", "pose": "panico", "titulo": "8:01.<br>Juan checa… <span style='color:#2FB36A'>otra vez</span>"},
+  {"fx": "tico", "w": "porque", "cara": "enojado", "pose": "jarra", "titulo": "Checó por<br><span style='color:#E5484D'>Pedro</span>"},
+  {"fx": "tico", "w": "pedro", "n": 1, "cara": "pensando", "pose": "hombros", "titulo": "Pedro sigue<br>en su casa 🛌"},
+  {"fx": "tico", "w": "pagas", "cara": "serio", "pose": "normal", "titulo": "Y tú le pagas<br>el día <span style='color:#E5484D'>completo</span>"},
+  {"fx": "tico", "w": "conmigo", "cara": "habla", "pose": "senala", "titulo": "Cada checada:<br><span style='color:#2FB36A'>foto + ubicación</span>"},
+  {"fx": "tico", "w": "siento", "cara": "risa", "pose": "normal", "titulo": "Lo siento,<br>Pedro 😅"},
+  {"fx": "tico", "w": "escribe", "cara": "feliz", "pose": "saluda", "titulo": "Escribe <span style='background:#2FB36A;color:#fff;padding:0 .18em;border-radius:.14em'>GUÍA</span><br>al WhatsApp", "nota": "+52 440 180 2213 · checkonoff.mx"}
  ]
 }
