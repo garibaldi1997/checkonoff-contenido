@@ -1,5 +1,5 @@
 # Aprendizajes automáticos
-_Actualizado: 04/11/2026 07:41 CDMX · 61 posts con más de 24 h (historias excluidas)._
+_Actualizado: 04/11/2026 14:33 CDMX · 62 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-11-04): Instagram 1 (+1 desde 2026-10-15), Facebook 0 (+0)
@@ -10,22 +10,22 @@ _Actualizado: 04/11/2026 07:41 CDMX · 61 posts con más de 24 h (historias excl
 - **¿Tu turno es "vespertino"? 🤔 Para la Ley Federal del Trabajo, ese tipo de jornada NO exist** · carrusel · miércoles 15:00 · alcance 52, vistas 67, guardados 0, compartidos 1, comentarios 0
 
 ## Peores 3 (no repetir ese gancho/formato/hora tal cual)
-- **¿Tu nómina y tu registro de asistencia dicen lo mismo? Deberían. 🧾** · carrusel · sábado 12:00 · alcance 0, puntaje 0
 - **¿Cómo se verá un turno de 40 horas en 2030? Así. 🗓️** · carrusel · domingo 12:00 · alcance 0, puntaje 0
 - **¿Tu empresa está lista para las 46 horas de 2027? 🗓️** · carrusel · lunes 12:00 · alcance 0, puntaje 0
+- **¿Cuánto tardas en cerrar la quincena? ⏱️** · carrusel · martes 12:00 · alcance 0, puntaje 0
 
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
 | reel | 17 | 10 | 0.1 |
-| carrusel | 29 | 6 | 0.6 |
+| carrusel | 30 | 6 | 0.5 |
 | imagen | 15 | 1 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
 | tarde (16–19) | 16 | 10 | 0.1 |
-| mediodía (12–15) | 36 | 5 | 0.3 |
+| mediodía (12–15) | 37 | 5 | 0.3 |
 | mañana (6–11) | 6 | 1 | 0.0 |
 | noche (20–5) | 3 | 1 | 1.3 |
 
@@ -38,7 +38,7 @@ _Actualizado: 04/11/2026 07:41 CDMX · 61 posts con más de 24 h (historias excl
 | jueves | 13 | 2 | 0.0 |
 | lunes | 7 | 2 | 0.0 |
 | domingo | 5 | 1 | 0.0 |
-| martes | 6 | 1 | 0.0 |
+| martes | 7 | 1 | 0.0 |
 
 ## Reglas para el siguiente post
 1. Formato con más alcance hasta hoy: **reel**. Dale más espacio en el calendario.
