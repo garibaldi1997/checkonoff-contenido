@@ -1,5 +1,5 @@
 {
- "revisado": "2026-10-27T14:07:18+00:00",
+ "revisado": "2026-11-04T13:53:58+00:00",
  "campanas": {
   "registro-2027": {
    "estado": {
@@ -52,7 +52,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-10-27"
+     "date_stop": "2026-11-04"
     },
     {
      "ad_id": "120251634200610036",
@@ -111,7 +111,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-10-27"
+     "date_stop": "2026-11-04"
     },
     {
      "ad_id": "120251634204540036",
@@ -138,7 +138,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-10-27"
+     "date_stop": "2026-11-04"
     },
     {
      "ad_id": "120251634206870036",
@@ -173,7 +173,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-10-27"
+     "date_stop": "2026-11-04"
     }
    ]
   },
@@ -183,6 +183,15 @@
     "status": "PAUSED",
     "effective_status": "PAUSED",
     "start_time": "2026-10-26T09:48:19-0600"
+   },
+   "anuncios": []
+  },
+  "personas-40h": {
+   "estado": {
+    "id": "120251742661660036",
+    "status": "PAUSED",
+    "effective_status": "PAUSED",
+    "start_time": "2026-11-01T16:08:42-0600"
    },
    "anuncios": []
   }
