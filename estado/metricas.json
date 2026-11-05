@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-04T20:32:40+00:00",
+  "actualizado": "2026-11-05T13:40:22+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1403,6 +1403,50 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1868982264130054/"
+      }
+    },
+    "2026-11-04-carrusel-horas-extra-3-pasos": {
+      "tipo": "carrusel",
+      "fecha": "2026-11-04T17:00:00-06:00",
+      "tema": "Tu empleado hizo 11 horas extra esta semana. ¿Cuánto le debes? 🧮",
+      "instagram": {
+        "id": "18146048995596743",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfVlsKtDU87/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122112843285512173"
+      }
+    },
+    "2026-11-05-anuncio-registro-listo": {
+      "tipo": "imagen",
+      "fecha": "2026-11-05T07:30:00-06:00",
+      "tema": "Que la STPS te pida el registro de jornada no debería quitarte el sueño. ✅",
+      "instagram": {
+        "id": "18148091089572403",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/DfXJK5fDEXF/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/photo.php?fbid=122113026933512173&set=a.122097810891512173&type=3"
       }
     }
   }
