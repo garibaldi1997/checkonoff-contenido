@@ -1,5 +1,5 @@
 {
- "revisado": "2026-11-05T13:55:04+00:00",
+ "revisado": "2026-11-06T05:13:43+00:00",
  "campanas": {
   "registro-2027": {
    "estado": {
@@ -189,9 +189,10 @@
   "personas-40h": {
    "estado": {
     "id": "120251742661660036",
-    "status": "PAUSED",
-    "effective_status": "PAUSED",
-    "start_time": "2026-11-01T16:08:42-0600"
+    "status": "ACTIVE",
+    "effective_status": "ACTIVE",
+    "start_time": "2026-11-01T16:08:42-0600",
+    "stop_time": "2026-11-12T22:56:16-0600"
    },
    "anuncios": []
   }
