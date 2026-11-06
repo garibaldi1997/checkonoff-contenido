@@ -471,7 +471,7 @@
     }
    }
   },
-  "estado": "PAUSADA (falta autorización del dueño)",
+  "estado": "ACTIVA hasta 2026-11-13T04:56:16+00:00 (autorizada por el dueño)",
   "formulario_id": "2317304209123736",
   "instagram_id": "17841415891192650",
   "intereses": [],
@@ -503,6 +503,7 @@
   "imagen_obra_todos": "e93dfa78c53c2c11be6292e7ad189c30",
   "creativo_obra_todos": "2743173336098820",
   "anuncio_obra_todos": "120251742672290036",
-  "revisado": "2026-11-01T22:09:20+00:00"
+  "revisado": "2026-11-01T22:09:20+00:00",
+  "activada": "2026-11-06T04:56:32+00:00"
  }
 }
