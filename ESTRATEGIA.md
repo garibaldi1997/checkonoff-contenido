@@ -274,3 +274,11 @@ Diagnóstico al 01/11:
 - Cierre: "Escríbenos GUÍA al WhatsApp +52 440 180 2213" (el bot Ana) en lugar de solo "guárdalo".
 
 **Cómo se mide el domingo 8:** alcance por post contra las semanas 43–44, y sobre todo conversaciones nuevas en el WhatsApp del bot. Si no mejora, el problema es de distribución (pauta y base de seguidores), no de volumen.
+
+## Cambio de estrategia (06/11/2026, aprobado por el dueño: "Sí, adelante")
+Datos al 05/11: 6 carruseles seguidos con alcance 0 en Instagram; reels 20 de alcance promedio (mejor: 124). "Estado de la cuenta": requisitos para recomendación ✅ (sin castigo); solo monetización marcada por "presencia establecida" (cuenta nueva). No pedir revisión aún (1 cada 90 días).
+- **Instagram = solo reels**, 1 diario a las 18:00 (lun–vie). Nada de carruseles ni imágenes en IG.
+- **Carruseles e imágenes → Facebook y LinkedIn.**
+- Reels de historia concreta o humor (obra, restaurante, diálogo, frases), estilos rotando; nunca el mismo estilo dos días seguidos.
+- Crecimiento con anuncios pagados (campaña personas-40h activa 06–13/11).
+- Medir por contactos (GUÍA al WhatsApp + formularios), no solo por alcance.
