@@ -1,0 +1,68 @@
+{
+ "voz": "voz/s46-vie-extras",
+ "salida": "contenido/checkonoff/2026-11-13-reel-extras-triple",
+ "estilo": "vibrante",
+ "claves": [
+  "doble",
+  "triple",
+  "tiempo"
+ ],
+ "escenas": [
+  {
+   "fx": "palabra",
+   "w": "viernes",
+   "texto": "Viernes de<br>quincena 💵",
+   "y": 540,
+   "size": 150
+  },
+  {
+   "fx": "palabra",
+   "w": "tu",
+   "texto": "Horas extra<br>toda la semana",
+   "y": 520,
+   "size": 130
+  },
+  {
+   "fx": "numero",
+   "w": "las",
+   "antes": "Las primeras 9",
+   "valor": "×2",
+   "despues": "al doble",
+   "y": 620,
+   "size": 280
+  },
+  {
+   "fx": "numero",
+   "w": "la",
+   "n": 1,
+   "antes": "La décima",
+   "valor": "×3",
+   "despues": "al triple",
+   "y": 620,
+   "size": 280
+  },
+  {
+   "fx": "palabra",
+   "w": "y",
+   "texto": "Nadie se<br>dio cuenta",
+   "sub": "hasta el día de pago 😬",
+   "y": 520,
+   "size": 150
+  },
+  {
+   "fx": "palabra",
+   "w": "con",
+   "texto": "Tiempo real<br>✅ autorizas",
+   "sub": "antes de pagarlas",
+   "y": 500,
+   "size": 130
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "voz": "voz/s46-lun-obra",
+ "salida": "contenido/checkonoff/2026-11-09-reel-obra-cuadrilla",
+ "estilo": "claro",
+ "claves": [
+  "faltan",
+  "foto",
+  "ubicación",
+  "guía"
+ ],
+ "escenas": [
+  {
+   "fx": "chat",
+   "w": "lunes",
+   "nombre": "Residente de obra",
+   "avatar": "👷",
+   "msgs": [
+    [
+     "el",
+     "Buenos días jefe 👷",
+     "7:02"
+    ],
+    [
+     "el",
+     "Ya llegó toda la cuadrilla ✅",
+     "7:02"
+    ],
+    [
+     "yo",
+     "Perfecto 👍",
+     "7:03"
+    ]
+   ],
+   "paso": 0.9,
+   "y": 330,
+   "h": 820,
+   "size": 52
+  },
+  {
+   "fx": "numero",
+   "w": "dos",
+   "antes": "Dos horas después pasas por la obra…",
+   "valor": "4",
+   "despues": "no están 😳",
+   "color": "#E21B20",
+   "y": 640,
+   "size": 300
+  },
+  {
+   "fx": "palabra",
+   "w": "esa",
+   "texto": "Y les pagas<br>a todos",
+   "y": 560,
+   "size": 150
+  },
+  {
+   "fx": "lista",
+   "w": "con",
+   "items": [
+    [
+     "Checan desde su celular",
+     "✓"
+    ],
+    [
+     "Con foto",
+     "✓"
+    ],
+    [
+     "Con ubicación de la obra",
+     "✓"
+    ]
+   ],
+   "y": 520
+  },
+  {
+   "fx": "numero",
+   "w": "si",
+   "antes": "¿Alguien no llegó?",
+   "valor": "Al instante",
+   "despues": "lo ves en el panel",
+   "color": "#2a9b10",
+   "y": 660,
+   "size": 150
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

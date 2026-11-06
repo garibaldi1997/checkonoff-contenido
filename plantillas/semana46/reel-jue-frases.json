@@ -1,0 +1,84 @@
+{
+ "voz": "voz/s46-jue-frases",
+ "salida": "contenido/checkonoff/2026-11-12-reel-frases-checa-por-otro",
+ "estilo": "claro",
+ "claves": [
+  "favor",
+  "gafete",
+  "camino",
+  "foto"
+ ],
+ "escenas": [
+  {
+   "fx": "numero",
+   "w": "tres",
+   "antes": "",
+   "valor": "3 frases",
+   "despues": "de quien checa por otro 🕵️",
+   "y": 620,
+   "size": 200
+  },
+  {
+   "fx": "numero",
+   "w": "uno",
+   "antes": "1",
+   "valor": "“Nomás le hice el favor”",
+   "y": 620,
+   "size": 96
+  },
+  {
+   "fx": "numero",
+   "w": "dos",
+   "antes": "2",
+   "valor": "“Se le olvidó el gafete”",
+   "y": 620,
+   "size": 96
+  },
+  {
+   "fx": "numero",
+   "w": "tres",
+   "n": 1,
+   "antes": "3",
+   "valor": "“Ya venía en camino”",
+   "y": 620,
+   "size": 96
+  },
+  {
+   "fx": "numero",
+   "w": "si",
+   "n": 1,
+   "antes": "Si las has escuchado…",
+   "valor": "Horas fantasma",
+   "despues": "que tú pagas 💸",
+   "color": "#E21B20",
+   "y": 640,
+   "size": 130
+  },
+  {
+   "fx": "lista",
+   "w": "con",
+   "items": [
+    [
+     "Foto en cada checada",
+     "✓"
+    ],
+    [
+     "Ubicación",
+     "✓"
+    ],
+    [
+     "Se acabó el favor",
+     "✓"
+    ]
+   ],
+   "y": 520
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

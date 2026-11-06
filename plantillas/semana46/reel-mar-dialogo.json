@@ -1,0 +1,66 @@
+{
+ "voz": "voz/s46-mar-dialogo",
+ "salida": "contenido/checkonoff/2026-11-10-reel-dialogo-7-59",
+ "estilo": "noche",
+ "sinSubs": true,
+ "escenas": [
+  {
+   "fx": "dialogo",
+   "w": "por",
+   "lineas": [
+    {
+     "quien": "J",
+     "t": 0,
+     "texto": "¿Por qué todos checaron a las siete cincuenta y nueve?"
+    },
+    {
+     "quien": "D",
+     "t": 3.73,
+     "texto": "Porque son muy puntuales."
+    },
+    {
+     "quien": "J",
+     "t": 6.51,
+     "texto": "¿Los veinte?"
+    },
+    {
+     "quien": "D",
+     "t": 8.73,
+     "texto": "Al mismo minuto."
+    },
+    {
+     "quien": "J",
+     "t": 11.14,
+     "texto": "¿Y cómo, si el camión llega a las ocho y cuarto?"
+    },
+    {
+     "quien": "D",
+     "t": 15.12,
+     "texto": "Ah, caray."
+    },
+    {
+     "quien": "J",
+     "t": 17.41,
+     "texto": "Uno checa por todos."
+    },
+    {
+     "quien": "D",
+     "t": 19.97,
+     "texto": "Con CheckONOFF cada checada lleva foto y ubicación."
+    },
+    {
+     "quien": "J",
+     "t": 24.21,
+     "texto": "Y el que no vino, no checa."
+    }
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "voz": "voz/s46-mie-restaurante",
+ "salida": "contenido/checkonoff/2026-11-11-reel-restaurante-libreta",
+ "estilo": "papel",
+ "claves": [
+  "libreta",
+  "sistema"
+ ],
+ "escenas": [
+  {
+   "fx": "nota",
+   "w": "tu",
+   "titulo": "Restaurante 🍽️",
+   "lineas": [
+    "Abre: 1:00 pm",
+    "Llega el mesero: 1:20 pm"
+   ],
+   "marca": [
+    1
+   ]
+  },
+  {
+   "fx": "nota",
+   "w": "en",
+   "titulo": "La libreta dice:",
+   "lineas": [
+    "Mesero ........ 1:00 ✔"
+   ],
+   "size": 84
+  },
+  {
+   "fx": "sello",
+   "w": "quién",
+   "texto": "LO ESCRIBIÓ ÉL"
+  },
+  {
+   "fx": "numero",
+   "w": "veinte", "n": 1,
+   "antes": "20 min × 6 días",
+   "valor": "2 h",
+   "despues": "a la semana que pagas sin trabajo",
+   "y": 620,
+   "size": 260
+  },
+  {
+   "fx": "nota",
+   "w": "con",
+   "titulo": "Con CheckONOFF",
+   "lineas": [
+    "La hora la pone el sistema,",
+    "no la pluma ✍️❌"
+   ],
+   "marca": [
+    0
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}
