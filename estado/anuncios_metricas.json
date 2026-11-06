@@ -1,5 +1,5 @@
 {
- "revisado": "2026-11-06T05:13:43+00:00",
+ "revisado": "2026-11-06T13:53:35+00:00",
  "campanas": {
   "registro-2027": {
    "estado": {
@@ -52,7 +52,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-11-05"
+     "date_stop": "2026-11-06"
     },
     {
      "ad_id": "120251634200610036",
@@ -111,7 +111,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-11-05"
+     "date_stop": "2026-11-06"
     },
     {
      "ad_id": "120251634204540036",
@@ -138,7 +138,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-11-05"
+     "date_stop": "2026-11-06"
     },
     {
      "ad_id": "120251634206870036",
@@ -173,7 +173,7 @@
       }
      ],
      "date_start": "2026-10-25",
-     "date_stop": "2026-11-05"
+     "date_stop": "2026-11-06"
     }
    ]
   },
@@ -194,7 +194,168 @@
     "start_time": "2026-11-01T16:08:42-0600",
     "stop_time": "2026-11-12T22:56:16-0600"
    },
-   "anuncios": []
+   "anuncios": [
+    {
+     "ad_id": "120251742669600036",
+     "ad_name": "Personas · Guía 40 horas · restaurante · todos",
+     "impressions": "10",
+     "reach": "7",
+     "frequency": "1.428571",
+     "inline_link_clicks": "0",
+     "ctr": "10",
+     "spend": "2.05",
+     "date_start": "2026-11-01",
+     "date_stop": "2026-11-06"
+    },
+    {
+     "ad_id": "120251742670090036",
+     "ad_name": "Personas · Guía 40 horas · planta · todos",
+     "impressions": "38",
+     "reach": "34",
+     "frequency": "1.117647",
+     "inline_link_clicks": "0",
+     "ctr": "7.894737",
+     "spend": "7.44",
+     "date_start": "2026-11-01",
+     "date_stop": "2026-11-06"
+    },
+    {
+     "ad_id": "120251742670870036",
+     "ad_name": "Personas · Guía 40 horas · sucursales · todos",
+     "impressions": "91",
+     "reach": "84",
+     "frequency": "1.083333",
+     "inline_link_clicks": "0",
+     "ctr": "1.098901",
+     "spend": "9.28",
+     "date_start": "2026-11-01",
+     "date_stop": "2026-11-06"
+    },
+    {
+     "ad_id": "120251742671290036",
+     "ad_name": "Personas · Guía 40 horas · familiar · todos",
+     "impressions": "112",
+     "reach": "103",
+     "frequency": "1.087379",
+     "inline_link_clicks": "0",
+     "ctr": "0.892857",
+     "spend": "16",
+     "actions": [
+      {
+       "action_type": "post_engagement",
+       "value": "1"
+      },
+      {
+       "action_type": "post_interaction_gross",
+       "value": "1"
+      },
+      {
+       "action_type": "page_engagement",
+       "value": "1"
+      },
+      {
+       "action_type": "post_interaction_net",
+       "value": "1"
+      },
+      {
+       "action_type": "onsite_conversion.post_save",
+       "value": "1"
+      },
+      {
+       "action_type": "onsite_conversion.post_net_save",
+       "value": "1"
+      }
+     ],
+     "date_start": "2026-11-01",
+     "date_stop": "2026-11-06"
+    },
+    {
+     "ad_id": "120251742671570036",
+     "ad_name": "Personas · Guía 40 horas · despachos · todos",
+     "impressions": "95",
+     "reach": "92",
+     "frequency": "1.032609",
+     "inline_link_clicks": "1",
+     "cost_per_inline_link_click": "10.94",
+     "ctr": "7.368421",
+     "spend": "10.94",
+     "actions": [
+      {
+       "action_type": "link_click",
+       "value": "1"
+      },
+      {
+       "action_type": "post_reaction",
+       "value": "1"
+      },
+      {
+       "action_type": "post_engagement",
+       "value": "2"
+      },
+      {
+       "action_type": "post_interaction_gross",
+       "value": "1"
+      },
+      {
+       "action_type": "page_engagement",
+       "value": "2"
+      },
+      {
+       "action_type": "post_interaction_net",
+       "value": "1"
+      },
+      {
+       "action_type": "onsite_conversion.post_net_like",
+       "value": "1"
+      }
+     ],
+     "date_start": "2026-11-01",
+     "date_stop": "2026-11-06"
+    },
+    {
+     "ad_id": "120251742672290036",
+     "ad_name": "Personas · Guía 40 horas · obra · todos",
+     "impressions": "138",
+     "reach": "126",
+     "frequency": "1.095238",
+     "inline_link_clicks": "1",
+     "cost_per_inline_link_click": "15.33",
+     "ctr": "5.072464",
+     "spend": "15.33",
+     "actions": [
+      {
+       "action_type": "link_click",
+       "value": "1"
+      },
+      {
+       "action_type": "post_reaction",
+       "value": "3"
+      },
+      {
+       "action_type": "post_engagement",
+       "value": "4"
+      },
+      {
+       "action_type": "post_interaction_gross",
+       "value": "3"
+      },
+      {
+       "action_type": "page_engagement",
+       "value": "4"
+      },
+      {
+       "action_type": "post_interaction_net",
+       "value": "3"
+      },
+      {
+       "action_type": "onsite_conversion.post_net_like",
+       "value": "3"
+      }
+     ],
+     "date_start": "2026-11-01",
+     "date_stop": "2026-11-06"
+    }
+   ]
   }
  }
 }
