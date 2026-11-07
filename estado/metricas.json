@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T20:04:38+00:00",
+  "actualizado": "2026-11-07T13:40:18+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1369,10 +1369,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DfSesr7l3QG/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 1
       },
       "facebook": {
         "reacciones": 0,
@@ -1391,12 +1391,12 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/DfTHrcHjhE2/",
-        "reach": 12,
+        "reach": 13,
         "saved": 0,
         "shares": 0,
-        "views": 10,
-        "ig_reels_avg_watch_time": 12636,
-        "ig_reels_video_view_total_time": 151639
+        "views": 11,
+        "ig_reels_avg_watch_time": 11763,
+        "ig_reels_video_view_total_time": 152930
       },
       "facebook": {
         "reacciones": 0,
@@ -1415,10 +1415,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DfVlsKtDU87/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 1
       },
       "facebook": {
         "reacciones": 0,
@@ -1437,10 +1437,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DfXJK5fDEXF/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 1
       },
       "facebook": {
         "reacciones": 0,
@@ -1459,10 +1459,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/DfYDl-4jI9f/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 1
       },
       "facebook": {
         "reacciones": 0,
@@ -1481,12 +1481,12 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/DfYRQ27DP-C/",
-        "reach": 7,
+        "reach": 9,
         "saved": 0,
         "shares": 0,
-        "views": 12,
-        "ig_reels_avg_watch_time": 30700,
-        "ig_reels_video_view_total_time": 276304
+        "views": 15,
+        "ig_reels_avg_watch_time": 23813,
+        "ig_reels_video_view_total_time": 285761
       },
       "facebook": {
         "reacciones": 0,
