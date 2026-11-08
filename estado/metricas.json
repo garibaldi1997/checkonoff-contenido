@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-07T18:17:32+00:00",
+  "actualizado": "2026-11-08T13:40:19+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -871,10 +871,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/De7TXmmAc8y/",
-        "reach": 1,
+        "reach": 2,
         "saved": 0,
         "shares": 0,
-        "views": 1
+        "views": 3
       },
       "facebook": {
         "reacciones": 0,
@@ -1515,6 +1515,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122113784331512173"
+      }
+    },
+    "2026-11-07-reel-sucursales-un-panel": {
+      "tipo": "reel",
+      "fecha": "2026-11-07T18:00:00-06:00",
+      "tema": "3 sucursales, 3 libretas, 0 control. 🏪",
+      "instagram": {
+        "id": "18087531185322560",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/Dfda23cHOIO/",
+        "reach": 8,
+        "saved": 0,
+        "shares": 0,
+        "views": 9,
+        "ig_reels_avg_watch_time": 5816,
+        "ig_reels_video_view_total_time": 46529
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1664724188632208/"
       }
     }
   }
