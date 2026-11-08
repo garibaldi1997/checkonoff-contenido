@@ -1,0 +1,23 @@
+{
+ "semana": 46,
+ "mensajes": [
+  {
+   "fecha": "2026-11-09",
+   "tipo": "texto",
+   "tema": "Dato de ley: registro electrónico de jornada (art. 132 fr. XXXIV)",
+   "texto": "📋 *Lo que dice el art. 132 fr. XXXIV de la LFT*\n\nCon la reforma, el patrón debe:\n\n• *Registrar por medios electrónicos* el inicio y fin de la jornada de cada trabajador\n• *Entregar ese registro a la autoridad* cuando lo pida\n• Si el mecanismo se *acordó con el trabajador*, el registro hace *prueba plena*\n\n📅 Las reglas de detalle de la STPS aplican desde el *1 de enero de 2027*.\n⚠️ Multa por no cumplir: de *250 a 5,000 UMA* (art. 994 fr. IV Bis).\n\n📌 Más detalle en la guía fijada arriba."
+  },
+  {
+   "fecha": "2026-11-11",
+   "tipo": "texto",
+   "tema": "Checklist: ¿tu registro actual sirve para 2027?",
+   "texto": "✅ *Checklist: ¿tu registro de asistencia sirve para 2027?*\n\nContesta sí o no:\n\n• ¿Registra entrada, salida, descansos y total de horas de cada día?\n• ¿Separa horas extra dobles y triples?\n• ¿Las correcciones dejan rastro de quién las hizo?\n• ¿Puedes sacar un reporte por persona y periodo en minutos?\n• ¿Coincide con lo que pagas en el CFDI de nómina?\n• ¿Tienes aviso de privacidad si usas huella, foto o ubicación?\n\nSi tienes 2 o más \"no\", conviene revisarlo antes de enero. 💡"
+  },
+  {
+   "fecha": "2026-11-13",
+   "tipo": "texto",
+   "tema": "Pregunta: cómo registran hoy",
+   "texto": "🗳️ *Pregunta rápida para el grupo*\n\n¿Cómo registra hoy la asistencia tu empresa?\n\n1️⃣ Libreta o lista en papel\n2️⃣ Excel\n3️⃣ Reloj checador\n4️⃣ App o sistema\n\nResponde con el número 👇 El lunes compartimos los resultados y qué ajustar en cada caso rumbo a 2027."
+  }
+ ]
+}

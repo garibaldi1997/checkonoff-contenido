@@ -184,6 +184,47 @@ P.cartel_descanso = `<style>${NUN}</style><div style="position:absolute;inset:0;
 ${rayas(14, 290, '#F06B7A', 0)}${rayas(976, 590, '#F06B7A', 180)}${rayas(14, 790, '#F5C518', 0)}${rayas(976, 960, '#F5C518', 180)}
 ${firma(true)}`;
 
+// ===== Semana 46 =====
+// Mito sin foto (martes 10/11)
+P.mito_extras = `<div style="position:absolute;inset:0;background:${K.bg}"></div>
+<div style="position:absolute;left:60px;top:60px;background:${K.r};color:#fff;font-weight:800;font-size:26px;letter-spacing:.1em;padding:10px 20px;border-radius:12px">MITO DE RRHH</div>
+<div class="up" style="position:absolute;left:60px;right:60px;top:170px;font-size:72px;text-decoration:line-through;text-decoration-color:${K.r}cc;text-decoration-thickness:5px;color:#C9D3E2">“Si las pago, que trabajen las horas extra que quieran”</div>
+<div style="position:absolute;left:60px;top:560px;background:${K.t};color:${K.bg};font-weight:800;font-size:26px;letter-spacing:.1em;padding:10px 20px;border-radius:12px">LA LEY DICE (ARTS. 66 Y 68 LFT)</div>
+<div style="position:absolute;left:60px;right:60px;top:640px;display:flex;flex-direction:column;gap:24px">${[['⏱️', 'Máximo 4 h extra al día', 'y no más de 4 días a la semana'], ['📊', 'Hasta 9 h a la semana al doble', 'en 2026 y 2027'], ['💸', 'Lo que pase se paga triple', 'y aun así tiene tope'], ['🚫', 'Nunca más de 12 h en un día', 'sumando jornada y extra']].map(([e, t, d]) => `<div style="display:flex;gap:22px;align-items:center"><div style="width:84px;height:84px;border-radius:24px;background:${K.bg2};display:grid;place-items:center;font-size:44px;flex:none">${e}</div><div><div style="font-size:40px;font-weight:800">${t}</div><div style="font-size:28px;color:${K.s}">${d}</div></div></div>`).join('')}</div>
+${firma()}`;
+// Comparativa (miércoles 11/11)
+const malo46 = [['✍️', 'Se escribe después', 'a la hora que dice quien llega'], ['🙈', 'Nadie la revisa', 'hasta que hay un problema'], ['⚖️', 'No prueba nada', 'en una demanda o inspección'], ['🗂️', 'Se pierde o se moja', 'y con ella la evidencia']];
+const bueno46 = [['🕒', 'Hora real', 'la pone el sistema, no la pluma'], ['🙋', 'Quién registró', 'cada checada identificada'], ['🔎', 'Cambios con rastro', 'cualquier corrección queda registrada'], ['📄', 'Reporte en minutos', 'para la quincena o la autoridad']];
+P.info_registro = `<div class="up" style="position:absolute;left:60px;right:60px;top:60px;font-size:58px;text-align:center">Registro de jornada:<br><span class="or" style="font-size:80px">libreta vs. electrónico</span></div>
+<div style="position:absolute;left:60px;right:60px;top:330px;text-align:center;font-size:30px;color:${K.s};line-height:1.35">Desde 2027 la ley pide el electrónico<br>(art. 132 fr. XXXIV LFT).</div>
+<div style="position:absolute;left:180px;right:180px;top:440px;height:3px;background:${K.o}"></div>
+<div class="up" style="position:absolute;left:60px;top:480px;font-size:34px"><span class="rd">✕ Libreta</span></div>
+<div class="up" style="position:absolute;left:570px;top:480px;font-size:34px"><span class="ac">✓ Electrónico</span></div>
+${col(malo46, K.r, 60)}${col(bueno46, K.t, 570)}
+<div style="position:absolute;left:540px;top:490px;width:2px;height:640px;background:rgba(255,255,255,.15)"></div>
+${firma()}`;
+// Humor (jueves 12/11, "Jueves de realidad con humor")
+P.humor_libreta = `<div style="position:absolute;inset:0;background:#fff"></div>
+<div style="position:absolute;left:60px;right:60px;top:60px;color:#0F1E36;font-size:44px;font-weight:600;line-height:1.38">
+— Jefe: Llegaste 9:20.<br>— Empleado: No, en la libreta dice 9:00.<br>— Jefe: ¿Y quién la llenó?<br>— Empleado: …yo.</div>
+<div style="position:absolute;left:60px;right:60px;top:440px;bottom:150px;border-radius:24px;overflow:hidden;background:#111">
+ <img src="${F('asombro')}" style="position:absolute;left:-200px;top:-40px;width:1360px">
+ <div style="position:absolute;left:40px;bottom:40px;font-size:62px;font-weight:800;color:#fff;-webkit-text-stroke:8px #0F1E36;paint-order:stroke fill">La libreta: 📒😶</div></div>
+${firma(true)}`;
+// Cartel con marcatexto (viernes 13/11)
+P.cartel_medir = `<style>${NUN}</style><div style="position:absolute;inset:0;background:#FBF7EE"></div>
+<div style="position:absolute;left:50px;right:50px;top:170px;text-align:center;font-family:NU;font-weight:900;color:#111;letter-spacing:-.03em">
+ <div style="font-size:70px;line-height:1.05;white-space:nowrap">Medir la jornada</div>
+ <div style="font-size:88px;line-height:1.15;margin-top:6px;white-space:nowrap">${mk('no es desconfiar.')}</div>
+ <div style="font-size:56px;line-height:1.3;margin-top:26px;white-space:nowrap">Es que ${mk('cada hora extra', '#F7A1AC')}</div>
+ <div style="font-size:56px;line-height:1.3;white-space:nowrap">${mk('se pague', '#F7A1AC')} y ninguna sobre.</div>
+ <div style="font-family:IT;font-weight:500;font-size:42px;letter-spacing:-.01em;line-height:1.25;color:#2b2b2b;margin-top:56px">Lo que no se mide, se discute.<br>Lo que se mide, se resuelve.${subr(560)}</div>
+ <div style="margin-top:84px;display:inline-block;background:#FFE36E;border-radius:70px;padding:8px 50px;white-space:nowrap;font-size:68px">Medir también es cuidar.</div>
+ <div style="font-size:48px;line-height:1.15;margin-top:24px">A tu gente<br>y a tu empresa.${subr(380)}</div>
+</div>
+${rayas(14, 290, '#F06B7A', 0)}${rayas(976, 590, '#F06B7A', 180)}${rayas(14, 790, '#F5C518', 0)}${rayas(976, 960, '#F5C518', 180)}
+${firma(true)}`;
+
 (async () => {
   const OUT = path.join(D, 'out2'); fs.mkdirSync(OUT, { recursive: true });
   const b = await chromium.launch(); const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
