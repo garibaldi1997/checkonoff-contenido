@@ -225,6 +225,24 @@ P.cartel_medir = `<style>${NUN}</style><div style="position:absolute;inset:0;bac
 ${rayas(14, 290, '#F06B7A', 0)}${rayas(976, 590, '#F06B7A', 180)}${rayas(14, 790, '#F5C518', 0)}${rayas(976, 960, '#F5C518', 180)}
 ${firma(true)}`;
 
+// Nota a mano (viernes 13/11): finanzas, control de gastos
+P.nota_gastos = `<style>${MANO}</style><div style="position:absolute;inset:0;background:#EFE9DD"></div>
+<div style="position:absolute;left:40px;top:50px;width:1040px;height:1300px;background:#FBF8F1;box-shadow:0 20px 60px rgba(60,40,10,.18);transform:rotate(-2.2deg);transform-origin:0 0">
+ <div style="position:absolute;left:60px;right:60px;top:70px;height:120px;border:2px solid #9a9488;display:flex">
+  <div style="width:220px;border-right:2px solid #9a9488;display:grid;place-items:center;font-size:30px;letter-spacing:.14em;color:#6d675c">ASUNTO:</div>
+  <div style="flex:1;display:flex;align-items:center;padding-left:34px;font-family:Mano;font-size:56px;color:#1d2433">${hl('ANTES DE GASTAR')}</div></div>
+ <div style="position:absolute;left:60px;right:60px;top:190px;bottom:60px;border:2px solid #9a9488;border-top:0"></div>
+ <div style="position:absolute;left:100px;right:90px;top:240px;font-family:Mano;color:#1d2433;font-size:60px;line-height:1.28">
+  Un gasto no es caro o barato:<br>${hl('es útil o no lo es.', '#F7A1AC')}
+  <div style="margin-top:44px;font-size:48px;line-height:1.25">
+   <div>${flecha}${hl('¿Qué resultado compra?')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Si no sabes qué mejora, todavía no lo apruebes.</div></div>
+   <div>${flecha}${hl('¿Cómo lo vas a medir?')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Un número antes y uno después.</div></div>
+   <div>${flecha}${hl('¿Quién responde por él?')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Gasto sin dueño, gasto sin control.</div></div>
+   <div>${flecha}${hl('¿Cuándo lo revisamos?')}<div style="font-size:36px;margin:4px 0 0 58px;color:#3a4152">Fecha fija para seguir o cortar.</div></div>
+  </div></div>
+ <div style="position:absolute;right:110px;bottom:110px;font-family:Mano;font-size:46px;color:#1d2433;padding:14px 34px;border:3px solid #F06B7A;border-radius:50%;transform:rotate(-6deg)">Dr. Garibaldi Corona</div>
+</div>`;
+
 (async () => {
   const OUT = path.join(D, 'out2'); fs.mkdirSync(OUT, { recursive: true });
   const b = await chromium.launch(); const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
