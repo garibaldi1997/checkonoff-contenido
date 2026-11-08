@@ -11,12 +11,19 @@
  "escenas": [
   {
    "fx": "numero",
-   "w": "tres",
-   "antes": "",
+   "w": "si",
    "valor": "3 frases",
    "despues": "de quien checa por otro 🕵️",
    "y": 620,
    "size": 200
+  },
+  {
+   "fx": "numero",
+   "w": "son",
+   "valor": "La última es",
+   "despues": "la más común 👀",
+   "y": 640,
+   "size": 120
   },
   {
    "fx": "numero",
@@ -36,23 +43,31 @@
   },
   {
    "fx": "numero",
+   "w": "pero",
+   "valor": "Pero la tercera…",
+   "despues": "es la que más dinero te cuesta 💸",
+   "color": "#E21B20",
+   "y": 640,
+   "size": 120
+  },
+  {
+   "fx": "numero",
    "w": "tres",
    "n": 1,
    "antes": "3",
    "valor": "“Ya venía en camino”",
+   "despues": "minutos que pagas sin trabajo",
    "y": 620,
    "size": 96
   },
   {
    "fx": "numero",
-   "w": "si",
+   "w": "y",
    "n": 1,
-   "antes": "Si las has escuchado…",
-   "valor": "Horas fantasma",
-   "despues": "que tú pagas 💸",
-   "color": "#E21B20",
+   "valor": "¿Cómo se acaba el favor?",
+   "color": "#2a9b10",
    "y": 640,
-   "size": 130
+   "size": 100
   },
   {
    "fx": "lista",
@@ -67,7 +82,7 @@
      "✓"
     ],
     [
-     "Se acabó el favor",
+     "Nadie checa por otro",
      "✓"
     ]
    ],

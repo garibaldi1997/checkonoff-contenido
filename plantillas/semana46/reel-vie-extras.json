@@ -10,17 +10,19 @@
  "escenas": [
   {
    "fx": "palabra",
-   "w": "viernes",
-   "texto": "Viernes de<br>quincena 💵",
-   "y": 540,
+   "w": "esta",
+   "texto": "Te cuesta<br>el triple 😱",
+   "sub": "y casi nadie lo sabe",
+   "y": 520,
    "size": 150
   },
   {
    "fx": "palabra",
-   "w": "tu",
-   "texto": "Horas extra<br>toda la semana",
+   "w": "en",
+   "texto": "30<br>segundos",
+   "sub": "cuál es y cómo evitarla",
    "y": 520,
-   "size": 130
+   "size": 170
   },
   {
    "fx": "numero",
@@ -32,10 +34,17 @@
    "size": 280
   },
   {
+   "fx": "palabra",
+   "w": "pero",
+   "texto": "La décima…",
+   "sub": "es otra historia 👀",
+   "y": 560,
+   "size": 160
+  },
+  {
    "fx": "numero",
-   "w": "la",
-   "n": 1,
-   "antes": "La décima",
+   "w": "a",
+   "antes": "A partir de la décima",
    "valor": "×3",
    "despues": "al triple",
    "y": 620,
@@ -44,10 +53,19 @@
   {
    "fx": "palabra",
    "w": "y",
-   "texto": "Nadie se<br>dio cuenta",
-   "sub": "hasta el día de pago 😬",
+   "n": 2,
+   "texto": "Enterarte<br>tarde",
+   "sub": "ese es el problema",
    "y": 520,
    "size": 150
+  },
+  {
+   "fx": "palabra",
+   "w": "casi",
+   "n": 1,
+   "texto": "Día de<br>pago 😬",
+   "y": 540,
+   "size": 160
   },
   {
    "fx": "palabra",

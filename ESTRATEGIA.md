@@ -282,3 +282,13 @@ Datos al 05/11: 6 carruseles seguidos con alcance 0 en Instagram; reels 20 de al
 - Reels de historia concreta o humor (obra, restaurante, diálogo, frases), estilos rotando; nunca el mismo estilo dos días seguidos.
 - Crecimiento con anuncios pagados (campaña personas-40h activa 06–13/11).
 - Medir por contactos (GUÍA al WhatsApp + formularios), no solo por alcance.
+
+## Guion de 8 piezas (obligatorio en todo reel desde el 08/11/2026)
+Referencia: video "¿Cómo se arma un video corto que la gente vea hasta el final?". Orden fijo:
+1. **Gancho** (0–2 s): algo que rompe el scroll (dato, acusación, número rojo).
+2. **Introducción / promesa** (2–5 s): qué se lleva si se queda ("en 30 segundos te digo…").
+3. **Cuerpo 1**: algo útil que no sabía.
+4. **Bucle abierto**: "pero eso no es lo peor…", "y aquí viene lo interesante…" → deja una pregunta en el aire.
+5. **Cuerpo 2**. 6. **Bucle abierto** (pregunta). 7. **Cuerpo 3** (la solución con CheckONOFF).
+8. **Llamado a la acción**: "Escríbenos GUÍA al WhatsApp".
+Cada pieza lleva su propia escena en pantalla; los bucles van en texto grande y solos.

@@ -10,6 +10,24 @@
  ],
  "escenas": [
   {
+   "fx": "numero",
+   "w": "estás",
+   "antes": "Estás pagando a",
+   "valor": "4",
+   "despues": "trabajadores que ni llegaron 😳",
+   "color": "#E21B20",
+   "y": 640,
+   "size": 300
+  },
+  {
+   "fx": "numero",
+   "w": "quédate",
+   "antes": "Cómo se detecta en",
+   "valor": "1 minuto ⏱️",
+   "y": 640,
+   "size": 150
+  },
+  {
    "fx": "chat",
    "w": "lunes",
    "nombre": "Residente de obra",
@@ -38,20 +56,30 @@
   },
   {
    "fx": "numero",
-   "w": "dos",
-   "antes": "Dos horas después pasas por la obra…",
-   "valor": "4",
-   "despues": "no están 😳",
-   "color": "#E21B20",
+   "w": "pero",
+   "valor": "Pero eso no es lo peor…",
    "y": 640,
-   "size": 300
+   "size": 100
   },
   {
-   "fx": "palabra",
-   "w": "esa",
-   "texto": "Y les pagas<br>a todos",
-   "y": 560,
-   "size": 150
+   "fx": "numero",
+   "w": "dos",
+   "antes": "Dos horas después…",
+   "valor": "Faltan 4",
+   "despues": "y les pagas a todos 💸",
+   "color": "#E21B20",
+   "y": 640,
+   "size": 170
+  },
+  {
+   "fx": "numero",
+   "w": "cómo",
+   "n": 2,
+   "valor": "¿Cómo lo detectas?",
+   "despues": "sin ir todos los días",
+   "color": "#2a9b10",
+   "y": 640,
+   "size": 110
   },
   {
    "fx": "lista",
@@ -68,19 +96,13 @@
     [
      "Con ubicación de la obra",
      "✓"
+    ],
+    [
+     "Lo ves al instante",
+     "✓"
     ]
    ],
-   "y": 520
-  },
-  {
-   "fx": "numero",
-   "w": "si",
-   "antes": "¿Alguien no llegó?",
-   "valor": "Al instante",
-   "despues": "lo ves en el panel",
-   "color": "#2a9b10",
-   "y": 660,
-   "size": 150
+   "y": 480
   },
   {
    "fx": "cierre",

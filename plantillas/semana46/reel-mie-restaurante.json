@@ -8,8 +8,30 @@
  ],
  "escenas": [
   {
+   "fx": "numero",
+   "w": "tu",
+   "antes": "Tu mesero cobra",
+   "valor": "2 h",
+   "despues": "que no trabajó ✍️",
+   "y": 640,
+   "size": 260
+  },
+  {
+   "fx": "nota",
+   "w": "te",
+   "titulo": "En menos de 1 minuto:",
+   "lineas": [
+    "cómo pasa",
+    "cómo se acaba"
+   ],
+   "marca": [
+    1
+   ]
+  },
+  {
    "fx": "nota",
    "w": "tu",
+   "n": 1,
    "titulo": "Restaurante 🍽️",
    "lineas": [
     "Abre: 1:00 pm",
@@ -21,7 +43,18 @@
   },
   {
    "fx": "nota",
+   "w": "y",
+   "n": 2,
+   "titulo": "Y aquí viene",
+   "lineas": [
+    "lo interesante… 👀"
+   ],
+   "size": 90
+  },
+  {
+   "fx": "nota",
    "w": "en",
+   "n": 1,
    "titulo": "La libreta dice:",
    "lineas": [
     "Mesero ........ 1:00 ✔"
@@ -35,7 +68,8 @@
   },
   {
    "fx": "numero",
-   "w": "veinte", "n": 1,
+   "w": "veinte",
+   "n": 1,
    "antes": "20 min × 6 días",
    "valor": "2 h",
    "despues": "a la semana que pagas sin trabajo",
