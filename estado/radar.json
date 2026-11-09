@@ -1,15 +1,15 @@
 {
- "revisado": "2026-11-03T07:01:44+00:00",
+ "revisado": "2026-11-09T01:43:02+00:00",
  "cuentas": {
   "runahr": {
-   "seguidores": 235681,
-   "publicaciones": 2492,
-   "mediana": 130.0
+   "seguidores": 235553,
+   "publicaciones": 2498,
+   "mediana": 108.0
   },
   "workymx": {
-   "seguidores": 4023,
-   "publicaciones": 1475,
-   "mediana": 9.5
+   "seguidores": 4026,
+   "publicaciones": 1478,
+   "mediana": 9.0
   },
   "buk.mx": {
    "seguidores": 506,
@@ -17,12 +17,12 @@
    "mediana": 92.0
   },
   "bizneohr": {
-   "seguidores": 632,
+   "seguidores": 636,
    "publicaciones": 42,
    "mediana": 8.0
   },
   "emprendedormx": {
-   "seguidores": 5852,
+   "seguidores": 5843,
    "publicaciones": 217,
    "mediana": 181.0
   }
@@ -30,19 +30,19 @@
  "destacados": [
   {
    "cuenta": "runahr",
-   "seguidores": 235681,
-   "veces_promedio": 147.6,
+   "seguidores": 235553,
+   "veces_promedio": 90.2,
    "tipo": "REELS",
-   "likes": 19023,
-   "comentarios": 57,
-   "fecha": "2026-10-09",
-   "enlace": "https://www.instagram.com/reel/DeQVPnKmuJ6/",
-   "texto": "A estas alturas de la semana, saber qué día es ya cuenta como productividad. \n\n#runahr #humor #jueves #worklife"
+   "likes": 9713,
+   "comentarios": 10,
+   "fecha": "2026-11-03",
+   "enlace": "https://www.instagram.com/reel/DfQmV7IByqx/",
+   "texto": "Los muertos regresan una vez al año y yo tengo que regresar todos los lunes. \nQué injusticia. 💀\n\n#RunaHR #rrhh #humor #lunes #Godínez"
   },
   {
    "cuenta": "runahr",
-   "seguidores": 235681,
-   "veces_promedio": 22.0,
+   "seguidores": 235553,
+   "veces_promedio": 26.5,
    "tipo": "REELS",
    "likes": 2825,
    "comentarios": 11,
@@ -52,10 +52,10 @@
   },
   {
    "cuenta": "runahr",
-   "seguidores": 235681,
-   "veces_promedio": 17.0,
+   "seguidores": 235553,
+   "veces_promedio": 20.6,
    "tipo": "REELS",
-   "likes": 2196,
+   "likes": 2212,
    "comentarios": 3,
    "fecha": "2026-10-19",
    "enlace": "https://www.instagram.com/reel/DescSBPBfEg/",
@@ -63,8 +63,8 @@
   },
   {
    "cuenta": "workymx",
-   "seguidores": 4023,
-   "veces_promedio": 12.4,
+   "seguidores": 4026,
+   "veces_promedio": 13.1,
    "tipo": "FEED",
    "likes": 88,
    "comentarios": 10,
@@ -74,7 +74,7 @@
   },
   {
    "cuenta": "bizneohr",
-   "seguidores": 632,
+   "seguidores": 636,
    "veces_promedio": 9.9,
    "tipo": "REELS",
    "likes": 52,
@@ -84,19 +84,8 @@
    "texto": "Summer mode: ON ☀️\nWe are so ready for the #BizneoSummerParty2026 and as always, we showed up and did it big 🎉\nGood music, even better people, and the best vibes of the year.\nThis is just the beginning… something special is coming 👀\n\n#teambizneo #LifeAtBizneo"
   },
   {
-   "cuenta": "runahr",
-   "seguidores": 235681,
-   "veces_promedio": 8.7,
-   "tipo": "REELS",
-   "likes": 1133,
-   "comentarios": 1,
-   "fecha": "2026-11-03",
-   "enlace": "https://www.instagram.com/reel/DfQmV7IByqx/",
-   "texto": "Los muertos regresan una vez al año y yo tengo que regresar todos los lunes. \nQué injusticia. 💀\n\n#RunaHR #rrhh #humor #lunes #Godínez"
-  },
-  {
    "cuenta": "bizneohr",
-   "seguidores": 632,
+   "seguidores": 636,
    "veces_promedio": 7.4,
    "tipo": "REELS",
    "likes": 50,
@@ -106,9 +95,20 @@
    "texto": "The most anticipated awards of the year... and the most fun. 🏆\n\nAt the #BizneoSummerParty2026, we also had our very own awards ceremony: the #BizneoTeamAwards2026 🎬✨\n\nBig categories, lots of applause, and a few faces that definitely weren’t expecting to hear their names... 👀😂\n\n#TeamBizneo #LifeAtBiz"
   },
   {
+   "cuenta": "runahr",
+   "seguidores": 235553,
+   "veces_promedio": 7.3,
+   "tipo": "REELS",
+   "likes": 781,
+   "comentarios": 2,
+   "fecha": "2026-10-12",
+   "enlace": "https://www.instagram.com/reel/DeYDsPUmsqW/",
+   "texto": "¡Estoy bien! 😃😃 \n\n#runahr #humor #worklife #oficina #humordeoficina"
+  },
+  {
    "cuenta": "workymx",
-   "seguidores": 4023,
-   "veces_promedio": 6.4,
+   "seguidores": 4026,
+   "veces_promedio": 6.8,
    "tipo": "REELS",
    "likes": 55,
    "comentarios": 2,
@@ -118,7 +118,7 @@
   },
   {
    "cuenta": "bizneohr",
-   "seguidores": 632,
+   "seguidores": 636,
    "veces_promedio": 6.4,
    "tipo": "FEED",
    "likes": 45,
@@ -129,25 +129,36 @@
   },
   {
    "cuenta": "runahr",
-   "seguidores": 235681,
-   "veces_promedio": 6.0,
+   "seguidores": 235553,
+   "veces_promedio": 3.5,
    "tipo": "REELS",
-   "likes": 779,
-   "comentarios": 2,
-   "fecha": "2026-10-12",
-   "enlace": "https://www.instagram.com/reel/DeYDsPUmsqW/",
-   "texto": "¡Estoy bien! 😃😃 \n\n#runahr #humor #worklife #oficina #humordeoficina"
+   "likes": 370,
+   "comentarios": 1,
+   "fecha": "2026-10-25",
+   "enlace": "https://www.instagram.com/reel/De75FRWhKAW/",
+   "texto": "Siempre listos para la chamba.\n\n#RunaHR #RRHH #Domingo #Humor #Godín"
+  },
+  {
+   "cuenta": "runahr",
+   "seguidores": 235553,
+   "veces_promedio": 3.5,
+   "tipo": "FEED",
+   "likes": 366,
+   "comentarios": 3,
+   "fecha": "2026-10-10",
+   "enlace": "https://www.instagram.com/p/DeSvwOqjYKo/",
+   "texto": "Mañana es el Día Mundial de la Salud Mental. 💜\nY en el trabajo, cuidar también significa aprender a detectar cuando algo empieza a cambiar.\nMenos energía, desconexión o cambios en el desempeño no deberían convertirse automáticamente en etiquetas: pueden ser una señal para observar, conversar y acomp"
   },
   {
    "cuenta": "workymx",
-   "seguidores": 4023,
-   "veces_promedio": 4.8,
+   "seguidores": 4026,
+   "veces_promedio": 3.3,
    "tipo": "FEED",
-   "likes": 43,
-   "comentarios": 1,
-   "fecha": "2026-09-11",
-   "enlace": "https://www.instagram.com/p/DdKLBCdINgA/",
-   "texto": "En Worky creemos que los mejores equipos no solo ejecutan juntos, también se preguntan juntos. ¿Qué estamos construyendo? ¿A dónde vamos? ¿Qué nos falta?\n\nNuestro offsite fue el espacio para hacer exactamente eso: salir de la rutina, conectar entre áreas y encontrarnos de verdad. Entre competencias,"
+   "likes": 21,
+   "comentarios": 3,
+   "fecha": "2026-10-28",
+   "enlace": "https://www.instagram.com/p/DfDdYgLlKVq/",
+   "texto": "Así vivimos la conversación que toda empresa en México debería tener.\n\nEsta mañana en Monterrey abrimos la pregunta que define el 2027:\n\n40 horas: ¿costo o ventaja competitiva?\n\nCon Álvaro García (Grupo Prodensa / INDEX), Karem Barraza (Goodyear), Daniela Pisanty y Francisco Udave (Santamarina + Ste"
   }
  ],
  "fallas": [
