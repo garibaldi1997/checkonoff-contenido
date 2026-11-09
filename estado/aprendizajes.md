@@ -1,8 +1,8 @@
 # Aprendizajes automáticos
-_Actualizado: 08/11/2026 12:31 CDMX · 69 posts con más de 24 h (historias excluidas)._
+_Actualizado: 09/11/2026 07:41 CDMX · 70 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
-- **checkonoff** (2026-11-08): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
+- **checkonoff** (2026-11-09): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
 
 ## Mejores 3 (repetir el patrón: formato, tipo de gancho, hora)
 - **Sábado, 11 de la noche: llegan fotos de la libreta de asistencia por WhatsApp. 📸** · reel · sábado 18:00 · alcance 124, vistas 138, guardados 0, compartidos 0, comentarios 0
@@ -17,14 +17,14 @@ _Actualizado: 08/11/2026 12:31 CDMX · 69 posts con más de 24 h (historias excl
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| reel | 19 | 10 | 0.1 |
+| reel | 20 | 10 | 0.1 |
 | carrusel | 34 | 6 | 0.5 |
 | imagen | 16 | 1 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| tarde (16–19) | 20 | 9 | 0.1 |
+| tarde (16–19) | 21 | 9 | 0.0 |
 | mediodía (12–15) | 39 | 5 | 0.3 |
 | mañana (6–11) | 7 | 1 | 0.0 |
 | noche (20–5) | 3 | 1 | 1.3 |
@@ -32,7 +32,7 @@ _Actualizado: 08/11/2026 12:31 CDMX · 69 posts con más de 24 h (historias excl
 ### Por día
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| sábado | 7 | 19 | 0.1 |
+| sábado | 8 | 17 | 0.1 |
 | viernes | 10 | 8 | 0.4 |
 | miércoles | 16 | 7 | 0.8 |
 | martes | 8 | 3 | 0.0 |
