@@ -1,5 +1,5 @@
 # Aprendizajes automáticos
-_Actualizado: 09/11/2026 07:41 CDMX · 70 posts con más de 24 h (historias excluidas)._
+_Actualizado: 09/11/2026 17:10 CDMX · 70 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-11-09): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
@@ -10,7 +10,7 @@ _Actualizado: 09/11/2026 07:41 CDMX · 70 posts con más de 24 h (historias excl
 - **¿Tu turno es "vespertino"? 🤔 Para la Ley Federal del Trabajo, ese tipo de jornada NO exist** · carrusel · miércoles 15:00 · alcance 52, vistas 67, guardados 0, compartidos 1, comentarios 0
 
 ## Peores 3 (no repetir ese gancho/formato/hora tal cual)
-- **¿Tu empresa está lista para las 46 horas de 2027? 🗓️** · carrusel · lunes 12:00 · alcance 0, puntaje 0
+- **¿Cómo se verá un turno de 40 horas en 2030? Así. 🗓️** · carrusel · domingo 12:00 · alcance 0, puntaje 0
 - **¿Tu registro de asistencia te defendería en una demanda? ⚖️** · carrusel · viernes 12:00 · alcance 0, puntaje 0
 - **¿Cómo controlas la asistencia de 3 sucursales sin estar ahí? 🏪** · carrusel · sábado 12:00 · alcance 0, puntaje 0
 
@@ -37,8 +37,8 @@ _Actualizado: 09/11/2026 07:41 CDMX · 70 posts con más de 24 h (historias excl
 | miércoles | 16 | 7 | 0.8 |
 | martes | 8 | 3 | 0.0 |
 | jueves | 16 | 2 | 0.0 |
-| domingo | 5 | 2 | 0.0 |
 | lunes | 7 | 2 | 0.0 |
+| domingo | 5 | 2 | 0.0 |
 
 ## Reglas para el siguiente post
 1. Formato con más alcance hasta hoy: **reel**. Dale más espacio en el calendario.
