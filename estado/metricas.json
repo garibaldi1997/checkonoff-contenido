@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-09T23:08:48+00:00",
+  "actualizado": "2026-11-10T13:40:23+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1539,6 +1539,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1664724188632208/"
+      }
+    },
+    "2026-11-09-reel-obra-cuadrilla": {
+      "tipo": "reel",
+      "fecha": "2026-11-09T18:00:00-06:00",
+      "tema": "Estás pagando a 4 trabajadores que ni llegaron. 👷",
+      "instagram": {
+        "id": "18168862552513911",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DfikcTCkScw/",
+        "reach": 12,
+        "saved": 0,
+        "shares": 0,
+        "views": 15,
+        "ig_reels_avg_watch_time": 5633,
+        "ig_reels_video_view_total_time": 67607
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1125484263723764/"
       }
     }
   }
