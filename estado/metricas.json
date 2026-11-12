@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-11T13:40:25+00:00",
+  "actualizado": "2026-11-12T13:40:27+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1531,8 +1531,8 @@
         "saved": 0,
         "shares": 0,
         "views": 10,
-        "ig_reels_avg_watch_time": 5330,
-        "ig_reels_video_view_total_time": 47971
+        "ig_reels_avg_watch_time": 5149,
+        "ig_reels_video_view_total_time": 51499
       },
       "facebook": {
         "reacciones": 0,
@@ -1555,8 +1555,8 @@
         "saved": 0,
         "shares": 0,
         "views": 15,
-        "ig_reels_avg_watch_time": 5633,
-        "ig_reels_video_view_total_time": 67607
+        "ig_reels_avg_watch_time": 5441,
+        "ig_reels_video_view_total_time": 70737
       },
       "facebook": {
         "reacciones": 0,
@@ -1575,18 +1575,42 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/DflJPoADq2_/",
-        "reach": 3,
+        "reach": 4,
         "saved": 0,
         "shares": 0,
-        "views": 4,
-        "ig_reels_avg_watch_time": 12397,
-        "ig_reels_video_view_total_time": 37191
+        "views": 5,
+        "ig_reels_avg_watch_time": 12851,
+        "ig_reels_video_view_total_time": 64258
       },
       "facebook": {
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1167341049062842/"
+      }
+    },
+    "2026-11-11-reel-restaurante-libreta": {
+      "tipo": "reel",
+      "fecha": "2026-11-11T18:00:00-06:00",
+      "tema": "Tu mesero cobra 2 horas que no trabajó… y él mismo lo anota. 🍽️",
+      "instagram": {
+        "id": "18117658688013153",
+        "comments_count": 0,
+        "like_count": 2,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DfnuCHamC_Y/",
+        "reach": 121,
+        "saved": 0,
+        "shares": 0,
+        "views": 152,
+        "ig_reels_avg_watch_time": 14324,
+        "ig_reels_video_view_total_time": 1747563
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/2160345551357619/"
       }
     }
   }
