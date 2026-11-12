@@ -1,5 +1,5 @@
 # Aprendizajes automáticos
-_Actualizado: 12/11/2026 07:41 CDMX · 72 posts con más de 24 h (historias excluidas)._
+_Actualizado: 12/11/2026 15:06 CDMX · 72 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-11-12): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
@@ -32,11 +32,11 @@ _Actualizado: 12/11/2026 07:41 CDMX · 72 posts con más de 24 h (historias excl
 ### Por día
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| sábado | 8 | 17 | 0.1 |
+| sábado | 8 | 18 | 0.1 |
 | viernes | 10 | 8 | 0.4 |
 | miércoles | 16 | 7 | 0.8 |
-| lunes | 8 | 3 | 0.0 |
 | martes | 9 | 3 | 0.0 |
+| lunes | 8 | 3 | 0.0 |
 | jueves | 16 | 2 | 0.0 |
 | domingo | 5 | 2 | 0.0 |
 
