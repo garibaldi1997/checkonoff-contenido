@@ -41,14 +41,14 @@ S['c2'] = () => head(1080,1350,GR) + flecha + `
 <div class="h" style="font-size:40px;margin-top:30px;line-height:1.15">Checadas con foto y ubicación. Retardos y horas extra calculados solos.</div>
 <div style="margin-top:36px;display:inline-block;background:${AZ};color:#fff;font-weight:800;font-size:28px;padding:14px 26px;border-radius:14px">CheckONOFF</div></div>
 <div style="position:absolute;right:70px;top:240px"><div class="tel"><div class="pant"><div class="bar" style="background:#1E9A0B">Checadas de hoy</div><div style="padding:6px 22px">${ui_check(5,20)}
-<div style="margin-top:22px;background:#F4F7F4;border-radius:16px;padding:16px;font-size:19px"><b>Resumen</b><div style="display:flex;justify-content:space-between;margin-top:8px"><span>Presentes</span><b>42</b></div><div style="display:flex;justify-content:space-between"><span>Retardos</span><b style="color:#E08A00">3</b></div><div style="display:flex;justify-content:space-between"><span>Horas extra</span><b>6.5 h</b></div></div></div></div></div></div>` + marca + `</body></html>`;
+<div style="margin-top:22px;background:#F4F7F4;border-radius:16px;padding:16px;font-size:19px"><b>Resumen</b><div style="display:flex;justify-content:space-between;margin-top:8px"><span>Presentes</span><b>42</b></div><div style="display:flex;justify-content:space-between"><span>Retardos</span><b style="color:#E08A00">3</b></div><div style="display:flex;justify-content:space-between"><span>Horas extra</span><b>6.5 h</b></div></div></div></div></div></div></body></html>`;
 S['c3'] = () => head(1080,1350,GR) + flecha + `
 <div style="position:absolute;left:80px;top:150px;width:470px">
 <div class="h" style="font-size:84px;color:${NV}">Tu WhatsApp responde <span style=\"color:${AM}\">las 24 horas.</span></div>
 <div class="h" style="font-size:40px;margin-top:30px;line-height:1.15">La IA contesta lo frecuente y pasa a tu equipo lo que necesita una persona.</div>
 <div style="margin-top:36px;display:inline-block;background:${AZ};color:#fff;font-weight:800;font-size:28px;padding:14px 26px;border-radius:14px">Dieloxia</div></div>
 <div style="position:absolute;right:70px;top:240px"><div class="tel"><div class="pant" style="background:#EFEAE2"><div class="bar" style="background:#075E54">Cliente nuevo</div><div style="padding:10px 18px">${ui_chat(20)}
-<div style="text-align:center;margin-top:16px"><span style="background:#fff;border-radius:10px;padding:8px 14px;font-size:16px;color:#555">Mariana tomó la conversación</span></div></div></div></div></div>` + marca + `</body></html>`;
+<div style="text-align:center;margin-top:16px"><span style="background:#fff;border-radius:10px;padding:8px 14px;font-size:16px;color:#555">Mariana tomó la conversación</span></div></div></div></div></div></body></html>`;
 S['c4'] = () => head(1080,1350,NV) + `
 <div style="position:absolute;left:80px;right:80px;top:180px;color:#fff">
 <div class="h" style="font-size:100px">Software hecho en México, para empresas mexicanas.</div>
