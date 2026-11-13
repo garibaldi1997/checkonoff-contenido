@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-12T21:05:39+00:00",
+  "actualizado": "2026-11-13T13:40:20+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1611,6 +1611,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/2160345551357619/"
+      }
+    },
+    "2026-11-12-reel-frases-checa-por-otro": {
+      "tipo": "reel",
+      "fecha": "2026-11-12T18:00:00-06:00",
+      "tema": "Si escuchas estas frases en tu empresa, alguien está checando por otro. 🕵️",
+      "instagram": {
+        "id": "17914968054503951",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DfqS1L6DVtL/",
+        "reach": 6,
+        "saved": 0,
+        "shares": 0,
+        "views": 8,
+        "ig_reels_avg_watch_time": 3863,
+        "ig_reels_video_view_total_time": 27047
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1154788240322738/"
       }
     }
   }
