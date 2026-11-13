@@ -18,5 +18,13 @@
       "secreto": "LINKEDIN_TOKEN_GARIBALDI",
       "nota": "Contenido interactivo de marca personal: encuestas, quizzes, autoevaluaciones y retos."
     }
+  },
+  "innovatec": {
+    "nombre": "Innova-Tec Industrial y Comercial de México (corporativo, solo LinkedIn)",
+    "linkedin": {
+      "secreto": "LINKEDIN_TOKEN_CHECKONOFF",
+      "organizacion": "146955870",
+      "nota": "Página corporativa de la empresa matriz (comercializa Dieloxia, CheckONOFF y futuros desarrollos). Tono profesional y corporativo. Usa el mismo token de administrador que la página de CheckONOFF."
+    }
   }
 }
