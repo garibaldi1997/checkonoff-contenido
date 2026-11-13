@@ -56,7 +56,7 @@ S['c4'] = () => head(1080,1350,NV) + `
 <div style="margin-top:70px;display:grid;gap:22px;font-size:34px;font-weight:700">
 <div style="background:rgba(255,255,255,.12);border-radius:18px;padding:24px 30px">checkonoff.mx</div>
 <div style="background:rgba(255,255,255,.12);border-radius:18px;padding:24px 30px">dieloxia.com</div>
-<div style="background:${AM};color:#fff;border-radius:18px;padding:24px 30px">WhatsApp +52 440 180 2213</div></div></div>
+<div style="background:${AM};color:#fff;border-radius:18px;padding:24px 30px">WhatsApp +52 33 3021 3199</div></div></div>
 <div class="marca" style="color:#fff;display:flex;align-items:center;gap:18px"><div style="background:#fff;border-radius:18px;padding:8px"><img src="${U('innovatec/logo.png')}" style="height:70px;display:block"></div><div>INNOVA-TEC <span style="color:${AM}">MÉXICO</span><small style="color:rgba(255,255,255,.75)">Innova-Tec Industrial y Comercial de México, S.A. de C.V.</small></div></div></body></html>`;
 
 // Infografía vertical (estilo guía práctica)
