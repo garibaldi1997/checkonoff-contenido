@@ -1,8 +1,8 @@
 # Aprendizajes automáticos
-_Actualizado: 13/11/2026 14:40 CDMX · 73 posts con más de 24 h (historias excluidas)._
+_Actualizado: 14/11/2026 07:42 CDMX · 74 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
-- **checkonoff** (2026-11-13): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
+- **checkonoff** (2026-11-14): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
 
 ## Mejores 3 (repetir el patrón: formato, tipo de gancho, hora)
 - **Sábado, 11 de la noche: llegan fotos de la libreta de asistencia por WhatsApp. 📸** · reel · sábado 18:00 · alcance 124, vistas 138, guardados 0, compartidos 0, comentarios 0
@@ -17,14 +17,14 @@ _Actualizado: 13/11/2026 14:40 CDMX · 73 posts con más de 24 h (historias excl
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| reel | 23 | 15 | 0.1 |
+| reel | 24 | 14 | 0.1 |
 | carrusel | 34 | 6 | 0.5 |
 | imagen | 16 | 1 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| tarde (16–19) | 24 | 14 | 0.1 |
+| tarde (16–19) | 25 | 14 | 0.1 |
 | mediodía (12–15) | 39 | 5 | 0.3 |
 | mañana (6–11) | 7 | 1 | 0.0 |
 | noche (20–5) | 3 | 1 | 1.3 |
@@ -37,7 +37,7 @@ _Actualizado: 13/11/2026 14:40 CDMX · 73 posts con más de 24 h (historias excl
 | viernes | 10 | 8 | 0.4 |
 | martes | 9 | 3 | 0.0 |
 | lunes | 8 | 3 | 0.0 |
-| jueves | 16 | 2 | 0.0 |
+| jueves | 17 | 3 | 0.0 |
 | domingo | 5 | 2 | 0.0 |
 
 ## Reglas para el siguiente post

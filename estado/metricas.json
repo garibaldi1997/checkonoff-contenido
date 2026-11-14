@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-13T20:38:55+00:00",
+  "actualizado": "2026-11-14T13:40:21+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1623,18 +1623,42 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/DfqS1L6DVtL/",
-        "reach": 8,
+        "reach": 11,
         "saved": 0,
         "shares": 0,
-        "views": 13,
-        "ig_reels_avg_watch_time": 5943,
-        "ig_reels_video_view_total_time": 53494
+        "views": 14,
+        "ig_reels_avg_watch_time": 4728,
+        "ig_reels_video_view_total_time": 56737
       },
       "facebook": {
         "reacciones": 0,
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1154788240322738/"
+      }
+    },
+    "2026-11-13-reel-extras-triple": {
+      "tipo": "reel",
+      "fecha": "2026-11-13T18:00:00-06:00",
+      "tema": "Esta hora extra te cuesta el triple, y casi nadie lo sabe. 😱",
+      "instagram": {
+        "id": "18028883741862496",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/Dfs3n7CD0gm/",
+        "reach": 9,
+        "saved": 0,
+        "shares": 0,
+        "views": 10,
+        "ig_reels_avg_watch_time": 2112,
+        "ig_reels_video_view_total_time": 21121
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1174281808874218/"
       }
     }
   }
