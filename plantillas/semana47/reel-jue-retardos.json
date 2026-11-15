@@ -1,0 +1,104 @@
+{
+ "voz": "voz/s47-jue-retardos",
+ "salida": "contenido/checkonoff/2026-11-19-reel-retardos-whatsapp",
+ "estilo": "vibrante",
+ "claves": [
+  "retardos",
+  "reporte"
+ ],
+ "escenas": [
+  {
+   "fx": "chat",
+   "w": "este",
+   "nombre": "Juan (almacén)",
+   "avatar": "👷",
+   "msgs": [
+    [
+     "el",
+     "Jefe, voy en el tráfico 🙏",
+     "8:24"
+    ]
+   ]
+  },
+  {
+   "fx": "palabra",
+   "w": "explico",
+   "texto": "Te explico<br>en 1 minuto"
+  },
+  {
+   "fx": "chat",
+   "w": "lunes",
+   "nombre": "Juan (almacén)",
+   "avatar": "👷",
+   "paso": 1.2,
+   "msgs": [
+    [
+     "el",
+     "Lun: voy en el tráfico 🙏",
+     "8:24"
+    ],
+    [
+     "el",
+     "Mar: se me fue el camión 🚌",
+     "8:31"
+    ],
+    [
+     "el",
+     "Mié: ya casi llego 🏃",
+     "8:22"
+    ]
+   ]
+  },
+  {
+   "fx": "palabra",
+   "w": "notas",
+   "texto": "¿Notas<br>algo? 🤔"
+  },
+  {
+   "fx": "chat",
+   "w": "nadie",
+   "nombre": "Juan (almacén)",
+   "avatar": "👷",
+   "msgs": [
+    [
+     "el",
+     "Ya casi llego 🏃",
+     "8:22"
+    ],
+    [
+     "yo",
+     "ok 👍",
+     "8:23"
+    ]
+   ]
+  },
+  {
+   "fx": "palabra",
+   "w": "fin",
+   "texto": "¿Y a fin<br>de mes?"
+  },
+  {
+   "fx": "numero",
+   "w": "tres",
+   "antes": "Retardos que pagas como trabajados",
+   "valor": "3 h",
+   "despues": "al mes, de una sola persona",
+   "y": 620,
+   "size": 260
+  },
+  {
+   "fx": "palabra",
+   "w": "con",
+   "texto": "Retardo<br>registrado",
+   "sub": "Con CheckONOFF lo ves en el reporte",
+   "size": 140
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

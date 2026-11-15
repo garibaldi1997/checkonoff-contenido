@@ -1,0 +1,71 @@
+{
+ "voz": "voz/s47-mie-dialogo",
+ "salida": "contenido/checkonoff/2026-11-18-reel-dialogo-inspector",
+ "estilo": "claro",
+ "sinSubs": true,
+ "escenas": [
+  {
+   "fx": "dialogo",
+   "w": "llegó",
+   "lineas": [
+    {
+     "quien": "J",
+     "t": 0.0,
+     "texto": "Llegó un inspector y pide los registros de asistencia."
+    },
+    {
+     "quien": "D",
+     "t": 4.02,
+     "texto": "¿De qué periodo?"
+    },
+    {
+     "quien": "J",
+     "t": 6.22,
+     "texto": "De los últimos meses."
+    },
+    {
+     "quien": "D",
+     "t": 8.8,
+     "texto": "Tenemos la libreta."
+    },
+    {
+     "quien": "J",
+     "t": 11.19,
+     "texto": "La mitad de las hojas tiene tachones."
+    },
+    {
+     "quien": "D",
+     "t": 14.49,
+     "texto": "Ay, no."
+    },
+    {
+     "quien": "J",
+     "t": 16.64,
+     "texto": "¿Y si alguien dice que se quedaba dos horas más todos los días?"
+    },
+    {
+     "quien": "D",
+     "t": 21.22,
+     "texto": "Nos toca probar que no. Y con tachones, no podemos."
+    },
+    {
+     "quien": "J",
+     "t": 25.48,
+     "texto": "¿Qué hacemos?"
+    },
+    {
+     "quien": "D",
+     "t": 27.53,
+     "texto": "Con CheckONOFF cada checada queda registrada y el reporte sale en minutos."
+    }
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "voz": "voz/s47-lun-dialogo",
+ "salida": "contenido/checkonoff/2026-11-16-reel-dialogo-nomina",
+ "estilo": "noche",
+ "sinSubs": true,
+ "escenas": [
+  {
+   "fx": "dialogo",
+   "w": "por",
+   "lineas": [
+    {
+     "quien": "J",
+     "t": 0.0,
+     "texto": "¿Por qué la nómina salió ocho mil pesos más alta?"
+    },
+    {
+     "quien": "D",
+     "t": 3.93,
+     "texto": "Por las horas extra."
+    },
+    {
+     "quien": "J",
+     "t": 6.32,
+     "texto": "¿Cuáles horas extra? Yo no autoricé ninguna."
+    },
+    {
+     "quien": "D",
+     "t": 10.84,
+     "texto": "Nadie las autorizó. Se fueron quedando."
+    },
+    {
+     "quien": "J",
+     "t": 15.2,
+     "texto": "¿Y me entero hasta el día de pago?"
+    },
+    {
+     "quien": "D",
+     "t": 18.12,
+     "texto": "Porque la libreta no avisa."
+    },
+    {
+     "quien": "J",
+     "t": 20.84,
+     "texto": "¿Y entonces qué hacemos?"
+    },
+    {
+     "quien": "D",
+     "t": 23.5,
+     "texto": "Con CheckONOFF ves las horas extra en el momento y las autorizas antes de pagarlas."
+    },
+    {
+     "quien": "J",
+     "t": 28.91,
+     "texto": "Eso sí me gusta."
+    }
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "voz": "voz/s47-mar-sucursal",
+ "salida": "contenido/checkonoff/2026-11-17-reel-sucursal-tres",
+ "estilo": "papel",
+ "claves": [
+  "truco",
+  "matriz",
+  "lista"
+ ],
+ "escenas": [
+  {
+   "fx": "nota",
+   "w": "el",
+   "titulo": "Sucursal 3 🏪",
+   "lineas": [
+    "El gerente tiene",
+    "un truco…"
+   ],
+   "marca": [
+    1
+   ],
+   "size": 96
+  },
+  {
+   "fx": "nota",
+   "w": "cuento",
+   "titulo": "En menos de 1 minuto:",
+   "lineas": [
+    "cuál es",
+    "y cómo se acaba"
+   ],
+   "marca": [
+    1
+   ],
+   "size": 92
+  },
+  {
+   "fx": "nota",
+   "w": "tú",
+   "titulo": "Tú: en la matriz",
+   "lineas": [
+    "Sucursal 3 abre: 9:00"
+   ],
+   "marca": [
+    0
+   ],
+   "size": 84
+  },
+  {
+   "fx": "nota",
+   "w": "aquí",
+   "titulo": "Y aquí viene",
+   "lineas": [
+    "lo bueno… 👀"
+   ],
+   "size": 90
+  },
+  {
+   "fx": "chat",
+   "w": "nueve",
+   "n": 1,
+   "nombre": "Gerente Suc. 3",
+   "avatar": "🏪",
+   "msgs": [
+    [
+     "el",
+     "Buen día, jefe 👋",
+     "9:00"
+    ],
+    [
+     "el",
+     "📋 Lista firmada: todos completos ✅",
+     "9:00"
+    ]
+   ]
+  },
+  {
+   "fx": "numero",
+   "w": "sabes",
+   "antes": "¿A qué hora llegó la mitad?",
+   "valor": "¿?",
+   "y": 640,
+   "size": 260
+  },
+  {
+   "fx": "numero",
+   "w": "diez",
+   "antes": "Llegaron a las",
+   "valor": "10:00",
+   "despues": "la lista la llenó él ✍️",
+   "y": 620,
+   "size": 240
+  },
+  {
+   "fx": "sello",
+   "w": "lista",
+   "n": 1,
+   "texto": "LA LLENÓ ÉL"
+  },
+  {
+   "fx": "nota",
+   "w": "con",
+   "titulo": "Con CheckONOFF",
+   "lineas": [
+    "Cada quien checa con",
+    "foto y ubicación 📍",
+    "y tú lo ves desde la matriz"
+   ],
+   "marca": [
+    1
+   ],
+   "size": 92
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

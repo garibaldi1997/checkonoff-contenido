@@ -243,6 +243,64 @@ P.nota_gastos = `<style>${MANO}</style><div style="position:absolute;inset:0;bac
  <div style="position:absolute;right:110px;bottom:110px;font-family:Mano;font-size:46px;color:#1d2433;padding:14px 34px;border:3px solid #F06B7A;border-radius:50%;transform:rotate(-6deg)">Dr. Garibaldi Corona</div>
 </div>`;
 
+// ===== Semana 47 =====
+// Lunes 16/11 · Mito (art. 64 LFT)
+P.mito_comida = `<div style="position:absolute;inset:0;background:${K.bg}"></div>
+<div style="position:absolute;left:60px;top:60px;background:${K.r};color:#fff;font-weight:800;font-size:26px;letter-spacing:.1em;padding:10px 20px;border-radius:12px">MITO DE RRHH</div>
+<div class="up" style="position:absolute;left:60px;right:60px;top:170px;font-size:72px;text-decoration:line-through;text-decoration-color:${K.r}cc;text-decoration-thickness:5px;color:#C9D3E2">“Si come en su lugar, no pierde tiempo de trabajo”</div>
+<div style="position:absolute;left:60px;top:560px;background:${K.t};color:${K.bg};font-weight:800;font-size:26px;letter-spacing:.1em;padding:10px 20px;border-radius:12px">LA LEY DICE (ARTS. 63 Y 64 LFT)</div>
+<div style="position:absolute;left:60px;right:60px;top:640px;display:flex;flex-direction:column;gap:24px">${[['🍽️', 'Jornada continua', 'lleva al menos 30 min de descanso'], ['🪑', 'Si no puede salir a comer', 'ese tiempo cuenta como trabajado'], ['⏱️', 'Se suma a la jornada', 'y puede volverse tiempo extra'], ['🩺', 'Y el cuerpo lo cobra', 'cansancio, errores y accidentes']].map(([e, t, d]) => `<div style="display:flex;gap:22px;align-items:center"><div style="width:84px;height:84px;border-radius:24px;background:${K.bg2};display:grid;place-items:center;font-size:44px;flex:none">${e}</div><div><div style="font-size:40px;font-weight:800">${t}</div><div style="font-size:28px;color:${K.s}">${d}</div></div></div>`).join('')}</div>
+${firma()}`;
+// Martes 17/11 · Comparativa antes vs. ahora (DOF 01/05/2026)
+const antes47 = [['3️⃣', '3 h extra al día', 'máximo 3 veces por semana'], ['♾️', 'Horas triples sin tope', 'semanal'], ['🧒', 'Menores de 16', 'sin tiempo extra'], ['📒', 'Registro libre', 'sin regla electrónica']];
+const ahora47 = [['4️⃣', 'Hasta 4 h al día', 'máximo 4 días por semana'], ['🔒', 'Triples: máx. 4 h', 'a la semana'], ['🧑', 'Menores de 18', 'sin tiempo extra'], ['💻', 'Registro electrónico', 'reglas desde el 01/01/2027']];
+P.info_antes_ahora = `<div class="up" style="position:absolute;left:60px;right:60px;top:60px;font-size:58px;text-align:center">Horas extra:<br><span class="or" style="font-size:80px">antes vs. ahora</span></div>
+<div style="position:absolute;left:60px;right:60px;top:330px;text-align:center;font-size:30px;color:${K.s};line-height:1.35">Reforma laboral publicada en el DOF el 01/05/2026<br>(arts. 66, 68 y 132 fr. XXXIV LFT).</div>
+<div style="position:absolute;left:180px;right:180px;top:440px;height:3px;background:${K.o}"></div>
+<div class="up" style="position:absolute;left:60px;top:480px;font-size:34px"><span class="rd">✕ Antes</span></div>
+<div class="up" style="position:absolute;left:570px;top:480px;font-size:34px"><span class="ac">✓ Ahora</span></div>
+${col(antes47, K.r, 60)}${col(ahora47, K.t, 570)}
+<div style="position:absolute;left:540px;top:490px;width:2px;height:640px;background:rgba(255,255,255,.15)"></div>
+${firma()}`;
+// Miércoles 18/11 · Cartel con marcatexto
+P.cartel_cansancio = `<style>${NUN}</style><div style="position:absolute;inset:0;background:#FBF7EE"></div>
+<div style="position:absolute;left:50px;right:50px;top:170px;text-align:center;font-family:NU;font-weight:900;color:#111;letter-spacing:-.03em">
+ <div style="font-size:70px;line-height:1.05;white-space:nowrap">El cansancio</div>
+ <div style="font-size:84px;line-height:1.15;margin-top:6px;white-space:nowrap">${mk('no sale en la nómina.')}</div>
+ <div style="font-size:60px;line-height:1.3;margin-top:26px;white-space:nowrap">Sale en ${mk('los errores,', '#F7A1AC')}</div>
+ <div style="font-size:60px;line-height:1.3;white-space:nowrap">${mk('los accidentes', '#F7A1AC')} y las renuncias.</div>
+ <div style="font-family:IT;font-weight:500;font-size:42px;letter-spacing:-.01em;line-height:1.25;color:#2b2b2b;margin-top:56px">Por eso la ley pone topes:<br>12 horas al día, como máximo.${subr(560)}</div>
+ <div style="margin-top:84px;display:inline-block;background:#FFE36E;border-radius:70px;padding:8px 50px;white-space:nowrap;font-size:66px">Cuidar el horario</div>
+ <div style="font-size:48px;line-height:1.15;margin-top:24px">también es cuidar<br>el negocio.${subr(380)}</div>
+</div>
+${rayas(14, 290, '#F06B7A', 0)}${rayas(976, 590, '#F06B7A', 180)}${rayas(14, 790, '#F5C518', 0)}${rayas(976, 960, '#F5C518', 180)}
+${firma(true)}`;
+// Jueves 19/11 · Jueves de realidad con humor
+P.humor_nomina = `<div style="position:absolute;inset:0;background:#fff"></div>
+<div style="position:absolute;left:60px;right:60px;top:60px;color:#0F1E36;font-size:42px;font-weight:600;line-height:1.38">
+— Jefe: ¿Cuántas horas extra hubo esta quincena?<br>— RRHH: Según la libreta, cero.<br>— Jefe: ¿Y por qué subió la nómina?<br>— RRHH: …según la libreta, cero.</div>
+<div style="position:absolute;left:60px;right:60px;top:440px;bottom:150px;border-radius:24px;overflow:hidden;background:#f6f5f2">
+ <img src="${F('duda_libreta')}" style="position:absolute;left:-40px;top:-170px;width:1040px">
+ <div style="position:absolute;left:40px;bottom:40px;font-size:62px;font-weight:800;color:#fff;-webkit-text-stroke:8px #0F1E36;paint-order:stroke fill">El jefe: 🤔📒</div></div>
+${firma(true)}`;
+// Viernes 20/11 · Nota a mano (finanzas)
+P.nota_contratar = `<style>${MANO}</style><div style="position:absolute;inset:0;background:#EFE9DD"></div>
+<div style="position:absolute;left:40px;top:50px;width:1040px;height:1300px;background:#FBF8F1;box-shadow:0 20px 60px rgba(60,40,10,.18);transform:rotate(-2.2deg);transform-origin:0 0">
+ <div style="position:absolute;left:60px;right:60px;top:70px;height:120px;border:2px solid #9a9488;display:flex">
+  <div style="width:220px;border-right:2px solid #9a9488;display:grid;place-items:center;font-size:30px;letter-spacing:.14em;color:#6d675c">ASUNTO:</div>
+  <div style="flex:1;display:flex;align-items:center;padding-left:34px;font-family:Mano;font-size:56px;color:#1d2433">${hl('ANTES DE CONTRATAR')}</div></div>
+ <div style="position:absolute;left:60px;right:60px;top:190px;bottom:60px;border:2px solid #9a9488;border-top:0"></div>
+ <div style="position:absolute;left:100px;right:90px;top:240px;font-family:Mano;color:#1d2433;font-size:58px;line-height:1.28">
+  Más gente no siempre es<br>${hl('más resultado.', '#F7A1AC')}
+  <div style="margin-top:44px;font-size:48px;line-height:1.25">
+   <div>${flecha}${hl('¿Es carga real o mal reparto?')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Revisa turnos antes de sumar plazas.</div></div>
+   <div>${flecha}${hl('¿Cuánto pagas hoy de extra?')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Ese número dice si la plaza se paga sola.</div></div>
+   <div>${flecha}${hl('¿Qué resultado va a medir?')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Puesto sin meta, gasto sin control.</div></div>
+   <div>${flecha}${hl('¿Quién lo va a formar?')}<div style="font-size:36px;margin:4px 0 0 58px;color:#3a4152">Sin inducción, la rotación llega rápido.</div></div>
+  </div></div>
+ <div style="position:absolute;right:110px;bottom:110px;font-family:Mano;font-size:46px;color:#1d2433;padding:14px 34px;border:3px solid #F06B7A;border-radius:50%;transform:rotate(-6deg)">Dr. Garibaldi Corona</div>
+</div>`;
+
 (async () => {
   const OUT = path.join(D, 'out2'); fs.mkdirSync(OUT, { recursive: true });
   const b = await chromium.launch(); const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });

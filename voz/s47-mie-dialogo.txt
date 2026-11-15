@@ -1,0 +1,12 @@
+#voz dialogo (Jorge y Dalia, armado de voz/s47-mie-dlg-*)
+Llegó un inspector y pide los registros de asistencia.
+¿De qué periodo?
+De los últimos meses.
+Tenemos la libreta.
+La mitad de las hojas tiene tachones.
+Ay, no.
+¿Y si alguien dice que se quedaba dos horas más todos los días?
+Nos toca probar que no. Y con tachones, no podemos.
+¿Qué hacemos?
+Con CheckONOFF cada checada queda registrada y el reporte sale en minutos.
+Escríbenos GUÍA al WhatsApp.

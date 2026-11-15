@@ -292,3 +292,17 @@ Referencia: video "¿Cómo se arma un video corto que la gente vea hasta el fina
 5. **Cuerpo 2**. 6. **Bucle abierto** (pregunta). 7. **Cuerpo 3** (la solución con CheckONOFF).
 8. **Llamado a la acción**: "Escríbenos GUÍA al WhatsApp".
 Cada pieza lleva su propia escena en pantalla; los bucles van en texto grande y solos.
+
+## Aprendizajes semana 46 (09–13/11/2026)
+| Reel | Formato | Alcance | Retención prom. |
+|---|---|---|---|
+| Obra cuadrilla | número + chat | 12 | 5.4 s |
+| Diálogo 7:59 | diálogo a dos voces | 5 | 16.1 s |
+| Restaurante libreta | historia (nota/sello) | 123 | 14.8 s |
+| Frases "checa por otro" | lista de frases | 11 | 4.7 s |
+| Horas extra triples | palabra/número (dato) | 14 | 1.6 s |
+
+- Lo que retiene: **historias con escena concreta y diálogos** (15–16 s). Lo que no: listas y datos sueltos (1.5–5 s).
+- El CTA de "guárdalo y compártelo" (12 y 13/11) no movió guardados: 0. No sirve agregarlo por agregar; el valor guardable tiene que estar en la pieza.
+- Seguidores IG: 2 (sin cambio). Instagram no está generando alcance; decisión A/B pendiente del dueño.
+- Semana 47: 2 diálogos + 3 historias de escena (sucursal, retardos por WhatsApp, cocinero de 13 h). Ninguna lista de datos.

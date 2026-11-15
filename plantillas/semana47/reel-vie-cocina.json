@@ -1,0 +1,83 @@
+{
+ "voz": "voz/s47-vie-cocina",
+ "salida": "contenido/checkonoff/2026-11-20-reel-cocinero-13h",
+ "estilo": "noche",
+ "claves": [
+  "trece",
+  "doce",
+  "tope"
+ ],
+ "escenas": [
+  {
+   "fx": "numero",
+   "w": "tu",
+   "antes": "Tu cocinero, el sábado:",
+   "valor": "13 h",
+   "despues": "y eso te puede salir caro 👨‍🍳",
+   "y": 620,
+   "size": 280
+  },
+  {
+   "fx": "palabra",
+   "w": "explico",
+   "texto": "Te explico<br>en 1 minuto"
+  },
+  {
+   "fx": "nota",
+   "w": "entra",
+   "titulo": "Sábado 🍽️", "size": 100,
+   "lineas": [
+    "Entra: 8:00 am",
+    "Sale: 9:00 pm"
+   ],
+   "marca": [
+    1
+   ]
+  },
+  {
+   "fx": "palabra",
+   "w": "qué",
+   "texto": "¿Y qué tiene<br>de malo?"
+  },
+  {
+   "fx": "numero",
+   "w": "ley",
+   "antes": "Tope de la ley al día",
+   "valor": "12 h",
+   "despues": "jornada + tiempo extra (art. 68 LFT)",
+   "y": 620,
+   "size": 280
+  },
+  {
+   "fx": "palabra",
+   "w": "quién",
+   "texto": "¿Y quién lo<br>revisa?"
+  },
+  {
+   "fx": "sello",
+   "w": "nadie",
+   "texto": "NADIE"
+  },
+  {
+   "fx": "lista",
+   "w": "con",
+   "items": [
+    [
+     "Pasa del tope",
+     "✕"
+    ],
+    [
+     "CheckONOFF te avisa",
+     "✓"
+    ]
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}
