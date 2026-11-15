@@ -82,10 +82,43 @@ ${fila(2026,'50.00','100.00','150.00')}${fila(2027,'52.22','104.44','156.66')}${
 <div style="display:flex;align-items:center;gap:16px"><div style="background:#fff;border-radius:16px;padding:6px"><img src="${U('innovatec/logo.png')}" style="height:64px;display:block"></div><div class="h" style="font-size:38px">INNOVA-TEC <span style="color:${AM}">MÉXICO</span><div style="font-family:IT;font-weight:500;font-size:17px;opacity:.8;margin-top:4px;letter-spacing:0">Innova-Tec Industrial y Comercial de México, S.A. de C.V.</div></div></div>
 <div style="font-size:20px;font-weight:600;opacity:.9;text-align:right">Fuente: DOF 01/05/2026<br>arts. 66, 68 y 132 LFT</div></div></div></body></html>`;
 
+const chats = [['Restaurante Lomas','¿Tienen mesa para 6 hoy?','IA','#3981C3'],['Ferretería Centro','Quiero cotizar 40 tornillos','IA','#3981C3'],['Cliente nuevo','Necesito hablar con alguien','Persona','#EC6544'],['Clínica Norte','¿A qué hora abren mañana?','IA','#3981C3'],['Pedido #418','¿Ya salió mi pedido?','IA','#3981C3']];
+S['w47a'] = () => head(1080,1350,GR) + `
+<div style="position:absolute;left:80px;top:150px;width:470px">
+<div class="h" style="font-size:80px;color:${NV}">¿Cuántos clientes se quedan <span style="color:${AM}">sin respuesta?</span></div>
+<div class="h" style="font-size:38px;margin-top:30px;line-height:1.18">Dieloxia contesta tu WhatsApp en segundos, de día y de noche.</div>
+<div style="font-size:28px;line-height:1.4;margin-top:26px;color:#3a4160">Cuando un cliente necesita a una persona, te avisa y alguien de tu equipo toma la conversación.</div>
+<div style="margin-top:34px;display:inline-block;background:${AZ};color:#fff;font-weight:800;font-size:28px;padding:14px 26px;border-radius:14px">Dieloxia</div></div>
+<div style="position:absolute;right:70px;top:150px"><div class="tel"><div class="pant"><div class="bar" style="background:#075E54">Chats de hoy</div>
+<div style="padding:8px 20px">${chats.map(([n,m,q,c])=>`<div style="display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:1px solid #eee"><div style="display:flex;gap:12px;align-items:center"><div style="width:44px;height:44px;border-radius:50%;background:#E6EEF6;display:grid;place-items:center;font-weight:800;color:${NV}">${n[0]}</div><div><div style="font-weight:700;font-size:19px">${n}</div><div style="font-size:16px;color:#777;margin-top:2px">${m}</div></div></div><div style="font-size:13px;font-weight:800;color:#fff;background:${c};border-radius:8px;padding:5px 8px;white-space:nowrap">${q=='IA'?'Respondido':'Te necesita'}</div></div>`).join('')}
+<div style="margin-top:20px;background:#F3F6FA;border-radius:16px;padding:16px;font-size:18px"><div style="display:flex;justify-content:space-between"><span>Respondidos por IA</span><b>4</b></div><div style="display:flex;justify-content:space-between;margin-top:6px"><span>Pasados a tu equipo</span><b style="color:${AM}">1</b></div><div style="display:flex;justify-content:space-between;margin-top:6px"><span>Sin respuesta</span><b>0</b></div></div></div></div></div></div>` + marca + `</body></html>`;
+const ck = (t) => `<div style="display:flex;gap:18px;align-items:flex-start;margin-bottom:16px;font-size:26px;line-height:1.35"><div style="flex:none;width:38px;height:38px;border:3px solid ${AM};border-radius:8px;margin-top:2px"></div><div>${t}</div></div>`;
+S['w47b'] = () => head(1080,1920,NV) + `
+<div style="position:absolute;inset:0;padding:70px;color:#fff">
+<div style="display:inline-block;background:${AM};color:#fff;font-weight:800;font-size:24px;letter-spacing:.08em;padding:10px 22px;border-radius:30px">REFORMA LABORAL · DESDE 2027</div>
+<div class="h" style="font-size:80px;margin-top:30px">Registro electrónico de jornada: <span style="color:${AM}">lo que pide la ley</span></div>
+<div style="font-size:28px;line-height:1.4;margin-top:22px;opacity:.95">El art. 132 fr. XXXIV de la LFT agrega una nueva obligación para todas las empresas.</div>
+<div style="font-weight:800;font-size:34px;margin:40px 0 20px;text-align:center">Lo que dice la ley:</div>
+${punto(1,'Registrar por medios electrónicos','El inicio y el fin de la jornada de cada trabajador.')}
+${punto(2,'Entregarlo a la autoridad','Cuando la autoridad laboral lo solicite.')}
+${punto(3,'Prueba plena','Si el mecanismo se acordó con el trabajador, el registro hace prueba plena.')}
+${punto(4,'Multa por no cumplir','De 250 a 5,000 UMA (art. 994 fr. IV Bis LFT).')}
+<div class="h" style="font-size:44px;margin:30px 0 22px;color:${AM}">Checklist rápido para tu empresa</div>
+<div style="background:rgba(57,129,195,.25);border-radius:22px;padding:30px 30px 16px">
+${ck('¿Queda registrada la entrada y la salida de <b>cada persona, cada día</b>?')}
+${ck('¿Es <b>electrónico</b>? (la libreta en papel no cumple)')}
+${ck('¿Las correcciones <b>dejan rastro</b> de quién las hizo?')}
+${ck('¿Puedes <b>entregar el registro</b> en minutos si te lo piden?')}
+${ck('¿El mecanismo está <b>acordado</b> con tus trabajadores?')}
+</div>
+<div style="position:absolute;left:70px;right:70px;bottom:60px;border-top:2px solid rgba(255,255,255,.35);padding-top:24px;display:flex;justify-content:space-between;align-items:flex-end">
+<div style="display:flex;align-items:center;gap:16px"><div style="background:#fff;border-radius:16px;padding:6px"><img src="${U('innovatec/logo.png')}" style="height:64px;display:block"></div><div class="h" style="font-size:38px">INNOVA-TEC <span style="color:${AM}">MÉXICO</span><div style="font-family:IT;font-weight:500;font-size:17px;opacity:.8;margin-top:4px;letter-spacing:0">Innova-Tec Industrial y Comercial de México, S.A. de C.V.</div></div></div>
+<div style="font-size:20px;font-weight:600;opacity:.9;text-align:right">Fuente: DOF 01/05/2026<br>arts. 132 y 994 LFT</div></div></div></body></html>`;
+
 (async () => {
   const b = await chromium.launch(); const dir = path.join(R,'innovatec','out2'); fs.mkdirSync(dir,{recursive:true});
-  for (const k of Object.keys(S)) {
-    const h = k==='info'?1920:1350; const pg = await b.newPage({viewport:{width:1080,height:h}});
+  for (const k of (process.argv[2]?process.argv.slice(2):Object.keys(S))) {
+    const h = (k==='info'||k==='w47b')?1920:1350; const pg = await b.newPage({viewport:{width:1080,height:h}});
     const f=path.join(dir,k+'.html'); fs.writeFileSync(f,S[k]()); await pg.goto('file://'+f,{waitUntil:'load'}); await pg.evaluate(()=>document.fonts.ready); await pg.waitForTimeout(400);
     await pg.screenshot({path:path.join(dir,k+'.jpg'),type:'jpeg',quality:92}); await pg.close(); console.log('ok',k);
   }

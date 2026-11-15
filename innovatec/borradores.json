@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "2026-11-24-innovatec-dieloxia-sin-respuesta",
+    "cuenta": "innovatec",
+    "fecha": "2026-11-24T09:10:00-06:00",
+    "tipo": "imagen",
+    "redes": ["linkedin"],
+    "imagenes": ["contenido/innovatec/2026-11-24-innovatec-dieloxia-sin-respuesta/01.jpg"],
+    "texto": "¿Cuántos mensajes de WhatsApp de tus clientes se quedan sin contestar fuera de horario o en las horas de más trabajo?\n\nCada uno puede ser una venta que se va con la competencia.\n\nDieloxia, de Innova-Tec México, contesta tu WhatsApp en segundos, de día y de noche: horarios, disponibilidad, seguimiento de pedidos y preguntas frecuentes. Cuando un cliente necesita a una persona, te avisa y alguien de tu equipo toma la conversación.\n\nEscríbenos al WhatsApp +52 33 3021 3199 y te mostramos cómo funcionaría en tu negocio."
+  },
+  {
+    "id": "2026-11-26-innovatec-registro-2027",
+    "cuenta": "innovatec",
+    "fecha": "2026-11-26T09:10:00-06:00",
+    "tipo": "imagen",
+    "redes": ["linkedin"],
+    "imagenes": ["contenido/innovatec/2026-11-26-innovatec-registro-2027/01.jpg"],
+    "texto": "Desde el 1 de enero de 2027 aplican las reglas del registro electrónico de jornada.\n\nLa reforma agregó al art. 132 de la LFT la obligación de registrar por medios electrónicos el inicio y el fin de la jornada de cada trabajador y de entregar ese registro a la autoridad cuando lo pida. No cumplir puede costar de 250 a 5,000 UMA.\n\nEn la imagen está lo que dice la ley y un checklist de 5 preguntas para revisar si el registro de tu empresa ya cumple.\n\nGuárdala y compártela con quien lleva la asistencia y la nómina.\n\nFuente: decreto DOF 01/05/2026; arts. 132 fr. XXXIV y 994 fr. IV Bis de la LFT."
+  }
+]
