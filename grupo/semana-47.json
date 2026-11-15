@@ -1,0 +1,25 @@
+{
+ "semana": 47,
+ "mensajes": [
+  {
+   "fecha": "2026-11-16",
+   "tipo": "texto",
+   "tema": "Qué ajustar según cómo registras hoy (art. 132 fr. XXXIV)",
+   "texto": "📊 *Gracias a quienes respondieron la pregunta del viernes*\n\nSegún cómo registras hoy la asistencia, esto es lo que conviene revisar rumbo a 2027:\n\n1️⃣ *Libreta o papel* → la ley pide registrar *por medios electrónicos* el inicio y fin de la jornada de cada trabajador. Es el cambio más urgente.\n2️⃣ *Excel* → es electrónico, pero revisa que no se pueda editar sin dejar rastro y que tengas el registro de *cada día y cada persona*.\n3️⃣ *Reloj checador* → confirma que puedes *sacar el registro y entregarlo a la autoridad* cuando lo pida.\n4️⃣ *App o sistema* → revisa que el mecanismo esté *acordado con el trabajador*: así el registro hace *prueba plena*.\n\n📅 Las reglas de la STPS aplican desde el *1 de enero de 2027* (art. 132 fr. XXXIV LFT)."
+  },
+  {
+   "fecha": "2026-11-18",
+   "tipo": "texto",
+   "tema": "Ejemplo: la misma carga de trabajo en 2027",
+   "texto": "🧮 *Ejemplo: ¿qué pasa si en 2027 todo sigue igual?*\n\nUn trabajador hacía 48 h a la semana. En 2027 el tope ordinario baja a *46 h*, y para no bajar la producción le piden *2 h extra diarias, 6 días*.\n\n• Total de horas extra: *12 h* en la semana\n• Tope de horas dobles en 2027: *9 h* a la semana\n• Máximo de días con tiempo extra: *4*\n\n❌ Resultado: rebasa el tope semanal y el número de días → las horas de más se pagan *al triple* y además hay *incumplimiento*.\n\n💡 Antes de enero, revisa turnos y plantilla con tu contador o abogado."
+  },
+  {
+   "fecha": "2026-11-20",
+   "tipo": "encuesta",
+   "tema": "Encuesta: cómo bajarán a 46 horas en 2027",
+   "texto": "En 2027 la jornada baja a 46 h. ¿Cómo lo va a hacer tu empresa?",
+   "opciones": ["Menos horas cada día", "Medio día libre", "Más personal o turnos", "Aún no lo decidimos"],
+   "despues": "Gracias por votar 🙌 El lunes compartimos qué implica cada opción para la nómina."
+  }
+ ]
+}
