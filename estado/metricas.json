@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-16T23:01:32+00:00",
+  "actualizado": "2026-11-17T13:40:35+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1670,6 +1670,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/photo.php?fbid=122116600365512173&set=a.122097810891512173&type=3"
+      }
+    },
+    "2026-11-16-reel-dialogo-nomina": {
+      "tipo": "reel",
+      "fecha": "2026-11-16T18:00:00-06:00",
+      "tema": "—¿Por qué la nómina salió ocho mil pesos más alta?",
+      "instagram": {
+        "id": "18132870175694215",
+        "comments_count": 0,
+        "like_count": 1,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/Df0mClDATCB/",
+        "reach": 110,
+        "saved": 0,
+        "shares": 0,
+        "views": 121,
+        "ig_reels_avg_watch_time": 10981,
+        "ig_reels_video_view_total_time": 1175031
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1125883266865082/"
       }
     }
   }
