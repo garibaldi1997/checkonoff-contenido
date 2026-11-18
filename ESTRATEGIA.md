@@ -309,7 +309,7 @@ Cada pieza lleva su propia escena en pantalla; los bucles van en texto grande y 
 
 
 ## Carruseles estilo competencia en Instagram (aprobado por el dueño, 18/11/2026)
-- Referencias: Humand (frase entre comillas grande sobre cielo azul + objeto/pantalla; serie con nombre fijo, humor de oficina) y Sesame ("Paso 1-4" con pantalla de producto y nombre de quien la usa).
+- Referencias: Humand (frase entre comillas grande sobre fondo degradado en los colores de CheckONOFF —verde #1E9A0B→#8EDB6E, etiqueta azul marino #111C3B— + objeto/pantalla; nunca el azul de Humand; serie con nombre fijo, humor de oficina) y Sesame ("Paso 1-4" con pantalla de producto y nombre de quien la usa).
 - Plantilla: plantillas/competencia/render_comp.js. Series: "Historias de terror de la quincena" y "De la libreta a la prenómina en pasos".
 - Se publican en TODAS las redes de CheckONOFF (Instagram, Facebook y LinkedIn): 2 carruseles por semana a las 13:00, además de los reels diarios de las 18:00.
 - Pendiente: fotos reales del equipo para la serie de personas (estilo "Creo que tengo fiebre").

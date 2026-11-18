@@ -6,10 +6,10 @@ const V = '#1E9A0B', V2 = '#2DB014', NV = '#111C3B';
 const head = (bg) => `<!doctype html><html><head><meta charset="utf-8"><style>
 ${[400,500,600,700,800].map(w=>`@font-face{font-family:IT;font-weight:${w};src:url(${U('plantillas/fonts_it_'+w+'.ttf')})}`).join('')}
 *{margin:0;padding:0;box-sizing:border-box} body{width:1080px;height:1350px;overflow:hidden;font-family:IT,sans-serif;position:relative;background:${bg}}
-.cielo{position:absolute;inset:0;background:linear-gradient(180deg,#5E9CE6 0%,#86B6EE 55%,#B3D2F5 100%)}
-.nube{position:absolute;border-radius:50%;background:rgba(255,255,255,.55);filter:blur(30px)}
+.cielo{position:absolute;inset:0;background:linear-gradient(180deg,#1E9A0B 0%,#3FBF22 55%,#8EDB6E 100%)}
+.nube{position:absolute;border-radius:50%;background:rgba(255,255,255,.28);filter:blur(34px)}
 .kick{position:absolute;left:0;right:0;top:150px;text-align:center;color:#fff;font-weight:700;font-size:28px;letter-spacing:.22em}
-.q{position:absolute;left:70px;right:70px;top:210px;text-align:center;color:#fff;font-weight:800;font-size:76px;line-height:1.06;letter-spacing:-.02em;text-shadow:0 4px 24px rgba(20,50,100,.25)}
+.q{position:absolute;left:70px;right:70px;top:210px;text-align:center;color:#fff;font-weight:800;font-size:76px;line-height:1.06;letter-spacing:-.02em;text-shadow:0 4px 24px rgba(10,60,5,.30)}
 .q small{display:block;font-size:44px;font-weight:700;margin-top:14px;opacity:.95}
 .obj{position:absolute;left:50%;transform:translateX(-50%);mix-blend-mode:multiply}
 .card{background:#fff;border-radius:28px;box-shadow:0 30px 70px rgba(17,28,59,.18);padding:34px}
@@ -24,20 +24,20 @@ ${[400,500,600,700,800].map(w=>`@font-face{font-family:IT;font-weight:${w};src:u
 </style></head><body>`;
 const fin = `</body></html>`;
 const cielo = `<div class="cielo"></div><div class="nube" style="left:-80px;top:80px;width:520px;height:200px"></div><div class="nube" style="right:-120px;top:640px;width:600px;height:240px"></div>`;
-const KICK = `<div class="kick">👻 HISTORIAS DE TERROR DE LA QUINCENA 👻</div>`;
+const KICK = `<div class="kick"><span style="background:#111C3B;padding:10px 22px;border-radius:30px">👻 HISTORIAS DE TERROR DE LA QUINCENA 👻</span></div>`;
 const S = {};
 // ---------- Carrusel A: estilo Humand ----------
-S.a1 = () => head('#86B6EE') + cielo + KICK + `<div class="q">“¿Alguien sabe a qué hora llegó Pedro el martes?”<small>(nadie sabe)</small></div>
+S.a1 = () => head('#3FBF22') + cielo + KICK + `<div class="q">“¿Alguien sabe a qué hora llegó Pedro el martes?”<small>(nadie sabe)</small></div>
 <img class="obj" src="${U('plantillas/competencia/fotos/reloj.jpg')}" style="top:560px;width:1150px">` + fin;
-S.a2 = () => head('#86B6EE') + cielo + KICK + `<div class="q">“Te mando foto de la lista por WhatsApp.”<small>(foto borrosa, 11:48 p. m.)</small></div>
+S.a2 = () => head('#3FBF22') + cielo + KICK + `<div class="q">“Te mando foto de la lista por WhatsApp.”<small>(foto borrosa, 11:48 p. m.)</small></div>
 <div style="position:absolute;left:150px;right:150px;top:640px;background:#EFE7DD;border-radius:34px;padding:34px;box-shadow:0 30px 70px rgba(17,28,59,.25)">
 <div style="display:flex;justify-content:flex-start"><div style="background:#fff;border-radius:18px;padding:12px;width:520px">
 <div style="height:330px;border-radius:12px;background:repeating-linear-gradient(0deg,#f6f1e4 0 34px,#c9c0ad 34px 36px);filter:blur(4px);position:relative"><div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,.15),transparent 60%)"></div></div>
 <div style="font-size:28px;margin-top:12px">Ahí está la lista de hoy 🙏</div><div style="text-align:right;font-size:20px;color:#888">11:48 p. m.</div></div></div>
 <div style="display:flex;justify-content:flex-end;margin-top:18px"><div style="background:#D9FDD3;border-radius:18px;padding:16px 22px;font-size:28px">¿Eso es un 7 o un 1? 🤔</div></div></div>` + fin;
-S.a3 = () => head('#86B6EE') + cielo + KICK + `<div class="q">“Los registros de asistencia de 2024 están… por ahí.”</div>
+S.a3 = () => head('#3FBF22') + cielo + KICK + `<div class="q">“Los registros de asistencia de 2024 están… por ahí.”</div>
 <img class="obj" src="${U('plantillas/competencia/fotos/carpetas.jpg')}" style="top:560px;width:1500px;transform:translateX(-66%);-webkit-mask-image:radial-gradient(ellipse 48% 44% at 55% 52%,#000 60%,transparent 100%)">` + fin;
-S.a4 = () => head('#86B6EE') + cielo + KICK + `<div class="q">“Juan checó a las 7:59.”<small>Juan estaba de vacaciones.</small></div>
+S.a4 = () => head('#3FBF22') + cielo + KICK + `<div class="q">“Juan checó a las 7:59.”<small>Juan estaba de vacaciones.</small></div>
 <div style="position:absolute;left:300px;top:660px;width:480px;background:#fff;padding:40px 40px 60px;font-family:monospace;font-size:30px;line-height:1.6;color:#333;box-shadow:0 30px 70px rgba(17,28,59,.25);transform:rotate(-4deg);clip-path:polygon(0 0,100% 0,100% 94%,92% 100%,84% 94%,76% 100%,68% 94%,60% 100%,52% 94%,44% 100%,36% 94%,28% 100%,20% 94%,12% 100%,4% 94%,0 100%)">
 <div style="text-align:center;font-weight:700">RELOJ CHECADOR</div><div>EMPLEADO: 0147 JUAN</div><div>FECHA: 12/11</div><div style="font-size:44px;font-weight:700;text-align:center;margin-top:16px">ENT 07:59</div><div style="text-align:center;color:#c00;font-weight:700;margin-top:10px">✔ REGISTRADO</div></div>` + fin;
 S.a5 = () => head('#F4F7F2') + `<div style="position:absolute;left:0;right:0;top:120px;text-align:center"><div style="font-weight:800;font-size:70px;color:${NV};letter-spacing:-.02em;line-height:1.08;padding:0 80px">Con CheckONOFF, estas historias se acaban.</div>
