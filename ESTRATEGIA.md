@@ -306,3 +306,10 @@ Cada pieza lleva su propia escena en pantalla; los bucles van en texto grande y 
 - El CTA de "guárdalo y compártelo" (12 y 13/11) no movió guardados: 0. No sirve agregarlo por agregar; el valor guardable tiene que estar en la pieza.
 - Seguidores IG: 2 (sin cambio). Instagram no está generando alcance; decisión A/B pendiente del dueño.
 - Semana 47: 2 diálogos + 3 historias de escena (sucursal, retardos por WhatsApp, cocinero de 13 h). Ninguna lista de datos.
+
+
+## Carruseles estilo competencia en Instagram (aprobado por el dueño, 18/11/2026)
+- Referencias: Humand (frase entre comillas grande sobre cielo azul + objeto/pantalla; serie con nombre fijo, humor de oficina) y Sesame ("Paso 1-4" con pantalla de producto y nombre de quien la usa).
+- Plantilla: plantillas/competencia/render_comp.js. Series: "Historias de terror de la quincena" y "De la libreta a la prenómina en pasos".
+- Se publican en TODAS las redes de CheckONOFF (Instagram, Facebook y LinkedIn): 2 carruseles por semana a las 13:00, además de los reels diarios de las 18:00.
+- Pendiente: fotos reales del equipo para la serie de personas (estilo "Creo que tengo fiebre").
