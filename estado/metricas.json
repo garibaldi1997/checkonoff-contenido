@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T21:54:44+00:00",
+  "actualizado": "2026-11-18T13:40:25+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1694,6 +1694,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1125883266865082/"
+      }
+    },
+    "2026-11-17-reel-sucursal-tres": {
+      "tipo": "reel",
+      "fecha": "2026-11-17T18:00:00-06:00",
+      "tema": "El gerente de tu sucursal 3 tiene un truco, y te cuesta cada quincena. 🏪",
+      "instagram": {
+        "id": "18114121643237757",
+        "comments_count": 0,
+        "like_count": 1,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/Df3K0hzjZ8g/",
+        "reach": 12,
+        "saved": 0,
+        "shares": 0,
+        "views": 16,
+        "ig_reels_avg_watch_time": 3837,
+        "ig_reels_video_view_total_time": 57565
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1664661298786690/"
       }
     }
   }
