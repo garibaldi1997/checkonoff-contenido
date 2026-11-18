@@ -1,5 +1,5 @@
 # Aprendizajes automáticos
-_Actualizado: 18/11/2026 07:42 CDMX · 77 posts con más de 24 h (historias excluidas)._
+_Actualizado: 18/11/2026 15:36 CDMX · 77 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-11-18): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
