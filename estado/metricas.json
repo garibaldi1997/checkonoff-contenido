@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-18T21:35:15+00:00",
+  "actualizado": "2026-11-19T13:40:23+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1718,6 +1718,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1664661298786690/"
+      }
+    },
+    "2026-11-18-reel-dialogo-inspector": {
+      "tipo": "reel",
+      "fecha": "2026-11-18T18:00:00-06:00",
+      "tema": "—Llegó un inspector y pide los registros de asistencia.",
+      "instagram": {
+        "id": "18026401625871835",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/Df5vnl3nAQr/",
+        "reach": 3,
+        "saved": 0,
+        "shares": 0,
+        "views": 3,
+        "ig_reels_avg_watch_time": 2784,
+        "ig_reels_video_view_total_time": 8353
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1005292965341314/"
       }
     }
   }
