@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-19T13:40:23+00:00",
+  "actualizado": "2026-11-19T21:47:37+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1742,6 +1742,28 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1005292965341314/"
+      }
+    },
+    "2026-11-19-carrusel-terror-quincena": {
+      "tipo": "carrusel",
+      "fecha": "2026-11-19T13:00:00-06:00",
+      "tema": "Historias de terror de la quincena 👻",
+      "instagram": {
+        "id": "18123725158949822",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "FEED",
+        "permalink": "https://www.instagram.com/p/Df7yGwhnXz9/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "https://www.facebook.com/122098590447512173/posts/122117396103512173"
       }
     }
   }
