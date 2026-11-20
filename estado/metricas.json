@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-19T21:47:37+00:00",
+  "actualizado": "2026-11-20T13:40:24+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1579,8 +1579,8 @@
         "saved": 0,
         "shares": 0,
         "views": 7,
-        "ig_reels_avg_watch_time": 16067,
-        "ig_reels_video_view_total_time": 96406
+        "ig_reels_avg_watch_time": 15815,
+        "ig_reels_video_view_total_time": 110711
       },
       "facebook": {
         "reacciones": 0,
@@ -1627,8 +1627,8 @@
         "saved": 0,
         "shares": 0,
         "views": 14,
-        "ig_reels_avg_watch_time": 4728,
-        "ig_reels_video_view_total_time": 56737
+        "ig_reels_avg_watch_time": 4673,
+        "ig_reels_video_view_total_time": 60756
       },
       "facebook": {
         "reacciones": 0,
@@ -1651,8 +1651,8 @@
         "saved": 0,
         "shares": 0,
         "views": 15,
-        "ig_reels_avg_watch_time": 1576,
-        "ig_reels_video_view_total_time": 23647
+        "ig_reels_avg_watch_time": 1686,
+        "ig_reels_video_view_total_time": 26985
       },
       "facebook": {
         "reacciones": 0,
@@ -1686,8 +1686,8 @@
         "saved": 0,
         "shares": 0,
         "views": 122,
-        "ig_reels_avg_watch_time": 10923,
-        "ig_reels_video_view_total_time": 1179780
+        "ig_reels_avg_watch_time": 10857,
+        "ig_reels_video_view_total_time": 1183414
       },
       "facebook": {
         "reacciones": 0,
@@ -1710,8 +1710,8 @@
         "saved": 0,
         "shares": 0,
         "views": 20,
-        "ig_reels_avg_watch_time": 6388,
-        "ig_reels_video_view_total_time": 121379
+        "ig_reels_avg_watch_time": 6394,
+        "ig_reels_video_view_total_time": 127899
       },
       "facebook": {
         "reacciones": 0,
@@ -1734,8 +1734,8 @@
         "saved": 0,
         "shares": 0,
         "views": 3,
-        "ig_reels_avg_watch_time": 2784,
-        "ig_reels_video_view_total_time": 8353
+        "ig_reels_avg_watch_time": 4167,
+        "ig_reels_video_view_total_time": 16669
       },
       "facebook": {
         "reacciones": 0,
@@ -1764,6 +1764,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122117396103512173"
+      }
+    },
+    "2026-11-19-reel-retardos-whatsapp": {
+      "tipo": "reel",
+      "fecha": "2026-11-19T18:00:00-06:00",
+      "tema": "\"Jefe, voy en el tráfico 🙏\"",
+      "instagram": {
+        "id": "18288038152295300",
+        "comments_count": 0,
+        "like_count": 1,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/Df8UaT8k3iK/",
+        "reach": 96,
+        "saved": 0,
+        "shares": 0,
+        "views": 115,
+        "ig_reels_avg_watch_time": 8643,
+        "ig_reels_video_view_total_time": 864313
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1542986477666557/"
       }
     }
   }
