@@ -1,5 +1,5 @@
 # Aprendizajes automáticos
-_Actualizado: 20/11/2026 07:42 CDMX · 79 posts con más de 24 h (historias excluidas)._
+_Actualizado: 20/11/2026 15:32 CDMX · 80 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-11-20): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
@@ -10,22 +10,22 @@ _Actualizado: 20/11/2026 07:42 CDMX · 79 posts con más de 24 h (historias excl
 - **—¿Por qué la nómina salió ocho mil pesos más alta?** · reel · lunes 18:00 · alcance 111, vistas 122, guardados 0, compartidos 0, comentarios 0
 
 ## Peores 3 (no repetir ese gancho/formato/hora tal cual)
-- **¿Tu registro de asistencia te defendería en una demanda? ⚖️** · carrusel · viernes 12:00 · alcance 0, puntaje 0
 - **¿Cómo controlas la asistencia de 3 sucursales sin estar ahí? 🏪** · carrusel · sábado 12:00 · alcance 0, puntaje 0
 - **RRHH: el aguinaldo se paga ANTES del 20 de diciembre 🎄 ¿Ya tienes listo el cálculo?** · imagen · lunes 10:00 · alcance 0, puntaje 0
+- **Historias de terror de la quincena 👻** · carrusel · jueves 13:00 · alcance 0, puntaje 0
 
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
 | reel | 28 | 17 | 0.2 |
-| carrusel | 34 | 6 | 0.5 |
+| carrusel | 35 | 5 | 0.5 |
 | imagen | 17 | 1 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
 | tarde (16–19) | 29 | 17 | 0.2 |
-| mediodía (12–15) | 39 | 5 | 0.3 |
+| mediodía (12–15) | 40 | 5 | 0.3 |
 | noche (20–5) | 3 | 1 | 1.3 |
 | mañana (6–11) | 8 | 1 | 0.0 |
 
@@ -37,7 +37,7 @@ _Actualizado: 20/11/2026 07:42 CDMX · 79 posts con más de 24 h (historias excl
 | miércoles | 18 | 13 | 0.8 |
 | viernes | 11 | 8 | 0.4 |
 | martes | 10 | 4 | 0.1 |
-| jueves | 17 | 3 | 0.0 |
+| jueves | 18 | 2 | 0.0 |
 | domingo | 5 | 2 | 0.0 |
 
 ## Reglas para el siguiente post
