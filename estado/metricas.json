@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T13:40:26+00:00",
+  "actualizado": "2026-11-21T20:14:54+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1800,10 +1800,10 @@
         "like_count": 0,
         "media_product_type": "FEED",
         "permalink": "https://www.instagram.com/p/Df-W7LBDl1d/",
-        "reach": 0,
+        "reach": 1,
         "saved": 0,
         "shares": 0,
-        "views": 0
+        "views": 2
       },
       "facebook": {
         "reacciones": 0,
@@ -1822,12 +1822,12 @@
         "like_count": 2,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/Df-5Mq-k17Z/",
-        "reach": 138,
+        "reach": 140,
         "saved": 0,
         "shares": 0,
-        "views": 161,
-        "ig_reels_avg_watch_time": 10093,
-        "ig_reels_video_view_total_time": 1402949
+        "views": 164,
+        "ig_reels_avg_watch_time": 10196,
+        "ig_reels_video_view_total_time": 1437681
       },
       "facebook": {
         "reacciones": 0,
