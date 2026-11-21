@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-20T21:31:56+00:00",
+  "actualizado": "2026-11-21T13:40:26+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1776,12 +1776,12 @@
         "like_count": 1,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/Df8UaT8k3iK/",
-        "reach": 100,
+        "reach": 101,
         "saved": 0,
         "shares": 0,
-        "views": 118,
-        "ig_reels_avg_watch_time": 8665,
-        "ig_reels_video_view_total_time": 901164
+        "views": 119,
+        "ig_reels_avg_watch_time": 8519,
+        "ig_reels_video_view_total_time": 903104
       },
       "facebook": {
         "reacciones": 0,
@@ -1810,6 +1810,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122117691597512173"
+      }
+    },
+    "2026-11-20-reel-cocinero-13h": {
+      "tipo": "reel",
+      "fecha": "2026-11-20T18:00:00-06:00",
+      "tema": "Tu cocinero se quedó 13 horas el sábado, y eso te puede salir caro. 👨‍🍳",
+      "instagram": {
+        "id": "18661971364007894",
+        "comments_count": 0,
+        "like_count": 2,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/Df-5Mq-k17Z/",
+        "reach": 138,
+        "saved": 0,
+        "shares": 0,
+        "views": 161,
+        "ig_reels_avg_watch_time": 10093,
+        "ig_reels_video_view_total_time": 1402949
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1772438028217640/"
       }
     }
   }
