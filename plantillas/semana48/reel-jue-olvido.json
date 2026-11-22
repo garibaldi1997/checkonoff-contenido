@@ -1,0 +1,103 @@
+{
+ "voz": "voz/s48-jue-olvido",
+ "salida": "contenido/checkonoff/2026-11-26-reel-olvido-checar",
+ "estilo": "noche",
+ "claves": [
+  "olvidó",
+  "demanda",
+  "empresa"
+ ],
+ "escenas": [
+  {
+   "fx": "chat",
+   "w": "este",
+   "nombre": "Luis (ventas)",
+   "avatar": "🧑",
+   "msgs": [
+    [
+     "el",
+     "Jefe, se me olvidó checar 🙏",
+     "9:14 p. m."
+    ]
+   ]
+  },
+  {
+   "fx": "palabra",
+   "w": "mira",
+   "texto": "Mira 👇"
+  },
+  {
+   "fx": "chat",
+   "w": "jefe",
+   "nombre": "Luis (ventas)",
+   "avatar": "🧑",
+   "paso": 1.3,
+   "msgs": [
+    [
+     "el",
+     "Jefe, se me olvidó checar la salida 🙏",
+     "9:14 p. m."
+    ],
+    [
+     "yo",
+     "Ok. ¿A qué hora saliste?",
+     "9:20 p. m."
+    ],
+    [
+     "el",
+     "Como a las 7 🤷",
+     "9:21 p. m."
+    ]
+   ]
+  },
+  {
+   "fx": "palabra",
+   "w": "compruebas",
+   "texto": "¿Y cómo lo<br>compruebas?",
+   "size": 110
+  },
+  {
+   "fx": "sello",
+   "w": "puedes",
+   "texto": "NO PUEDES"
+  },
+  {
+   "fx": "nota",
+   "w": "demanda",
+   "titulo": "Si hay demanda ⚖️",
+   "size": 92,
+   "lineas": [
+    "Probar la jornada",
+    "le toca a la empresa"
+   ],
+   "marca": [
+    1
+   ]
+  },
+  {
+   "fx": "lista",
+   "w": "con",
+   "items": [
+    [
+     "Checa desde el celular",
+     "✓"
+    ],
+    [
+     "Con foto y ubicación",
+     "✓"
+    ],
+    [
+     "Queda guardado",
+     "✓"
+    ]
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

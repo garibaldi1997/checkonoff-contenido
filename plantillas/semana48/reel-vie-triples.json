@@ -1,0 +1,101 @@
+{
+ "voz": "voz/s48-vie-triples",
+ "salida": "contenido/checkonoff/2026-11-27-reel-horas-triples",
+ "estilo": "vibrante",
+ "claves": [
+  "doce",
+  "nueve",
+  "triple"
+ ],
+ "escenas": [
+  {
+   "fx": "numero",
+   "w": "doce",
+   "antes": "Horas extra a la semana",
+   "valor": "12 h",
+   "despues": "en 2027 ya es un problema ⚠️",
+   "y": 620,
+   "size": 280
+  },
+  {
+   "fx": "palabra",
+   "w": "explico",
+   "texto": "Con un<br>ejemplo"
+  },
+  {
+   "fx": "nota",
+   "w": "trabajador",
+   "titulo": "Jornada semanal",
+   "size": 100,
+   "lineas": [
+    "Antes: 48 h",
+    "2027: 46 h"
+   ],
+   "marca": [
+    1
+   ]
+  },
+  {
+   "fx": "nota",
+   "w": "para",
+   "titulo": "Para no bajar producción",
+   "size": 88,
+   "lineas": [
+    "2 h extra",
+    "× 6 días"
+   ],
+   "marca": [
+    1
+   ]
+  },
+  {
+   "fx": "palabra",
+   "w": "cuánto",
+   "texto": "¿Y cuánto<br>suman?"
+  },
+  {
+   "fx": "lista",
+   "w": "doce",
+   "n": 1,
+   "items": [
+    [
+     "Horas extra: 12",
+     "✕"
+    ],
+    [
+     "Tope dobles 2027: 9",
+     "!"
+    ],
+    [
+     "Máx. 4 días",
+     "!"
+    ]
+   ]
+  },
+  {
+   "fx": "palabra",
+   "w": "demás",
+   "texto": "¿Y lo<br>demás?"
+  },
+  {
+   "fx": "sello",
+   "w": "paga",
+   "texto": "AL TRIPLE"
+  },
+  {
+   "fx": "palabra",
+   "w": "con",
+   "texto": "Te avisa<br>antes del tope",
+   "sub": "Con CheckONOFF",
+   "size": 130,
+   "n": 1
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

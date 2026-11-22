@@ -1,0 +1,11 @@
+#voz dialogo (Jorge y Dalia, armado de voz/s48-lun-dlg-*)
+¿Cuántos días de vacaciones le quedan a Karla?
+Déjame buscar en el Excel.
+¿Cuál Excel?
+El de dos mil veinticuatro, o el de la otra computadora.
+¿Y si nos equivocamos?
+Pues le pagamos de más, o se nos queja.
+¿No hay algo más fácil?
+Con CheckONOFF el saldo de vacaciones de cada persona está al día y las autorizas desde el celular.
+Eso sí me gusta.
+Escríbenos GUÍA al WhatsApp.

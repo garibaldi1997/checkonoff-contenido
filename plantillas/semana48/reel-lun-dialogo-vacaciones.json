@@ -1,0 +1,66 @@
+{
+ "voz": "voz/s48-lun-dialogo",
+ "salida": "contenido/checkonoff/2026-11-23-reel-dialogo-vacaciones",
+ "estilo": "claro",
+ "sinSubs": true,
+ "escenas": [
+  {
+   "fx": "dialogo",
+   "w": "cuántos",
+   "lineas": [
+    {
+     "quien": "J",
+     "t": 0.0,
+     "texto": "¿Cuántos días de vacaciones le quedan a Karla?"
+    },
+    {
+     "quien": "D",
+     "t": 3.47,
+     "texto": "Déjame buscar en el Excel."
+    },
+    {
+     "quien": "J",
+     "t": 6.22,
+     "texto": "¿Cuál Excel?"
+    },
+    {
+     "quien": "D",
+     "t": 8.39,
+     "texto": "El de dos mil veinticuatro, o el de la otra computadora."
+    },
+    {
+     "quien": "J",
+     "t": 12.72,
+     "texto": "¿Y si nos equivocamos?"
+    },
+    {
+     "quien": "D",
+     "t": 15.23,
+     "texto": "Pues le pagamos de más, o se nos queja."
+    },
+    {
+     "quien": "J",
+     "t": 18.5,
+     "texto": "¿No hay algo más fácil?"
+    },
+    {
+     "quien": "D",
+     "t": 21.06,
+     "texto": "Con CheckONOFF el saldo de vacaciones de cada persona está al día y las autorizas desde el celular."
+    },
+    {
+     "quien": "J",
+     "t": 26.98,
+     "texto": "Eso sí me gusta."
+    }
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

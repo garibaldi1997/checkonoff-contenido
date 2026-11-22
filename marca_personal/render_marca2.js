@@ -301,6 +301,58 @@ P.nota_contratar = `<style>${MANO}</style><div style="position:absolute;inset:0;
  <div style="position:absolute;right:110px;bottom:110px;font-family:Mano;font-size:46px;color:#1d2433;padding:14px 34px;border:3px solid #F06B7A;border-radius:50%;transform:rotate(-6deg)">Dr. Garibaldi Corona</div>
 </div>`;
 
+// ===== Semana 48 =====
+// Lunes 23/11 · Cartel con marcatexto
+P.cartel_septimo = `<style>${NUN}</style><div style="position:absolute;inset:0;background:#FBF7EE"></div>
+<div style="position:absolute;left:50px;right:50px;top:170px;text-align:center;font-family:NU;font-weight:900;color:#111;letter-spacing:-.03em">
+ <div style="font-size:70px;line-height:1.05;white-space:nowrap">El día de descanso</div>
+ <div style="font-size:84px;line-height:1.15;margin-top:6px;white-space:nowrap">${mk('no es un premio.')}</div>
+ <div style="font-size:60px;line-height:1.3;margin-top:26px;white-space:nowrap">Es lo que ${mk('recarga al equipo', '#F7A1AC')}</div>
+ <div style="font-size:60px;line-height:1.3;white-space:nowrap">para la ${mk('siguiente semana.', '#F7A1AC')}</div>
+ <div style="font-family:IT;font-weight:500;font-size:42px;letter-spacing:-.01em;line-height:1.25;color:#2b2b2b;margin-top:56px">Por cada 6 días de trabajo,<br>1 de descanso con salario íntegro.${subr(560)}</div>
+ <div style="margin-top:84px;display:inline-block;background:#FFE36E;border-radius:70px;padding:8px 50px;white-space:nowrap;font-size:66px">Respetar el descanso</div>
+ <div style="font-size:48px;line-height:1.15;margin-top:24px">también es productividad.${subr(380)}</div>
+</div>
+${rayas(14, 290, '#F06B7A', 0)}${rayas(976, 590, '#F06B7A', 180)}${rayas(14, 790, '#F5C518', 0)}${rayas(976, 960, '#F5C518', 180)}
+${firma(true)}`;
+// Martes 24/11 · Infografía de lista
+P.info_senales = `<div class="up" style="position:absolute;left:60px;right:60px;top:60px;font-size:56px;text-align:center">5 señales de que tu registro<br><span class="or" style="font-size:78px">no está listo para 2027</span></div>
+<div style="position:absolute;left:60px;right:60px;top:320px;text-align:center;font-size:28px;color:${K.s}">Desde el 01/01/2027 aplican las reglas del registro electrónico (art. 132 fr. XXXIV LFT).</div>
+<div style="position:absolute;left:70px;right:70px;top:430px;display:flex;flex-direction:column;gap:30px">${[['📒','Es una libreta o una lista en papel','la ley pide medios electrónicos'],['✏️','Se corrige sin dejar rastro','no sabes quién cambió qué'],['🕐','Solo anota la entrada','falta el fin de la jornada'],['🗂️','Sacar un reporte toma días','y la autoridad lo puede pedir'],['🤝','Nadie lo acordó con el equipo','acordado, hace prueba plena']].map(([e,t,d],i)=>`<div style="display:flex;gap:22px;align-items:center"><div style="width:84px;height:84px;border-radius:24px;background:${K.bg2};display:grid;place-items:center;font-size:44px;flex:none">${e}</div><div><div style="font-size:38px;font-weight:800"><span class="ac">${i+1}.</span> ${t}</div><div style="font-size:27px;color:${K.s}">${d}</div></div></div>`).join('')}</div>
+${firma()}`;
+// Miércoles 25/11 · Adivina el dato
+P.dato_hora2030 = `<div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 55% at 50% 0%,#1d3a66,${K.bg})"></div>
+<div style="position:absolute;left:60px;top:60px;background:${K.o};color:${K.bg};font-weight:800;font-size:26px;letter-spacing:.1em;padding:10px 20px;border-radius:12px">ADIVINA EL DATO</div>
+<div class="up" style="position:absolute;left:60px;right:60px;top:170px;font-size:64px">Salario diario de $400.<br><span class="or">¿Cuánto vale una hora extra triple en 2030?</span></div>
+<div style="position:absolute;left:60px;right:60px;top:560px;display:flex;flex-direction:column;gap:26px">${[['A','$150'],['B','$165'],['C','Casi $180']].map(([l,v])=>`<div style="display:flex;align-items:center;gap:26px;background:${K.bg2};border-radius:24px;padding:26px 34px"><div style="width:72px;height:72px;border-radius:50%;background:${K.t};color:${K.bg};display:grid;place-items:center;font-size:40px;font-weight:800">${l}</div><div style="font-size:54px;font-weight:800">${v}</div></div>`).join('')}</div>
+<div style="position:absolute;left:60px;right:60px;top:1010px;font-size:26px;color:${K.s};line-height:1.35">Ejemplo con un método que reparte la semana en 6 días (jornada de 40 h en 2030). Respuesta en los comentarios.</div>
+${firma()}`;
+// Jueves 26/11 · Jueves de realidad con humor
+P.humor_vacaciones = `<div style="position:absolute;inset:0;background:#fff"></div>
+<div style="position:absolute;left:60px;right:60px;top:60px;color:#0F1E36;font-size:42px;font-weight:600;line-height:1.38">
+— RRHH: Juan checó a las 7:59.<br>— Jefe: Qué puntual.<br>— RRHH: Juan está de vacaciones.<br>— Jefe: …qué comprometido.</div>
+<div style="position:absolute;left:60px;right:60px;top:440px;bottom:150px;border-radius:24px;overflow:hidden;background:#eee">
+ <img src="${F('facepalm')}" style="position:absolute;left:-30px;top:-120px;width:1020px">
+ <div style="position:absolute;left:40px;bottom:40px;font-size:58px;font-weight:800;color:#fff;-webkit-text-stroke:8px #0F1E36;paint-order:stroke fill">El reloj checador: 🤷</div></div>
+${firma(true)}`;
+// Viernes 27/11 · Nota a mano (finanzas)
+P.nota_diciembre = `<style>${MANO}</style><div style="position:absolute;inset:0;background:#EFE9DD"></div>
+<div style="position:absolute;left:40px;top:50px;width:1040px;height:1300px;background:#FBF8F1;box-shadow:0 20px 60px rgba(60,40,10,.18);transform:rotate(-2.2deg);transform-origin:0 0">
+ <div style="position:absolute;left:60px;right:60px;top:70px;height:120px;border:2px solid #9a9488;display:flex">
+  <div style="width:220px;border-right:2px solid #9a9488;display:grid;place-items:center;font-size:30px;letter-spacing:.14em;color:#6d675c">ASUNTO:</div>
+  <div style="flex:1;display:flex;align-items:center;padding-left:34px;font-family:Mano;font-size:56px;color:#1d2433">${hl('ANTES DE DICIEMBRE')}</div></div>
+ <div style="position:absolute;left:60px;right:60px;top:190px;bottom:60px;border:2px solid #9a9488;border-top:0"></div>
+ <div style="position:absolute;left:100px;right:90px;top:240px;font-family:Mano;color:#1d2433;font-size:58px;line-height:1.28">
+  Cerrar el año también<br>${hl('es planear el siguiente.', '#F7A1AC')}
+  <div style="margin-top:44px;font-size:48px;line-height:1.25">
+   <div>${flecha}${hl('¿El aguinaldo ya está apartado?')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Que no salga de la caja del mes.</div></div>
+   <div>${flecha}${hl('¿Cuántas vacaciones quedan?')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Días acumulados también son un pasivo.</div></div>
+   <div>${flecha}${hl('¿Hay horas extra sin pagar?')}<div style="font-size:36px;margin:4px 0 22px 58px;color:#3a4152">Mejor hoy que en una demanda.</div></div>
+   <div>${flecha}${hl('¿El presupuesto 2027 ya usa 46 h?')}<div style="font-size:36px;margin:4px 0 0 58px;color:#3a4152">Menos horas, mismo salario.</div></div>
+  </div></div>
+ <div style="position:absolute;right:110px;bottom:110px;font-family:Mano;font-size:46px;color:#1d2433;padding:14px 34px;border:3px solid #F06B7A;border-radius:50%;transform:rotate(-6deg)">Dr. Garibaldi Corona</div>
+</div>`;
+
 (async () => {
   const OUT = path.join(D, 'out2'); fs.mkdirSync(OUT, { recursive: true });
   const b = await chromium.launch(); const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });

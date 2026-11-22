@@ -1,0 +1,113 @@
+{
+ "voz": "voz/s48-mie-comedor",
+ "salida": "contenido/checkonoff/2026-11-25-reel-comedor",
+ "estilo": "papel",
+ "claves": [
+  "comer",
+  "descanso",
+  "efectivo"
+ ],
+ "escenas": [
+  {
+   "fx": "nota",
+   "w": "tu",
+   "titulo": "Comida en la planta 🍱",
+   "size": 96,
+   "lineas": [
+    "Comen en su lugar",
+    "¿Cuenta como trabajo?"
+   ],
+   "marca": [
+    1
+   ]
+  },
+  {
+   "fx": "nota",
+   "w": "explico",
+   "titulo": "En 1 minuto ⏱️",
+   "lineas": [
+    "Te lo explico"
+   ],
+   "marca": [
+    0
+   ],
+   "size": 110
+  },
+  {
+   "fx": "nota",
+   "w": "planta",
+   "titulo": "Turno",
+   "size": 100,
+   "lineas": [
+    "8:00 a 4:00",
+    "30 min para comer"
+   ],
+   "marca": [
+    1
+   ]
+  },
+  {
+   "fx": "sello",
+   "w": "nadie",
+   "texto": "NO PUEDEN SALIR"
+  },
+  {
+   "fx": "sello",
+   "w": "cambia",
+   "texto": "¿Y QUÉ CAMBIA?"
+  },
+  {
+   "fx": "nota",
+   "w": "ley",
+   "titulo": "Art. 64 LFT",
+   "size": 88,
+   "lineas": [
+    "Si no puede salir en su descanso,",
+    "ese tiempo cuenta",
+    "como trabajo efectivo"
+   ],
+   "marca": [
+    2
+   ]
+  },
+  {
+   "fx": "nota",
+   "w": "quién",
+   "titulo": "La pregunta",
+   "lineas": [
+    "¿Y quién lleva",
+    "la cuenta?"
+   ],
+   "marca": [
+    1
+   ],
+   "size": 100
+  },
+  {
+   "fx": "lista",
+   "w": "con",
+   "items": [
+    [
+     "Salida a comer",
+     "✓"
+    ],
+    [
+     "Regreso",
+     "✓"
+    ],
+    [
+     "Por persona",
+     "✓"
+    ]
+   ],
+   "n": 1
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}

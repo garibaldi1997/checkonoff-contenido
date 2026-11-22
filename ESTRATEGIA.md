@@ -311,5 +311,20 @@ Cada pieza lleva su propia escena en pantalla; los bucles van en texto grande y 
 ## Carruseles estilo competencia en Instagram (aprobado por el dueño, 18/11/2026)
 - Referencias: Humand (frase entre comillas grande sobre fondo degradado en los colores de CheckONOFF —verde #1E9A0B→#8EDB6E, etiqueta azul marino #111C3B— + objeto/pantalla; nunca el azul de Humand; serie con nombre fijo, humor de oficina) y Sesame ("Paso 1-4" con pantalla de producto y nombre de quien la usa).
 - Plantilla: plantillas/competencia/render_comp.js. Series: "Historias de terror de la quincena" y "De la libreta a la prenómina en pasos".
-- Se publican en TODAS las redes de CheckONOFF (Instagram, Facebook y LinkedIn): 2 carruseles por semana a las 13:00, además de los reels diarios de las 18:00.
+- Desde la semana 48 se publican SOLO en Facebook y LinkedIn (2 por semana, martes y jueves 13:00). En Instagram llegaron a 0–1 personas (19 y 20/11): con 2 seguidores, IG no reparte carruseles a no seguidores. La idea de "Historias de terror de la quincena" va a Instagram en formato reel.
 - Pendiente: fotos reales del equipo para la serie de personas (estilo "Creo que tengo fiebre").
+
+
+## Aprendizajes semana 47 (16–20/11/2026)
+| Reel | Formato | Alcance IG | Retención |
+|---|---|---|---|
+| Diálogo nómina $8,000 | diálogo J+D | 111 | 10.9 s |
+| Cocinero 13 h | número + nota + sello | 142 | 10.1 s |
+| Retardos por WhatsApp | chat | 101 | 8.5 s |
+| Sucursal tres | nota/papel | 13 | 6.4 s |
+| Diálogo inspector | diálogo J+D | 3 | 4.2 s |
+
+- Los reels de escena concreta (cocinero, chat de retardos) y el diálogo con dinero en el gancho retienen 8–11 s. El diálogo del inspector (gancho sin cifra) no despegó: el gancho necesita una cifra o un problema reconocible en la primera frase.
+- Carruseles estilo competencia en IG: 0 y 1 de alcance, 0 guardados. → Solo FB/LI desde la semana 48.
+- 0 guardados y 0 compartidos en todo; seguidores IG siguen en 2.
+- publicar.yml: todo salió; el primer intento de cada reel en IG falla y sale al reintento (video aún procesando), sin acción.

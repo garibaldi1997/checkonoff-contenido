@@ -1,0 +1,100 @@
+{
+ "voz": "voz/s48-mar-terror",
+ "salida": "contenido/checkonoff/2026-11-24-reel-terror-quincena",
+ "estilo": "vibrante",
+ "claves": [
+  "terror",
+  "peor",
+  "vacaciones"
+ ],
+ "escenas": [
+  {
+   "fx": "palabra",
+   "w": "historias",
+   "texto": "Historias de terror<br>de la quincena 👻",
+   "size": 110
+  },
+  {
+   "fx": "palabra",
+   "w": "quédate",
+   "texto": "La última<br>es la peor 😱"
+  },
+  {
+   "fx": "palabra",
+   "w": "uno",
+   "texto": "“¿Alguien sabe a qué hora llegó Pedro el martes?”",
+   "size": 96
+  },
+  {
+   "fx": "sello",
+   "w": "nadie",
+   "texto": "NADIE SABE"
+  },
+  {
+   "fx": "chat",
+   "w": "dos",
+   "nombre": "Supervisor",
+   "avatar": "📋",
+   "msgs": [
+    [
+     "el",
+     "Te mando foto de la lista 📸",
+     "11:48 p. m."
+    ],
+    [
+     "el",
+     "[foto borrosa]",
+     "11:48 p. m."
+    ]
+   ]
+  },
+  {
+   "fx": "palabra",
+   "w": "espera",
+   "texto": "Falta<br>la peor…"
+  },
+  {
+   "fx": "nota",
+   "w": "tres",
+   "titulo": "Reloj checador",
+   "size": 96,
+   "lineas": [
+    "Juan · ENT 07:59",
+    "Estado: de vacaciones 🏖️"
+   ],
+   "marca": [
+    1
+   ]
+  },
+  {
+   "fx": "palabra",
+   "w": "alguna",
+   "texto": "¿Te ha pasado<br>alguna? 👇"
+  },
+  {
+   "fx": "lista",
+   "w": "con",
+   "items": [
+    [
+     "Foto en cada checada",
+     "✓"
+    ],
+    [
+     "Hora exacta",
+     "✓"
+    ],
+    [
+     "Ubicación",
+     "✓"
+    ]
+   ]
+  },
+  {
+   "fx": "cierre",
+   "w": "escríbenos",
+   "cta": "GUÍA",
+   "ctaVerbo": "Escríbenos",
+   "linea": "al WhatsApp +52 440 180 2213"
+  }
+ ]
+}
