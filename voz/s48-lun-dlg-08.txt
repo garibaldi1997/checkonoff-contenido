@@ -1,0 +1,2 @@
+#voz es-MX-DaliaNeural +6%
+Con CheckONOFF el saldo de vacaciones de cada persona está al día y las autorizas desde el celular.
