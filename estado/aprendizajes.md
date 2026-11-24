@@ -1,8 +1,8 @@
 # Aprendizajes automáticos
-_Actualizado: 23/11/2026 19:13 CDMX · 83 posts con más de 24 h (historias excluidas)._
+_Actualizado: 24/11/2026 07:43 CDMX · 83 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
-- **checkonoff** (2026-11-23): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
+- **checkonoff** (2026-11-24): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
 
 ## Mejores 3 (repetir el patrón: formato, tipo de gancho, hora)
 - **Tu cocinero se quedó 13 horas el sábado, y eso te puede salir caro. 👨‍🍳** · reel · viernes 18:00 · alcance 142, vistas 165, guardados 0, compartidos 0, comentarios 0
