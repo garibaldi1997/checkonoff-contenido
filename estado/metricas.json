@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T13:40:29+00:00",
+  "actualizado": "2026-11-24T01:12:06+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1834,6 +1834,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/1772438028217640/"
+      }
+    },
+    "2026-11-23-reel-dialogo-vacaciones": {
+      "tipo": "reel",
+      "fecha": "2026-11-23T18:00:00-06:00",
+      "tema": "¿Cuántos días de vacaciones le quedan a Karla? 🏖️",
+      "instagram": {
+        "id": "18101566340394465",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DgGnljlDkEP/",
+        "reach": 0,
+        "saved": 0,
+        "shares": 0,
+        "views": 0,
+        "ig_reels_avg_watch_time": 0,
+        "ig_reels_video_view_total_time": 0
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/1692247775607506/"
       }
     }
   }
