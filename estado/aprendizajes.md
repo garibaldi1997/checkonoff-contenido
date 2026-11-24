@@ -1,13 +1,13 @@
 # Aprendizajes automáticos
-_Actualizado: 24/11/2026 07:43 CDMX · 83 posts con más de 24 h (historias excluidas)._
+_Actualizado: 24/11/2026 17:18 CDMX · 83 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-11-24): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
 
 ## Mejores 3 (repetir el patrón: formato, tipo de gancho, hora)
 - **Tu cocinero se quedó 13 horas el sábado, y eso te puede salir caro. 👨‍🍳** · reel · viernes 18:00 · alcance 142, vistas 165, guardados 0, compartidos 0, comentarios 0
+- **Tu mesero cobra 2 horas que no trabajó… y él mismo lo anota. 🍽️** · reel · miércoles 18:00 · alcance 124, vistas 157, guardados 0, compartidos 0, comentarios 0
 - **Sábado, 11 de la noche: llegan fotos de la libreta de asistencia por WhatsApp. 📸** · reel · sábado 18:00 · alcance 124, vistas 138, guardados 0, compartidos 0, comentarios 0
-- **Tu mesero cobra 2 horas que no trabajó… y él mismo lo anota. 🍽️** · reel · miércoles 18:00 · alcance 123, vistas 156, guardados 0, compartidos 0, comentarios 0
 
 ## Peores 3 (no repetir ese gancho/formato/hora tal cual)
 - **¿Cómo controlas la asistencia de 3 sucursales sin estar ahí? 🏪** · carrusel · sábado 12:00 · alcance 0, puntaje 0
@@ -17,7 +17,7 @@ _Actualizado: 24/11/2026 07:43 CDMX · 83 posts con más de 24 h (historias excl
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| reel | 30 | 24 | 0.3 |
+| reel | 30 | 25 | 0.3 |
 | carrusel | 36 | 5 | 0.4 |
 | imagen | 17 | 1 | 0.0 |
 
