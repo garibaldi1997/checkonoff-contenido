@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-24T23:15:49+00:00",
+  "actualizado": "2026-11-25T13:40:27+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1846,12 +1846,12 @@
         "like_count": 0,
         "media_product_type": "REELS",
         "permalink": "https://www.instagram.com/reel/DgGnljlDkEP/",
-        "reach": 2,
+        "reach": 3,
         "saved": 0,
         "shares": 0,
         "views": 3,
-        "ig_reels_avg_watch_time": 2237,
-        "ig_reels_video_view_total_time": 4474
+        "ig_reels_avg_watch_time": 2292,
+        "ig_reels_video_view_total_time": 6876
       },
       "facebook": {
         "reacciones": 0,
@@ -1869,6 +1869,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122118848019512173"
+      }
+    },
+    "2026-11-24-reel-terror-quincena": {
+      "tipo": "reel",
+      "fecha": "2026-11-24T18:00:00-06:00",
+      "tema": "Historias de terror de la quincena 👻",
+      "instagram": {
+        "id": "18422922601159732",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DgJMZG_Cuo2/",
+        "reach": 11,
+        "saved": 0,
+        "shares": 0,
+        "views": 14,
+        "ig_reels_avg_watch_time": 6476,
+        "ig_reels_video_view_total_time": 64760
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/2331063864410245/"
       }
     }
   }
