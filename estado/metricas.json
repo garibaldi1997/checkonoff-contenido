@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-25T22:45:07+00:00",
+  "actualizado": "2026-11-26T13:40:30+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1893,6 +1893,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "/reel/2331063864410245/"
+      }
+    },
+    "2026-11-25-reel-comedor": {
+      "tipo": "reel",
+      "fecha": "2026-11-25T18:00:00-06:00",
+      "tema": "Tu equipo come en su lugar de trabajo… y eso puede contar como trabajo. 🍱",
+      "instagram": {
+        "id": "18169588615489066",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DgLxLgths95/",
+        "reach": 3,
+        "saved": 0,
+        "shares": 0,
+        "views": 4,
+        "ig_reels_avg_watch_time": 769,
+        "ig_reels_video_view_total_time": 2307
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/2177961986130498/"
       }
     }
   }

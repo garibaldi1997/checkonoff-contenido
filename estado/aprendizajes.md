@@ -1,8 +1,8 @@
 # Aprendizajes automáticos
-_Actualizado: 25/11/2026 16:47 CDMX · 85 posts con más de 24 h (historias excluidas)._
+_Actualizado: 26/11/2026 07:42 CDMX · 86 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
-- **checkonoff** (2026-11-25): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
+- **checkonoff** (2026-11-26): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
 
 ## Mejores 3 (repetir el patrón: formato, tipo de gancho, hora)
 - **Tu cocinero se quedó 13 horas el sábado, y eso te puede salir caro. 👨‍🍳** · reel · viernes 18:00 · alcance 142, vistas 165, guardados 0, compartidos 0, comentarios 0
@@ -17,14 +17,14 @@ _Actualizado: 25/11/2026 16:47 CDMX · 85 posts con más de 24 h (historias excl
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| reel | 31 | 24 | 0.3 |
+| reel | 32 | 24 | 0.2 |
 | carrusel | 37 | 5 | 0.4 |
 | imagen | 17 | 1 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
-| tarde (16–19) | 32 | 23 | 0.2 |
+| tarde (16–19) | 33 | 23 | 0.2 |
 | mediodía (12–15) | 42 | 5 | 0.3 |
 | noche (20–5) | 3 | 1 | 1.3 |
 | mañana (6–11) | 8 | 1 | 0.0 |
@@ -37,7 +37,7 @@ _Actualizado: 25/11/2026 16:47 CDMX · 85 posts con más de 24 h (historias excl
 | miércoles | 18 | 13 | 0.8 |
 | lunes | 11 | 13 | 0.1 |
 | jueves | 19 | 8 | 0.1 |
-| martes | 11 | 4 | 0.1 |
+| martes | 12 | 5 | 0.1 |
 | domingo | 5 | 2 | 0.0 |
 
 ## Reglas para el siguiente post
