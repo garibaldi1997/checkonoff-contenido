@@ -1,5 +1,5 @@
 # Aprendizajes automáticos
-_Actualizado: 27/11/2026 07:42 CDMX · 87 posts con más de 24 h (historias excluidas)._
+_Actualizado: 27/11/2026 16:22 CDMX · 88 posts con más de 24 h (historias excluidas)._
 
 ## Seguidores
 - **checkonoff** (2026-11-27): Instagram 2 (+2 desde 2026-10-15), Facebook 0 (+0)
@@ -10,22 +10,22 @@ _Actualizado: 27/11/2026 07:42 CDMX · 87 posts con más de 24 h (historias excl
 - **Sábado, 11 de la noche: llegan fotos de la libreta de asistencia por WhatsApp. 📸** · reel · sábado 18:00 · alcance 124, vistas 138, guardados 0, compartidos 0, comentarios 0
 
 ## Peores 3 (no repetir ese gancho/formato/hora tal cual)
-- **RRHH: el aguinaldo se paga ANTES del 20 de diciembre 🎄 ¿Ya tienes listo el cálculo?** · imagen · lunes 10:00 · alcance 0, puntaje 0
 - **Historias de terror de la quincena 👻** · carrusel · jueves 13:00 · alcance 0, puntaje 0
 - **Historias de terror de la quincena, parte 2 👻** · carrusel · martes 13:00 · alcance 0, puntaje 0
+- **5 sucursales, sin ir a ninguna. 📍** · carrusel · jueves 13:00 · alcance 0, puntaje 0
 
 ### Por formato
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
 | reel | 33 | 23 | 0.2 |
-| carrusel | 37 | 5 | 0.4 |
+| carrusel | 38 | 5 | 0.4 |
 | imagen | 17 | 1 | 0.0 |
 
 ### Por horario
 | | posts | alcance prom. | puntaje prom. |
 |---|---|---|---|
 | tarde (16–19) | 34 | 22 | 0.2 |
-| mediodía (12–15) | 42 | 5 | 0.3 |
+| mediodía (12–15) | 43 | 4 | 0.3 |
 | noche (20–5) | 3 | 1 | 1.3 |
 | mañana (6–11) | 8 | 1 | 0.0 |
 
@@ -36,7 +36,7 @@ _Actualizado: 27/11/2026 07:42 CDMX · 87 posts con más de 24 h (historias excl
 | sábado | 8 | 18 | 0.1 |
 | lunes | 11 | 13 | 0.1 |
 | miércoles | 19 | 12 | 0.7 |
-| jueves | 19 | 8 | 0.1 |
+| jueves | 20 | 7 | 0.1 |
 | martes | 12 | 5 | 0.1 |
 | domingo | 5 | 2 | 0.0 |
 
