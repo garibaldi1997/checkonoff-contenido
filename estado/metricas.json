@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-26T22:35:02+00:00",
+  "actualizado": "2026-11-27T13:40:25+00:00",
   "publicaciones": {
     "2026-10-19-sabias-carga-prueba": {
       "tipo": "imagen",
@@ -1928,6 +1928,30 @@
         "comentarios": 0,
         "compartidos": 0,
         "permalink": "https://www.facebook.com/122098590447512173/posts/122119390263512173"
+      }
+    },
+    "2026-11-26-reel-olvido-checar": {
+      "tipo": "reel",
+      "fecha": "2026-11-26T18:00:00-06:00",
+      "tema": "\"Jefe, se me olvidó checar la salida.\" 📱",
+      "instagram": {
+        "id": "18130628254873798",
+        "comments_count": 0,
+        "like_count": 0,
+        "media_product_type": "REELS",
+        "permalink": "https://www.instagram.com/reel/DgOWDVvRxdz/",
+        "reach": 1,
+        "saved": 0,
+        "shares": 0,
+        "views": 2,
+        "ig_reels_avg_watch_time": 14137,
+        "ig_reels_video_view_total_time": 28274
+      },
+      "facebook": {
+        "reacciones": 0,
+        "comentarios": 0,
+        "compartidos": 0,
+        "permalink": "/reel/3622576214568081/"
       }
     }
   }
